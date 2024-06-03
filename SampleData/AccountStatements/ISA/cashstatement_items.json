@@ -1,0 +1,555 @@
+[
+  {
+    "account_code": "ISA",
+    "date": "2022-01-01",
+    "description": "* BALANCE B/F *",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-07-14",
+    "description": "Debit card subscription",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-07-28",
+    "description": "Debit card subscription",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-08-10",
+    "description": "Purchase 19 Vanguard USD Corp Bd UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -856.47
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-08-10",
+    "description": "Purchase 6 Amundi UK Govt Bd ETF Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -913.9
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-09-02",
+    "description": "Dividend 19   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.62,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-09-03",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-09-03",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-07",
+    "description": "Dividend 19   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.15,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-09",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-12",
+    "description": "Purchase 5 Vanguard USD Corp Bd UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -222.71
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-12",
+    "description": "Purchase 1 Amundi UK Govt Bd ETF Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -151.3
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-23",
+    "description": "Shares Custody Charge - Q3 2022",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.72
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-11-03",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-11-04",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.36,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-11-05",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-04",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.94,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-07",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-11",
+    "description": "Dividend 7   LYXOR INTERNATIONAL ASSET MGMT  LYXOR CORE FTSE ACTUARIES UK GILTS",
+    "receipt_amount_gbp": 8.54,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-30",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.12,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-12-30",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-01-01",
+    "description": "* BALANCE B/F *",
+    "receipt_amount_gbp": 673.55,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-01-05",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-01-11",
+    "description": "Purchase 3 Amundi UK Govt Bd ETF Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -447.5
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-01-26",
+    "description": "Shares Custody Charge - Q4 2020",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1.31
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-03",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.48,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-03",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-04",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-10",
+    "description": "Purchase 3 Amundi UK Govt Bd ETF Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -437.78
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-12",
+    "description": "Shares Custody Charge - Jan 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.52
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-03",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.89,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-04",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-10",
+    "description": "Purchase 25 Scottish Mortgage Ord",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -289.18
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-12",
+    "description": "Shares Custody Charge - Feb 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.58
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-31",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.38,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-06",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-07",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-12",
+    "description": "Purchase 24 Scottish Mortgage Ord",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -291.57
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-16",
+    "description": "Shares Custody Charge - Mar 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.64
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-28",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.78,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-05-04",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-05-06",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-05-17",
+    "description": "Shares Custody Charge - Apr 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.71
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-06-02",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.46,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-06-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-06-03",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-06-14",
+    "description": "Shares Custody Charge - May 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.7
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-06-30",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.9,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-01",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-01",
+    "description": "Dividend 49   SCOTTISH MORTGAGE  INVESTMENT TRUST",
+    "receipt_amount_gbp": 0.96,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-09",
+    "description": "Dividend 13   LYXOR INTERNATIONAL ASSET MGMT  LYXOR CORE UK GOVNMENT BOND (DR) U",
+    "receipt_amount_gbp": 20.28,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-12",
+    "description": "Purchase 30 Scottish Mortgage Ord",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -398.88
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-14",
+    "description": "Shares Custody Charge - Jun 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.73
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-28",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.06,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-30",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-08-03",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-08-13",
+    "description": "Shares Custody Charge - Jul 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.82
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-09-01",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.22,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-09-02",
+    "description": "Subscription",
+    "receipt_amount_gbp": 200,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-09-03",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.02
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-09-13",
+    "description": "Shares Custody Charge - Aug 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.82
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-09-29",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.95,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-10-01",
+    "description": "FX Charge (0.50%)",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.01
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-10-04",
+    "description": "Subscription",
+    "receipt_amount_gbp": 700,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-10-13",
+    "description": "Shares Custody Charge - Sep 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.82
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-10-27",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 1.99,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-11-12",
+    "description": "Shares Custody Charge - Oct 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.84
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-01",
+    "description": "Dividend 24   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 2.29,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-03",
+    "description": "Dividend 79   SCOTTISH MORTGAGE  INVESTMENT TRUST",
+    "receipt_amount_gbp": 1.2,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "description": "Dividend 13   LYXOR INTERNATIONAL ASSET MGMT  LYXOR CORE UK GOVNMENT BOND (DR) U",
+    "receipt_amount_gbp": 13.78,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "description": "Purchase 9 Vanguard USD Corp Bd UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -386.62
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "description": "Purchase 2 Amundi UK Govt Bd ETF Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -290.81
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "description": "Purchase 21 Scottish Mortgage Ord",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -298.03
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-14",
+    "description": "Shares Custody Charge - Nov 2023",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -0.85
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-29",
+    "description": "Dividend 33   VANGUARD FUNDS PLC  VANGUARD USD CORP BOND UCITS ETF USD DIS",
+    "receipt_amount_gbp": 3.01,
+    "payment_amount_gbp": 0
+  }
+]

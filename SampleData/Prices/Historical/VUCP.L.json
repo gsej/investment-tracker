@@ -1,0 +1,6560 @@
+[
+  {
+    "date": "2024-05-01",
+    "price": "37.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-30",
+    "price": "36.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-29",
+    "price": "36.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-26",
+    "price": "37.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-25",
+    "price": "36.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-24",
+    "price": "37.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-23",
+    "price": "37.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-22",
+    "price": "37.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-19",
+    "price": "37.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-18",
+    "price": "36.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-17",
+    "price": "37.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-16",
+    "price": "36.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-15",
+    "price": "37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-12",
+    "price": "37.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-11",
+    "price": "36.96",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-10",
+    "price": "37.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-09",
+    "price": "37.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-08",
+    "price": "37.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-05",
+    "price": "37.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-04",
+    "price": "37.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-03",
+    "price": "37.18",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-02",
+    "price": "37.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-28",
+    "price": "37.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-27",
+    "price": "37.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-26",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-25",
+    "price": "37.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-22",
+    "price": "37.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-21",
+    "price": "37.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-20",
+    "price": "36.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-19",
+    "price": "36.96",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-18",
+    "price": "36.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-15",
+    "price": "36.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-14",
+    "price": "36.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-13",
+    "price": "37.07",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-12",
+    "price": "37.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-11",
+    "price": "37.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-08",
+    "price": "36.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-07",
+    "price": "37.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-06",
+    "price": "37.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-05",
+    "price": "37.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-04",
+    "price": "37.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-01",
+    "price": "37.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-29",
+    "price": "37.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-28",
+    "price": "37.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-27",
+    "price": "37.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-26",
+    "price": "37.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-23",
+    "price": "37.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-22",
+    "price": "37.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-21",
+    "price": "37.18",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-20",
+    "price": "37.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-19",
+    "price": "37.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-16",
+    "price": "37.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-15",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-14",
+    "price": "37.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-13",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-12",
+    "price": "37.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-09",
+    "price": "37.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-08",
+    "price": "37.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-07",
+    "price": "37.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-06",
+    "price": "37.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-05",
+    "price": "37.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-02",
+    "price": "37.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-01",
+    "price": "37.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-31",
+    "price": "37.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-30",
+    "price": "37.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-29",
+    "price": "37.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-26",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-25",
+    "price": "37.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-24",
+    "price": "37.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-23",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-22",
+    "price": "37.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-19",
+    "price": "37.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-18",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-17",
+    "price": "37.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-16",
+    "price": "37.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-15",
+    "price": "37.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-12",
+    "price": "37.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-11",
+    "price": "37.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-10",
+    "price": "37.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-09",
+    "price": "37.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-08",
+    "price": "37.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-05",
+    "price": "37.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-04",
+    "price": "37.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-03",
+    "price": "37.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-02",
+    "price": "37.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-29",
+    "price": "37.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-28",
+    "price": "37.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-27",
+    "price": "37.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-22",
+    "price": "37.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-21",
+    "price": "37.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-20",
+    "price": "37.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-19",
+    "price": "37.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-18",
+    "price": "37.75",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-15",
+    "price": "37.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-14",
+    "price": "37.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-13",
+    "price": "37.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-12",
+    "price": "37.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-11",
+    "price": "37.32",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-08",
+    "price": "37.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-07",
+    "price": "37.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-06",
+    "price": "37.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-05",
+    "price": "37.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-04",
+    "price": "36.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-01",
+    "price": "36.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-30",
+    "price": "36.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-29",
+    "price": "36.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-28",
+    "price": "36.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-27",
+    "price": "36.45",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-24",
+    "price": "36.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-23",
+    "price": "36.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-22",
+    "price": "36.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-21",
+    "price": "36.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-20",
+    "price": "36.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-17",
+    "price": "36.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-16",
+    "price": "36.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-15",
+    "price": "36.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-14",
+    "price": "36.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-13",
+    "price": "36.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-10",
+    "price": "37.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-09",
+    "price": "36.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-08",
+    "price": "36.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-07",
+    "price": "36.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-06",
+    "price": "36.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-03",
+    "price": "36.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-02",
+    "price": "36.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-01",
+    "price": "36.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-31",
+    "price": "36.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-30",
+    "price": "36.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-27",
+    "price": "36.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-26",
+    "price": "36.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-25",
+    "price": "36.29",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-24",
+    "price": "36.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-23",
+    "price": "36.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-20",
+    "price": "36.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-19",
+    "price": "36.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-18",
+    "price": "36.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-17",
+    "price": "36.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-16",
+    "price": "36.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-13",
+    "price": "36.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-12",
+    "price": "36.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-11",
+    "price": "36.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-10",
+    "price": "36.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-09",
+    "price": "36.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-06",
+    "price": "36.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-05",
+    "price": "36.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-04",
+    "price": "36.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-03",
+    "price": "36.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-02",
+    "price": "36.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-29",
+    "price": "37.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-28",
+    "price": "36.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-27",
+    "price": "37.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-26",
+    "price": "37.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-25",
+    "price": "37.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-22",
+    "price": "37.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-21",
+    "price": "36.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-20",
+    "price": "36.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-19",
+    "price": "36.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-18",
+    "price": "36.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-15",
+    "price": "36.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-14",
+    "price": "36.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-13",
+    "price": "36.77",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-12",
+    "price": "36.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-11",
+    "price": "36.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-08",
+    "price": "36.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-07",
+    "price": "36.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-06",
+    "price": "36.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-05",
+    "price": "36.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-04",
+    "price": "36.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-01",
+    "price": "36.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-31",
+    "price": "36.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-30",
+    "price": "36.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-29",
+    "price": "36.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-25",
+    "price": "36.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-24",
+    "price": "36.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-23",
+    "price": "36.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-22",
+    "price": "35.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-21",
+    "price": "35.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-18",
+    "price": "35.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-17",
+    "price": "35.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-16",
+    "price": "36.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-15",
+    "price": "36.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-14",
+    "price": "36.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-11",
+    "price": "36.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-10",
+    "price": "36.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-09",
+    "price": "36.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-08",
+    "price": "36.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-07",
+    "price": "36.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-04",
+    "price": "36.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-03",
+    "price": "36.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-02",
+    "price": "36.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-01",
+    "price": "36.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-31",
+    "price": "36.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-28",
+    "price": "36.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-27",
+    "price": "36.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-26",
+    "price": "36.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-25",
+    "price": "36.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-24",
+    "price": "36.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-21",
+    "price": "36.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-20",
+    "price": "36.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-19",
+    "price": "36.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-18",
+    "price": "35.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-17",
+    "price": "35.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-14",
+    "price": "35.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-13",
+    "price": "35.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-12",
+    "price": "36.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-11",
+    "price": "36.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-10",
+    "price": "36.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-07",
+    "price": "36.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-06",
+    "price": "36.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-05",
+    "price": "36.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-04",
+    "price": "36.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-03",
+    "price": "37.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-30",
+    "price": "36.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-29",
+    "price": "37.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-28",
+    "price": "37.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-27",
+    "price": "36.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-26",
+    "price": "36.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-23",
+    "price": "36.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-22",
+    "price": "36.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-21",
+    "price": "36.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-20",
+    "price": "36.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-19",
+    "price": "36.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-16",
+    "price": "36.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-15",
+    "price": "36.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-14",
+    "price": "36.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-13",
+    "price": "37.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-12",
+    "price": "37.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-09",
+    "price": "37.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-08",
+    "price": "37.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-07",
+    "price": "37.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-06",
+    "price": "37.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-05",
+    "price": "37.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-02",
+    "price": "37.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-01",
+    "price": "37.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-31",
+    "price": "37.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-30",
+    "price": "37.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-26",
+    "price": "37.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-25",
+    "price": "37.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-24",
+    "price": "37.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-23",
+    "price": "37.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-22",
+    "price": "37.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-19",
+    "price": "37.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-18",
+    "price": "37.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-17",
+    "price": "37.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-16",
+    "price": "37.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-15",
+    "price": "37.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-12",
+    "price": "38.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-11",
+    "price": "38.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-10",
+    "price": "37.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-09",
+    "price": "37.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-05",
+    "price": "37.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-04",
+    "price": "37.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-03",
+    "price": "38.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-02",
+    "price": "38.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-28",
+    "price": "37.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-27",
+    "price": "38.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-26",
+    "price": "38.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-25",
+    "price": "38.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-24",
+    "price": "38.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-21",
+    "price": "38.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-20",
+    "price": "38.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-19",
+    "price": "37.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-18",
+    "price": "38.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-17",
+    "price": "38.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-14",
+    "price": "38.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-13",
+    "price": "38.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-12",
+    "price": "38.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-11",
+    "price": "38.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-06",
+    "price": "38.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-05",
+    "price": "38.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-04",
+    "price": "38.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-03",
+    "price": "38.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-31",
+    "price": "38.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-30",
+    "price": "38.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-29",
+    "price": "38.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-28",
+    "price": "38.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-27",
+    "price": "38.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-24",
+    "price": "38.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-23",
+    "price": "38.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-22",
+    "price": "38.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-21",
+    "price": "38.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-20",
+    "price": "38.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-17",
+    "price": "38.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-16",
+    "price": "38.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-15",
+    "price": "39.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-14",
+    "price": "38.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-13",
+    "price": "38.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-10",
+    "price": "38.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-09",
+    "price": "38.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-08",
+    "price": "39.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-07",
+    "price": "39.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-06",
+    "price": "38.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-03",
+    "price": "38.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-02",
+    "price": "38.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-01",
+    "price": "38.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-28",
+    "price": "38.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-27",
+    "price": "38.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-24",
+    "price": "38.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-23",
+    "price": "38.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-22",
+    "price": "38.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-21",
+    "price": "38.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-20",
+    "price": "38.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-17",
+    "price": "38.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-16",
+    "price": "38.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-15",
+    "price": "39.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-14",
+    "price": "38.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-13",
+    "price": "39.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-10",
+    "price": "39.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-09",
+    "price": "39.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-08",
+    "price": "39.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-07",
+    "price": "39.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-06",
+    "price": "39.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-03",
+    "price": "39.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-02",
+    "price": "39.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-01",
+    "price": "39.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-31",
+    "price": "38.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-30",
+    "price": "38.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-27",
+    "price": "38.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-26",
+    "price": "38.77",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-25",
+    "price": "38.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-24",
+    "price": "38.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-23",
+    "price": "38.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-20",
+    "price": "38.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-19",
+    "price": "38.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-18",
+    "price": "39.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-17",
+    "price": "39.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-16",
+    "price": "39.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-13",
+    "price": "39.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-12",
+    "price": "39.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-11",
+    "price": "39.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-10",
+    "price": "38.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-09",
+    "price": "39.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-06",
+    "price": "39.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-05",
+    "price": "39.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-04",
+    "price": "38.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-03",
+    "price": "38.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-30",
+    "price": "38.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-29",
+    "price": "38.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-28",
+    "price": "38.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-23",
+    "price": "38.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-22",
+    "price": "39.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-21",
+    "price": "38.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-20",
+    "price": "38.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-19",
+    "price": "38.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-16",
+    "price": "39.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-15",
+    "price": "38.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-14",
+    "price": "38.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-13",
+    "price": "38.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-12",
+    "price": "38.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-09",
+    "price": "38.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-08",
+    "price": "39.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-07",
+    "price": "39.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-06",
+    "price": "38.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-05",
+    "price": "38.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-02",
+    "price": "38.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-01",
+    "price": "38.45",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-30",
+    "price": "38.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-29",
+    "price": "38.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-28",
+    "price": "38.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-25",
+    "price": "38.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-24",
+    "price": "38.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-23",
+    "price": "38.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-22",
+    "price": "39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-21",
+    "price": "39.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-18",
+    "price": "38.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-17",
+    "price": "39.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-16",
+    "price": "39.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-15",
+    "price": "38.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-14",
+    "price": "39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-11",
+    "price": "38.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-10",
+    "price": "39.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-09",
+    "price": "39.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-08",
+    "price": "38.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-07",
+    "price": "38.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-04",
+    "price": "39.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-03",
+    "price": "39.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-02",
+    "price": "39.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-01",
+    "price": "39.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-31",
+    "price": "38.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-28",
+    "price": "38.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-27",
+    "price": "38.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-26",
+    "price": "38.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-25",
+    "price": "38.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-24",
+    "price": "39.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-21",
+    "price": "39.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-20",
+    "price": "39.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-19",
+    "price": "39.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-18",
+    "price": "39.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-17",
+    "price": "39.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-14",
+    "price": "39.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-13",
+    "price": "39.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-12",
+    "price": "40.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-11",
+    "price": "40.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-10",
+    "price": "40.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-07",
+    "price": "40.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-06",
+    "price": "40.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-05",
+    "price": "40.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-04",
+    "price": "40.32",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-03",
+    "price": "40.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-30",
+    "price": "40.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-29",
+    "price": "40.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-28",
+    "price": "42.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-27",
+    "price": "41.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-26",
+    "price": "42.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-23",
+    "price": "41.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-22",
+    "price": "40.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-21",
+    "price": "41.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-20",
+    "price": "40.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-16",
+    "price": "41.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-15",
+    "price": "40.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-14",
+    "price": "40.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-13",
+    "price": "40.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-12",
+    "price": "40.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-09",
+    "price": "41.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-08",
+    "price": "41.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-07",
+    "price": "41.29",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-06",
+    "price": "40.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-05",
+    "price": "41.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-02",
+    "price": "41.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-01",
+    "price": "40.96",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-31",
+    "price": "41.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-30",
+    "price": "41.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-26",
+    "price": "41.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-25",
+    "price": "40.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-24",
+    "price": "40.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-23",
+    "price": "40.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-22",
+    "price": "40.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-19",
+    "price": "40.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-18",
+    "price": "40.82",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-17",
+    "price": "40.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-16",
+    "price": "40.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-15",
+    "price": "41.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-12",
+    "price": "40.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-11",
+    "price": "40.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-10",
+    "price": "40.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-09",
+    "price": "40.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-08",
+    "price": "40.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-05",
+    "price": "40.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-04",
+    "price": "40.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-03",
+    "price": "40.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-02",
+    "price": "40.45",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-01",
+    "price": "40.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-29",
+    "price": "40.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-28",
+    "price": "40.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-27",
+    "price": "40.75",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-26",
+    "price": "40.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-25",
+    "price": "40.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-22",
+    "price": "40.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-21",
+    "price": "40.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-20",
+    "price": "40.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-19",
+    "price": "40.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-18",
+    "price": "40.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-15",
+    "price": "40.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-14",
+    "price": "40.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-13",
+    "price": "40.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-12",
+    "price": "40.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-11",
+    "price": "40.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-08",
+    "price": "40.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-07",
+    "price": "40.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-06",
+    "price": "40.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-05",
+    "price": "40.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-04",
+    "price": "40.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-01",
+    "price": "40.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-30",
+    "price": "39.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-29",
+    "price": "39.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-28",
+    "price": "38.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-27",
+    "price": "38.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-24",
+    "price": "39.09",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-23",
+    "price": "39.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-22",
+    "price": "38.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-21",
+    "price": "38.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-20",
+    "price": "38.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-17",
+    "price": "39.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-16",
+    "price": "38.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-15",
+    "price": "39.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-14",
+    "price": "39.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-13",
+    "price": "39.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-10",
+    "price": "39.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-09",
+    "price": "38.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-08",
+    "price": "39.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-07",
+    "price": "39.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-06",
+    "price": "39.07",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-01",
+    "price": "39.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-31",
+    "price": "39.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-30",
+    "price": "39.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-27",
+    "price": "39.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-26",
+    "price": "39.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-25",
+    "price": "39.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-24",
+    "price": "39.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-23",
+    "price": "38.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-20",
+    "price": "39.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-19",
+    "price": "39.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-18",
+    "price": "39.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-17",
+    "price": "39.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-16",
+    "price": "40.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-13",
+    "price": "39.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-12",
+    "price": "40.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-11",
+    "price": "39.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-10",
+    "price": "39.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-09",
+    "price": "39.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-06",
+    "price": "39.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-05",
+    "price": "39.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-04",
+    "price": "39.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-03",
+    "price": "39.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-29",
+    "price": "39.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-28",
+    "price": "39.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-27",
+    "price": "39.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-26",
+    "price": "39.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-25",
+    "price": "39.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-22",
+    "price": "38.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-21",
+    "price": "37.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-20",
+    "price": "38.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-19",
+    "price": "38.18",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-14",
+    "price": "38.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-13",
+    "price": "38.77",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-12",
+    "price": "38.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-11",
+    "price": "38.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-08",
+    "price": "39.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-07",
+    "price": "39.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-06",
+    "price": "39.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-05",
+    "price": "39.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-04",
+    "price": "39.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-01",
+    "price": "39.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-31",
+    "price": "39.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-30",
+    "price": "39.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-29",
+    "price": "39.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-28",
+    "price": "39.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-25",
+    "price": "38.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-24",
+    "price": "39.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-23",
+    "price": "39.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-22",
+    "price": "38.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-21",
+    "price": "39.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-18",
+    "price": "39.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-17",
+    "price": "39.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-16",
+    "price": "39.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-15",
+    "price": "39.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-14",
+    "price": "39.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-11",
+    "price": "39.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-10",
+    "price": "39.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-09",
+    "price": "39.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-08",
+    "price": "39.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-07",
+    "price": "40.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-04",
+    "price": "40.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-03",
+    "price": "39.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-02",
+    "price": "39.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-01",
+    "price": "40.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-28",
+    "price": "39.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-25",
+    "price": "39.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-24",
+    "price": "39.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-23",
+    "price": "39.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-22",
+    "price": "39.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-21",
+    "price": "39.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-18",
+    "price": "39.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-17",
+    "price": "39.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-16",
+    "price": "39.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-15",
+    "price": "39.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-14",
+    "price": "39.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-11",
+    "price": "39.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-10",
+    "price": "39.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-09",
+    "price": "39.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-08",
+    "price": "39.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-07",
+    "price": "39.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-04",
+    "price": "39.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-03",
+    "price": "39.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-02",
+    "price": "40.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-01",
+    "price": "40.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-31",
+    "price": "40.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-28",
+    "price": "40.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-27",
+    "price": "40.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-26",
+    "price": "40.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-25",
+    "price": "40.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-24",
+    "price": "40.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-21",
+    "price": "40.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-20",
+    "price": "40.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-19",
+    "price": "40.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-18",
+    "price": "40.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-17",
+    "price": "40.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-14",
+    "price": "40.57",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-13",
+    "price": "40.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-12",
+    "price": "40.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-11",
+    "price": "40.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-10",
+    "price": "40.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-07",
+    "price": "40.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-06",
+    "price": "41.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-05",
+    "price": "41.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-04",
+    "price": "41.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-31",
+    "price": "41.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-30",
+    "price": "41.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-29",
+    "price": "41.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-24",
+    "price": "42.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-23",
+    "price": "42.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-22",
+    "price": "42.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-21",
+    "price": "42.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-20",
+    "price": "42.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-17",
+    "price": "42.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-16",
+    "price": "42.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-15",
+    "price": "42.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-14",
+    "price": "42.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-13",
+    "price": "43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-10",
+    "price": "42.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-09",
+    "price": "42.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-08",
+    "price": "42.75",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-07",
+    "price": "43.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-06",
+    "price": "43.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-03",
+    "price": "43.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-02",
+    "price": "42.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-01",
+    "price": "42.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-30",
+    "price": "42.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-29",
+    "price": "42.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-26",
+    "price": "42.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-25",
+    "price": "42.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-24",
+    "price": "42.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-23",
+    "price": "41.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-22",
+    "price": "42.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-19",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-18",
+    "price": "41.96",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-17",
+    "price": "41.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-16",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-15",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-12",
+    "price": "42.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-11",
+    "price": "42.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-10",
+    "price": "42.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-09",
+    "price": "42.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-08",
+    "price": "42.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-05",
+    "price": "42.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-04",
+    "price": "42.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-03",
+    "price": "41.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-02",
+    "price": "41.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-01",
+    "price": "41.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-29",
+    "price": "41.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-28",
+    "price": "41.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-27",
+    "price": "41.45",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-26",
+    "price": "41.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-25",
+    "price": "41.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-22",
+    "price": "40.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-21",
+    "price": "40.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-20",
+    "price": "40.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-19",
+    "price": "40.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-18",
+    "price": "41.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-15",
+    "price": "41.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-14",
+    "price": "41.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-13",
+    "price": "41.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-12",
+    "price": "41.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-11",
+    "price": "41.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-08",
+    "price": "41.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-07",
+    "price": "41.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-06",
+    "price": "41.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-05",
+    "price": "41.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-04",
+    "price": "41.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-01",
+    "price": "42.09",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-30",
+    "price": "42.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-29",
+    "price": "42.45",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-28",
+    "price": "42.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-27",
+    "price": "41.82",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-24",
+    "price": "42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-23",
+    "price": "41.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-22",
+    "price": "42.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-21",
+    "price": "42.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-20",
+    "price": "42.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-17",
+    "price": "41.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-16",
+    "price": "41.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-15",
+    "price": "41.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-14",
+    "price": "41.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-13",
+    "price": "41.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-10",
+    "price": "41.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-09",
+    "price": "41.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-08",
+    "price": "41.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-07",
+    "price": "41.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-06",
+    "price": "41.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-03",
+    "price": "41.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-02",
+    "price": "41.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-01",
+    "price": "41.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-31",
+    "price": "41.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-27",
+    "price": "41.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-26",
+    "price": "41.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-25",
+    "price": "41.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-24",
+    "price": "41.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-23",
+    "price": "42.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-20",
+    "price": "42.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-19",
+    "price": "42.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-18",
+    "price": "41.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-17",
+    "price": "41.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-16",
+    "price": "41.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-13",
+    "price": "41.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-12",
+    "price": "41.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-11",
+    "price": "41.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-10",
+    "price": "41.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-09",
+    "price": "41.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-06",
+    "price": "41.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-05",
+    "price": "41.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-04",
+    "price": "41.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-03",
+    "price": "41.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-02",
+    "price": "41.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-30",
+    "price": "41.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-29",
+    "price": "41.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-28",
+    "price": "41.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-27",
+    "price": "41.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-26",
+    "price": "41.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-23",
+    "price": "41.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-22",
+    "price": "42.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-21",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-20",
+    "price": "42.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-19",
+    "price": "42.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-16",
+    "price": "41.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-15",
+    "price": "41.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-14",
+    "price": "41.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-13",
+    "price": "41.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-12",
+    "price": "41.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-09",
+    "price": "41.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-08",
+    "price": "41.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-07",
+    "price": "41.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-06",
+    "price": "41.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-05",
+    "price": "41.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-02",
+    "price": "41.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-01",
+    "price": "41.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-30",
+    "price": "41.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-29",
+    "price": "41.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-28",
+    "price": "41.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-25",
+    "price": "41.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-24",
+    "price": "41.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-23",
+    "price": "40.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-22",
+    "price": "41.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-21",
+    "price": "41.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-18",
+    "price": "41.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-17",
+    "price": "40.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-16",
+    "price": "40.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-15",
+    "price": "40.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-14",
+    "price": "40.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-11",
+    "price": "40.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-10",
+    "price": "40.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-09",
+    "price": "40.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-08",
+    "price": "40.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-07",
+    "price": "39.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-04",
+    "price": "39.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-03",
+    "price": "39.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-02",
+    "price": "39.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-01",
+    "price": "39.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-28",
+    "price": "39.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-27",
+    "price": "39.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-26",
+    "price": "40.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-25",
+    "price": "39.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-24",
+    "price": "39.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-21",
+    "price": "39.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-20",
+    "price": "39.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-19",
+    "price": "39.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-18",
+    "price": "39.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-17",
+    "price": "39.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-14",
+    "price": "39.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-13",
+    "price": "40.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-12",
+    "price": "39.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-11",
+    "price": "39.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-10",
+    "price": "40.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-07",
+    "price": "40.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-06",
+    "price": "40.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-05",
+    "price": "40.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-04",
+    "price": "40.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-30",
+    "price": "40.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-29",
+    "price": "40.32",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-28",
+    "price": "40.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-27",
+    "price": "40.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-26",
+    "price": "40.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-23",
+    "price": "40.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-22",
+    "price": "40.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-21",
+    "price": "40.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-20",
+    "price": "40.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-19",
+    "price": "40.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-16",
+    "price": "40.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-15",
+    "price": "41.09",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-14",
+    "price": "40.94",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-13",
+    "price": "40.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-12",
+    "price": "40.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-09",
+    "price": "41.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-08",
+    "price": "40.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-07",
+    "price": "40.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-06",
+    "price": "40.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-01",
+    "price": "40.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-31",
+    "price": "40.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-30",
+    "price": "40.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-29",
+    "price": "40.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-26",
+    "price": "40.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-25",
+    "price": "40.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-24",
+    "price": "40.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-23",
+    "price": "40.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-22",
+    "price": "40.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-19",
+    "price": "39.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-18",
+    "price": "39.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-17",
+    "price": "40.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-16",
+    "price": "40.18",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-15",
+    "price": "40.2",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-12",
+    "price": "40.09",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-11",
+    "price": "40.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-10",
+    "price": "40.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-09",
+    "price": "40.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-08",
+    "price": "40.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-05",
+    "price": "40.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-04",
+    "price": "40.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-03",
+    "price": "40.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-02",
+    "price": "40.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-01",
+    "price": "40.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-26",
+    "price": "40.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-25",
+    "price": "39.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-24",
+    "price": "40.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-23",
+    "price": "40.29",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-22",
+    "price": "40.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-19",
+    "price": "40.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-18",
+    "price": "41.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-17",
+    "price": "41.55",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-16",
+    "price": "41.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-15",
+    "price": "41.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-12",
+    "price": "41.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-11",
+    "price": "41.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-10",
+    "price": "41.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-09",
+    "price": "42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-08",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-05",
+    "price": "42.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-04",
+    "price": "42.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-03",
+    "price": "42.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-02",
+    "price": "42.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-01",
+    "price": "42.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-29",
+    "price": "42.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-28",
+    "price": "42.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-27",
+    "price": "42.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-26",
+    "price": "42.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-25",
+    "price": "42.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-22",
+    "price": "42.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-21",
+    "price": "42.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-20",
+    "price": "42.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-19",
+    "price": "42.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-18",
+    "price": "42.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-15",
+    "price": "42.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-14",
+    "price": "42.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-13",
+    "price": "42.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-12",
+    "price": "42.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-11",
+    "price": "42.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-08",
+    "price": "42.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-07",
+    "price": "42.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-06",
+    "price": "42.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-05",
+    "price": "42.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-04",
+    "price": "43.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-31",
+    "price": "43.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-30",
+    "price": "43.18",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-29",
+    "price": "43.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-24",
+    "price": "43.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-23",
+    "price": "43.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-22",
+    "price": "43.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-21",
+    "price": "43.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-18",
+    "price": "43.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-17",
+    "price": "43.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-16",
+    "price": "43.43",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-15",
+    "price": "43.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-14",
+    "price": "43.87",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-11",
+    "price": "44.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-10",
+    "price": "43.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-09",
+    "price": "43.51",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-08",
+    "price": "43.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-07",
+    "price": "43.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-04",
+    "price": "43.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-03",
+    "price": "43.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-02",
+    "price": "43.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-01",
+    "price": "43.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-30",
+    "price": "43.92",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-27",
+    "price": "43.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-26",
+    "price": "43.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-25",
+    "price": "43.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-24",
+    "price": "43.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-23",
+    "price": "43.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-20",
+    "price": "43.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-19",
+    "price": "44.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-18",
+    "price": "43.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-17",
+    "price": "43.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-16",
+    "price": "43.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-13",
+    "price": "43.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-12",
+    "price": "43.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-11",
+    "price": "43.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-10",
+    "price": "43.56",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-09",
+    "price": "43.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-06",
+    "price": "44.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-05",
+    "price": "44.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-04",
+    "price": "44.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-03",
+    "price": "43.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-02",
+    "price": "44.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-30",
+    "price": "44.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-29",
+    "price": "44.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-28",
+    "price": "44.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-27",
+    "price": "44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-26",
+    "price": "44.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-23",
+    "price": "43.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-22",
+    "price": "43.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-21",
+    "price": "43.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-20",
+    "price": "44.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-19",
+    "price": "44.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-16",
+    "price": "44.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-15",
+    "price": "44.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-14",
+    "price": "44.33",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-13",
+    "price": "44.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-12",
+    "price": "44.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-09",
+    "price": "44.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-08",
+    "price": "44.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-07",
+    "price": "44.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-06",
+    "price": "44.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-05",
+    "price": "44.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-02",
+    "price": "44.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-01",
+    "price": "44.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-30",
+    "price": "44.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-29",
+    "price": "44.75",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-28",
+    "price": "44.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-25",
+    "price": "44.95",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-24",
+    "price": "45.03",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-23",
+    "price": "45.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-22",
+    "price": "45.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-21",
+    "price": "45.19",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-18",
+    "price": "44.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-17",
+    "price": "44.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-16",
+    "price": "44.59",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-15",
+    "price": "45.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-14",
+    "price": "44.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-11",
+    "price": "45.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-10",
+    "price": "44.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-09",
+    "price": "44.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-08",
+    "price": "44.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-07",
+    "price": "43.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-04",
+    "price": "43.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-03",
+    "price": "43.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-02",
+    "price": "43.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-01",
+    "price": "43.02",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-28",
+    "price": "43.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-27",
+    "price": "43.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-26",
+    "price": "43.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-25",
+    "price": "43.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-24",
+    "price": "44.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-21",
+    "price": "44.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-20",
+    "price": "43.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-19",
+    "price": "44.05",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-18",
+    "price": "43.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-17",
+    "price": "44.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-14",
+    "price": "44.13",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-13",
+    "price": "44.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-12",
+    "price": "44.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-11",
+    "price": "44.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-10",
+    "price": "44.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-07",
+    "price": "44.99",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-06",
+    "price": "44.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-05",
+    "price": "44.58",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-04",
+    "price": "44.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-03",
+    "price": "44.83",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-31",
+    "price": "44.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-30",
+    "price": "44.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-29",
+    "price": "44.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-28",
+    "price": "45.08",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-27",
+    "price": "45.31",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-24",
+    "price": "45.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-23",
+    "price": "45.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-22",
+    "price": "45.97",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-21",
+    "price": "45.93",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-20",
+    "price": "46.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-17",
+    "price": "46.4",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-16",
+    "price": "46.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-15",
+    "price": "45.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-14",
+    "price": "46.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-13",
+    "price": "45.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-10",
+    "price": "45.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-09",
+    "price": "45.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-08",
+    "price": "45.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-07",
+    "price": "45.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-06",
+    "price": "46.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-03",
+    "price": "46.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-02",
+    "price": "46.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-01",
+    "price": "45.86",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-30",
+    "price": "46.24",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-29",
+    "price": "46.41",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-26",
+    "price": "46.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-25",
+    "price": "45.78",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-24",
+    "price": "45.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-23",
+    "price": "45.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-22",
+    "price": "45.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-19",
+    "price": "46.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-18",
+    "price": "45.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-17",
+    "price": "45.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-16",
+    "price": "45.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-15",
+    "price": "45.04",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-12",
+    "price": "44.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-11",
+    "price": "44.48",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-10",
+    "price": "44.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-09",
+    "price": "44.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-08",
+    "price": "44.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-05",
+    "price": "44.35",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-04",
+    "price": "44.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-03",
+    "price": "44.77",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-02",
+    "price": "44.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-01",
+    "price": "45.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-29",
+    "price": "45.32",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-28",
+    "price": "45.27",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-27",
+    "price": "45.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-26",
+    "price": "45.1",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-22",
+    "price": "45.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-21",
+    "price": "45.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-20",
+    "price": "45.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-19",
+    "price": "45.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-18",
+    "price": "45.11",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-15",
+    "price": "45.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-14",
+    "price": "44.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-13",
+    "price": "44.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-12",
+    "price": "44.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-11",
+    "price": "43.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-07",
+    "price": "44.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-06",
+    "price": "44.22",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-05",
+    "price": "44.26",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-04",
+    "price": "44.47",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-01",
+    "price": "43.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-30",
+    "price": "44.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-29",
+    "price": "44.54",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-28",
+    "price": "44.29",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-27",
+    "price": "44.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-24",
+    "price": "44.81",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-23",
+    "price": "44.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-22",
+    "price": "44.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-21",
+    "price": "44.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-20",
+    "price": "44.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-17",
+    "price": "44.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-16",
+    "price": "44.67",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-15",
+    "price": "44.01",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-14",
+    "price": "44.06",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-09",
+    "price": "44.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-08",
+    "price": "43.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-07",
+    "price": "43.38",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-06",
+    "price": "43.12",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-03",
+    "price": "42.8",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-02",
+    "price": "42.72",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-01",
+    "price": "42.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-31",
+    "price": "42.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-30",
+    "price": "42.76",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-27",
+    "price": "42.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-26",
+    "price": "43.25",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-25",
+    "price": "43.96",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-24",
+    "price": "44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-23",
+    "price": "43.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-20",
+    "price": "40.75",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-19",
+    "price": "41.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-18",
+    "price": "41.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-17",
+    "price": "42.69",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-16",
+    "price": "42.49",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-13",
+    "price": "42.52",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-12",
+    "price": "41.82",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-11",
+    "price": "42.5",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-10",
+    "price": "42.98",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-09",
+    "price": "42.71",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-06",
+    "price": "44.21",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-05",
+    "price": "44.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-04",
+    "price": "44.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-03",
+    "price": "44.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-02",
+    "price": "44.53",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-28",
+    "price": "44.28",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-27",
+    "price": "43.85",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-26",
+    "price": "43.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-25",
+    "price": "43.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-24",
+    "price": "43.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-21",
+    "price": "43.7",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-20",
+    "price": "43.84",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-19",
+    "price": "43.61",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-18",
+    "price": "43.39",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-17",
+    "price": "43.37",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-14",
+    "price": "43.34",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-13",
+    "price": "43.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-12",
+    "price": "43.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-11",
+    "price": "43.6",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-10",
+    "price": "43.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-07",
+    "price": "43.66",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-06",
+    "price": "43.42",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-05",
+    "price": "43.23",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-04",
+    "price": "43.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-03",
+    "price": "43.3",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-31",
+    "price": "42.65",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-30",
+    "price": "42.88",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-29",
+    "price": "43.17",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-28",
+    "price": "43.16",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-27",
+    "price": "42.91",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-24",
+    "price": "42.82",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-23",
+    "price": "42.64",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-22",
+    "price": "42.62",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-21",
+    "price": "42.9",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-20",
+    "price": "42.89",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-17",
+    "price": "42.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-16",
+    "price": "42.63",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-15",
+    "price": "42.74",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-14",
+    "price": "42.73",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-13",
+    "price": "42.79",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-10",
+    "price": "42.68",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-09",
+    "price": "42.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-08",
+    "price": "42.44",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-07",
+    "price": "42.36",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-06",
+    "price": "42.15",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-03",
+    "price": "42.46",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-02",
+    "price": "42.14",
+    "stockSymbol": "VUCP.L",
+    "currency": "GBP"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "account_code": "ISA",
+    "date": "2022-08-10",
+    "transaction": "Purchase",
+    "description": "Vanguard USD Corp Bd UCITS ETF GBP",
+    "quantity": 19,
+    "amount_gbp": 856.47,
+    "reference": "5WHNWXJM"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-08-10",
+    "transaction": "Purchase",
+    "description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "quantity": 6,
+    "amount_gbp": 913.9,
+    "reference": "RDAUJOZC"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-12",
+    "transaction": "Purchase",
+    "description": "Vanguard USD Corp Bd UCITS ETF GBP",
+    "quantity": 5,
+    "amount_gbp": 222.71,
+    "reference": "LB1TOQ23"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2022-10-12",
+    "transaction": "Purchase",
+    "description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "quantity": 1,
+    "amount_gbp": 151.3,
+    "reference": "ZDEG5RQB"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-01-11",
+    "transaction": "Purchase",
+    "description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "quantity": 3,
+    "amount_gbp": 447.5,
+    "reference": "A4DR1GMP"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-02-10",
+    "transaction": "Purchase",
+    "description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "quantity": 3,
+    "amount_gbp": 437.78,
+    "reference": "6RCMEIHE"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-03-10",
+    "transaction": "Purchase",
+    "description": "Scottish Mortgage Ord",
+    "quantity": 25,
+    "amount_gbp": 289.18,
+    "reference": "SCSGK2UM"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-04-12",
+    "transaction": "Purchase",
+    "description": "Scottish Mortgage Ord",
+    "quantity": 24,
+    "amount_gbp": 291.57,
+    "reference": "TGHKE3JH"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-07-12",
+    "transaction": "Purchase",
+    "description": "Scottish Mortgage Ord",
+    "quantity": 30,
+    "amount_gbp": 398.88,
+    "reference": "TI4SFRTD"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "transaction": "Purchase",
+    "description": "Vanguard USD Corp Bd UCITS ETF GBP",
+    "quantity": 9,
+    "amount_gbp": 386.62,
+    "reference": "1NYVGV8X"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "transaction": "Purchase",
+    "description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "quantity": 2,
+    "amount_gbp": 290.81,
+    "reference": "IIGED6RV"
+  },
+  {
+    "account_code": "ISA",
+    "date": "2023-12-10",
+    "transaction": "Purchase",
+    "description": "Scottish Mortgage Ord",
+    "quantity": 21,
+    "amount_gbp": 298.03,
+    "reference": "SRDMXTRH"
+  }
+]

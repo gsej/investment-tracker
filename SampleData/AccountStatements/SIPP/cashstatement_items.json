@@ -1,0 +1,387 @@
+[
+  {
+    "account_code": "SIPP",
+    "date": "2013-01-01",
+    "description": "* BALANCE B/F *",
+    "receipt_amount_gbp": 1115.74,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-01-03",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-01-04",
+    "description": "Div 73   VAND FUND FAW GBP",
+    "receipt_amount_gbp": 11.05,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-01-04",
+    "description": "Div 28   VAND FUND FAW USD",
+    "receipt_amount_gbp": 4.23,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-01-10",
+    "description": "Purchase 27 Vanguard FTSE All-World UCITS ETF",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -972.54
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-02-04",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-02-11",
+    "description": "Purchase 65 AstraZeneca PLC",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1974.55
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-03-05",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-03-13",
+    "description": "Div 129   ISHARES FTSE 250",
+    "receipt_amount_gbp": 6.84,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-03-18",
+    "description": "Div 65   ASTRAZENECA",
+    "receipt_amount_gbp": 78.32,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-03-31",
+    "description": "Gross interest to 31/03/13",
+    "receipt_amount_gbp": 0.13,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-04-02",
+    "description": "Div 73   VAND FUND FAW GBP",
+    "receipt_amount_gbp": 10.18,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-04-02",
+    "description": "Div 55   VAND FUND FAW USD",
+    "receipt_amount_gbp": 7.67,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-04-05",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-04-10",
+    "description": "Purchase 255 NATIONAL GRID ORD GBP0.113953",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1995.16
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-05-02",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-05-15",
+    "description": "Div 43   ISH FT ALL STK GLT",
+    "receipt_amount_gbp": 5.11,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-06-05",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-06-19",
+    "description": "Div 129   ISHARES FTSE 250",
+    "receipt_amount_gbp": 15.4,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-06-28",
+    "description": "Div 73   VAND FUND FAW GBP",
+    "receipt_amount_gbp": 23.23,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-06-28",
+    "description": "Div 55   VAND FUND FAW USD",
+    "receipt_amount_gbp": 17.5,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-06-30",
+    "description": "Gross interest to 30/06/13",
+    "receipt_amount_gbp": 0.17,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-07-03",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-07-31",
+    "description": "Div 328   DB X-TRK FT ALSH1D",
+    "receipt_amount_gbp": 36.08,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-08-05",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-08-21",
+    "description": "Div 255   NATIONAL GRD",
+    "receipt_amount_gbp": 67.21,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-09-03",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-09-16",
+    "description": "Div 65   ASTRAZENECA",
+    "receipt_amount_gbp": 38.48,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-09-18",
+    "description": "Div 129   ISHARES FTSE 250",
+    "receipt_amount_gbp": 11.91,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-09-30",
+    "description": "Gross interest to 30/09/13",
+    "receipt_amount_gbp": 0.54,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-02",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-04",
+    "description": "Div 73   VAND FUND FAW GBP",
+    "receipt_amount_gbp": 15.01,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-04",
+    "description": "Div 55   VAND FUND FAW USD",
+    "receipt_amount_gbp": 11.31,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-10",
+    "description": "Purchase 37 Vanguard FTSE All-World UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1462.74
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-11",
+    "description": "Purchase 227 Royal Mail PLC",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -749.1
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-10-11",
+    "description": "Sale 227 Royal Mail PLC",
+    "receipt_amount_gbp": 980.46,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-11-04",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-11-11",
+    "description": "Purchase 73 Vanguard FTSE All-World UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -2988
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-11-13",
+    "description": "Div 43   ISH FT ALL STK GLT",
+    "receipt_amount_gbp": 5.16,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-04",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-10",
+    "description": "Purchase 871 DIRECT LINE INS GR ORD GBP0.10",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1998.71
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-10",
+    "description": "Purchase 24 Vanguard FTSE All-World UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -972.44
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-18",
+    "description": "Div 129   ISHARES FTSE 250",
+    "receipt_amount_gbp": 10.97,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-27",
+    "description": "Div 262   VAND FUND FAW GBP",
+    "receipt_amount_gbp": 34.97,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2013-12-31",
+    "description": "Gross interest to 31/12/13",
+    "receipt_amount_gbp": 0.5,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-01-01",
+    "description": "* BALANCE B/F *",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-10-24",
+    "description": "Transfer Value",
+    "receipt_amount_gbp": 3999,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-06",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-14",
+    "description": "Div 43   ISH FT ALL STK GLT",
+    "receipt_amount_gbp": 5.71,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-19",
+    "description": "Purchase 73 Vanguard FTSE All-World UCITS ETF GBP",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -2442.22
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-19",
+    "description": "Purchase 129 iShares FTSE 250 ETF GBP Dist",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -1489.25
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-12-05",
+    "description": "Contribution",
+    "receipt_amount_gbp": 1000,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-12-10",
+    "description": "Purchase 28 Vanguard FTSE All-World UCITS ETF",
+    "receipt_amount_gbp": 0,
+    "payment_amount_gbp": -968.48
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-12-12",
+    "description": "Div 129   ISHARES FTSE 250",
+    "receipt_amount_gbp": 10.75,
+    "payment_amount_gbp": 0
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-12-31",
+    "description": "Gross interest to 31/12/12",
+    "receipt_amount_gbp": 0.23,
+    "payment_amount_gbp": 0
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "StockSymbol": "AZN.L",
+    "Isin": null,
+    "Description": "AstraZeneca PLC",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Share",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": true,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "DLG.L",
+    "Isin": null,
+    "Description": "Direct Line Insurance Group PLC",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "DIRECT LINE INS GR ORD GBP0.10",
+        "Stock": null
+      }
+    ],
+    "StockType": "Share",
+    "DefaultCurrency": "GBp",
+    "SubjectToStampDuty": true,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "GILS.L",
+    "Isin": null,
+    "Description": "Lyxor Core UK Govt Bd (DR) ETF D GBP",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "Amundi UK Govt Bd ETF Dist",
+        "Stock": null
+      }
+    ],
+    "StockType": "Etf",
+    "DefaultCurrency": "GBp",
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "IDS.L",
+    "Isin": null,
+    "Description": "International Distributions Services PLC",
+    "AlternativeSymbols": [
+      {
+        "Alternative": "RMG.L",
+        "Stock": null
+      }
+    ],
+    "Aliases": [
+      {
+        "Description": "Royal Mail PLC",
+        "Stock": null
+      }
+    ],
+    "StockType": "Share",
+    "DefaultCurrency": "GBp",
+    "SubjectToStampDuty": true,
+    "Notes": "Formerly Royal Mail"
+  },
+  {
+    "StockSymbol": "IGLT.L",
+    "Isin": null,
+    "Description": "iShares Core UK Gilts ETF GBP Dist",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "MIDD.L",
+    "Isin": null,
+    "Description": "iShares FTSE 250 ETF GBP Dist",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "NG.L",
+    "Isin": null,
+    "Description": "NATIONAL GRID ORD GBP0.113953",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "NATIONAL GRID ORD GBP0.113953",
+        "Stock": null
+      },
+      {
+        "Description": "National Grid PLC",
+        "Stock": null
+      }
+    ],
+    "StockType": "Share",
+    "DefaultCurrency": "GBp",
+    "SubjectToStampDuty": true,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "SMT.L",
+    "Isin": null,
+    "Description": "SCOTTISH MORTGAGE ORD GBP0.05",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "Scottish Mortgage Ord",
+        "Stock": null
+      }
+    ],
+    "StockType": "Share",
+    "DefaultCurrency": "GBp",
+    "SubjectToStampDuty": true,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "VUCP.L",
+    "Isin": null,
+    "Description": "Vanguard USD Corp Bd UCITS ETF GBP",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "VWRL.L",
+    "Isin": null,
+    "Description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": "GBP",
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "VWRP.L",
+    "Isin": null,
+    "Description": "VANGUARD FTSE ALL-WORLD ETF USD ACC GBP",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "VANGUARD FTSE ALL-WORLD UCITS ETF",
+        "Stock": null
+      }
+    ],
+    "StockType": "Etf",
+    "DefaultCurrency": "GBP",
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "XASX.L",
+    "Isin": null,
+    "Description": "Xtrackers MSCI UK ESG ETF 1D £",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "XMWD.L",
+    "Isin": null,
+    "Description": "Xtrackers MSCI World Swap ETF 1C USD",
+    "AlternativeSymbols": [],
+    "Aliases": [
+      {
+        "Description": "XTRACKERS MSCI WORLD SWAP UCITS ETF 1",
+        "Stock": null
+      }
+    ],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "XUKX.L",
+    "Isin": null,
+    "Description": "Xtrackers FTSE 100 Income ETF 1D",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": null
+  },
+  {
+    "StockSymbol": "XWND.L",
+    "Isin": null,
+    "Description": "DB X-TRACKERS MSCI WLD TRN IDX UCITS ETF1",
+    "AlternativeSymbols": [],
+    "Aliases": [],
+    "StockType": "Etf",
+    "DefaultCurrency": null,
+    "SubjectToStampDuty": false,
+    "Notes": "aka db x-trackers MSCI World Information Technology TRN Index UCITS ETF, Acquired by DBK.GE"
+  }
+]

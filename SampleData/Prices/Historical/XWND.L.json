@@ -1,0 +1,6326 @@
+[
+  {
+    "date": "2016-04-14",
+    "price": "16.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-13",
+    "price": "16.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-12",
+    "price": "16.19",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-11",
+    "price": "16.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-08",
+    "price": "16.22",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-07",
+    "price": "16.16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-06",
+    "price": "16.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-05",
+    "price": "16.23",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-04",
+    "price": "16.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-04-01",
+    "price": "16.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-31",
+    "price": "16.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-30",
+    "price": "16.4",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-29",
+    "price": "16.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-24",
+    "price": "15.96",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-23",
+    "price": "16.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-22",
+    "price": "16.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-21",
+    "price": "16.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-18",
+    "price": "16.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-17",
+    "price": "16.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-16",
+    "price": "15.84",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-15",
+    "price": "15.77",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-14",
+    "price": "15.77",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-11",
+    "price": "15.69",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-10",
+    "price": "15.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-09",
+    "price": "15.46",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-08",
+    "price": "15.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-07",
+    "price": "15.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-04",
+    "price": "15.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-03",
+    "price": "15.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-02",
+    "price": "15.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-03-01",
+    "price": "15.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-29",
+    "price": "15.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-26",
+    "price": "15.17",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-25",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-23",
+    "price": "14.93",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-22",
+    "price": "15.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-19",
+    "price": "14.92",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-18",
+    "price": "14.94",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-17",
+    "price": "14.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-16",
+    "price": "14.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-15",
+    "price": "14.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-12",
+    "price": "14.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-11",
+    "price": "13.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-10",
+    "price": "14.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-09",
+    "price": "14.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-08",
+    "price": "14.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-05",
+    "price": "14.55",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-04",
+    "price": "14.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-02",
+    "price": "15.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-02-01",
+    "price": "15.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-29",
+    "price": "15.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-28",
+    "price": "14.74",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-27",
+    "price": "14.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-26",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-25",
+    "price": "15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-22",
+    "price": "14.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-21",
+    "price": "14.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-20",
+    "price": "14.35",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-19",
+    "price": "14.78",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-18",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-15",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-14",
+    "price": "15.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-13",
+    "price": "15.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-12",
+    "price": "15.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-11",
+    "price": "15.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-08",
+    "price": "15.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-07",
+    "price": "15.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-06",
+    "price": "15.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-05",
+    "price": "15.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2016-01-04",
+    "price": "15.74",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-30",
+    "price": "16.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-29",
+    "price": "16.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-24",
+    "price": "16.32",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-23",
+    "price": "16.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-22",
+    "price": "16.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-21",
+    "price": "16.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-18",
+    "price": "16.13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-17",
+    "price": "16.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-16",
+    "price": "16.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-15",
+    "price": "16.36",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-14",
+    "price": "16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-11",
+    "price": "16.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-10",
+    "price": "16.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-09",
+    "price": "16.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-08",
+    "price": "16.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-07",
+    "price": "16.68",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-04",
+    "price": "16.69",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-03",
+    "price": "16.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-12-01",
+    "price": "16.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-30",
+    "price": "16.63",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-27",
+    "price": "16.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-26",
+    "price": "16.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-25",
+    "price": "16.58",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-24",
+    "price": "16.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-23",
+    "price": "16.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-20",
+    "price": "16.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-19",
+    "price": "16.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-18",
+    "price": "16.35",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-17",
+    "price": "16.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-16",
+    "price": "16.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-13",
+    "price": "16.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-12",
+    "price": "16.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-11",
+    "price": "16.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-10",
+    "price": "16.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-09",
+    "price": "16.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-06",
+    "price": "16.68",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-05",
+    "price": "16.68",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-04",
+    "price": "16.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-03",
+    "price": "16.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-11-02",
+    "price": "16.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-30",
+    "price": "16.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-29",
+    "price": "16.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-28",
+    "price": "16.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-27",
+    "price": "16.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-26",
+    "price": "16.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-23",
+    "price": "16.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-22",
+    "price": "16.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-21",
+    "price": "15.91",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-20",
+    "price": "15.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-19",
+    "price": "15.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-15",
+    "price": "15.77",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-14",
+    "price": "15.56",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-13",
+    "price": "15.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-12",
+    "price": "15.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-09",
+    "price": "15.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-08",
+    "price": "15.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-07",
+    "price": "15.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-06",
+    "price": "15.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-05",
+    "price": "15.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-02",
+    "price": "14.83",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-10-01",
+    "price": "14.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-29",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-28",
+    "price": "14.78",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-24",
+    "price": "14.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-23",
+    "price": "15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-22",
+    "price": "14.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-21",
+    "price": "15.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-18",
+    "price": "15.22",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-17",
+    "price": "15.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-16",
+    "price": "994.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-15",
+    "price": "15.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-14",
+    "price": "15.15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-11",
+    "price": "15.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-10",
+    "price": "15.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-09",
+    "price": "15.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-08",
+    "price": "980.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-07",
+    "price": "14.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-04",
+    "price": "14.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-03",
+    "price": "15.13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-02",
+    "price": "14.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-09-01",
+    "price": "14.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-28",
+    "price": "15.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-27",
+    "price": "15.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-26",
+    "price": "14.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-25",
+    "price": "14.83",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-24",
+    "price": "14.45",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-21",
+    "price": "15.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-20",
+    "price": "15.55",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-19",
+    "price": "15.76",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-18",
+    "price": "15.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-17",
+    "price": "15.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-14",
+    "price": "15.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-13",
+    "price": "15.9",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-12",
+    "price": "15.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-11",
+    "price": "15.92",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-10",
+    "price": "16.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-07",
+    "price": "15.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-06",
+    "price": "15.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-05",
+    "price": "16.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-04",
+    "price": "15.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-08-03",
+    "price": "16.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-31",
+    "price": "16.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-30",
+    "price": "16.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-29",
+    "price": "1023",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-28",
+    "price": "15.91",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-27",
+    "price": "15.92",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-24",
+    "price": "16.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-23",
+    "price": "16.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-22",
+    "price": "16.16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-21",
+    "price": "16.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-20",
+    "price": "16.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-17",
+    "price": "16.37",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-16",
+    "price": "16.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-15",
+    "price": "16.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-14",
+    "price": "16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-13",
+    "price": "15.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-09",
+    "price": "15.55",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-08",
+    "price": "15.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-07",
+    "price": "15.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-06",
+    "price": "15.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-03",
+    "price": "15.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-07-01",
+    "price": "1012.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-30",
+    "price": "15.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-29",
+    "price": "15.84",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-26",
+    "price": "16.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-25",
+    "price": "16.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-24",
+    "price": "16.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-23",
+    "price": "16.33",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-22",
+    "price": "16.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-19",
+    "price": "16.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-18",
+    "price": "16.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-17",
+    "price": "16.13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-16",
+    "price": "16.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-15",
+    "price": "16.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-12",
+    "price": "1041",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-11",
+    "price": "16.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-10",
+    "price": "16.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-08",
+    "price": "16.17",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-05",
+    "price": "16.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-04",
+    "price": "16.4",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-03",
+    "price": "16.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-06-01",
+    "price": "16.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-29",
+    "price": "16.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-28",
+    "price": "16.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-27",
+    "price": "16.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-26",
+    "price": "16.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-22",
+    "price": "16.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-21",
+    "price": "16.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-20",
+    "price": "16.45",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-19",
+    "price": "16.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-18",
+    "price": "16.46",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-15",
+    "price": "16.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-14",
+    "price": "1040.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-13",
+    "price": "16.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-12",
+    "price": "16.13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-11",
+    "price": "16.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-08",
+    "price": "16.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-07",
+    "price": "16.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-06",
+    "price": "1046",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-05-05",
+    "price": "16.07",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-30",
+    "price": "16.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-29",
+    "price": "16.35",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-28",
+    "price": "16.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-27",
+    "price": "16.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-24",
+    "price": "16.36",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-23",
+    "price": "16.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-22",
+    "price": "16.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-21",
+    "price": "16.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-20",
+    "price": "16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-17",
+    "price": "15.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-16",
+    "price": "16.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-15",
+    "price": "16.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-13",
+    "price": "16.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-10",
+    "price": "16.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-09",
+    "price": "15.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-08",
+    "price": "15.92",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-07",
+    "price": "15.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-02",
+    "price": "15.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-04-01",
+    "price": "15.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-31",
+    "price": "15.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-30",
+    "price": "15.91",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-27",
+    "price": "1053.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-26",
+    "price": "15.74",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-25",
+    "price": "15.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-24",
+    "price": "16.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-23",
+    "price": "16.23",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-20",
+    "price": "16.23",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-19",
+    "price": "16.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-18",
+    "price": "15.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-17",
+    "price": "15.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-16",
+    "price": "15.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-13",
+    "price": "15.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-12",
+    "price": "15.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-11",
+    "price": "15.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-10",
+    "price": "15.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-09",
+    "price": "16.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-06",
+    "price": "16.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-05",
+    "price": "16.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-04",
+    "price": "16.15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-03",
+    "price": "16.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-03-02",
+    "price": "16.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-27",
+    "price": "1052",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-26",
+    "price": "16.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-25",
+    "price": "16.23",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-24",
+    "price": "16.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-23",
+    "price": "16.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-20",
+    "price": "16.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-19",
+    "price": "16.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-18",
+    "price": "16.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-17",
+    "price": "15.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-16",
+    "price": "15.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-13",
+    "price": "15.93",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-12",
+    "price": "15.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-11",
+    "price": "1024.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-10",
+    "price": "15.46",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-09",
+    "price": "15.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-06",
+    "price": "15.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-05",
+    "price": "15.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-04",
+    "price": "1009.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-03",
+    "price": "15.19",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-02-02",
+    "price": "15.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-30",
+    "price": "15.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-29",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-28",
+    "price": "15.27",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-27",
+    "price": "15.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-26",
+    "price": "15.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-23",
+    "price": "15.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-22",
+    "price": "15.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-21",
+    "price": "15.27",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-20",
+    "price": "15.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-19",
+    "price": "15.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-16",
+    "price": "14.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-15",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-14",
+    "price": "15.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-13",
+    "price": "15.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-12",
+    "price": "15.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-09",
+    "price": "15.33",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-08",
+    "price": "15.42",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-06",
+    "price": "15.06",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-05",
+    "price": "15.27",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2015-01-02",
+    "price": "15.42",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-30",
+    "price": "15.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-29",
+    "price": "15.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-24",
+    "price": "15.84",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-23",
+    "price": "15.86",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-22",
+    "price": "15.76",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-18",
+    "price": "15.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-17",
+    "price": "15.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-16",
+    "price": "15.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-15",
+    "price": "15.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-11",
+    "price": "15.57",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-10",
+    "price": "15.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-08",
+    "price": "15.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-05",
+    "price": "15.76",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-04",
+    "price": "15.69",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-03",
+    "price": "15.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-02",
+    "price": "999.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-12-01",
+    "price": "15.63",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-27",
+    "price": "15.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-26",
+    "price": "15.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-25",
+    "price": "15.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-24",
+    "price": "15.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-21",
+    "price": "15.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-20",
+    "price": "15.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-19",
+    "price": "15.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-18",
+    "price": "15.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-17",
+    "price": "15.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-14",
+    "price": "15.36",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-13",
+    "price": "15.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-12",
+    "price": "959",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-11",
+    "price": "15.18",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-10",
+    "price": "15.16",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-07",
+    "price": "15.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-06",
+    "price": "15.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-05",
+    "price": "15.15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-04",
+    "price": "15.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-11-03",
+    "price": "15.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-31",
+    "price": "15.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-30",
+    "price": "14.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-29",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-28",
+    "price": "14.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-27",
+    "price": "14.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-24",
+    "price": "900.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-23",
+    "price": "14.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-22",
+    "price": "14.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-21",
+    "price": "14.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-20",
+    "price": "13.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-17",
+    "price": "14.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-16",
+    "price": "13.83",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-15",
+    "price": "13.76",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-14",
+    "price": "882.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-13",
+    "price": "14.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-10",
+    "price": "14.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-09",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-08",
+    "price": "14.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-07",
+    "price": "14.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-06",
+    "price": "14.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-03",
+    "price": "14.74",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-02",
+    "price": "14.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-10-01",
+    "price": "14.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-30",
+    "price": "14.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-29",
+    "price": "14.87",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-26",
+    "price": "14.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-25",
+    "price": "14.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-24",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-23",
+    "price": "14.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-22",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-19",
+    "price": "15.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-18",
+    "price": "15.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-17",
+    "price": "920.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-16",
+    "price": "14.93",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-15",
+    "price": "14.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-12",
+    "price": "15.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-11",
+    "price": "15.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-10",
+    "price": "15.07",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-09",
+    "price": "15.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-08",
+    "price": "15.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-05",
+    "price": "15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-04",
+    "price": "15.05",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-03",
+    "price": "15.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-02",
+    "price": "15.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-09-01",
+    "price": "15.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-29",
+    "price": "15.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-28",
+    "price": "14.96",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-27",
+    "price": "15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-26",
+    "price": "15.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-22",
+    "price": "15.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-21",
+    "price": "14.99",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-20",
+    "price": "14.91",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-19",
+    "price": "14.9",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-18",
+    "price": "14.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-15",
+    "price": "14.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-14",
+    "price": "14.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-13",
+    "price": "14.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-12",
+    "price": "14.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-11",
+    "price": "14.56",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-08",
+    "price": "14.36",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-07",
+    "price": "14.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-06",
+    "price": "14.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-05",
+    "price": "859.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-08-04",
+    "price": "14.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-31",
+    "price": "14.6",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-30",
+    "price": "14.81",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-29",
+    "price": "14.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-28",
+    "price": "14.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-25",
+    "price": "14.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-24",
+    "price": "14.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-23",
+    "price": "872.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-22",
+    "price": "14.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-21",
+    "price": "14.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-18",
+    "price": "14.65",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-17",
+    "price": "14.6",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-16",
+    "price": "14.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-15",
+    "price": "14.58",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-14",
+    "price": "14.63",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-11",
+    "price": "14.46",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-10",
+    "price": "14.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-09",
+    "price": "14.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-08",
+    "price": "14.4",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-07",
+    "price": "14.58",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-04",
+    "price": "14.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-03",
+    "price": "14.59",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-02",
+    "price": "14.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-07-01",
+    "price": "14.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-30",
+    "price": "14.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-27",
+    "price": "14.3",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-26",
+    "price": "14.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-24",
+    "price": "14.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-23",
+    "price": "14.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-20",
+    "price": "14.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-19",
+    "price": "14.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-16",
+    "price": "14.2",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-13",
+    "price": "838.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-12",
+    "price": "14.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-11",
+    "price": "14.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-10",
+    "price": "14.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-06",
+    "price": "14.22",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-05",
+    "price": "14.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-04",
+    "price": "14.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-03",
+    "price": "14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-06-02",
+    "price": "14.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-30",
+    "price": "14.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-29",
+    "price": "837.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-28",
+    "price": "13.96",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-27",
+    "price": "13.91",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-22",
+    "price": "13.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-21",
+    "price": "13.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-20",
+    "price": "13.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-19",
+    "price": "13.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-16",
+    "price": "13.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-15",
+    "price": "13.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-13",
+    "price": "13.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-12",
+    "price": "13.59",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-08",
+    "price": "13.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-07",
+    "price": "13.32",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-06",
+    "price": "13.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-02",
+    "price": "803",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-05-01",
+    "price": "806.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-30",
+    "price": "13.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-29",
+    "price": "13.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-25",
+    "price": "13.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-24",
+    "price": "13.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-23",
+    "price": "13.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-22",
+    "price": "13.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-17",
+    "price": "13.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-16",
+    "price": "13.35",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-15",
+    "price": "13.15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-14",
+    "price": "13.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-11",
+    "price": "13.28",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-10",
+    "price": "13.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-09",
+    "price": "13.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-08",
+    "price": "13.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-07",
+    "price": "13.39",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-04",
+    "price": "817.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-03",
+    "price": "831.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-02",
+    "price": "13.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-04-01",
+    "price": "13.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-31",
+    "price": "13.65",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-28",
+    "price": "13.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-26",
+    "price": "13.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-25",
+    "price": "13.57",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-24",
+    "price": "13.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-21",
+    "price": "13.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-20",
+    "price": "13.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-19",
+    "price": "13.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-18",
+    "price": "13.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-17",
+    "price": "13.54",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-14",
+    "price": "13.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-13",
+    "price": "13.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-12",
+    "price": "13.63",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-11",
+    "price": "13.69",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-10",
+    "price": "13.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-07",
+    "price": "13.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-06",
+    "price": "13.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-05",
+    "price": "13.74",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-04",
+    "price": "13.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-03-03",
+    "price": "13.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-28",
+    "price": "13.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-27",
+    "price": "13.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-26",
+    "price": "13.65",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-25",
+    "price": "13.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-24",
+    "price": "13.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-21",
+    "price": "13.58",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-20",
+    "price": "13.53",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-19",
+    "price": "13.61",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-18",
+    "price": "13.6",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-17",
+    "price": "13.55",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-14",
+    "price": "13.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-13",
+    "price": "13.45",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-12",
+    "price": "13.4",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-11",
+    "price": "13.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-10",
+    "price": "13.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-07",
+    "price": "13.08",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-06",
+    "price": "12.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-05",
+    "price": "12.79",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-04",
+    "price": "12.81",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-02-03",
+    "price": "12.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-31",
+    "price": "13.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-30",
+    "price": "13.02",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-29",
+    "price": "13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-28",
+    "price": "12.94",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-27",
+    "price": "13.09",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-24",
+    "price": "800.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-23",
+    "price": "13.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-22",
+    "price": "13.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-21",
+    "price": "13.4",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-20",
+    "price": "13.43",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-17",
+    "price": "13.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-16",
+    "price": "13.59",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-15",
+    "price": "13.49",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-14",
+    "price": "13.32",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-13",
+    "price": "13.31",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-10",
+    "price": "13.24",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-09",
+    "price": "13.27",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-08",
+    "price": "13.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-07",
+    "price": "13.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-06",
+    "price": "13.27",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-03",
+    "price": "13.22",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2014-01-02",
+    "price": "13.29",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-31",
+    "price": "807.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-30",
+    "price": "13.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-27",
+    "price": "13.35",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-24",
+    "price": "810.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-23",
+    "price": "13.26",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-20",
+    "price": "13.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-19",
+    "price": "12.98",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-18",
+    "price": "12.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-17",
+    "price": "12.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-16",
+    "price": "12.89",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-13",
+    "price": "12.76",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-12",
+    "price": "12.8",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-11",
+    "price": "790",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-10",
+    "price": "13.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-09",
+    "price": "13.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-06",
+    "price": "790.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-05",
+    "price": "12.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-04",
+    "price": "787.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-03",
+    "price": "12.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-12-02",
+    "price": "12.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-29",
+    "price": "12.9",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-28",
+    "price": "12.85",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-27",
+    "price": "12.82",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-26",
+    "price": "12.7",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-25",
+    "price": "12.66",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-22",
+    "price": "781.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-21",
+    "price": "12.67",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-20",
+    "price": "12.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-19",
+    "price": "12.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-18",
+    "price": "12.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-15",
+    "price": "12.72",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-14",
+    "price": "788",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-13",
+    "price": "12.59",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-12",
+    "price": "12.59",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-11",
+    "price": "12.57",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-08",
+    "price": "12.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-07",
+    "price": "12.47",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-06",
+    "price": "12.56",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-05",
+    "price": "12.45",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-04",
+    "price": "12.45",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-11-01",
+    "price": "781.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-31",
+    "price": "12.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-30",
+    "price": "12.51",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-29",
+    "price": "12.52",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-28",
+    "price": "12.41",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-25",
+    "price": "768.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-24",
+    "price": "768.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-23",
+    "price": "12.34",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-22",
+    "price": "12.44",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-21",
+    "price": "12.48",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-18",
+    "price": "761.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-17",
+    "price": "12.14",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-16",
+    "price": "12.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-15",
+    "price": "12.15",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-14",
+    "price": "12.04",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-11",
+    "price": "12.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-10",
+    "price": "11.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-09",
+    "price": "11.71",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-08",
+    "price": "11.84",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-07",
+    "price": "12.01",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-04",
+    "price": "747.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-03",
+    "price": "743.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-02",
+    "price": "12.1",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-10-01",
+    "price": "12.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-30",
+    "price": "12.03",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-27",
+    "price": "750.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-26",
+    "price": "12.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-25",
+    "price": "754.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-24",
+    "price": "12.13",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-23",
+    "price": "12.11",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-20",
+    "price": "759.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-19",
+    "price": "12.21",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-18",
+    "price": "752.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-17",
+    "price": "11.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-16",
+    "price": "11.97",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-13",
+    "price": "750.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-12",
+    "price": "11.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-11",
+    "price": "11.87",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-10",
+    "price": "11.95",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-09",
+    "price": "11.87",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-06",
+    "price": "11.73",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-05",
+    "price": "11.69",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-04",
+    "price": "11.64",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-03",
+    "price": "11.58",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-09-02",
+    "price": "11.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-30",
+    "price": "744.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-29",
+    "price": "749.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-28",
+    "price": "742.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-27",
+    "price": "748.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-23",
+    "price": "754.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-22",
+    "price": "748.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-21",
+    "price": "743.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-20",
+    "price": "744.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-19",
+    "price": "749.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-16",
+    "price": "749",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-15",
+    "price": "751",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-14",
+    "price": "762.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-13",
+    "price": "762.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-12",
+    "price": "760.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-09",
+    "price": "753.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-08",
+    "price": "754.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-07",
+    "price": "752.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-06",
+    "price": "765.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-05",
+    "price": "770.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-02",
+    "price": "765.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-08-01",
+    "price": "771.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-31",
+    "price": "764.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-30",
+    "price": "760.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-29",
+    "price": "748.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-26",
+    "price": "746.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-25",
+    "price": "748.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-24",
+    "price": "750.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-23",
+    "price": "745.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-22",
+    "price": "745.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-19",
+    "price": "750.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-18",
+    "price": "767.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-17",
+    "price": "768.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-16",
+    "price": "769.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-15",
+    "price": "770.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-12",
+    "price": "765.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-11",
+    "price": "761.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-10",
+    "price": "758.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-09",
+    "price": "760.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-08",
+    "price": "753.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-05",
+    "price": "753.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-04",
+    "price": "751.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-03",
+    "price": "733.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-02",
+    "price": "740.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-07-01",
+    "price": "735.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-28",
+    "price": "727.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-27",
+    "price": "731.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-26",
+    "price": "719.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-25",
+    "price": "710.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-24",
+    "price": "702.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-21",
+    "price": "716.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-20",
+    "price": "726.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-19",
+    "price": "736.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-18",
+    "price": "738.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-17",
+    "price": "730.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-14",
+    "price": "721.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-13",
+    "price": "717.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-12",
+    "price": "724.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-11",
+    "price": "733.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-10",
+    "price": "738.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-07",
+    "price": "734.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-06",
+    "price": "727.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-05",
+    "price": "737.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-04",
+    "price": "753.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-06-03",
+    "price": "739.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-31",
+    "price": "763.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-30",
+    "price": "759.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-29",
+    "price": "755.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-28",
+    "price": "770",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-24",
+    "price": "749.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-23",
+    "price": "758.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-22",
+    "price": "777.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-21",
+    "price": "767.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-20",
+    "price": "767.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-17",
+    "price": "763.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-16",
+    "price": "757.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-15",
+    "price": "754.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-14",
+    "price": "753.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-13",
+    "price": "744.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-10",
+    "price": "743.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-09",
+    "price": "735.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-08",
+    "price": "731.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-07",
+    "price": "733.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-03",
+    "price": "724.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-02",
+    "price": "718.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-05-01",
+    "price": "710.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-30",
+    "price": "710.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-29",
+    "price": "706.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-26",
+    "price": "698.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-25",
+    "price": "705.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-24",
+    "price": "707",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-23",
+    "price": "704.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-22",
+    "price": "691.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-19",
+    "price": "691",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-18",
+    "price": "693.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-17",
+    "price": "702.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-16",
+    "price": "708",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-15",
+    "price": "710",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-12",
+    "price": "708",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-11",
+    "price": "714.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-10",
+    "price": "717.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-09",
+    "price": "701.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-08",
+    "price": "699.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-05",
+    "price": "696.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-04",
+    "price": "709.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-03",
+    "price": "718",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-04-02",
+    "price": "721",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-28",
+    "price": "719.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-27",
+    "price": "721.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-26",
+    "price": "720.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-25",
+    "price": "716.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-22",
+    "price": "715",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-21",
+    "price": "718.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-20",
+    "price": "726.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-19",
+    "price": "723.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-18",
+    "price": "726.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-15",
+    "price": "725.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-14",
+    "price": "731.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-13",
+    "price": "731.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-12",
+    "price": "733.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-11",
+    "price": "732.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-08",
+    "price": "732.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-07",
+    "price": "727",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-06",
+    "price": "724",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-05",
+    "price": "721",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-04",
+    "price": "711.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-03-01",
+    "price": "712",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-28",
+    "price": "708.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-27",
+    "price": "707.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-26",
+    "price": "699",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-25",
+    "price": "711.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-22",
+    "price": "698.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-21",
+    "price": "695.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-20",
+    "price": "707",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-19",
+    "price": "703",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-18",
+    "price": "698",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-15",
+    "price": "697",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-14",
+    "price": "696.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-13",
+    "price": "695.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-12",
+    "price": "691",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-11",
+    "price": "692.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-08",
+    "price": "685.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-07",
+    "price": "680.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-06",
+    "price": "688.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-05",
+    "price": "685.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-04",
+    "price": "680.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-02-01",
+    "price": "683.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-31",
+    "price": "674",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-30",
+    "price": "678.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-29",
+    "price": "678.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-28",
+    "price": "683.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-25",
+    "price": "676.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-24",
+    "price": "680.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-23",
+    "price": "682.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-22",
+    "price": "671",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-21",
+    "price": "676.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-18",
+    "price": "672.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-17",
+    "price": "670.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-16",
+    "price": "667.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-15",
+    "price": "657.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-14",
+    "price": "663.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-11",
+    "price": "664.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-10",
+    "price": "659",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-09",
+    "price": "663.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-08",
+    "price": "656.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-07",
+    "price": "661.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-04",
+    "price": "663.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-03",
+    "price": "666.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2013-01-02",
+    "price": "631.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-31",
+    "price": "631.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-28",
+    "price": "639.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-27",
+    "price": "640.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-24",
+    "price": "645.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-21",
+    "price": "645.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-20",
+    "price": "647.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-19",
+    "price": "652.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-18",
+    "price": "646.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-17",
+    "price": "637.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-14",
+    "price": "639.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-13",
+    "price": "645.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-12",
+    "price": "648.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-11",
+    "price": "651.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-10",
+    "price": "645.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-07",
+    "price": "642.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-06",
+    "price": "645.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-05",
+    "price": "639.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-04",
+    "price": "643.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-12-03",
+    "price": "648.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-30",
+    "price": "648.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-29",
+    "price": "649.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-28",
+    "price": "643.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-27",
+    "price": "644.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-26",
+    "price": "641",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-23",
+    "price": "640.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-22",
+    "price": "637.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-21",
+    "price": "634.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-20",
+    "price": "633.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-19",
+    "price": "632.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-16",
+    "price": "612.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-15",
+    "price": "618",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-14",
+    "price": "627.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-13",
+    "price": "629",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-12",
+    "price": "627.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-09",
+    "price": "631.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-08",
+    "price": "630.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-07",
+    "price": "632.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-06",
+    "price": "647.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-05",
+    "price": "644.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-02",
+    "price": "646",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-11-01",
+    "price": "644.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-31",
+    "price": "634",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-30",
+    "price": "638",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-29",
+    "price": "638.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-26",
+    "price": "634.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-25",
+    "price": "635.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-24",
+    "price": "640.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-23",
+    "price": "646.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-22",
+    "price": "645.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-19",
+    "price": "650.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-18",
+    "price": "659.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-17",
+    "price": "661.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-16",
+    "price": "665.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-15",
+    "price": "655.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-12",
+    "price": "652.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-11",
+    "price": "658.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-10",
+    "price": "657.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-09",
+    "price": "660.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-08",
+    "price": "670.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-05",
+    "price": "673.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-04",
+    "price": "671.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-03",
+    "price": "677.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-02",
+    "price": "669.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-10-01",
+    "price": "675.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-28",
+    "price": "670.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-27",
+    "price": "667.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-26",
+    "price": "664.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-25",
+    "price": "678.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-24",
+    "price": "678.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-21",
+    "price": "684.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-20",
+    "price": "683.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-19",
+    "price": "686.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-18",
+    "price": "683.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-17",
+    "price": "683",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-14",
+    "price": "686.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-13",
+    "price": "676.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-12",
+    "price": "672.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-11",
+    "price": "675",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-10",
+    "price": "677.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-07",
+    "price": "680.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-06",
+    "price": "679.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-05",
+    "price": "670.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-04",
+    "price": "667.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-09-03",
+    "price": "674.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-31",
+    "price": "674.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-30",
+    "price": "673.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-29",
+    "price": "678.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-28",
+    "price": "677.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-24",
+    "price": "678.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-23",
+    "price": "678.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-22",
+    "price": "680.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-21",
+    "price": "686.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-20",
+    "price": "687.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-17",
+    "price": "686.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-16",
+    "price": "679.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-15",
+    "price": "673.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-14",
+    "price": "677.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-13",
+    "price": "672.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-10",
+    "price": "671.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-09",
+    "price": "675.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-08",
+    "price": "673.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-07",
+    "price": "673",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-06",
+    "price": "669.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-03",
+    "price": "663.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-02",
+    "price": "655.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-08-01",
+    "price": "656",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-31",
+    "price": "655.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-30",
+    "price": "649.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-27",
+    "price": "643",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-26",
+    "price": "636",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-25",
+    "price": "636.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-24",
+    "price": "641.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-23",
+    "price": "640.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-20",
+    "price": "652.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-19",
+    "price": "653.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-18",
+    "price": "645",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-17",
+    "price": "631.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-16",
+    "price": "637.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-13",
+    "price": "637.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-12",
+    "price": "635.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-11",
+    "price": "639.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-10",
+    "price": "648",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-09",
+    "price": "648.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-06",
+    "price": "651.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-05",
+    "price": "666",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-04",
+    "price": "661.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-03",
+    "price": "658.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-07-02",
+    "price": "650.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-29",
+    "price": "646.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-28",
+    "price": "635",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-27",
+    "price": "641.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-26",
+    "price": "632.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-25",
+    "price": "637.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-22",
+    "price": "645.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-21",
+    "price": "649.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-20",
+    "price": "648.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-19",
+    "price": "651.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-18",
+    "price": "645.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-15",
+    "price": "641.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-14",
+    "price": "641",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-13",
+    "price": "642.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-12",
+    "price": "640.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-11",
+    "price": "645.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-08",
+    "price": "645.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-07",
+    "price": "642.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-06",
+    "price": "643.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-06-01",
+    "price": "630.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-31",
+    "price": "640.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-30",
+    "price": "639.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-29",
+    "price": "643",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-28",
+    "price": "634.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-25",
+    "price": "633.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-24",
+    "price": "636.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-23",
+    "price": "628.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-22",
+    "price": "640",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-21",
+    "price": "628.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-18",
+    "price": "626.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-17",
+    "price": "634.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-16",
+    "price": "637",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-15",
+    "price": "637.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-14",
+    "price": "637.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-11",
+    "price": "647",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-10",
+    "price": "642",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-09",
+    "price": "642",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-08",
+    "price": "637.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-04",
+    "price": "652.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-03",
+    "price": "667.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-02",
+    "price": "667",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-05-01",
+    "price": "676.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-30",
+    "price": "669.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-27",
+    "price": "672.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-26",
+    "price": "672.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-25",
+    "price": "670.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-24",
+    "price": "655.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-23",
+    "price": "654.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-20",
+    "price": "668.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-19",
+    "price": "675.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-18",
+    "price": "676.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-17",
+    "price": "682.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-16",
+    "price": "677.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-13",
+    "price": "684.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-12",
+    "price": "688.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-11",
+    "price": "685.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-10",
+    "price": "690.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-05",
+    "price": "696.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-04",
+    "price": "690.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-03",
+    "price": "702.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-04-02",
+    "price": "697.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-30",
+    "price": "696.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-29",
+    "price": "695.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-28",
+    "price": "705",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-27",
+    "price": "700.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-26",
+    "price": "696",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-23",
+    "price": "691.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-22",
+    "price": "695.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-21",
+    "price": "696.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-20",
+    "price": "690.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-19",
+    "price": "694.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-16",
+    "price": "694",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-15",
+    "price": "698.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-14",
+    "price": "694.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-13",
+    "price": "685.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-12",
+    "price": "680.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-09",
+    "price": "679.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-08",
+    "price": "668.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-07",
+    "price": "665.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-06",
+    "price": "661.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-05",
+    "price": "664.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-02",
+    "price": "672.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-03-01",
+    "price": "666.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-29",
+    "price": "666",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-28",
+    "price": "670.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-27",
+    "price": "668.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-24",
+    "price": "667.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-23",
+    "price": "670",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-22",
+    "price": "668.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-21",
+    "price": "666.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-20",
+    "price": "663.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-17",
+    "price": "660.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-16",
+    "price": "656.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-15",
+    "price": "665.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-14",
+    "price": "656.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-13",
+    "price": "652",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-10",
+    "price": "651.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-09",
+    "price": "650.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-08",
+    "price": "644.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-07",
+    "price": "641.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-06",
+    "price": "641.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-03",
+    "price": "644.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-02",
+    "price": "634.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-02-01",
+    "price": "632",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-31",
+    "price": "625.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-30",
+    "price": "628.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-27",
+    "price": "629",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-26",
+    "price": "631.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-25",
+    "price": "633",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-24",
+    "price": "630.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-23",
+    "price": "631.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-20",
+    "price": "629.12",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-19",
+    "price": "632.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-18",
+    "price": "625.62",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-17",
+    "price": "623.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-16",
+    "price": "620.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-13",
+    "price": "618.38",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-12",
+    "price": "619",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-11",
+    "price": "618",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-10",
+    "price": "614.75",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-09",
+    "price": "611.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-06",
+    "price": "612",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-05",
+    "price": "607.5",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-04",
+    "price": "601.25",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  },
+  {
+    "date": "2012-01-03",
+    "price": "603.88",
+    "stockSymbol": "XWND.L",
+    "currency": "GBP"
+  }
+]

@@ -1,0 +1,6554 @@
+[
+  {
+    "date": "2024-04-30",
+    "price": "10118",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-29",
+    "price": "10160",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-26",
+    "price": "10132.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-25",
+    "price": "10102",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-24",
+    "price": "10118.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-23",
+    "price": "10178",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-22",
+    "price": "10212.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-19",
+    "price": "10187",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-18",
+    "price": "10172",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-17",
+    "price": "10162",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-16",
+    "price": "10144",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-15",
+    "price": "10176",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-12",
+    "price": "10255.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-11",
+    "price": "10194",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-10",
+    "price": "10261",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-09",
+    "price": "10338",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-08",
+    "price": "10283",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-05",
+    "price": "10300",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-04",
+    "price": "10340",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-03",
+    "price": "10301",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-04-02",
+    "price": "10281.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-28",
+    "price": "10415",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-27",
+    "price": "10408",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-26",
+    "price": "10371",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-25",
+    "price": "10342",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-22",
+    "price": "10393",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-21",
+    "price": "10353.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-20",
+    "price": "10339.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-19",
+    "price": "10313",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-18",
+    "price": "10292.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-15",
+    "price": "10281",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-14",
+    "price": "10289.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-13",
+    "price": "10338.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-12",
+    "price": "10393.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-11",
+    "price": "10385",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-08",
+    "price": "10372",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-07",
+    "price": "10365",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-06",
+    "price": "10333",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-05",
+    "price": "10329",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-04",
+    "price": "10232",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-03-01",
+    "price": "10250",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-29",
+    "price": "10238.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-28",
+    "price": "10176.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-27",
+    "price": "10169",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-26",
+    "price": "10198",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-23",
+    "price": "10225.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-22",
+    "price": "10185",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-21",
+    "price": "10176",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-20",
+    "price": "10211",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-19",
+    "price": "10162",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-16",
+    "price": "10160",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-15",
+    "price": "10198.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-14",
+    "price": "10204",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-13",
+    "price": "10155",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-12",
+    "price": "10198",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-09",
+    "price": "10174",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-08",
+    "price": "10201",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-07",
+    "price": "10243.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-06",
+    "price": "10243",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-05",
+    "price": "10181",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-02",
+    "price": "10256",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-02-01",
+    "price": "10403",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-31",
+    "price": "10363.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-30",
+    "price": "10267.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-29",
+    "price": "10278.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-26",
+    "price": "10222",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-25",
+    "price": "10216",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-24",
+    "price": "10207.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-23",
+    "price": "10215",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-22",
+    "price": "10286",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-19",
+    "price": "10249.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-18",
+    "price": "10233",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-17",
+    "price": "10194.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-16",
+    "price": "10339",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-15",
+    "price": "10342.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-12",
+    "price": "10381",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-11",
+    "price": "10327.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-10",
+    "price": "10347.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-09",
+    "price": "10362",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-08",
+    "price": "10373",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-05",
+    "price": "10376",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-04",
+    "price": "10398",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-03",
+    "price": "10456.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2024-01-02",
+    "price": "10476",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-29",
+    "price": "10586",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-28",
+    "price": "10625",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-27",
+    "price": "10675",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-22",
+    "price": "10632",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-21",
+    "price": "10618",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-20",
+    "price": "10596",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-19",
+    "price": "10507.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-18",
+    "price": "10474.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-15",
+    "price": "10488.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-14",
+    "price": "10380",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-13",
+    "price": "10339",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-12",
+    "price": "10211",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-11",
+    "price": "10354.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-08",
+    "price": "10389",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-07",
+    "price": "10430",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-06",
+    "price": "10431",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-05",
+    "price": "10374.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-04",
+    "price": "10229",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-12-01",
+    "price": "10270",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-30",
+    "price": "10262",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-29",
+    "price": "10319",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-28",
+    "price": "10272",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-27",
+    "price": "10235",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-24",
+    "price": "10167",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-23",
+    "price": "10195",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-22",
+    "price": "10260",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-21",
+    "price": "10347",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-20",
+    "price": "10320",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-17",
+    "price": "10326.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-16",
+    "price": "10319",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-15",
+    "price": "10246.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-14",
+    "price": "10297.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-13",
+    "price": "10153",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-10",
+    "price": "10134.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-09",
+    "price": "10171",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-08",
+    "price": "10210",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-07",
+    "price": "10156",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-06",
+    "price": "10077",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-03",
+    "price": "10144",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-02",
+    "price": "10063",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-11-01",
+    "price": "9981",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-31",
+    "price": "9964.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-30",
+    "price": "9912.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-27",
+    "price": "9935.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-26",
+    "price": "9894.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-25",
+    "price": "9884.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-24",
+    "price": "9926.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-23",
+    "price": "9887",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-20",
+    "price": "9846.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-19",
+    "price": "9826",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-18",
+    "price": "9869.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-17",
+    "price": "9950.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-16",
+    "price": "9980",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-13",
+    "price": "10044.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-12",
+    "price": "10023.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-11",
+    "price": "10094.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-10",
+    "price": "9980",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-09",
+    "price": "9948.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-06",
+    "price": "9881",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-05",
+    "price": "9919",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-04",
+    "price": "9884.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-03",
+    "price": "9879",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-10-02",
+    "price": "9909.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-29",
+    "price": "9984.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-28",
+    "price": "9969",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-27",
+    "price": "10057",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-26",
+    "price": "10073",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-25",
+    "price": "10077",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-22",
+    "price": "10143.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-21",
+    "price": "10110.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-20",
+    "price": "10163.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-19",
+    "price": "10076.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-18",
+    "price": "10048",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-15",
+    "price": "10095",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-14",
+    "price": "10158.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-13",
+    "price": "10107.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-12",
+    "price": "10041",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-11",
+    "price": "10004",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-08",
+    "price": "10057",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-07",
+    "price": "10022",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-06",
+    "price": "9958",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-05",
+    "price": "9956.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-04",
+    "price": "9995",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-09-01",
+    "price": "10050",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-31",
+    "price": "10087",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-30",
+    "price": "10046",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-29",
+    "price": "10051",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-25",
+    "price": "10040",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-24",
+    "price": "10040.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-23",
+    "price": "9995",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-22",
+    "price": "9854",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-21",
+    "price": "9796.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-18",
+    "price": "9840",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-17",
+    "price": "9790.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-16",
+    "price": "9876",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-15",
+    "price": "9911.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-14",
+    "price": "9932.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-11",
+    "price": "9950.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-10",
+    "price": "10082.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-09",
+    "price": "10081",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-08",
+    "price": "10061",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-07",
+    "price": "10017",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-04",
+    "price": "10066",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-03",
+    "price": "10013",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-02",
+    "price": "10073.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-08-01",
+    "price": "10077.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-31",
+    "price": "10134",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-28",
+    "price": "10125.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-27",
+    "price": "10146.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-26",
+    "price": "10152",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-25",
+    "price": "10148",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-24",
+    "price": "10174.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-21",
+    "price": "10166.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-20",
+    "price": "10161.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-19",
+    "price": "10200.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-18",
+    "price": "10092.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-17",
+    "price": "10010",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-14",
+    "price": "10024.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-13",
+    "price": "10016.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-12",
+    "price": "9960",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-11",
+    "price": "9861.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-10",
+    "price": "9881",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-07",
+    "price": "9871",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-06",
+    "price": "9879",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-05",
+    "price": "10005",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-04",
+    "price": "10058",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-07-03",
+    "price": "10039",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-30",
+    "price": "10066.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-29",
+    "price": "10081.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-28",
+    "price": "10115.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-27",
+    "price": "10077.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-26",
+    "price": "10108.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-23",
+    "price": "10081.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-22",
+    "price": "10041.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-21",
+    "price": "10014.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-20",
+    "price": "10072.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-19",
+    "price": "9972",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-16",
+    "price": "10019.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-15",
+    "price": "10017",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-14",
+    "price": "10002.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-13",
+    "price": "9960.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-12",
+    "price": "10033.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-09",
+    "price": "10103",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-08",
+    "price": "10088.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-07",
+    "price": "10091",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-06",
+    "price": "10120",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-05",
+    "price": "10107.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-02",
+    "price": "10158",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-06-01",
+    "price": "10161",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-31",
+    "price": "10108.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-30",
+    "price": "10046.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-26",
+    "price": "9975",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-25",
+    "price": "9978.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-24",
+    "price": "10087",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-23",
+    "price": "10107",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-22",
+    "price": "10192.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-19",
+    "price": "10221.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-18",
+    "price": "10253.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-17",
+    "price": "10354.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-16",
+    "price": "10370",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-15",
+    "price": "10366.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-12",
+    "price": "10411.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-11",
+    "price": "10472",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-10",
+    "price": "10393",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-09",
+    "price": "10366.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-05",
+    "price": "10411.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-04",
+    "price": "10501.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-03",
+    "price": "10479.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-05-02",
+    "price": "10507",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-28",
+    "price": "10466",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-27",
+    "price": "10409",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-26",
+    "price": "10481.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-25",
+    "price": "10507",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-24",
+    "price": "10436.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-21",
+    "price": "10443",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-20",
+    "price": "10438",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-19",
+    "price": "10369",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-18",
+    "price": "10453",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-17",
+    "price": "10498",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-14",
+    "price": "10534.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-13",
+    "price": "10607.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-12",
+    "price": "10634",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-11",
+    "price": "10662",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-06",
+    "price": "10750.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-05",
+    "price": "10748.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-04",
+    "price": "10747",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-04-03",
+    "price": "10762.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-31",
+    "price": "10652",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-30",
+    "price": "10650.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-29",
+    "price": "10694.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-28",
+    "price": "10688",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-27",
+    "price": "10723",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-24",
+    "price": "10794",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-23",
+    "price": "10723",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-22",
+    "price": "10624.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-21",
+    "price": "10720.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-20",
+    "price": "10755",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-17",
+    "price": "10784.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-16",
+    "price": "10720.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-15",
+    "price": "10772",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-14",
+    "price": "10586",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-13",
+    "price": "10679",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-10",
+    "price": "10513",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-09",
+    "price": "10384.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-08",
+    "price": "10413",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-07",
+    "price": "10345",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-06",
+    "price": "10302.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-03",
+    "price": "10298.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-02",
+    "price": "10277.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-03-01",
+    "price": "10302",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-28",
+    "price": "10350",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-27",
+    "price": "10334.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-24",
+    "price": "10401",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-23",
+    "price": "10459.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-22",
+    "price": "10464",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-21",
+    "price": "10431.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-20",
+    "price": "10552",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-17",
+    "price": "10510",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-16",
+    "price": "10544.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-15",
+    "price": "10565",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-14",
+    "price": "10525.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-13",
+    "price": "10616",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-10",
+    "price": "10627",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-09",
+    "price": "10692",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-08",
+    "price": "10679",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-07",
+    "price": "10711",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-06",
+    "price": "10756",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-03",
+    "price": "10885.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-02",
+    "price": "10944",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-02-01",
+    "price": "10689",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-31",
+    "price": "10704.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-30",
+    "price": "10723",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-27",
+    "price": "10700.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-26",
+    "price": "10731",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-25",
+    "price": "10786.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-24",
+    "price": "10764.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-23",
+    "price": "10687.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-20",
+    "price": "10677",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-19",
+    "price": "10765.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-18",
+    "price": "10724.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-17",
+    "price": "10713.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-16",
+    "price": "10672.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-13",
+    "price": "10691",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-12",
+    "price": "10704",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-11",
+    "price": "10642",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-10",
+    "price": "10505.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-09",
+    "price": "10478.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-06",
+    "price": "10536",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-05",
+    "price": "10488",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-04",
+    "price": "10554",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2023-01-03",
+    "price": "10444",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-30",
+    "price": "10429",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-29",
+    "price": "10420",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-28",
+    "price": "10414",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-23",
+    "price": "10455.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-22",
+    "price": "10479",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-21",
+    "price": "10503.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-20",
+    "price": "10452",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-19",
+    "price": "10544.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-16",
+    "price": "10667.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-15",
+    "price": "10719.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-14",
+    "price": "10667.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-13",
+    "price": "10670.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-12",
+    "price": "10750",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-09",
+    "price": "10804.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-08",
+    "price": "10867",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-07",
+    "price": "10917.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-06",
+    "price": "11024.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-05",
+    "price": "11010",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-02",
+    "price": "10938",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-12-01",
+    "price": "11022",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-30",
+    "price": "10973",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-29",
+    "price": "11052.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-28",
+    "price": "11047.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-25",
+    "price": "11057.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-24",
+    "price": "11133.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-23",
+    "price": "11196",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-22",
+    "price": "11053",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-21",
+    "price": "11072",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-18",
+    "price": "10986",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-17",
+    "price": "11024",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-16",
+    "price": "11086.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-15",
+    "price": "10915.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-14",
+    "price": "10869.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-11",
+    "price": "10859.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-10",
+    "price": "10955.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-09",
+    "price": "10786",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-08",
+    "price": "10638.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-07",
+    "price": "10559",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-04",
+    "price": "10633",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-03",
+    "price": "10681",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-02",
+    "price": "10784",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-11-01",
+    "price": "10735",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-31",
+    "price": "10668",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-28",
+    "price": "10766",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-27",
+    "price": "10769.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-26",
+    "price": "10625",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-25",
+    "price": "10601",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-24",
+    "price": "10521",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-21",
+    "price": "10236",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-20",
+    "price": "10387",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-19",
+    "price": "10359",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-18",
+    "price": "10173",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-17",
+    "price": "10101",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-14",
+    "price": "9736",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-13",
+    "price": "9882.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-12",
+    "price": "9693.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-11",
+    "price": "9708",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-10",
+    "price": "9691",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-07",
+    "price": "9954",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-06",
+    "price": "10015.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-05",
+    "price": "10157.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-04",
+    "price": "10306",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-10-03",
+    "price": "10372",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-30",
+    "price": "10332.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-29",
+    "price": "10215.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-28",
+    "price": "10228",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-27",
+    "price": "9577",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-26",
+    "price": "9890.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-23",
+    "price": "10286",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-22",
+    "price": "10556.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-21",
+    "price": "10758.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-20",
+    "price": "10759",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-16",
+    "price": "10922.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-15",
+    "price": "10912.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-14",
+    "price": "10957.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-13",
+    "price": "10902",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-12",
+    "price": "10962",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-09",
+    "price": "10914.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-08",
+    "price": "10889.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-07",
+    "price": "11007.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-06",
+    "price": "10992",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-05",
+    "price": "11136.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-02",
+    "price": "11102.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-09-01",
+    "price": "11158",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-31",
+    "price": "11275",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-30",
+    "price": "11382",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-26",
+    "price": "11493",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-25",
+    "price": "11486",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-24",
+    "price": "11428.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-23",
+    "price": "11523",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-22",
+    "price": "11583",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-19",
+    "price": "11707.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-18",
+    "price": "11838",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-17",
+    "price": "11835",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-16",
+    "price": "11975",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-15",
+    "price": "12104",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-12",
+    "price": "11983",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-11",
+    "price": "12072.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-10",
+    "price": "12213",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-09",
+    "price": "12199",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-08",
+    "price": "12200",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-05",
+    "price": "12094",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-04",
+    "price": "12310",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-03",
+    "price": "12258",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-02",
+    "price": "12350",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-08-01",
+    "price": "12347",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-29",
+    "price": "12188",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-28",
+    "price": "12183.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-27",
+    "price": "12026",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-26",
+    "price": "12088",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-25",
+    "price": "12058",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-22",
+    "price": "12120.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-21",
+    "price": "11993",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-20",
+    "price": "11844",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-19",
+    "price": "11790.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-18",
+    "price": "11863",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-15",
+    "price": "11918",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-14",
+    "price": "11970",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-13",
+    "price": "11989.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-12",
+    "price": "11948.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-11",
+    "price": "11882",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-08",
+    "price": "11849",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-07",
+    "price": "11975",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-06",
+    "price": "11990",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-05",
+    "price": "12206.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-04",
+    "price": "12064.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-07-01",
+    "price": "12239",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-30",
+    "price": "12038.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-29",
+    "price": "11930",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-28",
+    "price": "11833.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-27",
+    "price": "11939",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-24",
+    "price": "12049",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-23",
+    "price": "12035",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-22",
+    "price": "11839",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-21",
+    "price": "11671",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-20",
+    "price": "11728",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-17",
+    "price": "11860",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-16",
+    "price": "11882",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-15",
+    "price": "11929.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-14",
+    "price": "11808.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-13",
+    "price": "11907.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-10",
+    "price": "11987",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-09",
+    "price": "12093",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-08",
+    "price": "12164.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-07",
+    "price": "12207",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-06",
+    "price": "12120",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-06-01",
+    "price": "12241",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-31",
+    "price": "12263",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-30",
+    "price": "12443",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-27",
+    "price": "12530",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-26",
+    "price": "12478",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-25",
+    "price": "12562",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-24",
+    "price": "12614.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-23",
+    "price": "12492.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-20",
+    "price": "12621",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-19",
+    "price": "12647",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-18",
+    "price": "12646",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-17",
+    "price": "12630",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-16",
+    "price": "12806.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-13",
+    "price": "12785",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-12",
+    "price": "12845",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-11",
+    "price": "12645",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-10",
+    "price": "12682.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-09",
+    "price": "12549",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-06",
+    "price": "12484.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-05",
+    "price": "12536.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-04",
+    "price": "12572",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-05-03",
+    "price": "12590",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-29",
+    "price": "12656.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-28",
+    "price": "12694",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-27",
+    "price": "12780.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-26",
+    "price": "12836",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-25",
+    "price": "12759.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-22",
+    "price": "12623.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-21",
+    "price": "12561",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-20",
+    "price": "12596",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-19",
+    "price": "12522",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-14",
+    "price": "12631",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-13",
+    "price": "12751",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-12",
+    "price": "12773.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-11",
+    "price": "12721",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-08",
+    "price": "12825.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-07",
+    "price": "12898",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-06",
+    "price": "12928",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-05",
+    "price": "13012.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-04",
+    "price": "13138.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-04-01",
+    "price": "13036.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-31",
+    "price": "13009.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-30",
+    "price": "12950",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-29",
+    "price": "12976.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-28",
+    "price": "13002",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-25",
+    "price": "12893",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-24",
+    "price": "12945.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-23",
+    "price": "12918",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-22",
+    "price": "12835",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-21",
+    "price": "12947",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-18",
+    "price": "13106.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-17",
+    "price": "13016.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-16",
+    "price": "12962",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-15",
+    "price": "13051",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-14",
+    "price": "12998",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-11",
+    "price": "13144",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-10",
+    "price": "13109",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-09",
+    "price": "13149",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-08",
+    "price": "13229.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-07",
+    "price": "13424.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-04",
+    "price": "13558",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-03",
+    "price": "13398.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-02",
+    "price": "13499.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-03-01",
+    "price": "13736",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-28",
+    "price": "13282",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-25",
+    "price": "13223",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-24",
+    "price": "13289",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-23",
+    "price": "13269",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-22",
+    "price": "13286.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-21",
+    "price": "13386.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-18",
+    "price": "13397",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-17",
+    "price": "13290",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-16",
+    "price": "13217",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-15",
+    "price": "13158",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-14",
+    "price": "13131.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-11",
+    "price": "13170",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-10",
+    "price": "13176.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-09",
+    "price": "13322.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-08",
+    "price": "13224",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-07",
+    "price": "13356.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-04",
+    "price": "13393.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-03",
+    "price": "13424",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-02",
+    "price": "13612",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-02-01",
+    "price": "13496",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-31",
+    "price": "13465",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-28",
+    "price": "13596",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-27",
+    "price": "13613.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-26",
+    "price": "13651",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-25",
+    "price": "13731.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-24",
+    "price": "13777",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-21",
+    "price": "13701.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-20",
+    "price": "13624.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-19",
+    "price": "13587",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-18",
+    "price": "13652",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-17",
+    "price": "13707",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-14",
+    "price": "13772.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-13",
+    "price": "13825",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-12",
+    "price": "13780",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-11",
+    "price": "13755",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-10",
+    "price": "13683.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-07",
+    "price": "13706.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-06",
+    "price": "13754.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-05",
+    "price": "13851",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2022-01-04",
+    "price": "13846.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-31",
+    "price": "14008",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-30",
+    "price": "13982",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-29",
+    "price": "13910.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-24",
+    "price": "14065",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-23",
+    "price": "14051",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-22",
+    "price": "14102",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-21",
+    "price": "14119.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-20",
+    "price": "14292",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-17",
+    "price": "14315",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-16",
+    "price": "14349.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-15",
+    "price": "14395.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-14",
+    "price": "14429",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-13",
+    "price": "14504",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-10",
+    "price": "14477.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-09",
+    "price": "14455.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-08",
+    "price": "14533",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-07",
+    "price": "14655.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-06",
+    "price": "14600.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-03",
+    "price": "14540.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-02",
+    "price": "14490.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-12-01",
+    "price": "14452.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-30",
+    "price": "14519.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-29",
+    "price": "14405",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-26",
+    "price": "14435.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-25",
+    "price": "14202",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-24",
+    "price": "14133",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-23",
+    "price": "14157",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-22",
+    "price": "14180",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-19",
+    "price": "14269",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-18",
+    "price": "14176.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-17",
+    "price": "14091.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-16",
+    "price": "14103.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-15",
+    "price": "14138",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-12",
+    "price": "14192",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-11",
+    "price": "14196.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-10",
+    "price": "14214.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-09",
+    "price": "14416.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-08",
+    "price": "14321",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-05",
+    "price": "14311",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-04",
+    "price": "14105",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-03",
+    "price": "13975",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-02",
+    "price": "14028",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-11-01",
+    "price": "14044.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-29",
+    "price": "14081.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-28",
+    "price": "14156.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-27",
+    "price": "14111",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-26",
+    "price": "13823",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-25",
+    "price": "13760.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-22",
+    "price": "13724",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-21",
+    "price": "13645",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-20",
+    "price": "13713.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-19",
+    "price": "13751",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-18",
+    "price": "13753",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-15",
+    "price": "13774",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-14",
+    "price": "13878.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-13",
+    "price": "13789",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-12",
+    "price": "13658.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-11",
+    "price": "13567",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-08",
+    "price": "13582.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-07",
+    "price": "13711.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-06",
+    "price": "13711",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-05",
+    "price": "13682",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-04",
+    "price": "13815.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-10-01",
+    "price": "13804.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-30",
+    "price": "13773",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-29",
+    "price": "13865",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-28",
+    "price": "13874",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-27",
+    "price": "13959",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-24",
+    "price": "14001",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-23",
+    "price": "14055.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-22",
+    "price": "14216",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-21",
+    "price": "14226",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-20",
+    "price": "14222",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-17",
+    "price": "14153",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-16",
+    "price": "14213.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-15",
+    "price": "14286",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-14",
+    "price": "14330",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-13",
+    "price": "14310.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-10",
+    "price": "14293",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-09",
+    "price": "14317",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-08",
+    "price": "14293",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-07",
+    "price": "14272",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-06",
+    "price": "14363",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-03",
+    "price": "14314",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-02",
+    "price": "14384",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-09-01",
+    "price": "14361.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-31",
+    "price": "14312",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-27",
+    "price": "14408",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-26",
+    "price": "14383.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-25",
+    "price": "14380",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-24",
+    "price": "14499.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-23",
+    "price": "14496.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-20",
+    "price": "14518",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-19",
+    "price": "14512.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-18",
+    "price": "14468",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-17",
+    "price": "14484.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-16",
+    "price": "14469",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-13",
+    "price": "14475",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-12",
+    "price": "14436.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-11",
+    "price": "14489.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-10",
+    "price": "14479.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-09",
+    "price": "14496.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-06",
+    "price": "14389.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-05",
+    "price": "14518.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-04",
+    "price": "14525",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-03",
+    "price": "14517",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-08-02",
+    "price": "14477",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-30",
+    "price": "14425",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-29",
+    "price": "14425",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-28",
+    "price": "14422",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-27",
+    "price": "14450.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-26",
+    "price": "14410.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-23",
+    "price": "14395",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-22",
+    "price": "14412.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-21",
+    "price": "14335",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-20",
+    "price": "14409",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-19",
+    "price": "14394",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-16",
+    "price": "14229.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-15",
+    "price": "14174",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-14",
+    "price": "14248",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-13",
+    "price": "14235",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-12",
+    "price": "14186",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-09",
+    "price": "14147.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-08",
+    "price": "14232",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-07",
+    "price": "14235.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-06",
+    "price": "14329.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-05",
+    "price": "14203",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-02",
+    "price": "14215.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-07-01",
+    "price": "14182",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-30",
+    "price": "14199",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-29",
+    "price": "14183.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-28",
+    "price": "14201.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-25",
+    "price": "14119.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-24",
+    "price": "14183",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-23",
+    "price": "14127.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-22",
+    "price": "14134.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-21",
+    "price": "14194.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-18",
+    "price": "14225.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-17",
+    "price": "14115",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-16",
+    "price": "14159.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-15",
+    "price": "14131.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-14",
+    "price": "14152",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-11",
+    "price": "14182.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-10",
+    "price": "14118.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-09",
+    "price": "14155.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-08",
+    "price": "14090",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-07",
+    "price": "14028",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-04",
+    "price": "14061",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-03",
+    "price": "13999",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-02",
+    "price": "14047.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-06-01",
+    "price": "14023",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-28",
+    "price": "14092",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-27",
+    "price": "14068.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-26",
+    "price": "14136.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-25",
+    "price": "14071",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-24",
+    "price": "14022.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-21",
+    "price": "13976.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-20",
+    "price": "13969",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-19",
+    "price": "13967",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-18",
+    "price": "13939",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-17",
+    "price": "13949",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-14",
+    "price": "13945",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-13",
+    "price": "13878",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-12",
+    "price": "13918.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-11",
+    "price": "13986",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-10",
+    "price": "14072",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-07",
+    "price": "14099",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-06",
+    "price": "14089",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-05",
+    "price": "14068",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-05-04",
+    "price": "14116",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-30",
+    "price": "14037",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-29",
+    "price": "14019.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-28",
+    "price": "14080",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-27",
+    "price": "14109",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-26",
+    "price": "14142.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-23",
+    "price": "14143",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-22",
+    "price": "14150.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-21",
+    "price": "14134",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-20",
+    "price": "14166.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-19",
+    "price": "14120",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-16",
+    "price": "14100.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-15",
+    "price": "14161",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-14",
+    "price": "14029",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-13",
+    "price": "14084.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-12",
+    "price": "14076",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-09",
+    "price": "14083",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-08",
+    "price": "14113",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-07",
+    "price": "14061.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-06",
+    "price": "14047.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-04-01",
+    "price": "14027",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-31",
+    "price": "13948.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-30",
+    "price": "13981.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-29",
+    "price": "14073.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-26",
+    "price": "14117",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-25",
+    "price": "14180.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-24",
+    "price": "14126",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-23",
+    "price": "14108",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-22",
+    "price": "14016.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-19",
+    "price": "13980.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-18",
+    "price": "13928",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-17",
+    "price": "13994.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-16",
+    "price": "14058.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-15",
+    "price": "14038.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-12",
+    "price": "13988",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-11",
+    "price": "14143",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-10",
+    "price": "14188.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-09",
+    "price": "14177",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-08",
+    "price": "14110.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-05",
+    "price": "14115.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-04",
+    "price": "14118",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-03",
+    "price": "14038",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-02",
+    "price": "14192",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-03-01",
+    "price": "14053.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-26",
+    "price": "13954",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-25",
+    "price": "13962",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-24",
+    "price": "14004",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-23",
+    "price": "14085.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-22",
+    "price": "14171.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-19",
+    "price": "14163",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-18",
+    "price": "14247.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-17",
+    "price": "14340.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-16",
+    "price": "14231",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-15",
+    "price": "14324",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-12",
+    "price": "14437",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-11",
+    "price": "14515.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-10",
+    "price": "14492",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-09",
+    "price": "14542.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-08",
+    "price": "14505",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-05",
+    "price": "14473",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-04",
+    "price": "14570.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-03",
+    "price": "14709.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-02",
+    "price": "14742",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-02-01",
+    "price": "14799",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-29",
+    "price": "14795.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-28",
+    "price": "14871",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-27",
+    "price": "14910",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-26",
+    "price": "14886",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-25",
+    "price": "14895.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-22",
+    "price": "14793.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-21",
+    "price": "14764.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-20",
+    "price": "14810.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-19",
+    "price": "14852.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-18",
+    "price": "14838",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-15",
+    "price": "14839.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-14",
+    "price": "14857",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-13",
+    "price": "14824.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-12",
+    "price": "14739",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-11",
+    "price": "14779.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-08",
+    "price": "14830.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-07",
+    "price": "14814.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-06",
+    "price": "14902.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-05",
+    "price": "14990",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2021-01-04",
+    "price": "15060",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-31",
+    "price": "15040",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-30",
+    "price": "14996",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-29",
+    "price": "14998",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-24",
+    "price": "14913.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-23",
+    "price": "14824",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-22",
+    "price": "15079",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-21",
+    "price": "15032",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-18",
+    "price": "14939.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-17",
+    "price": "14886",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-16",
+    "price": "14870.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-15",
+    "price": "14887.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-14",
+    "price": "15008",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-11",
+    "price": "15103.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-10",
+    "price": "15035",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-09",
+    "price": "14926.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-08",
+    "price": "15052",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-07",
+    "price": "14971",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-04",
+    "price": "14833",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-03",
+    "price": "14859.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-02",
+    "price": "14837",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-12-01",
+    "price": "14830",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-30",
+    "price": "14946.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-27",
+    "price": "14972.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-26",
+    "price": "14984.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-25",
+    "price": "14914.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-24",
+    "price": "14877",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-23",
+    "price": "14862.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-20",
+    "price": "14887",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-19",
+    "price": "14844",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-18",
+    "price": "14835",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-17",
+    "price": "14846",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-16",
+    "price": "14804.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-13",
+    "price": "14830.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-12",
+    "price": "14816",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-11",
+    "price": "14679",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-10",
+    "price": "14728",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-09",
+    "price": "14745",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-06",
+    "price": "14945.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-05",
+    "price": "15037.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-04",
+    "price": "15111",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-03",
+    "price": "14975",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-11-02",
+    "price": "15068",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-30",
+    "price": "14992",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-29",
+    "price": "15103",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-28",
+    "price": "15127",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-27",
+    "price": "15057",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-26",
+    "price": "14939.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-23",
+    "price": "14951",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-22",
+    "price": "14956",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-21",
+    "price": "15019",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-20",
+    "price": "15140",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-19",
+    "price": "15200",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-16",
+    "price": "15169",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-15",
+    "price": "15181",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-14",
+    "price": "15083.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-13",
+    "price": "15031",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-12",
+    "price": "14954.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-09",
+    "price": "14964.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-08",
+    "price": "14930",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-07",
+    "price": "14895.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-06",
+    "price": "14928.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-05",
+    "price": "14938.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-02",
+    "price": "15005",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-10-01",
+    "price": "15028.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-30",
+    "price": "15058",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-29",
+    "price": "15165",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-28",
+    "price": "15139.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-25",
+    "price": "15162.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-24",
+    "price": "15097",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-23",
+    "price": "15085.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-22",
+    "price": "15112",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-21",
+    "price": "15200",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-18",
+    "price": "15143",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-17",
+    "price": "15128.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-16",
+    "price": "15105.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-15",
+    "price": "15081.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-14",
+    "price": "15106.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-11",
+    "price": "15146.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-10",
+    "price": "15014",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-09",
+    "price": "15036.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-08",
+    "price": "15157",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-07",
+    "price": "15001",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-04",
+    "price": "14988",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-03",
+    "price": "15026",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-02",
+    "price": "15016",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-09-01",
+    "price": "14890",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-28",
+    "price": "14868.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-27",
+    "price": "14778",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-26",
+    "price": "14852",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-25",
+    "price": "14925.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-24",
+    "price": "15040",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-21",
+    "price": "15052",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-20",
+    "price": "15005",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-19",
+    "price": "15008",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-18",
+    "price": "15043.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-17",
+    "price": "15066.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-14",
+    "price": "15008",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-13",
+    "price": "15025",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-12",
+    "price": "15041",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-11",
+    "price": "15114",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-10",
+    "price": "15228.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-07",
+    "price": "15226",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-06",
+    "price": "15325.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-05",
+    "price": "15252.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-04",
+    "price": "15364",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-08-03",
+    "price": "15321.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-31",
+    "price": "15330",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-30",
+    "price": "15352.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-29",
+    "price": "15293.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-28",
+    "price": "15327.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-27",
+    "price": "15331.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-24",
+    "price": "15255.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-23",
+    "price": "15301.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-22",
+    "price": "15317.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-21",
+    "price": "15261",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-20",
+    "price": "15233.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-17",
+    "price": "15221",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-16",
+    "price": "15220",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-15",
+    "price": "15205.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-14",
+    "price": "15284.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-13",
+    "price": "15241.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-10",
+    "price": "15313.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-09",
+    "price": "15292",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-08",
+    "price": "15270",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-07",
+    "price": "15461.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-06",
+    "price": "15443",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-03",
+    "price": "15432",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-02",
+    "price": "15429.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-07-01",
+    "price": "15391.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-30",
+    "price": "15460",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-29",
+    "price": "15507",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-26",
+    "price": "15477.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-25",
+    "price": "15547",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-24",
+    "price": "15446",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-23",
+    "price": "15367",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-22",
+    "price": "15382.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-19",
+    "price": "15333",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-18",
+    "price": "15385.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-17",
+    "price": "15549.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-16",
+    "price": "15494.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-15",
+    "price": "15502",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-12",
+    "price": "15509.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-11",
+    "price": "15534",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-10",
+    "price": "15411",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-09",
+    "price": "15278.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-08",
+    "price": "15201.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-05",
+    "price": "15156",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-04",
+    "price": "15260",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-03",
+    "price": "15311",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-02",
+    "price": "15450",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-06-01",
+    "price": "15459",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-29",
+    "price": "15550.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-28",
+    "price": "15482",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-27",
+    "price": "15501",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-26",
+    "price": "15440",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-22",
+    "price": "15548",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-21",
+    "price": "15575",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-20",
+    "price": "15470",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-19",
+    "price": "15425",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-18",
+    "price": "15397.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-15",
+    "price": "15456.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-14",
+    "price": "15528.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-13",
+    "price": "15521",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-12",
+    "price": "15497.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-11",
+    "price": "15503.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-07",
+    "price": "15550.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-06",
+    "price": "15549.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-05",
+    "price": "15604",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-04",
+    "price": "15545.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-05-01",
+    "price": "15487.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-30",
+    "price": "15534.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-29",
+    "price": "15439.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-28",
+    "price": "15410.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-27",
+    "price": "15409.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-24",
+    "price": "15468",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-23",
+    "price": "15484.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-22",
+    "price": "15387",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-21",
+    "price": "15435.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-20",
+    "price": "15292",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-17",
+    "price": "15357.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-16",
+    "price": "15369",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-15",
+    "price": "15355.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-14",
+    "price": "15312",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-09",
+    "price": "15384",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-08",
+    "price": "15186.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-07",
+    "price": "15049.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-06",
+    "price": "15153.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-03",
+    "price": "15171.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-02",
+    "price": "15155",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-04-01",
+    "price": "15199.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-31",
+    "price": "15071.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-30",
+    "price": "15217.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-27",
+    "price": "15201.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-26",
+    "price": "15128",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-25",
+    "price": "15065.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-24",
+    "price": "15102",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-23",
+    "price": "15224",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-20",
+    "price": "14958.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-19",
+    "price": "14271",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-18",
+    "price": "14172.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-17",
+    "price": "14675.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-16",
+    "price": "14705",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-13",
+    "price": "15010.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-12",
+    "price": "15309",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-11",
+    "price": "15363.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-10",
+    "price": "15547.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-09",
+    "price": "15643",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-06",
+    "price": "15354",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-05",
+    "price": "15050",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-04",
+    "price": "14949",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-03",
+    "price": "14962.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-03-02",
+    "price": "14913",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-28",
+    "price": "14890.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-27",
+    "price": "14880",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-26",
+    "price": "14812.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-25",
+    "price": "14824.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-24",
+    "price": "14780",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-21",
+    "price": "14745.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-20",
+    "price": "14665.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-19",
+    "price": "14603",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-18",
+    "price": "14589",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-17",
+    "price": "14544",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-14",
+    "price": "14575.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-13",
+    "price": "14537.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-12",
+    "price": "14602",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-11",
+    "price": "14649",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-10",
+    "price": "14650.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-07",
+    "price": "14599",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-06",
+    "price": "14587.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-05",
+    "price": "14563",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-04",
+    "price": "14617.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-02-03",
+    "price": "14690.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-31",
+    "price": "14710",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-30",
+    "price": "14671",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-29",
+    "price": "14698",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-28",
+    "price": "14661.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-27",
+    "price": "14739.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-24",
+    "price": "14646.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-23",
+    "price": "14631",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-22",
+    "price": "14526.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-21",
+    "price": "14508.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-20",
+    "price": "14442.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-17",
+    "price": "14481.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-16",
+    "price": "14473",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-15",
+    "price": "14475",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-14",
+    "price": "14368.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-13",
+    "price": "14327",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-10",
+    "price": "14294.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-09",
+    "price": "14230.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-08",
+    "price": "14292",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-07",
+    "price": "14303.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-06",
+    "price": "14319.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-03",
+    "price": "14369",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  },
+  {
+    "date": "2020-01-02",
+    "price": "14281.5",
+    "stockSymbol": "GILS.L",
+    "currency": "GBp"
+  }
+]

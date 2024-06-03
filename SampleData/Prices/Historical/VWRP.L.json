@@ -1,0 +1,7232 @@
+[
+  {
+    "date": "2024-04-30",
+    "stockSymbol": "VWRP.L",
+    "price": "99.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-29",
+    "stockSymbol": "VWRP.L",
+    "price": "99.5500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-26",
+    "stockSymbol": "VWRP.L",
+    "price": "99.8400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-25",
+    "stockSymbol": "VWRP.L",
+    "price": "98.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-24",
+    "stockSymbol": "VWRP.L",
+    "price": "99.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-23",
+    "stockSymbol": "VWRP.L",
+    "price": "99.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-22",
+    "stockSymbol": "VWRP.L",
+    "price": "98.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-19",
+    "stockSymbol": "VWRP.L",
+    "price": "98.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-18",
+    "stockSymbol": "VWRP.L",
+    "price": "98.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-17",
+    "stockSymbol": "VWRP.L",
+    "price": "98.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-16",
+    "stockSymbol": "VWRP.L",
+    "price": "98.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-15",
+    "stockSymbol": "VWRP.L",
+    "price": "100.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-12",
+    "stockSymbol": "VWRP.L",
+    "price": "100.5500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-11",
+    "stockSymbol": "VWRP.L",
+    "price": "100.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-10",
+    "stockSymbol": "VWRP.L",
+    "price": "100.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-09",
+    "stockSymbol": "VWRP.L",
+    "price": "99.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-08",
+    "stockSymbol": "VWRP.L",
+    "price": "100.5000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-05",
+    "stockSymbol": "VWRP.L",
+    "price": "100.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-04",
+    "stockSymbol": "VWRP.L",
+    "price": "100.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-03",
+    "stockSymbol": "VWRP.L",
+    "price": "100.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-04-02",
+    "stockSymbol": "VWRP.L",
+    "price": "100.6300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-28",
+    "stockSymbol": "VWRP.L",
+    "price": "101.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-27",
+    "stockSymbol": "VWRP.L",
+    "price": "100.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-26",
+    "stockSymbol": "VWRP.L",
+    "price": "100.8000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-25",
+    "stockSymbol": "VWRP.L",
+    "price": "100.5600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-22",
+    "stockSymbol": "VWRP.L",
+    "price": "100.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-21",
+    "stockSymbol": "VWRP.L",
+    "price": "100.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-20",
+    "stockSymbol": "VWRP.L",
+    "price": "99.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-19",
+    "stockSymbol": "VWRP.L",
+    "price": "98.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-18",
+    "stockSymbol": "VWRP.L",
+    "price": "98.8750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-15",
+    "stockSymbol": "VWRP.L",
+    "price": "98.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-14",
+    "stockSymbol": "VWRP.L",
+    "price": "98.5800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-13",
+    "stockSymbol": "VWRP.L",
+    "price": "98.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-12",
+    "stockSymbol": "VWRP.L",
+    "price": "98.6300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-11",
+    "stockSymbol": "VWRP.L",
+    "price": "97.6400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-08",
+    "stockSymbol": "VWRP.L",
+    "price": "98.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-07",
+    "stockSymbol": "VWRP.L",
+    "price": "98.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-06",
+    "stockSymbol": "VWRP.L",
+    "price": "98.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-05",
+    "stockSymbol": "VWRP.L",
+    "price": "97.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-04",
+    "stockSymbol": "VWRP.L",
+    "price": "98.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-03-01",
+    "stockSymbol": "VWRP.L",
+    "price": "98.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-29",
+    "stockSymbol": "VWRP.L",
+    "price": "97.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-28",
+    "stockSymbol": "VWRP.L",
+    "price": "97.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-27",
+    "stockSymbol": "VWRP.L",
+    "price": "97.5200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-26",
+    "stockSymbol": "VWRP.L",
+    "price": "97.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-23",
+    "stockSymbol": "VWRP.L",
+    "price": "97.8250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-22",
+    "stockSymbol": "VWRP.L",
+    "price": "97.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-21",
+    "stockSymbol": "VWRP.L",
+    "price": "96.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-20",
+    "stockSymbol": "VWRP.L",
+    "price": "96.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-19",
+    "stockSymbol": "VWRP.L",
+    "price": "97.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-16",
+    "stockSymbol": "VWRP.L",
+    "price": "97.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-15",
+    "stockSymbol": "VWRP.L",
+    "price": "96.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-14",
+    "stockSymbol": "VWRP.L",
+    "price": "96.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-13",
+    "stockSymbol": "VWRP.L",
+    "price": "95.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-12",
+    "stockSymbol": "VWRP.L",
+    "price": "96.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-09",
+    "stockSymbol": "VWRP.L",
+    "price": "96.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-08",
+    "stockSymbol": "VWRP.L",
+    "price": "95.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-07",
+    "stockSymbol": "VWRP.L",
+    "price": "95.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-06",
+    "stockSymbol": "VWRP.L",
+    "price": "95.6700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-05",
+    "stockSymbol": "VWRP.L",
+    "price": "95.5200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-02",
+    "stockSymbol": "VWRP.L",
+    "price": "95.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-02-01",
+    "stockSymbol": "VWRP.L",
+    "price": "93.6300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-31",
+    "stockSymbol": "VWRP.L",
+    "price": "93.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-30",
+    "stockSymbol": "VWRP.L",
+    "price": "94.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-29",
+    "stockSymbol": "VWRP.L",
+    "price": "94.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-26",
+    "stockSymbol": "VWRP.L",
+    "price": "94.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-25",
+    "stockSymbol": "VWRP.L",
+    "price": "93.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-24",
+    "stockSymbol": "VWRP.L",
+    "price": "93.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-23",
+    "stockSymbol": "VWRP.L",
+    "price": "93.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-22",
+    "stockSymbol": "VWRP.L",
+    "price": "93.0600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-19",
+    "stockSymbol": "VWRP.L",
+    "price": "92.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-18",
+    "stockSymbol": "VWRP.L",
+    "price": "91.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-17",
+    "stockSymbol": "VWRP.L",
+    "price": "91.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-16",
+    "stockSymbol": "VWRP.L",
+    "price": "92.5600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-15",
+    "stockSymbol": "VWRP.L",
+    "price": "92.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-12",
+    "stockSymbol": "VWRP.L",
+    "price": "92.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-11",
+    "stockSymbol": "VWRP.L",
+    "price": "91.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-10",
+    "stockSymbol": "VWRP.L",
+    "price": "92.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-09",
+    "stockSymbol": "VWRP.L",
+    "price": "92.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-08",
+    "stockSymbol": "VWRP.L",
+    "price": "91.6300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-05",
+    "stockSymbol": "VWRP.L",
+    "price": "91.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-04",
+    "stockSymbol": "VWRP.L",
+    "price": "92.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-03",
+    "stockSymbol": "VWRP.L",
+    "price": "92.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2024-01-02",
+    "stockSymbol": "VWRP.L",
+    "price": "92.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-29",
+    "stockSymbol": "VWRP.L",
+    "price": "92.9400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-28",
+    "stockSymbol": "VWRP.L",
+    "price": "92.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-27",
+    "stockSymbol": "VWRP.L",
+    "price": "92.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-22",
+    "stockSymbol": "VWRP.L",
+    "price": "92.0450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-21",
+    "stockSymbol": "VWRP.L",
+    "price": "92.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-20",
+    "stockSymbol": "VWRP.L",
+    "price": "92.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-19",
+    "stockSymbol": "VWRP.L",
+    "price": "91.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-18",
+    "stockSymbol": "VWRP.L",
+    "price": "92.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-15",
+    "stockSymbol": "VWRP.L",
+    "price": "91.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-14",
+    "stockSymbol": "VWRP.L",
+    "price": "91.2600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-13",
+    "stockSymbol": "VWRP.L",
+    "price": "91.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-12",
+    "stockSymbol": "VWRP.L",
+    "price": "90.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-11",
+    "stockSymbol": "VWRP.L",
+    "price": "90.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-08",
+    "stockSymbol": "VWRP.L",
+    "price": "90.3150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-07",
+    "stockSymbol": "VWRP.L",
+    "price": "89.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-06",
+    "stockSymbol": "VWRP.L",
+    "price": "89.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-05",
+    "stockSymbol": "VWRP.L",
+    "price": "89.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-04",
+    "stockSymbol": "VWRP.L",
+    "price": "89.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-12-01",
+    "stockSymbol": "VWRP.L",
+    "price": "89.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-30",
+    "stockSymbol": "VWRP.L",
+    "price": "88.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-29",
+    "stockSymbol": "VWRP.L",
+    "price": "88.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-28",
+    "stockSymbol": "VWRP.L",
+    "price": "88.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-27",
+    "stockSymbol": "VWRP.L",
+    "price": "89.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-24",
+    "stockSymbol": "VWRP.L",
+    "price": "89.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-23",
+    "stockSymbol": "VWRP.L",
+    "price": "89.7550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-22",
+    "stockSymbol": "VWRP.L",
+    "price": "90.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-21",
+    "stockSymbol": "VWRP.L",
+    "price": "89.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-20",
+    "stockSymbol": "VWRP.L",
+    "price": "89.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-17",
+    "stockSymbol": "VWRP.L",
+    "price": "89.5400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-16",
+    "stockSymbol": "VWRP.L",
+    "price": "89.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-15",
+    "stockSymbol": "VWRP.L",
+    "price": "89.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-14",
+    "stockSymbol": "VWRP.L",
+    "price": "88.8950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-13",
+    "stockSymbol": "VWRP.L",
+    "price": "88.5000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-10",
+    "stockSymbol": "VWRP.L",
+    "price": "88.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-09",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-08",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-07",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-06",
+    "stockSymbol": "VWRP.L",
+    "price": "87.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-03",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-02",
+    "stockSymbol": "VWRP.L",
+    "price": "87.2650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-11-01",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-31",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-30",
+    "stockSymbol": "VWRP.L",
+    "price": "84.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-27",
+    "stockSymbol": "VWRP.L",
+    "price": "84.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-26",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-25",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-24",
+    "stockSymbol": "VWRP.L",
+    "price": "85.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-23",
+    "stockSymbol": "VWRP.L",
+    "price": "85.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-20",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-19",
+    "stockSymbol": "VWRP.L",
+    "price": "87.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-18",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-17",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-16",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-13",
+    "stockSymbol": "VWRP.L",
+    "price": "87.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-12",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-11",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-10",
+    "stockSymbol": "VWRP.L",
+    "price": "88.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-09",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-06",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-05",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-04",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-03",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-10-02",
+    "stockSymbol": "VWRP.L",
+    "price": "87.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-29",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-28",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-27",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-26",
+    "stockSymbol": "VWRP.L",
+    "price": "87.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-25",
+    "stockSymbol": "VWRP.L",
+    "price": "87.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-22",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-21",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-20",
+    "stockSymbol": "VWRP.L",
+    "price": "89.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-19",
+    "stockSymbol": "VWRP.L",
+    "price": "88.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-18",
+    "stockSymbol": "VWRP.L",
+    "price": "88.9150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-15",
+    "stockSymbol": "VWRP.L",
+    "price": "89.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-14",
+    "stockSymbol": "VWRP.L",
+    "price": "89.5350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-13",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-12",
+    "stockSymbol": "VWRP.L",
+    "price": "88.4250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-11",
+    "stockSymbol": "VWRP.L",
+    "price": "88.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-08",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-07",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-06",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-05",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-04",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-09-01",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-31",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-30",
+    "stockSymbol": "VWRP.L",
+    "price": "87.4650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-29",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-25",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-24",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-23",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-22",
+    "stockSymbol": "VWRP.L",
+    "price": "85.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-21",
+    "stockSymbol": "VWRP.L",
+    "price": "84.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-18",
+    "stockSymbol": "VWRP.L",
+    "price": "84.5800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-17",
+    "stockSymbol": "VWRP.L",
+    "price": "85.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-16",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-15",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-14",
+    "stockSymbol": "VWRP.L",
+    "price": "87.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-11",
+    "stockSymbol": "VWRP.L",
+    "price": "86.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-10",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-09",
+    "stockSymbol": "VWRP.L",
+    "price": "87.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-08",
+    "stockSymbol": "VWRP.L",
+    "price": "87.0450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-07",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-04",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-03",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-02",
+    "stockSymbol": "VWRP.L",
+    "price": "87.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-08-01",
+    "stockSymbol": "VWRP.L",
+    "price": "89.0050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-31",
+    "stockSymbol": "VWRP.L",
+    "price": "88.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-28",
+    "stockSymbol": "VWRP.L",
+    "price": "88.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-27",
+    "stockSymbol": "VWRP.L",
+    "price": "88.6400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-26",
+    "stockSymbol": "VWRP.L",
+    "price": "87.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-25",
+    "stockSymbol": "VWRP.L",
+    "price": "88.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-24",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-21",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-20",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-19",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-18",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-17",
+    "stockSymbol": "VWRP.L",
+    "price": "85.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-14",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-13",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-12",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-11",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-10",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-07",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-06",
+    "stockSymbol": "VWRP.L",
+    "price": "85.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-05",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-04",
+    "stockSymbol": "VWRP.L",
+    "price": "86.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-07-03",
+    "stockSymbol": "VWRP.L",
+    "price": "87.1100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-30",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-29",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-28",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-27",
+    "stockSymbol": "VWRP.L",
+    "price": "85.1050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-26",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-23",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-22",
+    "stockSymbol": "VWRP.L",
+    "price": "85.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-21",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-20",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-19",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-16",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-15",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-14",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-13",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-12",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-09",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-08",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-07",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-06",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-05",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-02",
+    "stockSymbol": "VWRP.L",
+    "price": "85.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-06-01",
+    "stockSymbol": "VWRP.L",
+    "price": "84.0600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-31",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-30",
+    "stockSymbol": "VWRP.L",
+    "price": "84.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-26",
+    "stockSymbol": "VWRP.L",
+    "price": "85.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-25",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-24",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-23",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-22",
+    "stockSymbol": "VWRP.L",
+    "price": "85.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-19",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-18",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-17",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-16",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-15",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-12",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-11",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-10",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-09",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-05",
+    "stockSymbol": "VWRP.L",
+    "price": "83.0700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-04",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-03",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-05-02",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-28",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-27",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-26",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-25",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-24",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-21",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-20",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-19",
+    "stockSymbol": "VWRP.L",
+    "price": "84.4950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-18",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-17",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-14",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-13",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-12",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-11",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-06",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-05",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-04",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-04-03",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-31",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-30",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-29",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-28",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-27",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-24",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-23",
+    "stockSymbol": "VWRP.L",
+    "price": "82.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-22",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-21",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-20",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-17",
+    "stockSymbol": "VWRP.L",
+    "price": "81.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-16",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-15",
+    "stockSymbol": "VWRP.L",
+    "price": "80.6700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-14",
+    "stockSymbol": "VWRP.L",
+    "price": "81.8950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-13",
+    "stockSymbol": "VWRP.L",
+    "price": "81.2250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-10",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-09",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-08",
+    "stockSymbol": "VWRP.L",
+    "price": "85.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-07",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-06",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-03",
+    "stockSymbol": "VWRP.L",
+    "price": "85.2600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-02",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-03-01",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-28",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-27",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-24",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-23",
+    "stockSymbol": "VWRP.L",
+    "price": "84.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-22",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-21",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-20",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-17",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-16",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-15",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-14",
+    "stockSymbol": "VWRP.L",
+    "price": "85.5900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-13",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-10",
+    "stockSymbol": "VWRP.L",
+    "price": "85.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-09",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-08",
+    "stockSymbol": "VWRP.L",
+    "price": "86.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-07",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-06",
+    "stockSymbol": "VWRP.L",
+    "price": "86.5200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-03",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-02",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-02-01",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-31",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-30",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-27",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-26",
+    "stockSymbol": "VWRP.L",
+    "price": "83.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-25",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-24",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-23",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-20",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-19",
+    "stockSymbol": "VWRP.L",
+    "price": "81.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-18",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-17",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-16",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-13",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-12",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-11",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-10",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-09",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-06",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-05",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-04",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2023-01-03",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-30",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-29",
+    "stockSymbol": "VWRP.L",
+    "price": "80.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-28",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-23",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-22",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-21",
+    "stockSymbol": "VWRP.L",
+    "price": "80.8000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-20",
+    "stockSymbol": "VWRP.L",
+    "price": "79.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-19",
+    "stockSymbol": "VWRP.L",
+    "price": "79.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-16",
+    "stockSymbol": "VWRP.L",
+    "price": "79.5550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-15",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-14",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-13",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-12",
+    "stockSymbol": "VWRP.L",
+    "price": "80.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-09",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-08",
+    "stockSymbol": "VWRP.L",
+    "price": "81.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-07",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-06",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-05",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-02",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-12-01",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-30",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-29",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-28",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-25",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-24",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-23",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-22",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-21",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-18",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-17",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-16",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-15",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-14",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-11",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-10",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-09",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-08",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-07",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-04",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-03",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-02",
+    "stockSymbol": "VWRP.L",
+    "price": "81.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-11-01",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-31",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-28",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-27",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-26",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-25",
+    "stockSymbol": "VWRP.L",
+    "price": "80.8450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-24",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-21",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-20",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-19",
+    "stockSymbol": "VWRP.L",
+    "price": "80.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-18",
+    "stockSymbol": "VWRP.L",
+    "price": "79.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-17",
+    "stockSymbol": "VWRP.L",
+    "price": "78.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-14",
+    "stockSymbol": "VWRP.L",
+    "price": "78.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-13",
+    "stockSymbol": "VWRP.L",
+    "price": "78.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-12",
+    "stockSymbol": "VWRP.L",
+    "price": "79.3150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-11",
+    "stockSymbol": "VWRP.L",
+    "price": "79.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-10",
+    "stockSymbol": "VWRP.L",
+    "price": "80.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-07",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-06",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-05",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-04",
+    "stockSymbol": "VWRP.L",
+    "price": "81.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-10-03",
+    "stockSymbol": "VWRP.L",
+    "price": "79.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-30",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-29",
+    "stockSymbol": "VWRP.L",
+    "price": "80.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-28",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-27",
+    "stockSymbol": "VWRP.L",
+    "price": "83.0550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-26",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-23",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-22",
+    "stockSymbol": "VWRP.L",
+    "price": "81.8050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-21",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-20",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-16",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-15",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-14",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-13",
+    "stockSymbol": "VWRP.L",
+    "price": "84.5850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-12",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-09",
+    "stockSymbol": "VWRP.L",
+    "price": "85.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-08",
+    "stockSymbol": "VWRP.L",
+    "price": "84.6950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-07",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-06",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-05",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-02",
+    "stockSymbol": "VWRP.L",
+    "price": "84.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-09-01",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-31",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-30",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-26",
+    "stockSymbol": "VWRP.L",
+    "price": "85.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-25",
+    "stockSymbol": "VWRP.L",
+    "price": "85.9450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-24",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-23",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-22",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-19",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-18",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-17",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-16",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-15",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-12",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-11",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-10",
+    "stockSymbol": "VWRP.L",
+    "price": "84.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-09",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-08",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-05",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-04",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-03",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-02",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-08-01",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-29",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-28",
+    "stockSymbol": "VWRP.L",
+    "price": "82.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-27",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-26",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-25",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-22",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-21",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-20",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-19",
+    "stockSymbol": "VWRP.L",
+    "price": "80.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-18",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-15",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-14",
+    "stockSymbol": "VWRP.L",
+    "price": "78.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-13",
+    "stockSymbol": "VWRP.L",
+    "price": "79.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-12",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-11",
+    "stockSymbol": "VWRP.L",
+    "price": "80.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-08",
+    "stockSymbol": "VWRP.L",
+    "price": "80.5950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-07",
+    "stockSymbol": "VWRP.L",
+    "price": "80.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-06",
+    "stockSymbol": "VWRP.L",
+    "price": "79.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-05",
+    "stockSymbol": "VWRP.L",
+    "price": "78.2750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-04",
+    "stockSymbol": "VWRP.L",
+    "price": "78.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-07-01",
+    "stockSymbol": "VWRP.L",
+    "price": "78.5900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-30",
+    "stockSymbol": "VWRP.L",
+    "price": "77.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-29",
+    "stockSymbol": "VWRP.L",
+    "price": "78.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-28",
+    "stockSymbol": "VWRP.L",
+    "price": "79.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-27",
+    "stockSymbol": "VWRP.L",
+    "price": "79.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-24",
+    "stockSymbol": "VWRP.L",
+    "price": "78.8400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-23",
+    "stockSymbol": "VWRP.L",
+    "price": "77.1100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-22",
+    "stockSymbol": "VWRP.L",
+    "price": "77.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-21",
+    "stockSymbol": "VWRP.L",
+    "price": "77.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-20",
+    "stockSymbol": "VWRP.L",
+    "price": "76.3950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-17",
+    "stockSymbol": "VWRP.L",
+    "price": "75.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-16",
+    "stockSymbol": "VWRP.L",
+    "price": "75.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-15",
+    "stockSymbol": "VWRP.L",
+    "price": "78.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-14",
+    "stockSymbol": "VWRP.L",
+    "price": "78.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-13",
+    "stockSymbol": "VWRP.L",
+    "price": "77.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-10",
+    "stockSymbol": "VWRP.L",
+    "price": "79.5050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-09",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-08",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-07",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-06",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-06-01",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-31",
+    "stockSymbol": "VWRP.L",
+    "price": "81.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-30",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-27",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-26",
+    "stockSymbol": "VWRP.L",
+    "price": "80.5850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-25",
+    "stockSymbol": "VWRP.L",
+    "price": "79.4300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-24",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-23",
+    "stockSymbol": "VWRP.L",
+    "price": "79.4650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-20",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-19",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-18",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-17",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-16",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-13",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-12",
+    "stockSymbol": "VWRP.L",
+    "price": "79.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-11",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-10",
+    "stockSymbol": "VWRP.L",
+    "price": "79.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-09",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-06",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-05",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-04",
+    "stockSymbol": "VWRP.L",
+    "price": "82.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-05-03",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-29",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-28",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-27",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-26",
+    "stockSymbol": "VWRP.L",
+    "price": "82.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-25",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-22",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-21",
+    "stockSymbol": "VWRP.L",
+    "price": "84.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-20",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-19",
+    "stockSymbol": "VWRP.L",
+    "price": "84.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-14",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-13",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-12",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-11",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-08",
+    "stockSymbol": "VWRP.L",
+    "price": "85.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-07",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-06",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-05",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-04",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-04-01",
+    "stockSymbol": "VWRP.L",
+    "price": "85.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-31",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-30",
+    "stockSymbol": "VWRP.L",
+    "price": "86.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-29",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-28",
+    "stockSymbol": "VWRP.L",
+    "price": "85.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-25",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-24",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-23",
+    "stockSymbol": "VWRP.L",
+    "price": "84.0850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-22",
+    "stockSymbol": "VWRP.L",
+    "price": "84.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-21",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-18",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-17",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-16",
+    "stockSymbol": "VWRP.L",
+    "price": "82.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-15",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-14",
+    "stockSymbol": "VWRP.L",
+    "price": "79.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-11",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-10",
+    "stockSymbol": "VWRP.L",
+    "price": "79.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-09",
+    "stockSymbol": "VWRP.L",
+    "price": "80.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-08",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-07",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-04",
+    "stockSymbol": "VWRP.L",
+    "price": "80.2050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-03",
+    "stockSymbol": "VWRP.L",
+    "price": "81.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-02",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-03-01",
+    "stockSymbol": "VWRP.L",
+    "price": "81.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-28",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-25",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-24",
+    "stockSymbol": "VWRP.L",
+    "price": "78.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-23",
+    "stockSymbol": "VWRP.L",
+    "price": "80.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-22",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-21",
+    "stockSymbol": "VWRP.L",
+    "price": "80.3450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-18",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-17",
+    "stockSymbol": "VWRP.L",
+    "price": "82.2950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-16",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-15",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-14",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-11",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-10",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-09",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-08",
+    "stockSymbol": "VWRP.L",
+    "price": "83.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-07",
+    "stockSymbol": "VWRP.L",
+    "price": "83.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-04",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-03",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-02",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-02-01",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-31",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-28",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-27",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-26",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-25",
+    "stockSymbol": "VWRP.L",
+    "price": "81.2050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-24",
+    "stockSymbol": "VWRP.L",
+    "price": "80.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-21",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-20",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-19",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-18",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-17",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-14",
+    "stockSymbol": "VWRP.L",
+    "price": "85.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-13",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-12",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-11",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-10",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-07",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-06",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-05",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2022-01-04",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-31",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-30",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-29",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-24",
+    "stockSymbol": "VWRP.L",
+    "price": "87.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-23",
+    "stockSymbol": "VWRP.L",
+    "price": "87.5900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-22",
+    "stockSymbol": "VWRP.L",
+    "price": "87.0750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-21",
+    "stockSymbol": "VWRP.L",
+    "price": "86.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-20",
+    "stockSymbol": "VWRP.L",
+    "price": "85.5200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-17",
+    "stockSymbol": "VWRP.L",
+    "price": "87.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-16",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-15",
+    "stockSymbol": "VWRP.L",
+    "price": "86.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-14",
+    "stockSymbol": "VWRP.L",
+    "price": "86.6850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-13",
+    "stockSymbol": "VWRP.L",
+    "price": "87.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-10",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-09",
+    "stockSymbol": "VWRP.L",
+    "price": "88.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-08",
+    "stockSymbol": "VWRP.L",
+    "price": "88.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-07",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-06",
+    "stockSymbol": "VWRP.L",
+    "price": "86.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-03",
+    "stockSymbol": "VWRP.L",
+    "price": "85.5500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-02",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-12-01",
+    "stockSymbol": "VWRP.L",
+    "price": "87.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-30",
+    "stockSymbol": "VWRP.L",
+    "price": "86.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-29",
+    "stockSymbol": "VWRP.L",
+    "price": "86.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-26",
+    "stockSymbol": "VWRP.L",
+    "price": "85.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-25",
+    "stockSymbol": "VWRP.L",
+    "price": "88.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-24",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-23",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-22",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-19",
+    "stockSymbol": "VWRP.L",
+    "price": "87.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-18",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-17",
+    "stockSymbol": "VWRP.L",
+    "price": "87.9150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-16",
+    "stockSymbol": "VWRP.L",
+    "price": "88.5050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-15",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-12",
+    "stockSymbol": "VWRP.L",
+    "price": "88.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-11",
+    "stockSymbol": "VWRP.L",
+    "price": "88.0700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-10",
+    "stockSymbol": "VWRP.L",
+    "price": "87.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-09",
+    "stockSymbol": "VWRP.L",
+    "price": "87.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-08",
+    "stockSymbol": "VWRP.L",
+    "price": "87.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-05",
+    "stockSymbol": "VWRP.L",
+    "price": "87.8650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-04",
+    "stockSymbol": "VWRP.L",
+    "price": "87.4250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-03",
+    "stockSymbol": "VWRP.L",
+    "price": "85.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-02",
+    "stockSymbol": "VWRP.L",
+    "price": "86.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-11-01",
+    "stockSymbol": "VWRP.L",
+    "price": "85.6400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-29",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-28",
+    "stockSymbol": "VWRP.L",
+    "price": "84.4950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-27",
+    "stockSymbol": "VWRP.L",
+    "price": "84.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-26",
+    "stockSymbol": "VWRP.L",
+    "price": "84.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-25",
+    "stockSymbol": "VWRP.L",
+    "price": "84.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-22",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-21",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-20",
+    "stockSymbol": "VWRP.L",
+    "price": "83.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-19",
+    "stockSymbol": "VWRP.L",
+    "price": "83.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-18",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-15",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-14",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-13",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-12",
+    "stockSymbol": "VWRP.L",
+    "price": "82.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-11",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-08",
+    "stockSymbol": "VWRP.L",
+    "price": "82.5550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-07",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-06",
+    "stockSymbol": "VWRP.L",
+    "price": "81.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-05",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-04",
+    "stockSymbol": "VWRP.L",
+    "price": "80.8050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-10-01",
+    "stockSymbol": "VWRP.L",
+    "price": "81.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-30",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-29",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-28",
+    "stockSymbol": "VWRP.L",
+    "price": "82.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-27",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-24",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-23",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-22",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-21",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-20",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-17",
+    "stockSymbol": "VWRP.L",
+    "price": "83.0050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-16",
+    "stockSymbol": "VWRP.L",
+    "price": "83.2650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-15",
+    "stockSymbol": "VWRP.L",
+    "price": "82.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-14",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-13",
+    "stockSymbol": "VWRP.L",
+    "price": "83.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-10",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-09",
+    "stockSymbol": "VWRP.L",
+    "price": "83.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-08",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-07",
+    "stockSymbol": "VWRP.L",
+    "price": "84.5500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-06",
+    "stockSymbol": "VWRP.L",
+    "price": "84.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-03",
+    "stockSymbol": "VWRP.L",
+    "price": "84.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-02",
+    "stockSymbol": "VWRP.L",
+    "price": "84.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-09-01",
+    "stockSymbol": "VWRP.L",
+    "price": "84.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-31",
+    "stockSymbol": "VWRP.L",
+    "price": "84.0850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-27",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-26",
+    "stockSymbol": "VWRP.L",
+    "price": "83.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-25",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-24",
+    "stockSymbol": "VWRP.L",
+    "price": "83.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-23",
+    "stockSymbol": "VWRP.L",
+    "price": "83.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-20",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-19",
+    "stockSymbol": "VWRP.L",
+    "price": "82.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-18",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-17",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-16",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-13",
+    "stockSymbol": "VWRP.L",
+    "price": "82.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-12",
+    "stockSymbol": "VWRP.L",
+    "price": "82.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-11",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-10",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-09",
+    "stockSymbol": "VWRP.L",
+    "price": "82.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-06",
+    "stockSymbol": "VWRP.L",
+    "price": "82.2250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-05",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-04",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-03",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-08-02",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-30",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-29",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-28",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-27",
+    "stockSymbol": "VWRP.L",
+    "price": "80.8300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-26",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-23",
+    "stockSymbol": "VWRP.L",
+    "price": "82.4200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-22",
+    "stockSymbol": "VWRP.L",
+    "price": "81.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-21",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-20",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-19",
+    "stockSymbol": "VWRP.L",
+    "price": "80.5800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-16",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-15",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-14",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-13",
+    "stockSymbol": "VWRP.L",
+    "price": "82.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-12",
+    "stockSymbol": "VWRP.L",
+    "price": "81.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-09",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-08",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-07",
+    "stockSymbol": "VWRP.L",
+    "price": "81.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-06",
+    "stockSymbol": "VWRP.L",
+    "price": "81.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-05",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-02",
+    "stockSymbol": "VWRP.L",
+    "price": "81.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-07-01",
+    "stockSymbol": "VWRP.L",
+    "price": "81.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-30",
+    "stockSymbol": "VWRP.L",
+    "price": "81.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-29",
+    "stockSymbol": "VWRP.L",
+    "price": "81.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-28",
+    "stockSymbol": "VWRP.L",
+    "price": "80.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-25",
+    "stockSymbol": "VWRP.L",
+    "price": "80.8750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-24",
+    "stockSymbol": "VWRP.L",
+    "price": "80.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-23",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-22",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-21",
+    "stockSymbol": "VWRP.L",
+    "price": "79.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-18",
+    "stockSymbol": "VWRP.L",
+    "price": "79.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-17",
+    "stockSymbol": "VWRP.L",
+    "price": "79.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-16",
+    "stockSymbol": "VWRP.L",
+    "price": "79.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-15",
+    "stockSymbol": "VWRP.L",
+    "price": "79.6900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-14",
+    "stockSymbol": "VWRP.L",
+    "price": "79.5450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-11",
+    "stockSymbol": "VWRP.L",
+    "price": "79.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-10",
+    "stockSymbol": "VWRP.L",
+    "price": "79.1550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-09",
+    "stockSymbol": "VWRP.L",
+    "price": "79.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-08",
+    "stockSymbol": "VWRP.L",
+    "price": "78.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-07",
+    "stockSymbol": "VWRP.L",
+    "price": "78.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-04",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-03",
+    "stockSymbol": "VWRP.L",
+    "price": "78.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-02",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-06-01",
+    "stockSymbol": "VWRP.L",
+    "price": "78.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-28",
+    "stockSymbol": "VWRP.L",
+    "price": "78.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-27",
+    "stockSymbol": "VWRP.L",
+    "price": "78.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-26",
+    "stockSymbol": "VWRP.L",
+    "price": "78.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-25",
+    "stockSymbol": "VWRP.L",
+    "price": "78.0700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-24",
+    "stockSymbol": "VWRP.L",
+    "price": "77.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-21",
+    "stockSymbol": "VWRP.L",
+    "price": "77.2950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-20",
+    "stockSymbol": "VWRP.L",
+    "price": "77.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-19",
+    "stockSymbol": "VWRP.L",
+    "price": "76.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-18",
+    "stockSymbol": "VWRP.L",
+    "price": "77.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-17",
+    "stockSymbol": "VWRP.L",
+    "price": "76.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-14",
+    "stockSymbol": "VWRP.L",
+    "price": "77.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-13",
+    "stockSymbol": "VWRP.L",
+    "price": "76.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-12",
+    "stockSymbol": "VWRP.L",
+    "price": "76.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-11",
+    "stockSymbol": "VWRP.L",
+    "price": "76.7250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-10",
+    "stockSymbol": "VWRP.L",
+    "price": "78.2650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-07",
+    "stockSymbol": "VWRP.L",
+    "price": "79.2350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-06",
+    "stockSymbol": "VWRP.L",
+    "price": "78.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-05",
+    "stockSymbol": "VWRP.L",
+    "price": "78.5000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-05-04",
+    "stockSymbol": "VWRP.L",
+    "price": "77.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-30",
+    "stockSymbol": "VWRP.L",
+    "price": "79.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-29",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-28",
+    "stockSymbol": "VWRP.L",
+    "price": "78.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-27",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-26",
+    "stockSymbol": "VWRP.L",
+    "price": "79.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-23",
+    "stockSymbol": "VWRP.L",
+    "price": "79.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-22",
+    "stockSymbol": "VWRP.L",
+    "price": "78.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-21",
+    "stockSymbol": "VWRP.L",
+    "price": "77.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-20",
+    "stockSymbol": "VWRP.L",
+    "price": "77.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-19",
+    "stockSymbol": "VWRP.L",
+    "price": "78.1650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-16",
+    "stockSymbol": "VWRP.L",
+    "price": "79.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-15",
+    "stockSymbol": "VWRP.L",
+    "price": "79.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-14",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-13",
+    "stockSymbol": "VWRP.L",
+    "price": "78.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-12",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-09",
+    "stockSymbol": "VWRP.L",
+    "price": "78.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-08",
+    "stockSymbol": "VWRP.L",
+    "price": "78.2850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-07",
+    "stockSymbol": "VWRP.L",
+    "price": "77.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-06",
+    "stockSymbol": "VWRP.L",
+    "price": "77.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-04-01",
+    "stockSymbol": "VWRP.L",
+    "price": "76.4350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-31",
+    "stockSymbol": "VWRP.L",
+    "price": "76.1300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-30",
+    "stockSymbol": "VWRP.L",
+    "price": "76.1600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-29",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-26",
+    "stockSymbol": "VWRP.L",
+    "price": "75.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-25",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-24",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-23",
+    "stockSymbol": "VWRP.L",
+    "price": "75.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-22",
+    "stockSymbol": "VWRP.L",
+    "price": "75.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-19",
+    "stockSymbol": "VWRP.L",
+    "price": "75.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-18",
+    "stockSymbol": "VWRP.L",
+    "price": "75.5950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-17",
+    "stockSymbol": "VWRP.L",
+    "price": "75.5200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-16",
+    "stockSymbol": "VWRP.L",
+    "price": "75.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-15",
+    "stockSymbol": "VWRP.L",
+    "price": "75.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-12",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-11",
+    "stockSymbol": "VWRP.L",
+    "price": "75.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-10",
+    "stockSymbol": "VWRP.L",
+    "price": "74.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-09",
+    "stockSymbol": "VWRP.L",
+    "price": "74.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-08",
+    "stockSymbol": "VWRP.L",
+    "price": "74.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-05",
+    "stockSymbol": "VWRP.L",
+    "price": "72.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-04",
+    "stockSymbol": "VWRP.L",
+    "price": "73.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-03",
+    "stockSymbol": "VWRP.L",
+    "price": "73.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-02",
+    "stockSymbol": "VWRP.L",
+    "price": "74.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-03-01",
+    "stockSymbol": "VWRP.L",
+    "price": "74.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-26",
+    "stockSymbol": "VWRP.L",
+    "price": "73.2050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-25",
+    "stockSymbol": "VWRP.L",
+    "price": "73.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-24",
+    "stockSymbol": "VWRP.L",
+    "price": "74.1450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-23",
+    "stockSymbol": "VWRP.L",
+    "price": "73.6100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-22",
+    "stockSymbol": "VWRP.L",
+    "price": "74.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-19",
+    "stockSymbol": "VWRP.L",
+    "price": "75.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-18",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-17",
+    "stockSymbol": "VWRP.L",
+    "price": "75.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-16",
+    "stockSymbol": "VWRP.L",
+    "price": "76.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-15",
+    "stockSymbol": "VWRP.L",
+    "price": "76.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-12",
+    "stockSymbol": "VWRP.L",
+    "price": "76.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-11",
+    "stockSymbol": "VWRP.L",
+    "price": "76.2100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-10",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-09",
+    "stockSymbol": "VWRP.L",
+    "price": "75.9050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-08",
+    "stockSymbol": "VWRP.L",
+    "price": "76.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-05",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-04",
+    "stockSymbol": "VWRP.L",
+    "price": "75.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-03",
+    "stockSymbol": "VWRP.L",
+    "price": "75.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-02",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-02-01",
+    "stockSymbol": "VWRP.L",
+    "price": "73.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-29",
+    "stockSymbol": "VWRP.L",
+    "price": "72.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-28",
+    "stockSymbol": "VWRP.L",
+    "price": "74.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-27",
+    "stockSymbol": "VWRP.L",
+    "price": "74.1250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-26",
+    "stockSymbol": "VWRP.L",
+    "price": "75.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-25",
+    "stockSymbol": "VWRP.L",
+    "price": "75.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-22",
+    "stockSymbol": "VWRP.L",
+    "price": "75.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-21",
+    "stockSymbol": "VWRP.L",
+    "price": "75.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-20",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-19",
+    "stockSymbol": "VWRP.L",
+    "price": "74.9350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-18",
+    "stockSymbol": "VWRP.L",
+    "price": "74.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-15",
+    "stockSymbol": "VWRP.L",
+    "price": "74.6750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-14",
+    "stockSymbol": "VWRP.L",
+    "price": "75.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-13",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-12",
+    "stockSymbol": "VWRP.L",
+    "price": "74.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-11",
+    "stockSymbol": "VWRP.L",
+    "price": "75.6900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-08",
+    "stockSymbol": "VWRP.L",
+    "price": "75.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-07",
+    "stockSymbol": "VWRP.L",
+    "price": "75.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-06",
+    "stockSymbol": "VWRP.L",
+    "price": "74.5450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-05",
+    "stockSymbol": "VWRP.L",
+    "price": "73.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2021-01-04",
+    "stockSymbol": "VWRP.L",
+    "price": "73.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-31",
+    "stockSymbol": "VWRP.L",
+    "price": "73.1250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-30",
+    "stockSymbol": "VWRP.L",
+    "price": "73.5600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-29",
+    "stockSymbol": "VWRP.L",
+    "price": "73.8100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-24",
+    "stockSymbol": "VWRP.L",
+    "price": "72.6000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-23",
+    "stockSymbol": "VWRP.L",
+    "price": "73.0050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-22",
+    "stockSymbol": "VWRP.L",
+    "price": "73.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-21",
+    "stockSymbol": "VWRP.L",
+    "price": "73.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-18",
+    "stockSymbol": "VWRP.L",
+    "price": "73.1750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-17",
+    "stockSymbol": "VWRP.L",
+    "price": "72.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-16",
+    "stockSymbol": "VWRP.L",
+    "price": "73.0050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-15",
+    "stockSymbol": "VWRP.L",
+    "price": "72.7100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-14",
+    "stockSymbol": "VWRP.L",
+    "price": "73.3450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-11",
+    "stockSymbol": "VWRP.L",
+    "price": "73.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-10",
+    "stockSymbol": "VWRP.L",
+    "price": "73.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-09",
+    "stockSymbol": "VWRP.L",
+    "price": "73.2250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-08",
+    "stockSymbol": "VWRP.L",
+    "price": "73.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-07",
+    "stockSymbol": "VWRP.L",
+    "price": "73.3400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-04",
+    "stockSymbol": "VWRP.L",
+    "price": "72.6350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-03",
+    "stockSymbol": "VWRP.L",
+    "price": "72.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-02",
+    "stockSymbol": "VWRP.L",
+    "price": "72.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-12-01",
+    "stockSymbol": "VWRP.L",
+    "price": "72.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-30",
+    "stockSymbol": "VWRP.L",
+    "price": "71.4500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-27",
+    "stockSymbol": "VWRP.L",
+    "price": "72.4200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-26",
+    "stockSymbol": "VWRP.L",
+    "price": "72.0750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-25",
+    "stockSymbol": "VWRP.L",
+    "price": "71.6250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-24",
+    "stockSymbol": "VWRP.L",
+    "price": "71.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-23",
+    "stockSymbol": "VWRP.L",
+    "price": "71.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-20",
+    "stockSymbol": "VWRP.L",
+    "price": "71.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-19",
+    "stockSymbol": "VWRP.L",
+    "price": "71.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-18",
+    "stockSymbol": "VWRP.L",
+    "price": "71.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-17",
+    "stockSymbol": "VWRP.L",
+    "price": "71.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-16",
+    "stockSymbol": "VWRP.L",
+    "price": "71.8750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-13",
+    "stockSymbol": "VWRP.L",
+    "price": "70.8750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-12",
+    "stockSymbol": "VWRP.L",
+    "price": "71.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-11",
+    "stockSymbol": "VWRP.L",
+    "price": "70.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-10",
+    "stockSymbol": "VWRP.L",
+    "price": "70.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-09",
+    "stockSymbol": "VWRP.L",
+    "price": "71.6650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-06",
+    "stockSymbol": "VWRP.L",
+    "price": "69.4350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-05",
+    "stockSymbol": "VWRP.L",
+    "price": "69.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-04",
+    "stockSymbol": "VWRP.L",
+    "price": "69.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-03",
+    "stockSymbol": "VWRP.L",
+    "price": "67.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-11-02",
+    "stockSymbol": "VWRP.L",
+    "price": "66.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-30",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-29",
+    "stockSymbol": "VWRP.L",
+    "price": "66.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-28",
+    "stockSymbol": "VWRP.L",
+    "price": "66.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-27",
+    "stockSymbol": "VWRP.L",
+    "price": "67.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-26",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-23",
+    "stockSymbol": "VWRP.L",
+    "price": "68.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-22",
+    "stockSymbol": "VWRP.L",
+    "price": "68.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-21",
+    "stockSymbol": "VWRP.L",
+    "price": "68.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-20",
+    "stockSymbol": "VWRP.L",
+    "price": "69.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-19",
+    "stockSymbol": "VWRP.L",
+    "price": "69.3100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-16",
+    "stockSymbol": "VWRP.L",
+    "price": "69.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-15",
+    "stockSymbol": "VWRP.L",
+    "price": "69.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-14",
+    "stockSymbol": "VWRP.L",
+    "price": "69.7450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-13",
+    "stockSymbol": "VWRP.L",
+    "price": "70.1250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-12",
+    "stockSymbol": "VWRP.L",
+    "price": "69.8400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-09",
+    "stockSymbol": "VWRP.L",
+    "price": "69.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-08",
+    "stockSymbol": "VWRP.L",
+    "price": "69.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-07",
+    "stockSymbol": "VWRP.L",
+    "price": "68.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-06",
+    "stockSymbol": "VWRP.L",
+    "price": "68.3900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-05",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-02",
+    "stockSymbol": "VWRP.L",
+    "price": "67.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-10-01",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-30",
+    "stockSymbol": "VWRP.L",
+    "price": "67.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-29",
+    "stockSymbol": "VWRP.L",
+    "price": "67.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-28",
+    "stockSymbol": "VWRP.L",
+    "price": "67.7800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-25",
+    "stockSymbol": "VWRP.L",
+    "price": "67.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-24",
+    "stockSymbol": "VWRP.L",
+    "price": "66.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-23",
+    "stockSymbol": "VWRP.L",
+    "price": "67.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-22",
+    "stockSymbol": "VWRP.L",
+    "price": "67.3650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-21",
+    "stockSymbol": "VWRP.L",
+    "price": "66.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-18",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-17",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-16",
+    "stockSymbol": "VWRP.L",
+    "price": "68.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-15",
+    "stockSymbol": "VWRP.L",
+    "price": "69.3200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-14",
+    "stockSymbol": "VWRP.L",
+    "price": "68.7400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-11",
+    "stockSymbol": "VWRP.L",
+    "price": "68.5150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-10",
+    "stockSymbol": "VWRP.L",
+    "price": "68.6600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-09",
+    "stockSymbol": "VWRP.L",
+    "price": "67.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-08",
+    "stockSymbol": "VWRP.L",
+    "price": "66.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-07",
+    "stockSymbol": "VWRP.L",
+    "price": "67.3950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-04",
+    "stockSymbol": "VWRP.L",
+    "price": "66.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-03",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-02",
+    "stockSymbol": "VWRP.L",
+    "price": "68.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-09-01",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-28",
+    "stockSymbol": "VWRP.L",
+    "price": "67.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-27",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-26",
+    "stockSymbol": "VWRP.L",
+    "price": "68.0150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-25",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-24",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-21",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-20",
+    "stockSymbol": "VWRP.L",
+    "price": "66.5900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-19",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-18",
+    "stockSymbol": "VWRP.L",
+    "price": "66.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-17",
+    "stockSymbol": "VWRP.L",
+    "price": "67.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-14",
+    "stockSymbol": "VWRP.L",
+    "price": "66.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-13",
+    "stockSymbol": "VWRP.L",
+    "price": "67.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-12",
+    "stockSymbol": "VWRP.L",
+    "price": "67.5000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-11",
+    "stockSymbol": "VWRP.L",
+    "price": "66.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-10",
+    "stockSymbol": "VWRP.L",
+    "price": "66.2050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-07",
+    "stockSymbol": "VWRP.L",
+    "price": "66.3250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-06",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-05",
+    "stockSymbol": "VWRP.L",
+    "price": "66.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-04",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-08-03",
+    "stockSymbol": "VWRP.L",
+    "price": "65.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-31",
+    "stockSymbol": "VWRP.L",
+    "price": "64.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-30",
+    "stockSymbol": "VWRP.L",
+    "price": "64.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-29",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-28",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-27",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-24",
+    "stockSymbol": "VWRP.L",
+    "price": "66.0450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-23",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-22",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-21",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-20",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-17",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-16",
+    "stockSymbol": "VWRP.L",
+    "price": "66.6400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-15",
+    "stockSymbol": "VWRP.L",
+    "price": "67.1550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-14",
+    "stockSymbol": "VWRP.L",
+    "price": "66.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-13",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-10",
+    "stockSymbol": "VWRP.L",
+    "price": "65.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-09",
+    "stockSymbol": "VWRP.L",
+    "price": "65.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-08",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-07",
+    "stockSymbol": "VWRP.L",
+    "price": "66.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-06",
+    "stockSymbol": "VWRP.L",
+    "price": "66.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-03",
+    "stockSymbol": "VWRP.L",
+    "price": "65.5350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-02",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-07-01",
+    "stockSymbol": "VWRP.L",
+    "price": "64.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-30",
+    "stockSymbol": "VWRP.L",
+    "price": "64.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-29",
+    "stockSymbol": "VWRP.L",
+    "price": "65.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-26",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-25",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-24",
+    "stockSymbol": "VWRP.L",
+    "price": "64.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-23",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-22",
+    "stockSymbol": "VWRP.L",
+    "price": "65.2200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-19",
+    "stockSymbol": "VWRP.L",
+    "price": "66.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-18",
+    "stockSymbol": "VWRP.L",
+    "price": "65.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-17",
+    "stockSymbol": "VWRP.L",
+    "price": "64.9300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-16",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-15",
+    "stockSymbol": "VWRP.L",
+    "price": "62.7600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-12",
+    "stockSymbol": "VWRP.L",
+    "price": "63.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-11",
+    "stockSymbol": "VWRP.L",
+    "price": "63.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-10",
+    "stockSymbol": "VWRP.L",
+    "price": "65.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-09",
+    "stockSymbol": "VWRP.L",
+    "price": "65.3800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-08",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-05",
+    "stockSymbol": "VWRP.L",
+    "price": "65.5850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-04",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-03",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-02",
+    "stockSymbol": "VWRP.L",
+    "price": "63.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-06-01",
+    "stockSymbol": "VWRP.L",
+    "price": "63.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-29",
+    "stockSymbol": "VWRP.L",
+    "price": "62.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-28",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-27",
+    "stockSymbol": "VWRP.L",
+    "price": "63.0250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-26",
+    "stockSymbol": "VWRP.L",
+    "price": "62.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-22",
+    "stockSymbol": "VWRP.L",
+    "price": "61.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-21",
+    "stockSymbol": "VWRP.L",
+    "price": "61.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-20",
+    "stockSymbol": "VWRP.L",
+    "price": "62.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-19",
+    "stockSymbol": "VWRP.L",
+    "price": "62.0000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-18",
+    "stockSymbol": "VWRP.L",
+    "price": "62.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-15",
+    "stockSymbol": "VWRP.L",
+    "price": "60.0150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-14",
+    "stockSymbol": "VWRP.L",
+    "price": "59.1750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-13",
+    "stockSymbol": "VWRP.L",
+    "price": "60.0750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-12",
+    "stockSymbol": "VWRP.L",
+    "price": "61.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-11",
+    "stockSymbol": "VWRP.L",
+    "price": "60.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-07",
+    "stockSymbol": "VWRP.L",
+    "price": "60.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-06",
+    "stockSymbol": "VWRP.L",
+    "price": "59.3950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-05",
+    "stockSymbol": "VWRP.L",
+    "price": "59.3450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-04",
+    "stockSymbol": "VWRP.L",
+    "price": "58.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-05-01",
+    "stockSymbol": "VWRP.L",
+    "price": "58.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-30",
+    "stockSymbol": "VWRP.L",
+    "price": "59.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-29",
+    "stockSymbol": "VWRP.L",
+    "price": "60.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-28",
+    "stockSymbol": "VWRP.L",
+    "price": "59.5500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-27",
+    "stockSymbol": "VWRP.L",
+    "price": "59.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-24",
+    "stockSymbol": "VWRP.L",
+    "price": "58.1800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-23",
+    "stockSymbol": "VWRP.L",
+    "price": "58.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-22",
+    "stockSymbol": "VWRP.L",
+    "price": "58.2000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-21",
+    "stockSymbol": "VWRP.L",
+    "price": "57.2250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-20",
+    "stockSymbol": "VWRP.L",
+    "price": "58.8050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-17",
+    "stockSymbol": "VWRP.L",
+    "price": "58.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-16",
+    "stockSymbol": "VWRP.L",
+    "price": "57.5550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-15",
+    "stockSymbol": "VWRP.L",
+    "price": "56.8050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-14",
+    "stockSymbol": "VWRP.L",
+    "price": "57.6850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-09",
+    "stockSymbol": "VWRP.L",
+    "price": "57.7350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-08",
+    "stockSymbol": "VWRP.L",
+    "price": "56.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-07",
+    "stockSymbol": "VWRP.L",
+    "price": "57.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-06",
+    "stockSymbol": "VWRP.L",
+    "price": "55.4250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-03",
+    "stockSymbol": "VWRP.L",
+    "price": "53.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-02",
+    "stockSymbol": "VWRP.L",
+    "price": "52.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-04-01",
+    "stockSymbol": "VWRP.L",
+    "price": "52.9850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-31",
+    "stockSymbol": "VWRP.L",
+    "price": "55.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-30",
+    "stockSymbol": "VWRP.L",
+    "price": "54.7250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-27",
+    "stockSymbol": "VWRP.L",
+    "price": "53.6250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-26",
+    "stockSymbol": "VWRP.L",
+    "price": "56.1750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-25",
+    "stockSymbol": "VWRP.L",
+    "price": "55.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-24",
+    "stockSymbol": "VWRP.L",
+    "price": "54.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-23",
+    "stockSymbol": "VWRP.L",
+    "price": "51.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-20",
+    "stockSymbol": "VWRP.L",
+    "price": "52.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-19",
+    "stockSymbol": "VWRP.L",
+    "price": "53.3000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-18",
+    "stockSymbol": "VWRP.L",
+    "price": "52.2250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-17",
+    "stockSymbol": "VWRP.L",
+    "price": "53.7000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-16",
+    "stockSymbol": "VWRP.L",
+    "price": "52.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-13",
+    "stockSymbol": "VWRP.L",
+    "price": "53.0100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-12",
+    "stockSymbol": "VWRP.L",
+    "price": "52.2350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-11",
+    "stockSymbol": "VWRP.L",
+    "price": "56.6250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-10",
+    "stockSymbol": "VWRP.L",
+    "price": "56.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-09",
+    "stockSymbol": "VWRP.L",
+    "price": "56.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-06",
+    "stockSymbol": "VWRP.L",
+    "price": "59.9750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-05",
+    "stockSymbol": "VWRP.L",
+    "price": "62.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-04",
+    "stockSymbol": "VWRP.L",
+    "price": "63.1000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-03",
+    "stockSymbol": "VWRP.L",
+    "price": "62.5450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-03-02",
+    "stockSymbol": "VWRP.L",
+    "price": "62.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-28",
+    "stockSymbol": "VWRP.L",
+    "price": "60.5350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-27",
+    "stockSymbol": "VWRP.L",
+    "price": "62.5700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-26",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-25",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-24",
+    "stockSymbol": "VWRP.L",
+    "price": "65.4650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-21",
+    "stockSymbol": "VWRP.L",
+    "price": "67.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-20",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-19",
+    "stockSymbol": "VWRP.L",
+    "price": "68.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-18",
+    "stockSymbol": "VWRP.L",
+    "price": "67.4550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-17",
+    "stockSymbol": "VWRP.L",
+    "price": "68.1450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-14",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-13",
+    "stockSymbol": "VWRP.L",
+    "price": "67.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-12",
+    "stockSymbol": "VWRP.L",
+    "price": "68.3550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-11",
+    "stockSymbol": "VWRP.L",
+    "price": "68.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-10",
+    "stockSymbol": "VWRP.L",
+    "price": "67.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-07",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-06",
+    "stockSymbol": "VWRP.L",
+    "price": "68.0250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-05",
+    "stockSymbol": "VWRP.L",
+    "price": "67.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-04",
+    "stockSymbol": "VWRP.L",
+    "price": "66.7750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-02-03",
+    "stockSymbol": "VWRP.L",
+    "price": "65.7650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-31",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-30",
+    "stockSymbol": "VWRP.L",
+    "price": "65.4750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-29",
+    "stockSymbol": "VWRP.L",
+    "price": "66.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-28",
+    "stockSymbol": "VWRP.L",
+    "price": "66.5450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-27",
+    "stockSymbol": "VWRP.L",
+    "price": "65.5850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-24",
+    "stockSymbol": "VWRP.L",
+    "price": "67.1200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-23",
+    "stockSymbol": "VWRP.L",
+    "price": "66.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-22",
+    "stockSymbol": "VWRP.L",
+    "price": "67.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-21",
+    "stockSymbol": "VWRP.L",
+    "price": "67.4800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-20",
+    "stockSymbol": "VWRP.L",
+    "price": "67.8950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-17",
+    "stockSymbol": "VWRP.L",
+    "price": "67.6800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-16",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-15",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-14",
+    "stockSymbol": "VWRP.L",
+    "price": "67.2700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-13",
+    "stockSymbol": "VWRP.L",
+    "price": "67.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-10",
+    "stockSymbol": "VWRP.L",
+    "price": "66.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-09",
+    "stockSymbol": "VWRP.L",
+    "price": "66.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-08",
+    "stockSymbol": "VWRP.L",
+    "price": "66.0850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-07",
+    "stockSymbol": "VWRP.L",
+    "price": "65.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-06",
+    "stockSymbol": "VWRP.L",
+    "price": "65.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-03",
+    "stockSymbol": "VWRP.L",
+    "price": "65.9550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2020-01-02",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-31",
+    "stockSymbol": "VWRP.L",
+    "price": "65.1350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-30",
+    "stockSymbol": "VWRP.L",
+    "price": "65.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-27",
+    "stockSymbol": "VWRP.L",
+    "price": "66.0900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-24",
+    "stockSymbol": "VWRP.L",
+    "price": "66.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-23",
+    "stockSymbol": "VWRP.L",
+    "price": "66.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-20",
+    "stockSymbol": "VWRP.L",
+    "price": "65.8450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-19",
+    "stockSymbol": "VWRP.L",
+    "price": "65.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-18",
+    "stockSymbol": "VWRP.L",
+    "price": "65.3350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-17",
+    "stockSymbol": "VWRP.L",
+    "price": "64.9800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-16",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-13",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2400",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-12",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-11",
+    "stockSymbol": "VWRP.L",
+    "price": "63.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-10",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-09",
+    "stockSymbol": "VWRP.L",
+    "price": "63.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-06",
+    "stockSymbol": "VWRP.L",
+    "price": "63.7550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-05",
+    "stockSymbol": "VWRP.L",
+    "price": "62.9450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-04",
+    "stockSymbol": "VWRP.L",
+    "price": "63.1900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-03",
+    "stockSymbol": "VWRP.L",
+    "price": "62.9700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-12-02",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-29",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-28",
+    "stockSymbol": "VWRP.L",
+    "price": "64.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-27",
+    "stockSymbol": "VWRP.L",
+    "price": "64.8200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-26",
+    "stockSymbol": "VWRP.L",
+    "price": "64.9100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-25",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-22",
+    "stockSymbol": "VWRP.L",
+    "price": "64.3500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-21",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-20",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-19",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-18",
+    "stockSymbol": "VWRP.L",
+    "price": "64.0450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-15",
+    "stockSymbol": "VWRP.L",
+    "price": "64.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-14",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-13",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-12",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-11",
+    "stockSymbol": "VWRP.L",
+    "price": "64.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-08",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-07",
+    "stockSymbol": "VWRP.L",
+    "price": "64.5750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-06",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-05",
+    "stockSymbol": "VWRP.L",
+    "price": "64.0200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-04",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-11-01",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-31",
+    "stockSymbol": "VWRP.L",
+    "price": "62.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-30",
+    "stockSymbol": "VWRP.L",
+    "price": "63.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-29",
+    "stockSymbol": "VWRP.L",
+    "price": "63.1150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-28",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-25",
+    "stockSymbol": "VWRP.L",
+    "price": "63.0250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-24",
+    "stockSymbol": "VWRP.L",
+    "price": "62.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-23",
+    "stockSymbol": "VWRP.L",
+    "price": "62.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-22",
+    "stockSymbol": "VWRP.L",
+    "price": "62.1700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-21",
+    "stockSymbol": "VWRP.L",
+    "price": "61.8550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-18",
+    "stockSymbol": "VWRP.L",
+    "price": "62.1250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-17",
+    "stockSymbol": "VWRP.L",
+    "price": "62.3050",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-16",
+    "stockSymbol": "VWRP.L",
+    "price": "62.2800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-15",
+    "stockSymbol": "VWRP.L",
+    "price": "62.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-14",
+    "stockSymbol": "VWRP.L",
+    "price": "62.9500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-11",
+    "stockSymbol": "VWRP.L",
+    "price": "62.8650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-10",
+    "stockSymbol": "VWRP.L",
+    "price": "63.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-09",
+    "stockSymbol": "VWRP.L",
+    "price": "63.4450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-08",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-07",
+    "stockSymbol": "VWRP.L",
+    "price": "63.5650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-04",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-03",
+    "stockSymbol": "VWRP.L",
+    "price": "62.2300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-02",
+    "stockSymbol": "VWRP.L",
+    "price": "62.5250",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-10-01",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-30",
+    "stockSymbol": "VWRP.L",
+    "price": "64.3300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-27",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-26",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-25",
+    "stockSymbol": "VWRP.L",
+    "price": "63.7950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-24",
+    "stockSymbol": "VWRP.L",
+    "price": "63.7700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-23",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9650",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-20",
+    "stockSymbol": "VWRP.L",
+    "price": "64.0800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-19",
+    "stockSymbol": "VWRP.L",
+    "price": "64.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-18",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-17",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8800",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-16",
+    "stockSymbol": "VWRP.L",
+    "price": "64.2500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-13",
+    "stockSymbol": "VWRP.L",
+    "price": "64.4150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-12",
+    "stockSymbol": "VWRP.L",
+    "price": "64.7850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-11",
+    "stockSymbol": "VWRP.L",
+    "price": "64.3600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-10",
+    "stockSymbol": "VWRP.L",
+    "price": "63.6950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-09",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-06",
+    "stockSymbol": "VWRP.L",
+    "price": "64.1500",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-05",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-04",
+    "stockSymbol": "VWRP.L",
+    "price": "63.7900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-03",
+    "stockSymbol": "VWRP.L",
+    "price": "63.5600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-09-02",
+    "stockSymbol": "VWRP.L",
+    "price": "63.8900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-30",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-29",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-28",
+    "stockSymbol": "VWRP.L",
+    "price": "62.4000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-27",
+    "stockSymbol": "VWRP.L",
+    "price": "61.9600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-23",
+    "stockSymbol": "VWRP.L",
+    "price": "62.0750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-22",
+    "stockSymbol": "VWRP.L",
+    "price": "62.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-21",
+    "stockSymbol": "VWRP.L",
+    "price": "63.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-20",
+    "stockSymbol": "VWRP.L",
+    "price": "63.2450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-19",
+    "stockSymbol": "VWRP.L",
+    "price": "63.5100",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-16",
+    "stockSymbol": "VWRP.L",
+    "price": "62.7300",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-15",
+    "stockSymbol": "VWRP.L",
+    "price": "62.0550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-14",
+    "stockSymbol": "VWRP.L",
+    "price": "62.6200",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-13",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-12",
+    "stockSymbol": "VWRP.L",
+    "price": "63.3750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-09",
+    "stockSymbol": "VWRP.L",
+    "price": "63.4850",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-08",
+    "stockSymbol": "VWRP.L",
+    "price": "63.6550",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-07",
+    "stockSymbol": "VWRP.L",
+    "price": "62.3700",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-06",
+    "stockSymbol": "VWRP.L",
+    "price": "62.2750",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-05",
+    "stockSymbol": "VWRP.L",
+    "price": "62.5350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-02",
+    "stockSymbol": "VWRP.L",
+    "price": "63.9000",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-08-01",
+    "stockSymbol": "VWRP.L",
+    "price": "65.6150",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-31",
+    "stockSymbol": "VWRP.L",
+    "price": "65.1950",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-30",
+    "stockSymbol": "VWRP.L",
+    "price": "65.4900",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-29",
+    "stockSymbol": "VWRP.L",
+    "price": "65.4600",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-26",
+    "stockSymbol": "VWRP.L",
+    "price": "64.6450",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-25",
+    "stockSymbol": "VWRP.L",
+    "price": "64.0350",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-24",
+    "stockSymbol": "VWRP.L",
+    "price": "64.2133",
+    "currency": "GBP"
+  },
+  {
+    "date": "2019-07-23",
+    "stockSymbol": "VWRP.L",
+    "price": "64.3216",
+    "currency": "GBP"
+  }
+]

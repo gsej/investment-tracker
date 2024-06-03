@@ -1,0 +1,155 @@
+[
+  {
+    "account_code": "SIPP",
+    "date": "2022-09-04",
+    "transaction": "Transfer In",
+    "description": "Xtrackers MSCI UK ESG ETF 1D \u00A3",
+    "quantity": 328,
+    "amount_gbp": 972.85,
+    "reference": "5IXZJTOZ"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-09-04",
+    "transaction": "Transfer In",
+    "description": "DB X-TRACKERS MSCI WLD TRN IDX UCITS ETF1",
+    "quantity": 96,
+    "amount_gbp": 1913.28,
+    "reference": "HMDUEF0T"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-09-04",
+    "transaction": "Transfer In",
+    "description": "iShares Core UK Gilts ETF GBP Dist",
+    "quantity": 43,
+    "amount_gbp": 523.53,
+    "reference": "SKW3THZI"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-19",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "quantity": 73,
+    "amount_gbp": 2442.22,
+    "reference": "XYTZ6NEY"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-11-19",
+    "transaction": "Purchase",
+    "description": "iShares FTSE 250 ETF GBP Dist",
+    "quantity": 129,
+    "amount_gbp": 1489.25,
+    "reference": "DTG9XZBA"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2022-12-10",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF",
+    "quantity": 28,
+    "amount_gbp": 968.48,
+    "reference": "8KTVSAKU"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-01-10",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF",
+    "quantity": 27,
+    "amount_gbp": 972.54,
+    "reference": "NW3BFOY1"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-02-11",
+    "transaction": "Purchase",
+    "description": "AstraZeneca PLC",
+    "quantity": 65,
+    "amount_gbp": 1974.55,
+    "reference": "MPAOS0M4"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-04-10",
+    "transaction": "Purchase",
+    "description": "NATIONAL GRID ORD GBP0.113953",
+    "quantity": 255,
+    "amount_gbp": 1995.16,
+    "reference": "AMZ4PJRH"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-10-10",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "quantity": 37,
+    "amount_gbp": 1462.74,
+    "reference": "MGGM3T46"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-10-11",
+    "transaction": "Purchase",
+    "description": "Royal Mail PLC",
+    "quantity": 227,
+    "amount_gbp": 749.1,
+    "reference": "VPSCHYJW"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-10-11",
+    "transaction": "Sale",
+    "description": "Royal Mail PLC",
+    "quantity": 227,
+    "amount_gbp": 980.46,
+    "reference": "9QA9NHTE"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-11-11",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "quantity": 73,
+    "amount_gbp": 2988,
+    "reference": "YDS8KKTW"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-11-15",
+    "transaction": "Receipt of stock following a corporate action",
+    "description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "quantity": 55,
+    "amount_gbp": 1941.02,
+    "reference": "EKVDH26P"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-11-15",
+    "transaction": "Removal of stock following a corporate action",
+    "description": "Vanguard FTSE All-World UCITS ETF",
+    "quantity": 55,
+    "amount_gbp": 1941.02,
+    "reference": "YDI6XHRA"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-12-10",
+    "transaction": "Purchase",
+    "description": "DIRECT LINE INS GR ORD GBP0.10",
+    "quantity": 871,
+    "amount_gbp": 1998.71,
+    "reference": "BFO7VAFO"
+  },
+  {
+    "account_code": "SIPP",
+    "date": "2023-12-10",
+    "transaction": "Purchase",
+    "description": "Vanguard FTSE All-World UCITS ETF GBP",
+    "quantity": 24,
+    "amount_gbp": 972.44,
+    "reference": "USMPJIFP"
+  }
+]
