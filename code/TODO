@@ -1,0 +1,13 @@
+make Stock.StockType not null
+
+check we have prices for all stocks in stock table
+
+foreign key from stockprice table to stock
+
+make StockTransaction.StockSymbol not null
+foreign key from StockTransacftion table to stock
+
+fix stamp duty values
+
+fix entries in StockTransaction where TransactionType is empty string
+
