@@ -25,20 +25,30 @@ There are sample files in the main repo.
 
 Price information for securities is from a variety of sources. Some historical data is downloaded from various sites usually in CSV format, and then manually converted into JSON.
 
-Other prices are pulled from various sources, ususally in JSON form. The code to do this sits in the other repository and the price data sits in a separate private repo. 
+Other prices are pulled from various sources, ususally in JSON form. The code to do this sits in the other repository and the price data sits in a separate private repo. Some sample price data exists in this repo. 
 
-The prices are collected as close of day prices, and as they are from different sources, there are often duplicates. Later when loading data, we take the first price encountered, and log warnings if we spot descrepancies that exceed 1%. This provides a certain quality control. 
+The prices are collected as close of day prices, and as they are from different sources, there are often duplicates. Later when loading data, we made load multiple prices for the same security 
+and date. This needs to be handled at the point of querying. Initially I filtered out duplicates on import, warning if there were large differences in price, but this made the import unacceptably slow.
 
+## The code folder
 
-## Code to clean the input data
+This contains C# code arranged in various projecfts.
 
-To follow....
+### AjBellParserConsole
 
-## The dotnet folder
+This is a console app which reads CSV files downloaded from AjBell from the SampleData folder and 
+converts the data to json files for use in later stages.
 
 ### LoaderConsole
 
-This solution contains a console application called LoaderConsole. It deletes and recreates a SQL datbase and loads all account and price data (and some others) 
+This is a console app which deletes and recreates a SQL database, and then loads a variety of data (located by default in the SampleData folder, but which can be configured to look for the data elsewhere). 
+
+Data loaded includes:
+* a list of investment accounts.
+* a list of the stocks we are interested in.
+* statements relating to the investment accounts (in json form, prepared by the AjBellParserConsole).
+* prices for the stocks we are interested in.
+* exchange rates.
 
 ### Api
 
@@ -51,22 +61,3 @@ This is a front end to present the data. It's not great right now....
 ### Others
 
 There are other library projects used by the Api and LoaderConsole
-
-Python programs to parse the cash statements and transaction history files downloaded from youinvest.
-
-
-
-## Below here needs cleaning up...
-
-
-## Instructions
-
-### Parsing CSV
-
-`parse_transaction_files.py` and `parse_cashstatement_files.py` take the CSV files from youinvest and emit JSON files (`transactions.json` and `cashstatement_items.json`) containing the relevant data in order.
-
-### Create account state for a particular time
-
-`process_transactions.py` reads the `transactions.json` file and outputs the securities held in an account at a particular time (currently it reads them all so produces the latest state).
-
-`process_cashstatement_items.py` does the same, producing the cash balance.  
