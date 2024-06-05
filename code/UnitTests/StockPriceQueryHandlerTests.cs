@@ -26,13 +26,13 @@ public class GetStockPriceTests : IDisposable, IAsyncDisposable
     }
 
     [Fact]
-    public async Task Handle_WhenNoStockPriceIsFound_ReturnsNull()
+    public async Task Handle_WhenNoStockPriceIsFound_ReturnsError()
     {
         // act
-        var stockPrice = await _context.GetStockPrice("ABC.L", "2029-10-10");
+        var stockPriceResult = await _context.GetStockPrice("ABC.L", "2029-10-10");
 
         // assert
-        stockPrice.Should().BeNull();
+        stockPriceResult.HasPrice.Should().BeFalse();
     }
     
     [Theory]

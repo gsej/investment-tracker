@@ -1,14 +1,11 @@
-﻿using System.Runtime.CompilerServices;
-using Database.Entities;
+﻿using Database.Entities;
 using Database.Repositories;
 using DataLoaders;
 using FileReaders.Prices;
 using FluentAssertions;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using UnitTests.Fakes;
-using StockPrice = FileReaders.Prices.StockPrice;
 
 namespace UnitTests.Loaders;
 
@@ -21,7 +18,6 @@ public class StockPriceLoaderTests
     public StockPriceLoaderTests()
     {
         _reader = Substitute.For<IStockPriceReader>();
-        var memoryCache = Substitute.For<IMemoryCache>();
         
         var stockRepository = Substitute.For<IStockRepository>();
         
@@ -32,7 +28,7 @@ public class StockPriceLoaderTests
         
         stockRepository.GetStocks().Returns(new List<Stock> {stock});
         
-        _loader = new StockPriceLoader(Substitute.For<ILogger<StockPriceLoader>>(), stockRepository, _stockPriceRepository, _reader, memoryCache);
+        _loader = new StockPriceLoader(Substitute.For<ILogger<StockPriceLoader>>(), stockRepository, _stockPriceRepository, _reader);
         
     }
     
