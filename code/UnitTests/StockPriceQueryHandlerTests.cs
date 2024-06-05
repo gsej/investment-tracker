@@ -46,7 +46,7 @@ public class GetStockPriceTests : IDisposable, IAsyncDisposable
         var stock = new Stock.StockBuilder("ABC.L", "some stock", StockTypes.Share).Build();
         _context.Stocks.Add(stock);
 
-        var expectedStockPrice = new StockPrice(stock.StockSymbol, "2023-01-01", 100m, "GBP", "CI");
+        var expectedStockPrice = new StockPrice(stock.StockSymbol, "2023-01-01", 100m, "GBP", "CI", "GBP");
         _context.StockPrices.Add(expectedStockPrice);
 
         await _context.SaveChangesAsync();
@@ -68,13 +68,13 @@ public class GetStockPriceTests : IDisposable, IAsyncDisposable
         var stock = new Stock.StockBuilder("ABC.L", "some stock", StockTypes.Share).Build();
         _context.Stocks.Add(stock);
         
-        var olderStockPrice = new StockPrice(stock.StockSymbol, "2023-01-01", 90m, "GBP", "CI");
+        var olderStockPrice = new StockPrice(stock.StockSymbol, "2023-01-01", 90m, "GBP", "CI", "GBP");
         _context.StockPrices.Add(olderStockPrice);
         
-        var expectedStockPrice = new StockPrice(stock.StockSymbol, "2023-01-15", 100m, "GBP", "CI");
+        var expectedStockPrice = new StockPrice(stock.StockSymbol, "2023-01-15", 100m, "GBP", "CI", "GBP");
         _context.StockPrices.Add(expectedStockPrice);
         
-        var futureStockPrice = new StockPrice(stock.StockSymbol, "2023-01-31", 120m, "GBP", "CI");
+        var futureStockPrice = new StockPrice(stock.StockSymbol, "2023-01-31", 120m, "GBP", "CI", "GBP");
         _context.StockPrices.Add(futureStockPrice);
 
         await _context.SaveChangesAsync();

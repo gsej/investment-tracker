@@ -1,11 +1,14 @@
 ﻿using Database.Entities;
 using Database.Repositories;
+using Database.ValueTypes;
 using DataLoaders;
 using FileReaders.Prices;
 using FluentAssertions;
+using FluentAssertions.Execution;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using UnitTests.Fakes;
+using StockPrice = FileReaders.Prices.StockPrice;
 
 namespace UnitTests.Loaders;
 
@@ -20,28 +23,29 @@ public class StockPriceLoaderTests
         _reader = Substitute.For<IStockPriceReader>();
         
         var stockRepository = Substitute.For<IStockRepository>();
-        
-        var stock = new Stock
+
+        var stocks = new List<Stock>
         {
-            StockSymbol = "SMT.L"
+            new Stock.StockBuilder("VWRL.L", "", StockTypes.Etf).Build(),
+            new Stock.StockBuilder("SMT.L", "", StockTypes.Share).Build(),
         };
         
-        stockRepository.GetStocks().Returns(new List<Stock> {stock});
+        stockRepository.GetStocks().Returns(stocks);
         
         _loader = new StockPriceLoader(Substitute.For<ILogger<StockPriceLoader>>(), stockRepository, _stockPriceRepository, _reader);
         
     }
     
     [Fact]
-    public async Task LoadFile_WithNoPreexistingPrice_SavesStockPrices()
+    public async Task LoadFile_SavesStockPrices()
     {
         // arrange
         var fileName = "test.json";
-        var price = 123.21m;
+        var price = 102.07m;
 
-        var readStockPrice = new global::FileReaders.Prices.StockPrice("SMT.L", "2022-05-20", price.ToString("F2"), "GBp");
+        var readStockPrice = new StockPrice("VWRL.L", "2022-05-20", price.ToString("F2"), "GBP");
         
-        _reader.ReadFile(fileName).Returns(new List<global::FileReaders.Prices.StockPrice> {readStockPrice});
+        _reader.ReadFile(fileName).Returns(new List<StockPrice> {readStockPrice});
         
         // act
         await _loader.LoadFile(fileName, source: "Test", true);
@@ -53,6 +57,32 @@ public class StockPriceLoaderTests
         addedStock.Currency.Should().Be(readStockPrice.Currency);
         addedStock.Price.Should().Be(price);
         addedStock.Source.Should().Be("Test");
+        addedStock.OriginalCurrency.Should().Be("GBP");
+    }
+    
+    [Fact]
+    public async Task LoadFile_WhenStockPriceIsInGBp_ConvertsPriceToGBP()
+    {
+        // arrange
+        var fileName = "test.json";
+        var price = 899.12m;
+
+        var readStockPrice = new StockPrice("SMT.L", "2022-05-20", price.ToString("F2"), "GBp");
+        
+        _reader.ReadFile(fileName).Returns(new List<StockPrice> {readStockPrice});
+        
+        // act
+        await _loader.LoadFile(fileName, source: "Test", true);
+        
+        // assert
+        var addedStock = _stockPriceRepository.StockPrices.Single();
+
+        using var _ = new AssertionScope();
+        addedStock.StockSymbol.Should().Be(readStockPrice.StockSymbol);
+        addedStock.Currency.Should().Be("GBP");
+        addedStock.Price.Should().Be(price / 100);
+        addedStock.Source.Should().Be("Test");
+        addedStock.OriginalCurrency.Should().Be("GBp");
     }
     
     [Fact]

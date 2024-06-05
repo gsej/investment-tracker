@@ -8,13 +8,14 @@ namespace Database.Entities;
 [Table("StockPrice")]
 public class StockPrice
 {
-    public StockPrice(string stockSymbol, string date, decimal price, string currency, string source)
+    public StockPrice(string stockSymbol, string date, decimal price, string currency, string source, string originalCurrency)
     {
         StockSymbol = stockSymbol;
         Date = date;
         Price = price;
         Currency = currency;
         Source = source;
+        OriginalCurrency = originalCurrency;
     }
 
     [Key]
@@ -34,11 +35,15 @@ public class StockPrice
     [Required]
     public decimal Price { get; set; }
     
-    //[Required]
+    [Required]
     [MaxLength(10)]
     public string Currency { get; set; }
     
     //  [Required]
     [MaxLength(100)]
     public string Source { get; set; }
+    
+    [Required]
+    [MaxLength(10)]
+    public string OriginalCurrency { get; set; }
 }
