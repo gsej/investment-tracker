@@ -49,6 +49,9 @@ public class InvestmentsDbContext : DbContext
         modelBuilder.Entity<StockPrice>().Property(a => a.Currency)
             .UseCollation("SQL_Latin1_General_CP1_CS_AS");
         
+        modelBuilder.Entity<StockPrice>().Property(a => a.OriginalCurrency)
+            .UseCollation("SQL_Latin1_General_CP1_CS_AS");
+        
         modelBuilder.Entity<ExchangeRate>().Property(a => a.BaseCurrency)
             .UseCollation("SQL_Latin1_General_CP1_CS_AS");
         
