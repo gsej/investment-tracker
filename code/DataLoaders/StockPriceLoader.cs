@@ -1,3 +1,4 @@
+using Common.Extensions;
 using Common.Tracing;
 using Database.Entities;
 using Database.Repositories;
@@ -12,20 +13,26 @@ public class StockPriceLoader
     private readonly ILogger<StockPriceLoader> _logger;
     private readonly IStockRepository _stockRepository;
     private readonly IStockPriceRepository _stockPriceRepository;
+    private readonly IExchangeRateRepository _exchangeRateRepository;
     private readonly IStockPriceReader _reader;
+    private readonly ExchangeRateFetcher _exchangeRateFetcher;
     private IList<Stock> _stocks;
+    private IList<ExchangeRate> _exchangeRates;
    
     public StockPriceLoader(
         ILogger<StockPriceLoader> logger,
         IStockRepository stockRepository,
         IStockPriceRepository stockPriceRepository,
+        IExchangeRateRepository exchangeRateRepository,
         IStockPriceReader reader
     )
     {
         _logger = logger;
         _stockRepository = stockRepository;
         _stockPriceRepository = stockPriceRepository;
+        _exchangeRateRepository = exchangeRateRepository;
         _reader = reader;
+        _exchangeRateFetcher = new ExchangeRateFetcher();
     }
 
     public async Task LoadFile(string fileName, string source, bool deduplicate)
@@ -33,7 +40,10 @@ public class StockPriceLoader
         using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
+            // Preload stocks and exchange rates.
+            // TODO: check that we are only going to the db once per run for this.
             _stocks = await _stockRepository.GetStocks();
+            _exchangeRates = await _exchangeRateRepository.GetAll();
 
             _logger.LogInformation("Loading stock prices from {fileName}", fileName);
 
@@ -77,16 +87,32 @@ public class StockPriceLoader
                     continue;
                 }
 
-                string date = stockPriceDto.Date.Substring(0, 10);
-
-                
+                var date = stockPriceDto.Date.ToDateOnly();
                 var currency = stockPriceDto.Currency;
+                int? exchangeRateAgeInDays = null;
+                string comment = null;
 
                 if (currency.Equals("GBp"))
                 {
-                    price = price / 100;
+                    price /= 100;
                     currency = "GBP";
                 }
+                else if (currency.Equals("USD"))
+                {
+                    var exchangeRateResult = _exchangeRateFetcher.GetExchangeRate(_exchangeRates, date);
+
+                    if (exchangeRateResult.HasRate)
+                    {
+                      price /= exchangeRateResult.Rate.Value;
+                      currency = "GBP";
+                      exchangeRateAgeInDays = exchangeRateResult.AgeInDays;
+                    }
+                    else
+                    {
+                        comment = "Missing GBP_USD exchange rate";
+                    }
+                }
+                
 
                 var stockPrice = new StockPrice(
                     stockSymbol: matchingStock.StockSymbol,
@@ -94,7 +120,10 @@ public class StockPriceLoader
                     price: price,
                     currency: currency,
                     source: source,
-                    originalCurrency: stockPriceDto.Currency);
+                    originalCurrency: stockPriceDto.Currency,
+                    exchangeRateAgeInDays: exchangeRateAgeInDays,
+                    comment: comment
+                    );
 
                 _stockPriceRepository.Add(stockPrice);
             }

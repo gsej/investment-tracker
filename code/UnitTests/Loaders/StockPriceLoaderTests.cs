@@ -17,6 +17,7 @@ public class StockPriceLoaderTests
     private readonly StockPriceLoader _loader;
     private readonly IStockPriceReader _reader;
     private readonly FakeStockPriceRepository _stockPriceRepository = new FakeStockPriceRepository();
+    private readonly IExchangeRateRepository _exchangeRateRepository = Substitute.For<IExchangeRateRepository>();
     
     public StockPriceLoaderTests()
     {
@@ -28,12 +29,16 @@ public class StockPriceLoaderTests
         {
             new Stock.StockBuilder("VWRL.L", "", StockTypes.Etf).Build(),
             new Stock.StockBuilder("SMT.L", "", StockTypes.Share).Build(),
+            new Stock.StockBuilder("IT25.L", "", StockTypes.Share).Build(),
         };
         
         stockRepository.GetStocks().Returns(stocks);
         
-        _loader = new StockPriceLoader(Substitute.For<ILogger<StockPriceLoader>>(), stockRepository, _stockPriceRepository, _reader);
-        
+        _loader = new StockPriceLoader(Substitute.For<ILogger<StockPriceLoader>>(),
+            stockRepository,
+            _stockPriceRepository,
+            _exchangeRateRepository,
+            _reader);
     }
     
     [Fact]
@@ -83,6 +88,37 @@ public class StockPriceLoaderTests
         addedStock.Price.Should().Be(price / 100);
         addedStock.Source.Should().Be("Test");
         addedStock.OriginalCurrency.Should().Be("GBp");
+    }
+    
+    [Fact]
+    public async Task LoadFile_WhenStockPriceIsInUSD_ConvertsPriceToGBP()
+    {
+        // arrange
+        var fileName = "test.json";
+        var price = 103.75m;
+        var exchangeRateUsdToGbp = 1.24930m;
+
+        var readStockPrice = new StockPrice("IT25.L", "2022-05-20", price.ToString("F2"), "USD");
+        
+        _reader.ReadFile(fileName).Returns(new List<StockPrice> {readStockPrice});
+
+        var exchangeRate = new ExchangeRate { Date = new DateOnly(2022, 5, 15), BaseCurrency = "GBP", AlternateCurrency = "USD", Rate = exchangeRateUsdToGbp};
+        
+        _exchangeRateRepository.GetAll().Returns(new List<ExchangeRate> {exchangeRate});
+        
+        // act
+        await _loader.LoadFile(fileName, source: "Test", true);
+        
+        // assert
+        var addedStock = _stockPriceRepository.StockPrices.Single();
+
+        using var _ = new AssertionScope();
+        addedStock.StockSymbol.Should().Be(readStockPrice.StockSymbol);
+        addedStock.Currency.Should().Be("GBP");
+        addedStock.Price.Should().Be(price / exchangeRateUsdToGbp);
+        addedStock.Source.Should().Be("Test");
+        addedStock.OriginalCurrency.Should().Be("USD");
+        addedStock.ExchangeRateAgeInDays.Should().Be(5);
     }
     
     [Fact]

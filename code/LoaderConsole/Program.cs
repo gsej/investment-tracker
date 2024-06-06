@@ -54,6 +54,7 @@ class Program
                 services.AddTransient<IAccountRepository, AccountRepository>();
                 services.AddTransient<IStockRepository, StockRepository>();
                 services.AddTransient<IStockPriceRepository, StockPriceRepository>();
+                services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
 
                 services.AddTransient<ICashStatementReader, CashStatementReader>();
                 services.AddTransient<CashStatementItemLoader>();

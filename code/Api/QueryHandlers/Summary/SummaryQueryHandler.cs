@@ -1,5 +1,6 @@
 using System.Globalization;
 using Common;
+using Common.Extensions;
 using Database;
 using Database.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -193,12 +194,14 @@ public class SummaryQueryHandler : ISummaryQueryHandler
             .OrderByDescending(s => s.Date)
             .FirstOrDefault();
 
+        
+        // TODO: abstract this into a fetcher like with exchange rates.
         if (stockPrice != null)
         {
-            var requestDate = DateTime.ParseExact(date, "yyyy-MM-dd", null, DateTimeStyles.AssumeUniversal);
-            var priceDate = DateTime.ParseExact(stockPrice.Date, "yyyy-MM-dd", null, DateTimeStyles.AssumeUniversal);
+            var requestDate = date.ToDateOnly();
+            var priceDate = stockPrice.Date;
 
-            var ageInDays = (requestDate - priceDate).Days;
+            var ageInDays = requestDate.DayNumber - priceDate.DayNumber;
             
             return new StockPriceResult(stockPrice.Price, stockPrice.Currency, ageInDays);
         }

@@ -8,7 +8,14 @@ namespace Database.Entities;
 [Table("StockPrice")]
 public class StockPrice
 {
-    public StockPrice(string stockSymbol, string date, decimal price, string currency, string source, string originalCurrency)
+    public StockPrice(string stockSymbol,
+        DateOnly date,
+        decimal price,
+        string currency,
+        string source,
+        string originalCurrency,
+        int? exchangeRateAgeInDays = null,
+        string comment = null)
     {
         StockSymbol = stockSymbol;
         Date = date;
@@ -16,6 +23,8 @@ public class StockPrice
         Currency = currency;
         Source = source;
         OriginalCurrency = originalCurrency;
+        ExchangeRateAgeInDays = exchangeRateAgeInDays;
+        Comment = comment;
     }
 
     [Key]
@@ -26,10 +35,9 @@ public class StockPrice
     public string StockSymbol { get; set; }
     
     //public Stock Stock { get; set; }
-    
-    [MaxLength(10)]
+  
     [Required]
-    public string Date { get; set; }
+    public DateOnly Date { get; set; }
     
     [Precision(19,5)]
     [Required]
@@ -46,4 +54,8 @@ public class StockPrice
     [Required]
     [MaxLength(10)]
     public string OriginalCurrency { get; set; }
+    
+    public int? ExchangeRateAgeInDays { get; set; }
+    
+    public string Comment { get; set; }
 }
