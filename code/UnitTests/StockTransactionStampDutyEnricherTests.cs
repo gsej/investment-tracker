@@ -1,9 +1,9 @@
-﻿using Database.Entities;
+﻿using Common.Extensions;
+using Database.Entities;
 using Database.ValueTypes;
 using FluentAssertions;
 using LoaderConsole.StockTransactionEnrichers;
 using UnitTests.Builder;
-using Xunit.Sdk;
 
 namespace UnitTests;
 
@@ -24,7 +24,7 @@ public class StockTransactionStampDutyEnricherTests
             .Build();
 
         var stockTransaction = new StockTransactionBuilder()
-            .WithDate(date)
+            .WithDate(date.ToDateOnly())
             .WithTransaction(transaction)
             .WithTransactionType(transaction)
             .WithAmountGbp(amountGbp)
@@ -36,5 +36,4 @@ public class StockTransactionStampDutyEnricherTests
 
         stockTransaction.StampDuty.Should().Be(expectedDuty);
     }
-
 }

@@ -27,5 +27,5 @@ public class ExchangeRate
     public decimal Rate { get; init; }
     
     [MaxLength(100)]
-    public string Source { get; set; }
+    public string Source { get; init; }
 }

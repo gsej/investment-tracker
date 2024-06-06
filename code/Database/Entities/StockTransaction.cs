@@ -10,7 +10,7 @@ public class StockTransaction
 {
     public StockTransaction(
         string accountCode,
-        string date,
+        DateOnly date,
         string transaction,
         string description,
         decimal quantity,
@@ -48,10 +48,9 @@ public class StockTransaction
     public string StockSymbol { get; private set; }
     
     public Stock Stock { get; private set; }
-    
-    [MaxLength(10)]
+  
     [Required]
-    public string Date { get; private set; }
+    public DateOnly Date { get; private set; }
     
     [MaxLength(200)]
     [Required]

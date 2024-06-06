@@ -9,17 +9,18 @@ public class StockTransactionFeeEnricher : IStockTransactionEnricher
     {
         // Make some assumptions here about the fees......
 
-        var date = DateOnly.ParseExact(stockTransaction.Date, "yyyy-MM-dd");
-
         decimal fee = 0;
+
+        // AjBell reduced their regular trade price on 2024-04-01
+        var isAfterPriceReduction = stockTransaction.Date.DayNumber >= (new DateOnly(2024, 4, 1)).DayNumber;
         
         if (stockTransaction.TransactionType == "Purchase")
         {
-            if (RegularInvestmentDayCalculator.IsRegularInvestmentDay(date))
+            if (RegularInvestmentDayCalculator.IsRegularInvestmentDay(stockTransaction.Date))
             {
                 fee = 1.5m;
             }
-            else if (date >= new DateOnly(2024, 4, 1))
+            else if (isAfterPriceReduction)
             {
                 fee = 5m;
             }
@@ -30,7 +31,7 @@ public class StockTransactionFeeEnricher : IStockTransactionEnricher
         }
         else if (stockTransaction.TransactionType == "Sale")
         {
-            if (date >= new DateOnly(2024, 4, 1))
+            if (isAfterPriceReduction)
             {
                 fee = 5m;
             }

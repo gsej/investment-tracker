@@ -5,7 +5,7 @@ namespace UnitTests.Builder;
 public class StockTransactionBuilder
 {
     private string _accountCode = "ACCOUNT-CODE";
-    private string _date = "2023-03-30";
+    private DateOnly _date = new(2023, 3, 3);
     private string _transaction = "Purchase";
     private string _transactionType = "Purchase";
     private string _description = "National Grid Plc";
@@ -16,7 +16,7 @@ public class StockTransactionBuilder
     private decimal _stampDuty = 0m;
     private string _stockSymbol = "NG.L";
     
-    public StockTransactionBuilder WithDate(string date)
+    public StockTransactionBuilder WithDate(DateOnly date)
     {
         _date = date;
         return this;

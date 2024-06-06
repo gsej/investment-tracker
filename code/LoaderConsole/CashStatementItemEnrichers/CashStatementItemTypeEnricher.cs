@@ -8,12 +8,9 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
 {
     public void Enrich(CashStatementItem cashStatementItem)
     {
-        
-        var date = DateOnly.ParseExact(cashStatementItem.Date, "yyyy-MM-dd");
-        
-       if (cashStatementItem.Description.StartsWith("Purchase"))
+        if (cashStatementItem.Description.StartsWith("Purchase"))
         {
-            if (RegularInvestmentDayCalculator.IsRegularInvestmentDay(date))
+            if (RegularInvestmentDayCalculator.IsRegularInvestmentDay(cashStatementItem.Date))
             {
                 cashStatementItem.CashStatementItemType = CashStatementItemTypes.RegularInvestmentPurchase;
             }
@@ -34,7 +31,7 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
         else if (cashStatementItem.Description.StartsWith("Contribution") ||
                  cashStatementItem.Description.Contains("Deposit", StringComparison.InvariantCultureIgnoreCase) ||
                  cashStatementItem.Description.Contains("Subscription", StringComparison.InvariantCultureIgnoreCase) ||
-                 cashStatementItem.Description.Equals("Direct debit payment") || 
+                 cashStatementItem.Description.Equals("Direct debit payment") ||
                  cashStatementItem.Description.Equals("Debit card contribution") ||
                  cashStatementItem.Description.Equals("Debit card payment", StringComparison.InvariantCultureIgnoreCase) ||
                  cashStatementItem.Description.Equals("Transfer From SIPP Cash Account", StringComparison.InvariantCultureIgnoreCase))
@@ -81,7 +78,7 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
         }
         else
         {
-            var json = JsonSerializer.Serialize(cashStatementItem, new JsonSerializerOptions { WriteIndented = true});
+            var json = JsonSerializer.Serialize(cashStatementItem, new JsonSerializerOptions { WriteIndented = true });
             throw new Exception($"couldn't identify type for description {json}");
         }
     }

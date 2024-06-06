@@ -1,3 +1,4 @@
+using Common.Extensions;
 using Common.Tracing;
 using Database;
 using Database.Entities;
@@ -37,7 +38,7 @@ public class CashStatementItemLoader
         {
             var cashStatementItem = new CashStatementItem(
                 accountCode: ajBellCashStatementItem.AccountCode,
-                date: ajBellCashStatementItem.Date, 
+                date: ajBellCashStatementItem.Date.ToDateOnly(), 
                 description: ajBellCashStatementItem.Description,
                 paymentAmountGbp: ajBellCashStatementItem.Payment_Amount_Gbp,
                 receiptAmountGbp: ajBellCashStatementItem.ReceiptAmountGbp);

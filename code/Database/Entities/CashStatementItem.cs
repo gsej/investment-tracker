@@ -9,7 +9,7 @@ namespace Database.Entities;
 public class CashStatementItem
 {
     public CashStatementItem(string accountCode,
-        string date,
+        DateOnly date,
         string description,
         decimal paymentAmountGbp,
         decimal receiptAmountGbp)
@@ -30,10 +30,9 @@ public class CashStatementItem
     public string AccountCode { get; }
     
     public Account Account { get; private set; }
-    
-    [MaxLength(10)]
+   
     [Required]
-    public string Date { get; private set; }
+    public DateOnly Date { get; private set; }
     
     [MaxLength(200)]
     [Required]

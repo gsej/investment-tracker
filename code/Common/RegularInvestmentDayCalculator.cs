@@ -5,7 +5,6 @@ public static class RegularInvestmentDayCalculator
 
     public static bool IsRegularInvestmentDay(DateOnly date)
     {
-    
         if (date.Day == 10 && (
                 date.DayOfWeek == DayOfWeek.Monday ||
                 date.DayOfWeek == DayOfWeek.Tuesday ||

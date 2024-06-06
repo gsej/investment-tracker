@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using Common.Extensions;
+using FluentAssertions;
 using LoaderConsole.StockTransactionEnrichers;
 using UnitTests.Builder;
 using Xunit.Sdk;
@@ -21,7 +22,7 @@ public class StockTransactionFeeEnricherTests
     public void Enrich_WithPurchase_SetsFee(string transaction, string date, decimal expectedFee)
     {
         var stockTransaction = new StockTransactionBuilder()
-            .WithDate(date)
+            .WithDate(date.ToDateOnly())
             .WithTransaction(transaction)
             .WithTransactionType(transaction)
             .Build();
@@ -39,7 +40,7 @@ public class StockTransactionFeeEnricherTests
     public void Enrich_WithSale_SetsFee(string transaction, string date, decimal expectedFee)
     {
         var stockTransaction = new StockTransactionBuilder()
-            .WithDate(date)
+            .WithDate(date.ToDateOnly())
             .WithTransaction(transaction)
             .WithTransactionType(transaction)
             .Build();
@@ -57,7 +58,7 @@ public class StockTransactionFeeEnricherTests
     public void Enrich_WithRegularPurchase_SetsFee(string transaction, string date, decimal expectedFee)
     {
         var stockTransaction = new StockTransactionBuilder()
-            .WithDate(date)
+            .WithDate(date.ToDateOnly())
             .WithTransaction(transaction)
             .WithTransactionType(transaction)
             .Build();

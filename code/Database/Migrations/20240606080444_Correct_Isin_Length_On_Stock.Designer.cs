@@ -4,6 +4,7 @@ using Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Database.Migrations
 {
     [DbContext(typeof(InvestmentsDbContext))]
-    partial class InvestmentsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240606080444_Correct_Isin_Length_On_Stock")]
+    partial class Correct_Isin_Length_On_Stock
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -33,7 +36,7 @@ namespace Database.Migrations
 
                     b.HasKey("AccountCode");
 
-                    b.ToTable("Account", (string)null);
+                    b.ToTable("Account");
                 });
 
             modelBuilder.Entity("Database.Entities.AlternativeSymbol", b =>
@@ -50,7 +53,7 @@ namespace Database.Migrations
 
                     b.HasIndex("StockSymbol");
 
-                    b.ToTable("AlternativeSymbol", (string)null);
+                    b.ToTable("AlternativeSymbol");
                 });
 
             modelBuilder.Entity("Database.Entities.CashStatementItem", b =>
@@ -90,7 +93,7 @@ namespace Database.Migrations
 
                     b.HasIndex("AccountCode");
 
-                    b.ToTable("CashStatementItem", (string)null);
+                    b.ToTable("CashStatementItem");
                 });
 
             modelBuilder.Entity("Database.Entities.ExchangeRate", b =>
@@ -126,7 +129,7 @@ namespace Database.Migrations
 
                     b.HasKey("ExchangeRateId");
 
-                    b.ToTable("ExchangeRate", (string)null);
+                    b.ToTable("ExchangeRate");
                 });
 
             modelBuilder.Entity("Database.Entities.RecordedTotalValue", b =>
@@ -154,7 +157,7 @@ namespace Database.Migrations
 
                     b.HasIndex("AccountCode");
 
-                    b.ToTable("RecordedTotalValue", (string)null);
+                    b.ToTable("RecordedTotalValue");
                 });
 
             modelBuilder.Entity("Database.Entities.Stock", b =>
@@ -185,7 +188,7 @@ namespace Database.Migrations
 
                     b.HasKey("StockSymbol");
 
-                    b.ToTable("Stock", (string)null);
+                    b.ToTable("Stock");
                 });
 
             modelBuilder.Entity("Database.Entities.StockAlias", b =>
@@ -202,7 +205,7 @@ namespace Database.Migrations
 
                     b.HasIndex("StockSymbol");
 
-                    b.ToTable("StockAlias", (string)null);
+                    b.ToTable("StockAlias");
                 });
 
             modelBuilder.Entity("Database.Entities.StockPrice", b =>
@@ -247,7 +250,7 @@ namespace Database.Migrations
 
                     b.HasKey("StockPriceId");
 
-                    b.ToTable("StockPrice", (string)null);
+                    b.ToTable("StockPrice");
                 });
 
             modelBuilder.Entity("Database.Entities.StockTransaction", b =>
@@ -314,7 +317,7 @@ namespace Database.Migrations
 
                     b.HasIndex("StockSymbol");
 
-                    b.ToTable("StockTransaction", (string)null);
+                    b.ToTable("StockTransaction");
                 });
 
             modelBuilder.Entity("Database.Entities.AlternativeSymbol", b =>

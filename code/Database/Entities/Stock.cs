@@ -14,7 +14,7 @@ public class Stock
     [Key]
     public string StockSymbol { get; init; }
     
-    [MaxLength(15)] // todo: check length
+    [MaxLength(12)]
     public string Isin { get; init; }
 
     [MaxLength(50)]

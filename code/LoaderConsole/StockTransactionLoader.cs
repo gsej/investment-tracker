@@ -1,3 +1,4 @@
+using Common.Extensions;
 using Common.Tracing;
 using Database;
 using Database.Entities;
@@ -76,7 +77,7 @@ public class StockTransactionLoader
             
             var stockTransaction = new StockTransaction(
                 accountCode: ajBellStockTransaction.AccountCode,
-                date: ajBellStockTransaction.Date,
+                date: ajBellStockTransaction.Date.ToDateOnly(),
                 transaction: ajBellStockTransaction.Transaction,
                 description: ajBellStockTransaction.Description,
                 quantity: quantity,
