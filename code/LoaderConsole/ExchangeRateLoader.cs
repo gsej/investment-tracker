@@ -11,12 +11,12 @@ namespace LoaderConsole;
 public class ExchangeRateLoader
 {
     private readonly ILogger<ExchangeRateLoader> _logger;
-    private readonly IExchangeRateReader _reader;
+    private readonly IReader<FileReaders.ExchangeRates.ExchangeRate> _reader;
     private readonly InvestmentsDbContext _context;
 
     public ExchangeRateLoader(
         ILogger<ExchangeRateLoader> logger,
-        IExchangeRateReader reader,
+        IReader<FileReaders.ExchangeRates.ExchangeRate> reader,
         InvestmentsDbContext context)
     {
         _logger = logger;
@@ -34,7 +34,7 @@ public class ExchangeRateLoader
             return;
         }
 
-        var exchangeRates = (await _reader.ReadFile(fileName)).ToList();
+        var exchangeRates = (await _reader.Read(fileName)).ToList();
 
         foreach (var exchangeRate in exchangeRates)
         {

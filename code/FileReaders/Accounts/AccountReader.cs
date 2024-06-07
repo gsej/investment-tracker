@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FileReaders.Accounts;
 
-public class AccountReader : IAccountReader
+public class AccountReader : IReader<Account>
 {
     private readonly ILogger<AccountReader> _logger;
     private readonly JsonSerializerOptions _options;
@@ -16,7 +16,7 @@ public class AccountReader : IAccountReader
         _options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
     }
 
-    public async Task<IList<Account>> ReadFile(string fileName)
+    public async Task<IEnumerable<Account>> Read(string fileName)
     {
         using var _ = InvestmentTrackerActivitySource.Instance.StartActivity($"Reading account file  {fileName}");
         _logger.LogInformation("Reading account file {fileName}", fileName);

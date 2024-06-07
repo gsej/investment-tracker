@@ -1,11 +1,12 @@
 using Common.Extensions;
 using Common.Tracing;
 using Database;
-using Database.Entities;
 using FileReaders;
+using FileReaders.AccountStatements;
 using LoaderConsole.StockTransactionEnrichers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using StockTransaction = Database.Entities.StockTransaction;
 
 namespace LoaderConsole;
 
@@ -15,7 +16,7 @@ public class StockTransactionLoader
     private readonly StockTransactionTypeEnricher _stockTransactionTypeEnricher;
     private readonly StockTransactionFeeEnricher _stockTransactionFeeEnricher;
     private readonly StockTransactionStampDutyEnricher _stockTransactionStampDutyEnricher;
-    private readonly IStockTransactionReader _reader;
+    private readonly IReader<FileReaders.AccountStatements.StockTransaction> _reader;
     private readonly InvestmentsDbContext _context;
 
     public StockTransactionLoader(
@@ -23,7 +24,7 @@ public class StockTransactionLoader
         StockTransactionTypeEnricher stockTransactionTypeEnricher,
         StockTransactionFeeEnricher stockTransactionFeeEnricher,
         StockTransactionStampDutyEnricher stockTransactionStampDutyEnricher,
-        IStockTransactionReader reader,
+        IReader<FileReaders.AccountStatements.StockTransaction> reader,
         InvestmentsDbContext context)
     {
         _logger = logger;
@@ -50,7 +51,7 @@ public class StockTransactionLoader
             .Include(stock => stock.AlternativeSymbols)
             .ToListAsync();
         
-        var ajBellStockTransactions = _reader.Read(fileName).ToList();
+        var ajBellStockTransactions = (await _reader.Read(fileName)).ToList();
         
         foreach (var ajBellStockTransaction in ajBellStockTransactions)
         {

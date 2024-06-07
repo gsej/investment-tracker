@@ -56,23 +56,23 @@ class Program
                 services.AddTransient<IStockPriceRepository, StockPriceRepository>();
                 services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
 
-                services.AddTransient<ICashStatementReader, CashStatementReader>();
+                services.AddTransient<IReader<CashStatementItem>, CashStatementReader>();
                 services.AddTransient<CashStatementItemLoader>();
 
                 services.AddTransient<StockTransactionTypeEnricher>();
                 services.AddTransient<StockTransactionFeeEnricher>();
                 services.AddTransient<StockTransactionStampDutyEnricher>();
 
-                services.AddTransient<IStockTransactionReader, StockTransactionReader>();
+                services.AddTransient<IReader<StockTransaction>, StockTransactionReader>();
                 services.AddTransient<StockTransactionLoader>();
 
-                services.AddTransient<IAccountReader, AccountReader>();
+                services.AddTransient<IReader<Account>, AccountReader>();
                 services.AddTransient<AccountLoader>();
                 
                 services.AddTransient<IStockReader, StockReader>();
                 services.AddTransient<StockLoader>();
                 
-                services.AddTransient<IExchangeRateReader, ExchangeRateReader>();
+                services.AddTransient<IReader<ExchangeRate>, ExchangeRateReader>();
                 services.AddTransient<ExchangeRateLoader>();
 
                 

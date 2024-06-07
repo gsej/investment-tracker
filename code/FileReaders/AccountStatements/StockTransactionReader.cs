@@ -2,13 +2,14 @@ using System.Text.Json;
 
 namespace FileReaders.AccountStatements;
 
-public class StockTransactionReader : IStockTransactionReader
+public class StockTransactionReader : IReader<StockTransaction>
 {
     private readonly JsonSerializerOptions _options = new() { PropertyNameCaseInsensitive = true };
 
-    public IEnumerable<StockTransaction> Read(string fileName)
+    public async Task<IEnumerable<StockTransaction>> Read(string fileName)
     {
-        var jsonString = File.ReadAllText(fileName);
+        // TODO: use streams like with exchange rate
+        var jsonString = await File.ReadAllTextAsync(fileName);
         var items = JsonSerializer.Deserialize<IList<StockTransaction>>(jsonString, _options);
 
         return items;

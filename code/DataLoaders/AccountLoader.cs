@@ -1,6 +1,7 @@
 using Common.Tracing;
 using Database.Converters;
 using Database.Repositories;
+using FileReaders;
 using FileReaders.Accounts;
 using Microsoft.Extensions.Logging;
 using Account = Database.Entities.Account;
@@ -11,13 +12,13 @@ public class AccountLoader
 {
     private readonly ILogger<AccountLoader> _logger;
     private readonly IAccountRepository _repository;
-    private readonly IAccountReader _reader;
+    private readonly IReader<Account> _reader;
     private readonly DateOnlyConverter _dateOnlyConverter;
 
     public AccountLoader(
         ILogger<AccountLoader> logger,
         IAccountRepository repository,
-        IAccountReader reader,
+        IReader<Account> reader,
         DateOnlyConverter dateOnlyConverter)
     {
         _logger = logger;
@@ -26,7 +27,7 @@ public class AccountLoader
         _repository = repository;
     }
 
-    public AccountLoader(IAccountReader reader, DateOnlyConverter dateOnlyConverter)
+    public AccountLoader(IReader<Account> reader, DateOnlyConverter dateOnlyConverter)
     {
         _reader = reader;
         _dateOnlyConverter = dateOnlyConverter;
@@ -39,7 +40,7 @@ public class AccountLoader
         {
             _logger.LogInformation("Loading accounts from {fileName}", fileName);
 
-            var accounts = (await _reader.ReadFile(fileName)).ToList();
+            var accounts = (await _reader.Read(fileName)).ToList();
 
             foreach (var accountDto in accounts)
             {

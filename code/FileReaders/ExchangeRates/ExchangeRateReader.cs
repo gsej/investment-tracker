@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FileReaders.ExchangeRates;
 
-public class ExchangeRateReader : IExchangeRateReader
+public class ExchangeRateReader : IReader<ExchangeRate>
 {
     private readonly ILogger<ExchangeRateReader> _logger;
     private readonly JsonSerializerOptions _options;
@@ -17,7 +17,7 @@ public class ExchangeRateReader : IExchangeRateReader
         _options.Converters.Add(new StringConverter());
     }
 
-    public async Task<IEnumerable<ExchangeRate>> ReadFile(string fileName)
+    public async Task<IEnumerable<ExchangeRate>> Read(string fileName)
     {
         using var _ = InvestmentTrackerActivitySource.Instance.StartActivity($"Reading exchange rate file {fileName}");
         _logger.LogInformation("Reading exchange rate {fileName}", fileName);

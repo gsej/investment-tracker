@@ -1,20 +1,21 @@
 using Common.Extensions;
 using Common.Tracing;
 using Database;
-using Database.Entities;
 using FileReaders;
+using FileReaders.AccountStatements;
 using LoaderConsole.CashStatementItemEnrichers;
 using Microsoft.Extensions.Logging;
+using CashStatementItem = Database.Entities.CashStatementItem;
 
 namespace LoaderConsole;
 
 public class CashStatementItemLoader
 {
-    private readonly ICashStatementReader _cashStatementReader;
+    private readonly IReader<FileReaders.AccountStatements.CashStatementItem> _cashStatementReader;
     private readonly InvestmentsDbContext _context;
     private readonly ILogger<CashStatementItemLoader> _logger;
 
-    public CashStatementItemLoader(ILogger<CashStatementItemLoader> logger, ICashStatementReader cashStatementReader, InvestmentsDbContext context)
+    public CashStatementItemLoader(ILogger<CashStatementItemLoader> logger, IReader<FileReaders.AccountStatements.CashStatementItem> cashStatementReader, InvestmentsDbContext context)
     {
         _cashStatementReader = cashStatementReader;
         _context = context;
@@ -31,7 +32,7 @@ public class CashStatementItemLoader
             return;
         }
         
-        var ajBellCashStatementItems = _cashStatementReader.Read(fileName).ToList();
+        var ajBellCashStatementItems = (await _cashStatementReader.Read(fileName)).ToList();
         var cashStatementItemTypeEnricher = new CashStatementItemTypeEnricher();
         
         foreach (var ajBellCashStatementItem in ajBellCashStatementItems)
