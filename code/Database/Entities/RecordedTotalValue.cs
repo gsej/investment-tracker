@@ -21,18 +21,18 @@ public class RecordedTotalValue
     [Key]
     public Guid RecordedTotalValueId { get; set; }
     
-    [MaxLength(20)]
-    [Required]
     [ForeignKey(nameof(Account))]
+    [Required]
+    [MaxLength(20)]
     public string AccountCode { get; private set; }
     
     public Account Account { get; private set; }
-   
+
+    [Required]
     [MaxLength(10)]
-    [Required]
     public string Date { get; set; }
-    
-    [Precision(19,5)]
+
     [Required]
+    [Precision(19,5)]
     public decimal TotalValueInGbp { get; set; }
 }

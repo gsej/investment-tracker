@@ -18,9 +18,10 @@ public class Account
         OpeningDate = openingDate;
     }
 
-    [MaxLength(20)]
-    [Required]
+    
     [Key]
+    [Required]
+    [MaxLength(20)]
     public string AccountCode { get; init; }
     
     public DateOnly? OpeningDate { get; init; }

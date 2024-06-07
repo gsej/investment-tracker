@@ -9,24 +9,24 @@ namespace Database.Entities;
 [DebuggerDisplay("{StockSymbol} - {Description}")]
 public class Stock
 {
-    [MaxLength(15)]
-    [Required]
     [Key]
+    [Required]
+    [MaxLength(15)]
     public string StockSymbol { get; init; }
     
     [MaxLength(12)]
     public string Isin { get; init; }
 
-    [MaxLength(50)]
     [Required]
+    [MaxLength(50)]
     public string Description { get; init; }
 
     public IEnumerable<AlternativeSymbol> AlternativeSymbols { get; init; } = new List<AlternativeSymbol>();// encapsulate this
     
     public IEnumerable<StockAlias> Aliases { get; set; } = new List<StockAlias>();// encapsulate this
     
+    [Required]
     [MaxLength(15)]
-    // [Required] // TODO: make required 
     public string StockType { get; init; }
     
     [Required]
@@ -37,9 +37,9 @@ public class Stock
 
     public class StockBuilder 
     {
-        private string _stockSymbol;
+        private readonly string _stockSymbol;
         private string _isin;
-        private string _description;
+        private readonly string _description;
         private string _stockType;
         private string _notes;
         private bool _subjectToStampDuty;

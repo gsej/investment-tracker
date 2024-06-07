@@ -11,12 +11,12 @@ public class ExchangeRate
     [Key]
     public Guid ExchangeRateId { get; init; }
     
-    [MaxLength(3)]
     [Required]
+    [MaxLength(3)]
     public string BaseCurrency { get; init; }
     
-    [MaxLength(3)]
     [Required]
+    [MaxLength(3)]
     public string AlternateCurrency { get; init; }
     
     [Required]
@@ -26,6 +26,7 @@ public class ExchangeRate
     [Precision(19,5)]
     public decimal Rate { get; init; }
     
+    [Required]
     [MaxLength(100)]
     public string Source { get; init; }
 }

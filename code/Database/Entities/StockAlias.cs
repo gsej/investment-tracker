@@ -11,9 +11,9 @@ public class StockAlias
         Description = description;
     }
 
-    [MaxLength(50)]
-    [Required]
     [Key]
+    [Required]
+    [MaxLength(50)]
     public string Description { get; set; }
     
     [Required]

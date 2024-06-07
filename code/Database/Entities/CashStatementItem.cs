@@ -24,9 +24,10 @@ public class CashStatementItem
     [Key]
     public Guid CashStatementItemId { get; set; }
     
-    [MaxLength(20)]
-    [Required]
+    
     [ForeignKey(nameof(Account))]
+    [Required]
+    [MaxLength(20)]
     public string AccountCode { get; }
     
     public Account Account { get; private set; }
@@ -34,8 +35,8 @@ public class CashStatementItem
     [Required]
     public DateOnly Date { get; private set; }
     
-    [MaxLength(200)]
     [Required]
+    [MaxLength(200)]
     public string Description { get; private set; }
     
     [Precision(19, 5)]
@@ -44,6 +45,7 @@ public class CashStatementItem
     [Precision(19, 5)]
     public decimal PaymentAmountGbp { get; private set; }
     
+    [Required]
     [MaxLength(100)]
     public string CashStatementItemType { get;  set; }
 }

@@ -34,17 +34,17 @@ public class StockTransaction
  
     [Key]
     public Guid StockTransactionId { get; }
-    
-    [MaxLength(20)]
-    [Required]
+   
     [ForeignKey(nameof(Account))]
+    [Required]
+    [MaxLength(20)]
     public string AccountCode { get; private set; }
     
     public Account Account { get; private set; }
-    
-    [MaxLength(15)]
+   
     [ForeignKey(nameof(Stock))]
     [Required]
+    [MaxLength(15)]
     public string StockSymbol { get; private set; }
     
     public Stock Stock { get; private set; }
@@ -52,36 +52,35 @@ public class StockTransaction
     [Required]
     public DateOnly Date { get; private set; }
     
-    [MaxLength(200)]
     [Required]
+    [MaxLength(200)]
     public string Transaction { get; private set; }
     
-    [MaxLength(200)]
     [Required]
+    [MaxLength(200)]
     public string Description { get; private set; }
     
-    [Precision(19,5)]
     [Required]
+    [Precision(19,5)]
     public decimal Quantity { get; private set; }
     
-    [Precision(19,5)]
     [Required]
+    [Precision(19,5)]
     public decimal AmountGbp { get; set; }
     
-    [MaxLength(20)]
     [Required]
+    [MaxLength(20)]
     public string Reference { get; set; }
     
-    [Precision(19,5)]
     [Required]
+    [Precision(19,5)]
     public decimal Fee { get; set; }
     
-    [Precision(19,5)]
     [Required]
+    [Precision(19,5)]
     public decimal StampDuty { get; set; }
     
-    [MaxLength(100)]
     [Required]
-    // TODO: use Enumeration
+    [MaxLength(100)]
     public string TransactionType { get; set; }
 }

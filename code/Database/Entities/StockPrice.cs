@@ -30,24 +30,25 @@ public class StockPrice
     [Key]
     public Guid StockPriceId { get; set; }
     
+    [ForeignKey(nameof(Stock))]
+    [Required]
     [MaxLength(15)]
-    //[ForeignKey(nameof(Stock))]
     public string StockSymbol { get; set; }
     
-    //public Stock Stock { get; set; }
+    public Stock Stock { get; set; }
   
     [Required]
     public DateOnly Date { get; set; }
     
-    [Precision(19,5)]
     [Required]
+    [Precision(19,5)]
     public decimal Price { get; set; }
     
     [Required]
     [MaxLength(10)]
     public string Currency { get; set; }
     
-    //  [Required]
+    [Required]
     [MaxLength(100)]
     public string Source { get; set; }
     
@@ -57,5 +58,6 @@ public class StockPrice
     
     public int? ExchangeRateAgeInDays { get; set; }
     
+    [MaxLength(200)]
     public string Comment { get; set; }
 }

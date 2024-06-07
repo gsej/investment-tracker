@@ -11,9 +11,10 @@ public class AlternativeSymbol
         Alternative = alternative;
     }
 
-    [MaxLength(15)]
-    [Required]
+    
     [Key]
+    [Required]
+    [MaxLength(15)]
     public string Alternative { get; set; }
     
     [Required]
