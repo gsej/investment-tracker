@@ -9,11 +9,7 @@ namespace UnitTests;
 
 public class StockTransactionStampDutyEnricherTests
 {
-    private StockTransactionStampDutyEnricher _stockTransactionStampDutyEnricher;
-    public StockTransactionStampDutyEnricherTests()
-    {
-        _stockTransactionStampDutyEnricher = new StockTransactionStampDutyEnricher();
-    }
+    private readonly StockTransactionStampDutyEnricher _stockTransactionStampDutyEnricher = new();
 
     [Theory]
     [InlineData("Purchase", "2019-11-11", 748.51, 3.72)]

@@ -25,6 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\AjBellParserConsole\AjBellParserConsole.csproj" />
       <ProjectReference Include="..\Api\Api.csproj" />   
       <ProjectReference Include="..\FileReaders\FileReaders.csproj" />      
       <ProjectReference Include="..\LoaderConsole\LoaderConsole.csproj" />   
