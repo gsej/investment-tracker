@@ -10,7 +10,7 @@ public class RecordedTotalValue
 {
     public RecordedTotalValue(
         string accountCode,
-        string date,
+        DateOnly date,
         decimal totalValueInGbp)
     {
         AccountCode = accountCode;;
@@ -29,8 +29,7 @@ public class RecordedTotalValue
     public Account Account { get; private set; }
 
     [Required]
-    [MaxLength(10)]
-    public string Date { get; set; }
+    public DateOnly Date { get; set; }
 
     [Required]
     [Precision(19,5)]

@@ -30,7 +30,7 @@ class Program
 
                 var configurationRoot = new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json")
-             //       .AddEnvironmentVariables()
+                    .AddEnvironmentVariables()
                     .Build();
 
                 _configuration = configurationRoot.GetRequiredSection(nameof(ParserConfiguration)).Get<ParserConfiguration>();

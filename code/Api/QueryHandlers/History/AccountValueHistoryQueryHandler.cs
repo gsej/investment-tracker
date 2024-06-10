@@ -34,8 +34,8 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
         }
         
         var startDate = account.OpeningDate ?? new DateOnly(2020, 1, 1);
-        var now = DateTime.UtcNow;
 
+        var now = DateTime.UtcNow;
         var endDate = new DateOnly(now.Year, now.Month, now.Day);
        
         // iterate over each day in the date range
@@ -43,21 +43,20 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
         var currentDate = startDate;
 
-        var accountCode = request.AccountCode; //GSEJ
+        var accountCode = request.AccountCode;
         
         // get record total values
         var recordedTotalValues = await _recordedTotalValueQueryHandler.Handle(new RecordedTotalValuesRequest(accountCode));
 
         while (currentDate <= endDate)
         {
-            var dateAsString = currentDate.ToString("yyyy-MM-dd");
-            var daysResult = await _summaryQueryHandler.Handle(new SummaryRequest { AccountCode = request.AccountCode, Date = dateAsString });
+            var daysResult = await _summaryQueryHandler.Handle(new SummaryRequest { AccountCode = request.AccountCode, Date = currentDate });
 
             var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
 
-            var matchingRecordedTotalValue = recordedTotalValues.RecordedTotalValues.SingleOrDefault(r => r.Date == dateAsString);
+            var matchingRecordedTotalValue = recordedTotalValues.RecordedTotalValues.SingleOrDefault(r => r.Date == currentDate);
             
-            var historicalValue = new AccountHistoricalValue(dateAsString, 
+            var historicalValue = new AccountHistoricalValue(currentDate, 
                 accountCode, 
                 daysResult.TotalValue.ValueInGbp,
                 daysResult.TotalValue.TotalPriceAgeInDays, 

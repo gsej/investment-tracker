@@ -33,14 +33,14 @@ public class RecordedTotalValueLoader
             // var matchingAccount = accounts.SingleOrDefault(a =>
             //     a.AccountCode.Equals(balanceDto.AccountCode, StringComparison.InvariantCultureIgnoreCase));
 
-
             var date = DateTime.ParseExact(recordedValueDto.Date, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-
-            var formattedDate = date.ToString("yyyy-MM-dd");
+       
+            
+            var dateOnly = new DateOnly(date.Year, date.Month, date.Day);
 
             var knownValue = new RecordedTotalValue(
                 accountCode: recordedValueDto.AccountCode,
-                date: formattedDate,
+                date: dateOnly,
                 totalValueInGbp: totalValueInGbp);
 
             try

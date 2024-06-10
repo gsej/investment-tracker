@@ -1,4 +1,3 @@
-using System.Globalization;
 using Common;
 using Common.Extensions;
 using Database;
@@ -33,16 +32,16 @@ public class SummaryQueryHandler : ISummaryQueryHandler
     {
         var cashStatementItems = await GetCashStatementItems(request.AccountCode);
         var cashBalance = cashStatementItems
-            .Where(c => request.Date.CompareTo(c.Date) >= 0)
+                .Where(c => request.Date.DayNumber >= c.Date.DayNumber)
             .Sum(c => c.ReceiptAmountGbp + c.PaymentAmountGbp);
 
         var holdings = new List<Holding>();
         
         var stockTransactions = await GetStockTransactions(request.AccountCode);
-
+       
         var groupedStockTransactions = stockTransactions
             .Where(s =>
-                request.Date.CompareTo(s.Date) >= 0)
+                request.Date.DayNumber >= s.Date.DayNumber)
             .GroupBy(s => s.Stock)
             .ToList();
 
@@ -186,11 +185,12 @@ public class SummaryQueryHandler : ISummaryQueryHandler
     private StockPriceResult GetStockPrice(
         string stockSymbol,
         IList<StockPrice> stockPrices,
-        string date)
+        DateOnly date)
     {
         var stockPrice = stockPrices
             .Where(s =>
-                s.Date.CompareTo(date) <= 0)
+                s.Date.DayNumber <= date.DayNumber)
+                //s.Date.CompareTo(date) <= 0)
             .OrderByDescending(s => s.Date)
             .FirstOrDefault();
 
@@ -198,7 +198,7 @@ public class SummaryQueryHandler : ISummaryQueryHandler
         // TODO: abstract this into a fetcher like with exchange rates.
         if (stockPrice != null)
         {
-            var requestDate = date.ToDateOnly();
+            var requestDate = date;//.ToDateOnly();
             var priceDate = stockPrice.Date;
 
             var ageInDays = requestDate.DayNumber - priceDate.DayNumber;

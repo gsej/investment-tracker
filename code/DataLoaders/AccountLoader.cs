@@ -12,13 +12,13 @@ public class AccountLoader
 {
     private readonly ILogger<AccountLoader> _logger;
     private readonly IAccountRepository _repository;
-    private readonly IReader<Account> _reader;
+    private readonly IReader<FileReaders.Accounts.Account> _reader;
     private readonly DateOnlyConverter _dateOnlyConverter;
 
     public AccountLoader(
         ILogger<AccountLoader> logger,
         IAccountRepository repository,
-        IReader<Account> reader,
+        IReader<FileReaders.Accounts.Account> reader,
         DateOnlyConverter dateOnlyConverter)
     {
         _logger = logger;
@@ -27,7 +27,7 @@ public class AccountLoader
         _repository = repository;
     }
 
-    public AccountLoader(IReader<Account> reader, DateOnlyConverter dateOnlyConverter)
+    public AccountLoader(IReader<FileReaders.Accounts.Account> reader, DateOnlyConverter dateOnlyConverter)
     {
         _reader = reader;
         _dateOnlyConverter = dateOnlyConverter;
