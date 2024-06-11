@@ -2,7 +2,7 @@ using Database;
 using FileReaders;
 using RecordedTotalValue = Database.Entities.RecordedTotalValue;
 
-namespace LoaderConsole;
+namespace DataLoaders;
 
 public class RecordedTotalValueLoader
 {

@@ -1,14 +1,13 @@
 using Common.Extensions;
 using Common.Tracing;
 using Database;
+using DataLoaders.StockTransactionEnrichers;
 using FileReaders;
-using FileReaders.AccountStatements;
-using LoaderConsole.StockTransactionEnrichers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StockTransaction = Database.Entities.StockTransaction;
 
-namespace LoaderConsole;
+namespace DataLoaders;
 
 public class StockTransactionLoader
 {

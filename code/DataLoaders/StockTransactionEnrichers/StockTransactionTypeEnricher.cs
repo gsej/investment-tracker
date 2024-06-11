@@ -2,7 +2,7 @@ using Common;
 using Database.Entities;
 using Microsoft.Extensions.Logging;
 
-namespace LoaderConsole.StockTransactionEnrichers;
+namespace DataLoaders.StockTransactionEnrichers;
 
 public class StockTransactionTypeEnricher : IStockTransactionEnricher
 {

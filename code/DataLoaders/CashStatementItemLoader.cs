@@ -1,13 +1,12 @@
 using Common.Extensions;
 using Common.Tracing;
 using Database;
+using DataLoaders.CashStatementItemEnrichers;
 using FileReaders;
-using FileReaders.AccountStatements;
-using LoaderConsole.CashStatementItemEnrichers;
 using Microsoft.Extensions.Logging;
 using CashStatementItem = Database.Entities.CashStatementItem;
 
-namespace LoaderConsole;
+namespace DataLoaders;
 
 public class CashStatementItemLoader
 {

@@ -2,7 +2,7 @@ using System.Text.Json;
 using Common;
 using Database.Entities;
 
-namespace LoaderConsole.CashStatementItemEnrichers;
+namespace DataLoaders.CashStatementItemEnrichers;
 
 public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
 {

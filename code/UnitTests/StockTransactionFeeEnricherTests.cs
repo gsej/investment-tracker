@@ -1,6 +1,6 @@
 ﻿using Common.Extensions;
+using DataLoaders.StockTransactionEnrichers;
 using FluentAssertions;
-using LoaderConsole.StockTransactionEnrichers;
 using UnitTests.Builder;
 using Xunit.Sdk;
 

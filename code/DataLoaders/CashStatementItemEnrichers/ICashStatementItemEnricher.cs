@@ -1,6 +1,6 @@
 using Database.Entities;
 
-namespace LoaderConsole.CashStatementItemEnrichers;
+namespace DataLoaders.CashStatementItemEnrichers;
 
 public interface ICashStatementItemEnricher
 {

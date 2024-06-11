@@ -4,13 +4,13 @@ using Database;
 using Database.Converters;
 using Database.Repositories;
 using DataLoaders;
+using DataLoaders.StockTransactionEnrichers;
 using FileReaders;
 using FileReaders.Accounts;
 using FileReaders.AccountStatements;
 using FileReaders.ExchangeRates;
 using FileReaders.Prices;
 using FileReaders.Stocks;
-using LoaderConsole.StockTransactionEnrichers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -74,11 +74,10 @@ class Program
                 
                 services.AddTransient<IReader<ExchangeRate>, ExchangeRateReader>();
                 services.AddTransient<ExchangeRateLoader>();
-
                 
                 services.AddTransient<IStockPriceReader, StockPriceReader>();
                 services.AddTransient<StockPriceLoader>();
-
+                
                 services.AddTransient<IRecordedTotalValueReader, RecordedTotalValueReader>();
                 services.AddTransient<RecordedTotalValueLoader>();
 
@@ -124,10 +123,10 @@ class Program
         
         var accountRepository = serviceProvider.GetRequiredService<IAccountRepository>();
         
-        var datafolder = GetPathToDataFolder();
+        var dataFolder = GetPathToDataFolder();
 
-        await accountLoader.LoadFile(Path.Combine(datafolder, "accounts.json"));
-        await stockLoader.LoadFile(Path.Combine(datafolder, "stocks.json"));
+        await accountLoader.LoadFile(Path.Combine(dataFolder, "accounts.json"));
+        await stockLoader.LoadFile(Path.Combine(dataFolder, "stocks.json"));
             
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadCashStatements"))
         {
@@ -135,8 +134,8 @@ class Program
 
             foreach (var account in accounts)
             {
-                await cashStatementLoader.Load(Path.Combine(datafolder, "AccountStatements", account.AccountCode, "cashstatement_items.json"));
-                await stockTransactionLoader.Load(Path.Combine(datafolder, "AccountStatements", account.AccountCode, "transactions.json"));
+                await cashStatementLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "cashstatement_items.json"));
+                await stockTransactionLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "transactions.json"));
             }
         }
         

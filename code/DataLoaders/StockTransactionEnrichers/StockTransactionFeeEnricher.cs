@@ -1,7 +1,7 @@
 ﻿using Common;
 using Database.Entities;
 
-namespace LoaderConsole.StockTransactionEnrichers;
+namespace DataLoaders.StockTransactionEnrichers;
 
 public class StockTransactionFeeEnricher : IStockTransactionEnricher
 {

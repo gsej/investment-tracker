@@ -1,8 +1,8 @@
 ﻿using Common.Extensions;
 using Database.Entities;
 using Database.ValueTypes;
+using DataLoaders.StockTransactionEnrichers;
 using FluentAssertions;
-using LoaderConsole.StockTransactionEnrichers;
 using UnitTests.Builder;
 
 namespace UnitTests;

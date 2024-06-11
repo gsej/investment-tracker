@@ -2,11 +2,10 @@ using System.Globalization;
 using Common.Tracing;
 using Database;
 using FileReaders;
-using FileReaders.ExchangeRates;
 using Microsoft.Extensions.Logging;
 using ExchangeRate = Database.Entities.ExchangeRate;
 
-namespace LoaderConsole;
+namespace DataLoaders;
 
 public class ExchangeRateLoader
 {
