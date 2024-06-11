@@ -8,7 +8,6 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace Api.Controllers;
 
-
 public class ExampleSchemaFilter : ISchemaFilter
 {
     public void Apply(OpenApiSchema schema, SchemaFilterContext context)
@@ -23,7 +22,6 @@ public class ExampleSchemaFilter : ISchemaFilter
         }
     }
 }
-
 
 [ApiController]
 [Route("[controller]")]
@@ -66,12 +64,6 @@ public class AccountController : ControllerBase
     public async Task<AccountSummaryResult> GetSummary([FromBody] AccountSummaryRequest request)
     {
         return await _accountSummaryQueryHandler.Handle(request);
-    }
-    
-    [HttpPost("/account/recorded-total-values")]
-    public async Task<RecordedTotalValuesResult> GetHistory([FromBody] RecordedTotalValuesRequest request)
-    {
-        return await _recordedTotalValueQueryHandler.Handle(request);
     }
     
     [HttpPost("/account/account-value-history")]

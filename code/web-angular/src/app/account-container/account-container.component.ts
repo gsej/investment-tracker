@@ -53,11 +53,6 @@ export class AccountContainerComponent implements OnInit {
 
       });
 
-    this.accountsService.getRecordedTotalValues(accountCode)
-      .subscribe(recordedTotalValues => {
-        this.recordedTotalValues = recordedTotalValues;
-      });
-
     this.accountsService.getAccountValueHistory(accountCode)
       .subscribe(accountHistoricalValues => {
         this.accountHistoricalValues = accountHistoricalValues
