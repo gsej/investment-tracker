@@ -1,13 +1,8 @@
-using System.Runtime.InteropServices.JavaScript;
-using Api.QueryHandlers;
 using Database;
-using Database.Entities;
-using Database.ValueTypes;
-using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace UnitTests;
+namespace UnitTests.Api.QueryHandlers;
 
 public class GetStockPriceTests : IDisposable, IAsyncDisposable
 {

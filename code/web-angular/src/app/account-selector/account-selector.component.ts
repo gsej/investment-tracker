@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Account } from '../models/account';
 
 @Component({
@@ -14,11 +14,8 @@ export class AccountSelectorComponent {
   @Output()
   public accountsChanged: EventEmitter<string[]> = new EventEmitter<string[]>();
 
-
   accountsSelected(selection: any) {
-
     const accountCodes = selection.map((item: any) => item.value.accountCode);
     this.accountsChanged.next(accountCodes);
   }
-
 }

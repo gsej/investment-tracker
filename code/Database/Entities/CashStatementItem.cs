@@ -11,9 +11,16 @@ public class CashStatementItem
     public CashStatementItem(string accountCode,
         DateOnly date,
         string description,
-        decimal paymentAmountGbp,
-        decimal receiptAmountGbp)
+        decimal receiptAmountGbp,
+        decimal paymentAmountGbp)
     {
+        if (receiptAmountGbp < 0)
+            throw new ArgumentOutOfRangeException(nameof(receiptAmountGbp));
+
+        if (paymentAmountGbp > 0)
+            throw new ArgumentOutOfRangeException(nameof(paymentAmountGbp));
+        
+        
         AccountCode = accountCode;
         Date = date;
         Description = description;
@@ -23,7 +30,6 @@ public class CashStatementItem
 
     [Key]
     public Guid CashStatementItemId { get; set; }
-    
     
     [ForeignKey(nameof(Account))]
     [Required]

@@ -7,17 +7,17 @@ namespace Api.QueryHandlers.History;
 public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 {
     private readonly InvestmentsDbContext _context;
-    private readonly ISummaryQueryHandler _summaryQueryHandler;
+    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly ILogger<AccountValueHistoryQueryHandler> _logger;
 
     public AccountValueHistoryQueryHandler(InvestmentsDbContext context,
-        ISummaryQueryHandler summaryQueryHandler,
+        IAccountSummaryQueryHandler accountSummaryQueryHandler,
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler, 
         ILogger<AccountValueHistoryQueryHandler> logger)
     {
         _context = context;
-        _summaryQueryHandler = summaryQueryHandler;
+        _accountSummaryQueryHandler = accountSummaryQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _logger = logger;
     }
@@ -50,7 +50,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
         while (currentDate <= endDate)
         {
-            var daysResult = await _summaryQueryHandler.Handle(new SummaryRequest { AccountCode = request.AccountCode, Date = currentDate });
+            var daysResult = await _accountSummaryQueryHandler.Handle(new AccountSummaryRequest { AccountCode = request.AccountCode, Date = currentDate });
 
             var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
 

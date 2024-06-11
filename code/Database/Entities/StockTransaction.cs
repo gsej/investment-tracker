@@ -47,7 +47,8 @@ public class StockTransaction
     [MaxLength(15)]
     public string StockSymbol { get; private set; }
     
-    public Stock Stock { get; private set; }
+    // TODO: make this private setter
+    public Stock Stock { get; init; }
   
     [Required]
     public DateOnly Date { get; private set; }

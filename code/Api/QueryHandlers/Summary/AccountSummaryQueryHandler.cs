@@ -14,13 +14,16 @@ public static class CacheKeys
     public const string StockPrices = "StockPrices_{0}";
 }
 
-public class SummaryQueryHandler : ISummaryQueryHandler
+public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
 {
-    private readonly ILogger<SummaryQueryHandler> _logger;
+    private readonly ILogger<AccountSummaryQueryHandler> _logger;
     private readonly InvestmentsDbContext _context;
     private readonly IMemoryCache _memoryCache;
 
-    public SummaryQueryHandler(ILogger<SummaryQueryHandler> logger, InvestmentsDbContext context, IMemoryCache memoryCache)
+    public AccountSummaryQueryHandler(
+        ILogger<AccountSummaryQueryHandler> logger, 
+        InvestmentsDbContext context, 
+        IMemoryCache memoryCache)
     {
         _logger = logger;
         _context = context;
@@ -28,7 +31,7 @@ public class SummaryQueryHandler : ISummaryQueryHandler
     }
   
     // Summarizes the position of an account or set of accounts on a given day
-    public async Task<SummaryResult> Handle(SummaryRequest request)
+    public async Task<IAccountSummaryResult> Handle(AccountSummaryRequest request)
     {
         var cashStatementItems = await GetCashStatementItems(request.AccountCode);
         var cashBalance = cashStatementItems
@@ -105,7 +108,7 @@ public class SummaryQueryHandler : ISummaryQueryHandler
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
         var totalPriceAgeInDays = holdings.Sum(h => h.StockPrice?.AgeInDays ?? 0);
 
-        return new SummaryResult(Holdings: holdings, CashBalanceInGbp: cashBalance, new TotalValue(totalValueInGbp, totalPriceAgeInDays));
+        return new IAccountSummaryResult(Holdings: holdings, CashBalanceInGbp: cashBalance, new TotalValue(totalValueInGbp, totalPriceAgeInDays));
     }
 
     private async Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode)

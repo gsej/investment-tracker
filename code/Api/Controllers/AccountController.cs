@@ -13,7 +13,7 @@ public class ExampleSchemaFilter : ISchemaFilter
 {
     public void Apply(OpenApiSchema schema, SchemaFilterContext context)
     {
-        if (context.Type == typeof(SummaryRequest))
+        if (context.Type == typeof(AccountSummaryRequest))
         {
             schema.Example = new OpenApiObject()
             {
@@ -37,19 +37,19 @@ public class AccountController : ControllerBase
     public record AccountResponse(IList<Account> Accounts);
 
     private readonly ILogger<AccountController> _logger;
-    private readonly ISummaryQueryHandler _summaryQueryHandler;
+    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
     private readonly IAccountQueryHandler _accountQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
 
     public AccountController(ILogger<AccountController> logger, 
-        ISummaryQueryHandler summaryQueryHandler,
+        IAccountSummaryQueryHandler accountSummaryQueryHandler,
         IAccountQueryHandler accountQueryHandler, 
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler,
     IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler)
     {
         _logger = logger;
-        _summaryQueryHandler = summaryQueryHandler;
+        _accountSummaryQueryHandler = accountSummaryQueryHandler;
         _accountQueryHandler = accountQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
@@ -63,9 +63,9 @@ public class AccountController : ControllerBase
     }
 
     [HttpPost("/account/summary")]
-    public async Task<SummaryResult> GetSummary([FromBody] SummaryRequest request)
+    public async Task<IAccountSummaryResult> GetSummary([FromBody] AccountSummaryRequest request)
     {
-        return await _summaryQueryHandler.Handle(request);
+        return await _accountSummaryQueryHandler.Handle(request);
     }
     
     [HttpPost("/account/recorded-total-values")]

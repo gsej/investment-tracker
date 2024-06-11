@@ -38,7 +38,7 @@ builder.Services.AddDbContext<InvestmentsDbContext>(
         "Server=localhost;Initial Catalog=investments;Persist Security Info=False;User ID=sa;Password=Password123!;MultipleActiveResultSets=False;Encrypt=True;Trust Server Certificate=True;Connection Timeout=30;")
 );
 
-builder.Services.AddScoped<ISummaryQueryHandler, SummaryQueryHandler>();
+builder.Services.AddScoped<IAccountSummaryQueryHandler, AccountSummaryQueryHandler>();
 builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
 builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
 builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();

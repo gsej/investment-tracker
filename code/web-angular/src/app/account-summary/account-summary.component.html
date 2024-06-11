@@ -4,20 +4,19 @@
   <table mat-table [dataSource]="accountSummary.holdings">
 
     <ng-container matColumnDef="stockSymbol">
-      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <th mat-header-cell *matHeaderCellDef (click)="sort('stockSymbol')"> Symbol </th>
       <td mat-cell *matCellDef="let element"> {{element.stockSymbol}} </td>
       <td mat-footer-cell *matFooterCellDef></td>
-
     </ng-container>>
 
     <ng-container matColumnDef="stockDescription">
-      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <th mat-header-cell *matHeaderCellDef (click)="sort('stockDescription')"> Description </th>
       <td mat-cell *matCellDef="let element"> {{element.stockDescription}} </td>
       <td mat-footer-cell *matFooterCellDef>Total Value</td>
     </ng-container>>
 
     <ng-container matColumnDef="quantity">
-      <th mat-header-cell *matHeaderCellDef> Quantity </th>
+      <th mat-header-cell *matHeaderCellDef (click)="sort('quantity')"> Quantity </th>
       <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
       <td mat-footer-cell *matFooterCellDef></td>
     </ng-container>>
@@ -41,7 +40,7 @@
     </ng-container>
 
     <ng-container matColumnDef="valueInGbp">
-      <th mat-header-cell *matHeaderCellDef> Value (GBP)</th>
+      <th mat-header-cell *matHeaderCellDef (click)="sort('valueInGbp')"> Value (GBP)</th>
       <td mat-cell class="align-right" *matCellDef="let element"> {{ element.valueInGbp | number: '1.2' }} </td>
       <td mat-footer-cell class="align-right" *matFooterCellDef>{{ accountSummary.totalValue.valueInGbp | number: '1.2' }}</td>
     </ng-container>

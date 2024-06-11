@@ -41,8 +41,7 @@ public class CashStatementItemLoader
                 accountCode: ajBellCashStatementItem.AccountCode,
                 date: ajBellCashStatementItem.Date.ToDateOnly(), 
                 description: ajBellCashStatementItem.Description,
-                paymentAmountGbp: ajBellCashStatementItem.Payment_Amount_Gbp,
-                receiptAmountGbp: ajBellCashStatementItem.ReceiptAmountGbp);
+                receiptAmountGbp: ajBellCashStatementItem.ReceiptAmountGbp, paymentAmountGbp: ajBellCashStatementItem.Payment_Amount_Gbp);
 
             cashStatementItemTypeEnricher.Enrich(cashStatementItem);
 
