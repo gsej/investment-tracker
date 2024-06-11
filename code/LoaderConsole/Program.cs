@@ -55,6 +55,7 @@ class Program
                 services.AddTransient<IStockRepository, StockRepository>();
                 services.AddTransient<IStockPriceRepository, StockPriceRepository>();
                 services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
+                services.AddTransient<IRecordedTotalValueRepository, RecordedTotalValueRepository>();
 
                 services.AddTransient<IReader<CashStatementItem>, CashStatementReader>();
                 services.AddTransient<CashStatementItemLoader>();
@@ -78,7 +79,7 @@ class Program
                 services.AddTransient<IStockPriceReader, StockPriceReader>();
                 services.AddTransient<StockPriceLoader>();
                 
-                services.AddTransient<IRecordedTotalValueReader, RecordedTotalValueReader>();
+                services.AddTransient<IReader<RecordedTotalValue>, RecordedTotalValueReader>();
                 services.AddTransient<RecordedTotalValueLoader>();
 
                 services.AddSingleton<DateOnlyConverter>();
@@ -138,7 +139,12 @@ class Program
                 await stockTransactionLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "transactions.json"));
             }
         }
-        
+
+        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadRecordedTotalValues"))
+        {
+            await recordedTotalValueLoader.LoadFile(Path.Combine(dataFolder, "RecordedTotalValues", "recorded_total_values.json"), "recorded_total_values.json");
+        }
+
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadExchangeRates"))
         {
             var exchangeRateFolder = GetPathToExchangeRateFolder();

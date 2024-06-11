@@ -10,7 +10,7 @@ using NSubstitute;
 using UnitTests.Fakes;
 using StockPrice = FileReaders.Prices.StockPrice;
 
-namespace UnitTests.Loaders;
+namespace UnitTests.DataLoaders;
 
 public class StockPriceLoaderTests
 {

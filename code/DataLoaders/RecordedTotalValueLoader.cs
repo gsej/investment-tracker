@@ -1,52 +1,50 @@
-using Database;
+using Common.Extensions;
+using Database.Repositories;
 using FileReaders;
-using RecordedTotalValue = Database.Entities.RecordedTotalValue;
-
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 namespace DataLoaders;
 
 public class RecordedTotalValueLoader
 {
-    private readonly InvestmentsDbContext _context;
-    private readonly IRecordedTotalValueReader _reader;
+    private readonly ILogger<RecordedTotalValueLoader> _logger;
+    private readonly IRecordedTotalValueRepository _recordedTotalValueRepository;
+    private readonly IReader<RecordedTotalValue> _reader;
 
-    public RecordedTotalValueLoader(InvestmentsDbContext context, IRecordedTotalValueReader reader)
+    public RecordedTotalValueLoader(ILogger<RecordedTotalValueLoader> logger,
+        IRecordedTotalValueRepository recordedTotalValueRepository,
+        IReader<RecordedTotalValue> reader)
     {
-        _context = context;
+        _logger = logger;
+        _recordedTotalValueRepository = recordedTotalValueRepository;
         _reader = reader;
     }
 
-    public async Task LoadFile(string fileName)
+    public async Task LoadFile(string fileName, string source)
     {
-        var recordedValues = _reader.Read(fileName).ToList();
+        var recordedValues = (await _reader.Read(fileName)).ToList();
 
         foreach (var recordedValueDto in recordedValues)
         {
             decimal totalValueInGbp;
-            
+
             var totalValueParsable = decimal.TryParse(recordedValueDto.TotalValueInGbp, null, out totalValueInGbp);
-            
+
             if (!totalValueParsable)
             {
+                _logger.LogWarning("Could not parse total value {totalValue}", recordedValueDto.TotalValueInGbp);
                 continue;
             }
 
-            // var matchingAccount = accounts.SingleOrDefault(a =>
-            //     a.AccountCode.Equals(balanceDto.AccountCode, StringComparison.InvariantCultureIgnoreCase));
 
-            var date = DateTime.ParseExact(recordedValueDto.Date, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-       
-            
-            var dateOnly = new DateOnly(date.Year, date.Month, date.Day);
-
-            var knownValue = new RecordedTotalValue(
-                accountCode: recordedValueDto.AccountCode,
-                date: dateOnly,
-                totalValueInGbp: totalValueInGbp);
+            var knownValue = new Database.Entities.RecordedTotalValue(
+                recordedValueDto.AccountCode,
+                recordedValueDto.Date.ToDateOnly(),
+                totalValueInGbp);
 
             try
             {
-                _context.RecordedTotalValues.Add(knownValue);
-                await _context.SaveChangesAsync();
+                _recordedTotalValueRepository.Add(knownValue);
             }
             catch (Exception)
             {
@@ -54,5 +52,9 @@ public class RecordedTotalValueLoader
                 throw;
             }
         }
+
+        await _recordedTotalValueRepository.SaveChangesAsync();
+
+        return;
     }
 }
