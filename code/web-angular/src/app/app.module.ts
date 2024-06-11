@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { AccountSummaryComponent } from './account-summary/account-summary.compo
 import { AccountContainerComponent } from './account-container/account-container.component';
 import { RecordedTotalValuesComponent } from './recorded-total-values/recorded-total-values.component';
 import { AccountValueHistoryComponent } from './account-value-history/account-value-history.component';
+import { SortIndicatorComponent } from './sort-indicator/sort-indicator.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AccountValueHistoryComponent } from './account-value-history/account-va
     AccountSelectorComponent,
     AccountSummaryComponent,
     RecordedTotalValuesComponent,
-    AccountValueHistoryComponent
+    AccountValueHistoryComponent,
+    SortIndicatorComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { AccountValueHistoryComponent } from './account-value-history/account-va
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

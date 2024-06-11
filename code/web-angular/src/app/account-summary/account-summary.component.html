@@ -1,5 +1,8 @@
 <div *ngIf="accountSummary">
   <h2>Account Summary - Current Holdings</h2>
+  <div>
+
+  </div>
 
   <table mat-table [dataSource]="accountSummary.holdings">
     <ng-container matColumnDef="stockSymbol">
@@ -11,8 +14,9 @@
     </ng-container>
 
     <ng-container matColumnDef="stockDescription">
-      <th class="medium" mat-header-cell *matHeaderCellDef (click)="sort('stockDescription')">
+      <th class="medium" mat-header-cell *matHeaderCellDef (click)="sort('stockDescription')" >
         Description
+        <app-sort-indicator columnName="stockDescription" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
       </th>
       <td mat-cell *matCellDef="let element">{{ element.stockDescription }}</td>
       <td mat-footer-cell *matFooterCellDef>Cash Balance</td>
@@ -21,13 +25,17 @@
     <ng-container matColumnDef="quantity">
       <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('quantity')">
         Quantity
+        <app-sort-indicator columnName="quantity" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
       </th>
       <td mat-cell *matCellDef="let element">{{ element.quantity }}</td>
       <td mat-footer-cell *matFooterCellDef></td>
     </ng-container>
 
     <ng-container matColumnDef="price">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('price')">Price</th>
+      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('price')">
+        Price
+        <app-sort-indicator columnName="price" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+      </th>
       <td mat-cell *matCellDef="let element">
         {{ element.price }}
       </td>
@@ -43,7 +51,10 @@
     </ng-container>
 
     <ng-container matColumnDef="ageInDays">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('priceAgeInDays')">Price Age (days)</th>
+      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('priceAgeInDays')">
+        Price Age (days)
+        <app-sort-indicator columnName="priceAgeInDays" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+      </th>
       <td mat-cell class="align-center" *matCellDef="let element">
         {{ element.priceAgeInDays }}
       </td>
@@ -53,6 +64,7 @@
     <ng-container matColumnDef="valueInGbp">
       <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('valueInGbp')">
         Value (GBP)
+        <app-sort-indicator columnName="valueInGbp" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
       </th>
       <td mat-cell class="align-right" *matCellDef="let element">
         {{ element.valueInGbp | number : "1.2" }}

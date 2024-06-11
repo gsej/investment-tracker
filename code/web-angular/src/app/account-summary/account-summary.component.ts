@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { AccountSummaryViewModel } from '../view-models/accountSummaryViewModel';
 import { HoldingViewModel } from '../view-models/holdingViewModel';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-account-summary',
@@ -8,6 +10,12 @@ import { HoldingViewModel } from '../view-models/holdingViewModel';
   styleUrls: ['./account-summary.component.scss']
 })
 export class AccountSummaryComponent {
+
+   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+        'thumbs-up',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
+  }
 
   public displayedColumns = [
     'stockSymbol',
@@ -21,33 +29,33 @@ export class AccountSummaryComponent {
   @Input()
   public accountSummary: AccountSummaryViewModel | null = null;
 
-  private _sortAscending = true;
-  private _sortColumn: keyof HoldingViewModel = 'stockDescription';
+  public sortAscending = true;
+  public sortColumn: keyof HoldingViewModel = 'stockDescription';
 
   public sort(column: keyof HoldingViewModel) {
 
-    console.log(`sorting by ${this._sortColumn}`);
+    console.log(`sorting by ${this.sortColumn}`);
 
-    this._sortAscending = !this._sortAscending;
-    this._sortColumn = column;
+    this.sortAscending = !this.sortAscending;
+    this.sortColumn = column;
 
     if (this.accountSummary) {
       let holdings = [...this.accountSummary.holdings];
 
-      if (this._sortAscending) {
+      if (this.sortAscending) {
         holdings.sort((a, b) => {
-          if (typeof a[this._sortColumn] === 'number') {
-            return Number(a[this._sortColumn]) - Number(b[this._sortColumn]);
+          if (typeof a[this.sortColumn] === 'number') {
+            return Number(a[this.sortColumn]) - Number(b[this.sortColumn]);
           } else {
-            return String(a[this._sortColumn]).localeCompare(String(b[this._sortColumn]));
+            return String(a[this.sortColumn]).localeCompare(String(b[this.sortColumn]));
           }
         });
       } else {
         holdings.sort((a, b) => {
-          if (typeof a[this._sortColumn] === 'number') {
-            return Number(b[this._sortColumn]) - Number(a[this._sortColumn]);
+          if (typeof a[this.sortColumn] === 'number') {
+            return Number(b[this.sortColumn]) - Number(a[this.sortColumn]);
           } else {
-            return String(b[this._sortColumn]).localeCompare(String(a[this._sortColumn]));
+            return String(b[this.sortColumn]).localeCompare(String(a[this.sortColumn]));
 
           }
         });
