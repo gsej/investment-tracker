@@ -9,3 +9,16 @@
 .mat-mdc-footer-row td {
   border-top: 4px solid var(--mat-table-row-item-outline-color);
 }
+
+.small {
+  width: 10em;
+}
+
+.match-mdc-footer-row.small {
+  width: 10em;
+}
+
+.medium {
+  width: 30em;
+}
+

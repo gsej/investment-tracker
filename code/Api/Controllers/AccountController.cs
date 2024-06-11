@@ -63,7 +63,7 @@ public class AccountController : ControllerBase
     }
 
     [HttpPost("/account/summary")]
-    public async Task<IAccountSummaryResult> GetSummary([FromBody] AccountSummaryRequest request)
+    public async Task<AccountSummaryResult> GetSummary([FromBody] AccountSummaryRequest request)
     {
         return await _accountSummaryQueryHandler.Handle(request);
     }

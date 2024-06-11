@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { AccountSummary } from '../models/accountSummary';
-import { Holding } from '../models/holding';
+import { AccountSummaryViewModel } from '../view-models/accountSummaryViewModel';
+import { HoldingViewModel } from '../view-models/holdingViewModel';
 
 @Component({
   selector: 'app-account-summary',
@@ -9,15 +9,22 @@ import { Holding } from '../models/holding';
 })
 export class AccountSummaryComponent {
 
-  public displayedColumns = ['stockSymbol', 'stockDescription', 'quantity', 'price', 'currency', 'ageInDays', 'valueInGbp'];
+  public displayedColumns = [
+    'stockSymbol',
+    'stockDescription',
+    'quantity', 'price',
+    'currency',
+    'ageInDays',
+    'valueInGbp',
+    'comment'];
 
   @Input()
-  public accountSummary: AccountSummary | null = null;
+  public accountSummary: AccountSummaryViewModel | null = null;
 
   private _sortAscending = true;
-  private _sortColumn: keyof Holding = 'stockDescription';
+  private _sortColumn: keyof HoldingViewModel = 'stockDescription';
 
-  public sort(column: keyof Holding) {
+  public sort(column: keyof HoldingViewModel) {
 
     console.log(`sorting by ${this._sortColumn}`);
 

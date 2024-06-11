@@ -1,10 +1,10 @@
-import { StockPrice } from "./StockPrice";
-
-export class Holding {
+export class HoldingViewModel {
   stockSymbol!: string;
   stockDescription!: string;
   quantity!: number;
-  stockPrice!: StockPrice;
+  price!: number;
+  currency!: string;
+  priceAgeInDays!: number;
   valueInGbp!: number;
   comment!: string;
 }

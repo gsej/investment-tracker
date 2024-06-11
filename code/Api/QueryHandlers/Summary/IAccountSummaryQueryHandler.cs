@@ -2,5 +2,5 @@ namespace Api.QueryHandlers.Summary;
 
 public interface IAccountSummaryQueryHandler
 {
-    Task<IAccountSummaryResult> Handle(AccountSummaryRequest request);
+    Task<AccountSummaryResult> Handle(AccountSummaryRequest request);
 }

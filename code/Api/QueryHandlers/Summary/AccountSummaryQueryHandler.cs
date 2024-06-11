@@ -31,7 +31,7 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
     }
   
     // Summarizes the position of an account or set of accounts on a given day
-    public async Task<IAccountSummaryResult> Handle(AccountSummaryRequest request)
+    public async Task<AccountSummaryResult> Handle(AccountSummaryRequest request)
     {
         var cashStatementItems = await GetCashStatementItems(request.AccountCode);
         var cashBalance = cashStatementItems
@@ -108,7 +108,7 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
         var totalPriceAgeInDays = holdings.Sum(h => h.StockPrice?.AgeInDays ?? 0);
 
-        return new IAccountSummaryResult(Holdings: holdings, CashBalanceInGbp: cashBalance, new TotalValue(totalValueInGbp, totalPriceAgeInDays));
+        return new AccountSummaryResult(Holdings: holdings, CashBalanceInGbp: cashBalance, new TotalValue(totalValueInGbp, totalPriceAgeInDays));
     }
 
     private async Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode)

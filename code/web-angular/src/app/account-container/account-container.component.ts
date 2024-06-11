@@ -4,6 +4,7 @@ import { AccountsService } from '../accounts.service';
 import { AccountSummary } from '../models/accountSummary';
 import { RecordedTotalValues } from '../models/recordedTotalValues';
 import { AccountHistoricalValues } from '../models/accountHistoricalValues';
+import { AccountSummaryViewModel } from '../view-models/accountSummaryViewModel';
 
 @Component({
   selector: 'app-account-container',
@@ -14,7 +15,7 @@ export class AccountContainerComponent implements OnInit {
 
 
   public accounts: Account[] = []
-  public accountSummary: AccountSummary | null = null;
+  public accountSummary: AccountSummaryViewModel | null = null;
   public recordedTotalValues: RecordedTotalValues | null = null;
   public accountHistoricalValues: AccountHistoricalValues | null = null;
 
@@ -31,20 +32,26 @@ export class AccountContainerComponent implements OnInit {
   accountsSelected(accountCodes: string[]) {
     this.accountsService.getAccountSummary(accountCodes)
       .subscribe(summary => {
-        this.accountSummary = summary
 
-        this.accountSummary.holdings.push({
-          stockSymbol: "£",
-          stockDescription: "Cash Balance",
-          quantity: this.accountSummary.cashBalanceInGbp,
-          stockPrice: {
-            currency: "GBP",
-            price: 1,
-            ageInDays: 0
-          },
-          valueInGbp: this.accountSummary.cashBalanceInGbp,
-          comment: ""
-        });
+        this.accountSummary = {
+          holdings: summary.holdings.map(
+            holding => {
+              return {
+                stockSymbol: holding.stockSymbol,
+                stockDescription: holding.stockDescription,
+                quantity: holding.quantity,
+                price: holding.stockPrice.price,
+                currency: holding.stockPrice.currency,
+                priceAgeInDays: holding.stockPrice.ageInDays,
+                valueInGbp: holding.valueInGbp,
+                comment: holding.comment
+              }
+            }
+          ),
+          cashBalanceInGbp: summary.cashBalanceInGbp,
+          totalValueInGbp: summary.totalValue.valueInGbp,
+          totalPriceAgeInDays: summary.totalValue.totalPriceAgeInDays
+        }
 
       });
 
@@ -65,7 +72,7 @@ export class AccountContainerComponent implements OnInit {
         });
     }
     else {
-      this.accountHistoricalValues = { accountHistoricalValues:[]};
+      this.accountHistoricalValues = { accountHistoricalValues: [] };
     }
   }
 }
