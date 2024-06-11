@@ -29,6 +29,9 @@ export class AccountSummaryComponent {
   @Input()
   public accountSummary: AccountSummaryViewModel | null = null;
 
+  @Input()
+  public date!: string;
+
   public sortAscending = true;
   public sortColumn: keyof HoldingViewModel = 'stockDescription';
 

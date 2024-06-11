@@ -22,8 +22,8 @@ export class AccountsService {
     return this.http.get<any>('http://localhost:5100/accounts').pipe(map((result: any) => result.accounts));
   }
 
-  getAccountSummary(accountCode: string): Observable<AccountSummary> {
-    return this.http.post<AccountSummary>('http://localhost:5100/account/summary', { accountCode: accountCode, date: this._today })
+  getAccountSummary(accountCode: string, date: string): Observable<AccountSummary> {
+    return this.http.post<AccountSummary>('http://localhost:5100/account/summary', { accountCode: accountCode, date: date })
   }
 
   getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {

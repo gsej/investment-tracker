@@ -17,7 +17,11 @@ export class AccountContainerComponent implements OnInit {
   public recordedTotalValues: RecordedTotalValues | null = null;
   public accountHistoricalValues: AccountHistoricalValues | null = null;
 
+  public accountCode!: string;
+  public date!: string;
+
   constructor(private accountsService: AccountsService) {
+    this.setDateToToday();
   }
 
 
@@ -27,8 +31,27 @@ export class AccountContainerComponent implements OnInit {
     })
   }
 
+  setDateToToday() {
+    this.date = new Date().toISOString().substring(0, 10);
+
+  }
+
   accountSelected(accountCode: string) {
-    this.accountsService.getAccountSummary(accountCode)
+
+    this.setDateToToday();
+
+    this.accountCode = accountCode;
+
+    this.getSummary();
+
+    this.accountsService.getAccountValueHistory(accountCode)
+      .subscribe(accountHistoricalValues => {
+        this.accountHistoricalValues = accountHistoricalValues
+      });
+  }
+
+  getSummary() {
+    this.accountsService.getAccountSummary(this.accountCode, this.date)
       .subscribe(summary => {
 
         this.accountSummary = {
@@ -52,10 +75,12 @@ export class AccountContainerComponent implements OnInit {
         }
 
       });
+  }
 
-    this.accountsService.getAccountValueHistory(accountCode)
-      .subscribe(accountHistoricalValues => {
-        this.accountHistoricalValues = accountHistoricalValues
-      });
+  dateSelected(date: string) {
+    console.log("container, date selected: " + date);
+
+    this.date = date;
+    this.getSummary();
   }
 }

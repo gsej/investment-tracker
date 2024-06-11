@@ -39,6 +39,17 @@
       <td class="column" mat-cell *matCellDef="let element">{{ element.comment }}</td>
     </ng-container>
 
+    <ng-container matColumnDef="controls">
+      <th class="column" mat-header-cell *matHeaderCellDef>Controls</th>
+      <td class="column" mat-cell *matCellDef="let element">
+
+<button type="button" (click)="selectDate(element.date)">Select</button>
+
+
+
+      </td>
+    </ng-container>
+
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 

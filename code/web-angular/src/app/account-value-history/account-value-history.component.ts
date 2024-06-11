@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AccountHistoricalValues } from '../models/accountHistoricalValues';
 
 @Component({
@@ -15,8 +15,17 @@ export class AccountValueHistoryComponent {
     'totalPriceAgeInDays',
     'recordedTotalValueInGbp',
     'discrepancyPercentage',
-    'comment'];
+    'comment',
+    'controls'];
 
   @Input()
   public accountHistoricalValues: AccountHistoricalValues | null = null;
+
+  @Output()
+  public dateSelected: EventEmitter<string> = new EventEmitter<string>();
+
+  public selectDate($event :any) {
+    console.log($event);
+    this.dateSelected.next($event);
+  }
 }

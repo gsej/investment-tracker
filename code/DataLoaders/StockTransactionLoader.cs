@@ -69,7 +69,11 @@ public class StockTransactionLoader
 
             // TODO: fix this hack:
             // Is this actually for all GILTs? 
-            if (matchingStock?.StockSymbol == "T26A" || matchingStock?.StockSymbol == "T25" || matchingStock?.StockSymbol == "T27A")
+            if (matchingStock?.StockSymbol == "T26A" 
+                || matchingStock?.StockSymbol == "T25" 
+                || matchingStock?.StockSymbol == "T27A"
+                || matchingStock?.StockSymbol == "TY25"
+                )
             {
                 // quantities for some GILTs from AJBell are out by a factor of 100
                 quantity = quantity / 100;
