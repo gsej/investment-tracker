@@ -1,5 +1,7 @@
-<mat-selection-list #accountList formControlName="selectAccounts" (selectionChange)="accountsSelected(accountList.selectedOptions.selected)">
-  <mat-list-option *ngFor="let account of accounts" [value]="account">
-    {{ account.accountCode}}
-  </mat-list-option>
-</mat-selection-list>
+<mat-form-field>
+  <mat-select placeholder="Account" (selectionChange)="accountsSelected($event)">
+    <mat-option *ngFor="let account of accounts" [value]="account">
+      {{ account.accountCode }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

@@ -6,7 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { AccountContainerComponent } from './account-container/account-container
 import { RecordedTotalValuesComponent } from './recorded-total-values/recorded-total-values.component';
 import { AccountValueHistoryComponent } from './account-value-history/account-value-history.component';
 import { SortIndicatorComponent } from './sort-indicator/sort-indicator.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,8 +35,11 @@ import { SortIndicatorComponent } from './sort-indicator/sort-indicator.componen
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatListModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+//    MatCheckboxModule,
+ //   MatInputModule,
+//    MatListModule,
     MatTableModule,
     MatIconModule
   ],

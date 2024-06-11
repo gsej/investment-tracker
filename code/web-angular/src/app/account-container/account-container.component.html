@@ -1,4 +1,4 @@
-<app-account-selector [accounts]="accounts" (accountsChanged)="accountsSelected($event)"></app-account-selector>
+<app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 <app-account-summary [accountSummary]="accountSummary"></app-account-summary>
 <app-recorded-total-values *ngIf="recordedTotalValues" [recordedTotalValues]="recordedTotalValues"></app-recorded-total-values>
 <app-account-value-history *ngIf="accountHistoricalValues" [accountHistoricalValues]="accountHistoricalValues"></app-account-value-history>

@@ -12,10 +12,9 @@ export class AccountSelectorComponent {
   public accounts: Account[] = []
 
   @Output()
-  public accountsChanged: EventEmitter<string[]> = new EventEmitter<string[]>();
+  public accountChanged: EventEmitter<string> = new EventEmitter<string>();
 
-  accountsSelected(selection: any) {
-    const accountCodes = selection.map((item: any) => item.value.accountCode);
-    this.accountsChanged.next(accountCodes);
+  accountsSelected(event: any) {
+    this.accountChanged.next(event.value.accountCode);
   }
 }
