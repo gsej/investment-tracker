@@ -20,8 +20,10 @@ export class AccountSummaryComponent {
   public displayedColumns = [
     'stockSymbol',
     'stockDescription',
-    'quantity', 'price',
+    'quantity',
+    'price',
     'currency',
+    'originalCurrency',
     'ageInDays',
     'valueInGbp',
     'comment'];

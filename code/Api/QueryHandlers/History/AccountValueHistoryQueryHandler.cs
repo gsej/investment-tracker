@@ -45,9 +45,11 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
         var accountCode = request.AccountCode;
         
-        // get record total values
+        // get recorded total values
         var recordedTotalValues = await _recordedTotalValueQueryHandler.Handle(new RecordedTotalValuesRequest(accountCode));
 
+        decimal? previousDayTotal = null;
+        
         while (currentDate <= endDate)
         {
             var daysResult = await _accountSummaryQueryHandler.Handle(new AccountSummaryRequest { AccountCode = request.AccountCode, Date = currentDate });
@@ -67,10 +69,17 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
                 historicalValue.RecordedTotalValueInGbp = matchingRecordedTotalValue.TotalValueInGbp;
                 historicalValue.DiscrepancyPercentage = 100 * (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
             }
+
+            if (previousDayTotal.HasValue)
+            {
+                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - previousDayTotal.Value;
+                historicalValue.DifferencePercentage = 100 * (historicalValue.DifferenceToPreviousDay / previousDayTotal.Value);
+            }
             
             results.Add(historicalValue);
 
             currentDate = currentDate.AddDays(1);
+            previousDayTotal = historicalValue.ValueInGbp;
         }
 
         results = results.OrderBy(r => r.Date).ToList();

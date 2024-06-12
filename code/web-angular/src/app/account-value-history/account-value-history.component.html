@@ -1,8 +1,11 @@
-<div *ngIf="accountHistoricalValues">
+<div *ngIf="accountHistoricalValuesToShow.length">
 
   <h2>Account Historical Values</h2>
 
-  <table mat-table [dataSource]="accountHistoricalValues.accountHistoricalValues">
+  <mat-checkbox (change)="recordedOnly($event)">Only show with recorded values</mat-checkbox>
+  <mat-checkbox (change)="bigDifferenceOnly($event)">Only show with big difference from previous</mat-checkbox>
+
+  <table mat-table [dataSource]="accountHistoricalValuesToShow">
 
     <ng-container matColumnDef="date">
       <th class="date-column" mat-header-cell *matHeaderCellDef>Date</th>
@@ -32,6 +35,16 @@
     <ng-container matColumnDef="discrepancyPercentage">
       <th class="percentage-column" mat-header-cell *matHeaderCellDef>Discrepancy</th>
       <td class="percentage-column" mat-cell *matCellDef="let element">{{ element.discrepancyPercentage | number: '1.2' }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="differenceToPreviousDay">
+      <th class="value-column" mat-header-cell *matHeaderCellDef>Difference</th>
+      <td class="value-column" mat-cell *matCellDef="let element">{{ element.differenceToPreviousDay | number: '1.2' }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="differencePercentage">
+      <th class="percentage-column" mat-header-cell *matHeaderCellDef>Difference %</th>
+      <td class="percentage-column" mat-cell *matCellDef="let element">{{ element.differencePercentage | number: '1.2' }}</td>
     </ng-container>
 
     <ng-container matColumnDef="comment">

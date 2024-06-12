@@ -6,5 +6,7 @@ export class AccountHistoricalValue {
   totalPriceAgeInDays!: number;
   recordedTotalValueInGbp!: number;
   discrepancyPercentage!: number;
+  differenceToPreviousDay!: number;
+  differencePercentage!: number;
   comment!: string;
 }

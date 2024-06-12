@@ -50,6 +50,14 @@
       <td mat-footer-cell *matFooterCellDef>GBP</td>
     </ng-container>
 
+    <ng-container matColumnDef="originalCurrency">
+      <th class="small" mat-header-cell *matHeaderCellDef>Original Currency</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.originalCurrency }}
+      </td>
+      <td mat-footer-cell *matFooterCellDef>GBP</td>
+    </ng-container>
+
     <ng-container matColumnDef="ageInDays">
       <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('priceAgeInDays')">
         Price Age (days)
@@ -105,6 +113,10 @@
     </ng-container>
 
     <ng-container matColumnDef="currency">
+      <td mat-footer-cell class="small" *matFooterCellDef>GBP</td>
+    </ng-container>
+
+    <ng-container matColumnDef="originalCurrency">
       <td mat-footer-cell class="small" *matFooterCellDef>GBP</td>
     </ng-container>
 

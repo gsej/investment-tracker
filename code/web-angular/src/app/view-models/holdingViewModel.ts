@@ -4,6 +4,7 @@ export class HoldingViewModel {
   quantity!: number;
   price!: number;
   currency!: string;
+  originalCurrency!: string;
   priceAgeInDays!: number;
   valueInGbp!: number;
   comment!: string;

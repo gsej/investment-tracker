@@ -63,6 +63,7 @@ export class AccountContainerComponent implements OnInit {
                 quantity: holding.quantity,
                 price: holding.stockPrice.price,
                 currency: holding.stockPrice.currency,
+                originalCurrency: holding.stockPrice.originalCurrency,
                 priceAgeInDays: holding.stockPrice.ageInDays,
                 valueInGbp: holding.valueInGbp,
                 comment: holding.comment

@@ -1,6 +1,7 @@
 using Common.Extensions;
 using Common.Tracing;
 using Database;
+using Database.ValueTypes;
 using DataLoaders.StockTransactionEnrichers;
 using FileReaders;
 using Microsoft.EntityFrameworkCore;
@@ -67,17 +68,22 @@ public class StockTransactionLoader
             
             var quantity = ajBellStockTransaction.Quantity;
 
-            // TODO: fix this hack:
-            // Is this actually for all GILTs? 
-            if (matchingStock?.StockSymbol == "T26A" 
-                || matchingStock?.StockSymbol == "T25" 
-                || matchingStock?.StockSymbol == "T27A"
-                || matchingStock?.StockSymbol == "TY25"
-                )
+            if (matchingStock.StockType == StockTypes.Gilt)
             {
-                // quantities for some GILTs from AJBell are out by a factor of 100
                 quantity = quantity / 100;
             }
+
+            // // TODO: fix this hack:
+            // // Is this actually for all GILTs? 
+            // if (matchingStock?.StockSymbol == "T26A" 
+            //     || matchingStock?.StockSymbol == "T25" 
+            //     || matchingStock?.StockSymbol == "T27A"
+            //     || matchingStock?.StockSymbol == "TY25"
+            //     )
+            // {
+            //     // quantities for some GILTs from AJBell are out by a factor of 100
+            //     quantity = quantity / 100;
+            // }
             
             var stockTransaction = new StockTransaction(
                 accountCode: ajBellStockTransaction.AccountCode,

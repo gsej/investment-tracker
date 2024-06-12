@@ -101,7 +101,12 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
                     comment = stockPrice.Error;
                 }
                 
-                holdings.Add(new Holding(stock.StockSymbol, stock.Description, totalHeld, stockPrice, value ?? 0, comment));
+                holdings.Add(new Holding(
+                    stock.StockSymbol, 
+                    stock.Description, 
+                    totalHeld, 
+                    stockPrice, 
+                    value ?? 0, comment));
             }
         }
 
@@ -206,7 +211,7 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
 
             var ageInDays = requestDate.DayNumber - priceDate.DayNumber;
             
-            return new StockPriceResult(stockPrice.Price, stockPrice.Currency, ageInDays);
+            return new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, ageInDays);
         }
 
         return StockPriceResult.Missing(stockSymbol);
