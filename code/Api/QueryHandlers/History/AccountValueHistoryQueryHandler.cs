@@ -67,13 +67,21 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             if (matchingRecordedTotalValue != null)
             {
                 historicalValue.RecordedTotalValueInGbp = matchingRecordedTotalValue.TotalValueInGbp;
-                historicalValue.DiscrepancyPercentage = 100 * (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
+
+                if (historicalValue.ValueInGbp != 0)
+                {
+                    historicalValue.DiscrepancyPercentage = 100 * (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
+                }
             }
 
             if (previousDayTotal.HasValue)
             {
                 historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - previousDayTotal.Value;
-                historicalValue.DifferencePercentage = 100 * (historicalValue.DifferenceToPreviousDay / previousDayTotal.Value);
+
+                if (previousDayTotal.Value != 0)
+                {
+                    historicalValue.DifferencePercentage = 100 * (historicalValue.DifferenceToPreviousDay / previousDayTotal.Value);
+                }
             }
             
             results.Add(historicalValue);
