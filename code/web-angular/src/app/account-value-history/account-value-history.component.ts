@@ -55,7 +55,7 @@ export class AccountValueHistoryComponent implements OnInit {
     let rowsToShow = [...this.accountHistoricalValues.accountHistoricalValues];
 
     if (this.showBigDifferenceOnly) {
-      rowsToShow = [...rowsToShow.filter(v => v.differencePercentage > 1)];
+      rowsToShow = [...rowsToShow.filter(v => Math.abs(v.differencePercentage) > 1)];
     }
 
     if (this.showRecordedOnly) {
