@@ -39,8 +39,12 @@ export class AccountContainerComponent implements OnInit {
   accountSelected(accountCode: string) {
 
     this.setDateToToday();
-
     this.accountCode = accountCode;
+
+    this.accountHistoricalValues = {
+      accountHistoricalValues: []
+    };
+
 
     this.getSummary();
 

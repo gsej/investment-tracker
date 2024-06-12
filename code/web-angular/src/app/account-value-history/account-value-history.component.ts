@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { AccountHistoricalValues } from '../models/accountHistoricalValues';
 import { AccountHistoricalValue } from '../models/accountHistoricalValue';
 
@@ -7,7 +7,7 @@ import { AccountHistoricalValue } from '../models/accountHistoricalValue';
   templateUrl: './account-value-history.component.html',
   styleUrls: ['./account-value-history.component.scss']
 })
-export class AccountValueHistoryComponent implements OnInit {
+export class AccountValueHistoryComponent implements OnChanges {
 
   public displayedColumns = [
     'date',
@@ -35,7 +35,7 @@ export class AccountValueHistoryComponent implements OnInit {
   private showRecordedOnly = false;
   private showBigDifferenceOnly = false;
 
-  ngOnInit(): void {
+  ngOnChanges(changes: SimpleChanges): void {
     this.accountHistoricalValuesToShow = [...this.accountHistoricalValues.accountHistoricalValues];
   }
 
