@@ -1,141 +1,121 @@
 <div *ngIf="accountSummary">
-  <h2>Account Summary - Current Holdings - as of {{ date }} </h2>
-  <div>
-
-  </div>
-
-  <table mat-table [dataSource]="accountSummary.holdings">
-    <ng-container matColumnDef="stockSymbol">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('stockSymbol')">
-        Symbol
+  <h2>Account Summary - Current Holdings - as of {{ date }}</h2>
+  <!-- add sort icons -->
+  <table>
+    <thead>
+      <th (click)="sort('stockSymbol')">
+        Stock Symbol
+        <app-sort-indicator
+          columnName="stockSymbol"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.stockSymbol }}</td>
-      <td mat-footer-cell *matFooterCellDef>£</td>
-    </ng-container>
-
-    <ng-container matColumnDef="stockDescription">
-      <th class="medium" mat-header-cell *matHeaderCellDef (click)="sort('stockDescription')" >
-        Description
-        <app-sort-indicator columnName="stockDescription" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+      <th (click)="sort('stockDescription')">
+        Stock Description
+        <app-sort-indicator
+          columnName="stockDescription"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.stockDescription }}</td>
-      <td mat-footer-cell *matFooterCellDef>Cash Balance</td>
-    </ng-container>
-
-    <ng-container matColumnDef="quantity">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('quantity')">
+      <th (click)="sort('quantity')">
         Quantity
-        <app-sort-indicator columnName="quantity" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+        <app-sort-indicator
+          columnName="quantity"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell *matCellDef="let element">{{ element.quantity }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="price">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('price')">
+      <th (click)="sort('price')">
         Price
-        <app-sort-indicator columnName="price" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+        <app-sort-indicator
+          columnName="price"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.price }}
-      </td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="currency">
-      <th class="small" mat-header-cell *matHeaderCellDef>Currency</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.currency }}
-      </td>
-      <td mat-footer-cell *matFooterCellDef>GBP</td>
-    </ng-container>
-
-    <ng-container matColumnDef="originalCurrency">
-      <th class="small" mat-header-cell *matHeaderCellDef>Original Currency</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.originalCurrency }}
-      </td>
-      <td mat-footer-cell *matFooterCellDef>GBP</td>
-    </ng-container>
-
-    <ng-container matColumnDef="ageInDays">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('priceAgeInDays')">
+      <th (click)="sort('currency')">
+        Currency
+        <app-sort-indicator
+          columnName="currency"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
+      </th>
+      <th (click)="sort('originalCurrency')">
+        Original Currency
+        <app-sort-indicator
+          columnName="originalCurrency"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
+      </th>
+      <th (click)="sort('priceAgeInDays')">
         Price Age (days)
-        <app-sort-indicator columnName="priceAgeInDays" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+        <app-sort-indicator
+          columnName="priceAgeInDays"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell class="align-center" *matCellDef="let element">
-        {{ element.priceAgeInDays }}
-      </td>
-      <td mat-footer-cell class="align-center" *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="valueInGbp">
-      <th class="small" mat-header-cell *matHeaderCellDef (click)="sort('valueInGbp')">
+      <th (click)="sort('valueInGbp')">
         Value (GBP)
-        <app-sort-indicator columnName="valueInGbp" [sortColumn]="sortColumn" [sortAscending]="sortAscending"></app-sort-indicator>
+        <app-sort-indicator
+          columnName="valueInGbp"
+          [sortColumn]="sortColumn"
+          [sortAscending]="sortAscending"
+        ></app-sort-indicator>
       </th>
-      <td mat-cell class="align-right" *matCellDef="let element">
-        {{ element.valueInGbp | number : "1.2" }}
-      </td>
-      <td mat-footer-cell class="align-right" *matFooterCellDef>
-        {{ accountSummary.cashBalanceInGbp | number : "1.2" }}
-      </td>
-    </ng-container>
-
-    <ng-container matColumnDef="comment">
-      <th class="small" mat-header-cell *matHeaderCellDef>Quality Comment</th>
-      <td mat-cell class="align-right" *matCellDef="let element">
-        {{ element.comment }}
-      </td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    <tr class="my-foot" mat-footer-row *matFooterRowDef="displayedColumns"></tr>
-  </table>
-
-  <table mat-table >
-    <ng-container matColumnDef="stockSymbol">
-      <td mat-footer-cell class="small" *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="stockDescription">
-      <td mat-footer-cell class="medium" *matFooterCellDef>Total Value</td>
-    </ng-container>
-
-    <ng-container matColumnDef="quantity">
-      <td mat-footer-cell class="small" *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="price">
-      <td mat-footer-cell class="small" *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="currency">
-      <td mat-footer-cell class="small" *matFooterCellDef>GBP</td>
-    </ng-container>
-
-    <ng-container matColumnDef="originalCurrency">
-      <td mat-footer-cell class="small" *matFooterCellDef>GBP</td>
-    </ng-container>
-
-    <ng-container matColumnDef="ageInDays">
-      <td mat-footer-cell class="small align-center" *matFooterCellDef>
-        {{ accountSummary.totalPriceAgeInDays }}
-      </td>
-    </ng-container>
-
-    <ng-container matColumnDef="valueInGbp">
-      <td mat-footer-cell class="small align-right" *matFooterCellDef>
-        {{ accountSummary.totalValueInGbp | number : "1.2" }}
-      </td>
-    </ng-container>
-
-    <ng-container matColumnDef="comment">
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-
-    <tr class="my-foot" mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+      <th>Comment</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let holding of accountSummary.holdings">
+        <td>{{ holding.stockSymbol }}</td>
+        <td>{{ holding.stockDescription }}</td>
+        <td>{{ holding.quantity }}</td>
+        <td>{{ holding.price }}</td>
+        <td>{{ holding.currency }}</td>
+        <td>{{ holding.originalCurrency }}</td>
+        <td>{{ holding.priceAgeInDays }}</td>
+        <td>{{ holding.valueInGbp }}</td>
+        <td>{{ holding.comment }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>Total Value Stocks</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>??</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Cash Balance</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ accountSummary.cashBalanceInGbp }}</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Total Value</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ accountSummary.totalPriceAgeInDays }}</td>
+        <td>{{ accountSummary.totalValueInGbp }}</td>
+        <td></td>
+      </tr>
+    </tfoot>
   </table>
 </div>

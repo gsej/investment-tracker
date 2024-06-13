@@ -17,17 +17,6 @@ export class AccountSummaryComponent {
         sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
   }
 
-  public displayedColumns = [
-    'stockSymbol',
-    'stockDescription',
-    'quantity',
-    'price',
-    'currency',
-    'originalCurrency',
-    'ageInDays',
-    'valueInGbp',
-    'comment'];
-
   @Input()
   public accountSummary: AccountSummaryViewModel | null = null;
 

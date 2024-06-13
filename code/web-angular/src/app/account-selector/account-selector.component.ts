@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Account } from '../models/account';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-account-selector',
@@ -14,7 +15,16 @@ export class AccountSelectorComponent {
   @Output()
   public accountChanged: EventEmitter<string> = new EventEmitter<string>();
 
-  accountsSelected(event: any) {
-    this.accountChanged.next(event.value.accountCode);
+  accountSelectorForm: FormGroup;
+
+  constructor() {
+    this.accountSelectorForm = new FormGroup({
+      account: new FormControl(null)
+    });
+  }
+
+  onAccountChanged() {
+    let selectedAccountCode = this.accountSelectorForm.controls["account"].value.accountCode;
+    this.accountChanged.next(selectedAccountCode);
   }
 }

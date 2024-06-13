@@ -1,3 +1,15 @@
-<app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
-<app-account-summary [accountSummary]="accountSummary" [date]="date"></app-account-summary>
-<app-account-value-history *ngIf="accountHistoricalValues" [accountHistoricalValues]="accountHistoricalValues" (dateSelected)="dateSelected($event)"></app-account-value-history>
+<form>
+  <app-account-selector
+    [accounts]="accounts"
+    (accountChanged)="accountSelected($event)"
+  ></app-account-selector>
+  <app-account-summary
+    [accountSummary]="accountSummary"
+    [date]="date"
+  ></app-account-summary>
+  <app-account-value-history
+    *ngIf="accountHistoricalValues"
+    [accountHistoricalValues]="accountHistoricalValues"
+    (dateSelected)="dateSelected($event)"
+  ></app-account-value-history>
+</form>
