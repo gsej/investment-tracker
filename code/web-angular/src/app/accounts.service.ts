@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { RecordedTotalValues } from './models/recordedTotalValues';
 import { AccountHistoricalValues } from './models/accountHistoricalValues';
+import { AccountAnnualPerformances } from './models/accountAnnualPerformances';
 
 
 @Injectable({
@@ -32,5 +33,9 @@ export class AccountsService {
 
   getAccountValueHistory(accountCode: string): Observable<AccountHistoricalValues> {
     return this.http.post<AccountHistoricalValues>('http://localhost:5100/account/account-value-history', { accountCode: accountCode })
+  }
+
+  getAccountAnnualPerformance(accountCode: string, date: string): Observable<AccountAnnualPerformances> {
+    return this.http.post<AccountAnnualPerformances>('http://localhost:5100/account/annual-performance', { accountCode: accountCode, asOfDate: date })
   }
 }

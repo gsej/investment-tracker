@@ -12,7 +12,7 @@ public class Account
         AccountCode = accountCode;
     }
     
-    public Account(string accountCode, DateOnly? openingDate)
+    public Account(string accountCode, DateOnly openingDate)
     {
         AccountCode = accountCode;
         OpeningDate = openingDate;
@@ -24,5 +24,5 @@ public class Account
     [MaxLength(20)]
     public string AccountCode { get; init; }
     
-    public DateOnly? OpeningDate { get; init; }
+    public DateOnly OpeningDate { get; init; }
 }

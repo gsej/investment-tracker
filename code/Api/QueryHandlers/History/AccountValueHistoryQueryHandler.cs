@@ -33,15 +33,13 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             throw new InvalidOperationException(); // TODO: perhaps return something better?
         }
         
-        var startDate = account.OpeningDate ?? new DateOnly(2020, 1, 1);
-
         var now = DateTime.UtcNow;
         var endDate = new DateOnly(now.Year, now.Month, now.Day);
        
         // iterate over each day in the date range
         var results = new List<AccountHistoricalValue>();
 
-        var currentDate = startDate;
+        var currentDate = account.OpeningDate;
 
         var accountCode = request.AccountCode;
         

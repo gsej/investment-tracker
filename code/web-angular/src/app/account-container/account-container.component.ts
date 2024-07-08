@@ -4,6 +4,7 @@ import { AccountsService } from '../accounts.service';
 import { RecordedTotalValues } from '../models/recordedTotalValues';
 import { AccountHistoricalValues } from '../models/accountHistoricalValues';
 import { AccountSummaryViewModel } from '../view-models/accountSummaryViewModel';
+import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
 
 @Component({
   selector: 'app-account-container',
@@ -16,6 +17,7 @@ export class AccountContainerComponent implements OnInit {
   public accountSummary: AccountSummaryViewModel | null = null;
   public recordedTotalValues: RecordedTotalValues | null = null;
   public accountHistoricalValues: AccountHistoricalValues | null = null;
+  public accountAnnualPerformances: AccountAnnualPerformances | null = null;
 
   public accountCode!: string;
   public date!: string;
@@ -52,6 +54,11 @@ export class AccountContainerComponent implements OnInit {
       .subscribe(accountHistoricalValues => {
         this.accountHistoricalValues = accountHistoricalValues
       });
+
+    this.accountsService.getAccountAnnualPerformance(accountCode, this.date)
+    .subscribe(accountAnnualPerformances => {
+      this.accountAnnualPerformances = accountAnnualPerformances
+    });
   }
 
   getSummary() {

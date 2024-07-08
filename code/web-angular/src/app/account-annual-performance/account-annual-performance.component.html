@@ -1,0 +1,27 @@
+<div *ngIf="accountHistoricalValuesToShow.length">
+
+  <h2>Account Annual Performance Values</h2>
+
+  <table mat-table [dataSource]="accountAnnualPerformances">
+
+    <ng-container matColumnDef="year">
+      <th class="date-column" mat-header-cell *matHeaderCellDef>Year</th>
+      <td class="date-column" mat-cell *matCellDef="let element">{{element.date}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="accountCode">
+      <th class="account-column" mat-header-cell *matHeaderCellDef>Account Code</th>
+      <td class="account-column" mat-cell *matCellDef="let element">{{element.accountCode}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="inflowsInGbp">
+      <th class="value-column" mat-header-cell *matHeaderCellDef>inflowsInGbp </th>
+      <td class="value-column" mat-cell *matCellDef="let element">{{ element.inflowsInGbp | number: '1.2' }}</td>
+    </ng-container>
+
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+  </table>
+</div>

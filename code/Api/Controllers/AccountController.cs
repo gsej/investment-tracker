@@ -27,11 +27,6 @@ public class ExampleSchemaFilter : ISchemaFilter
 [Route("[controller]")]
 public class AccountController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freeoing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     public record AccountResponse(IList<Account> Accounts);
 
     private readonly ILogger<AccountController> _logger;
@@ -39,18 +34,21 @@ public class AccountController : ControllerBase
     private readonly IAccountQueryHandler _accountQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
+    private readonly IAnnualPerformanceQueryHandler _annualPerformanceQueryHandler;
 
-    public AccountController(ILogger<AccountController> logger, 
+    public AccountController(ILogger<AccountController> logger,
         IAccountSummaryQueryHandler accountSummaryQueryHandler,
-        IAccountQueryHandler accountQueryHandler, 
+        IAccountQueryHandler accountQueryHandler,
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler,
-    IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler)
+        IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler,
+        IAnnualPerformanceQueryHandler annualPerformanceQueryHandler)
     {
         _logger = logger;
         _accountSummaryQueryHandler = accountSummaryQueryHandler;
         _accountQueryHandler = accountQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
+        _annualPerformanceQueryHandler = annualPerformanceQueryHandler;
     }
 
     [HttpGet("/accounts")]
@@ -70,5 +68,11 @@ public class AccountController : ControllerBase
     public async Task<AccountValueHistoryResult> GetAccountValueHistory([FromBody] AccountValueHistoryRequest request)
     {
         return await _accountValueHistoryQueryHandler.Handle(request);
+    }
+    
+    [HttpPost("/account/annual-performance")]
+    public async Task<AnnualPerformanceResult> GetAccountAnnualPerformance([FromBody] AnnualPerformanceRequest request)
+    {
+        return await _annualPerformanceQueryHandler.Handle(request);
     }
 }

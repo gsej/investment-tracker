@@ -41,16 +41,4 @@ public class DateOnlyConverterTests
 
         result.Should().BeEquivalentTo(new DateOnly(2021, 1, 1));
     }
-    
-    [Theory]
-    [InlineData("")]
-    [InlineData(null)]
-    public void CanConvertNullOrEmptyStringToNullDateOnly(string dateOnlyAsString)
-    {
-        var converter = new DateOnlyConverter();
-        
-        var result = converter.ConvertFromProvider(dateOnlyAsString);
-
-        result.Should().BeNull();
-    }
 }

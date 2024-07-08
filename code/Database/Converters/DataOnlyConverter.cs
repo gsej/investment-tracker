@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Database.Converters;
 
-public class DateOnlyConverter : ValueConverter<DateOnly?, string>
+public class DateOnlyConverter : ValueConverter<DateOnly, string>
 {
     public DateOnlyConverter() : base(
         dateOnly => ConvertFromDateOnlyToString(dateOnly), 
@@ -15,11 +15,11 @@ public class DateOnlyConverter : ValueConverter<DateOnly?, string>
         return dateOnly?.ToString("yyyy-MM-dd");
     }
     
-    private static DateOnly? ConvertFromStringToDateOnly(string dateOnlyAsString)
+    private static DateOnly ConvertFromStringToDateOnly(string dateOnlyAsString)
     {
         if (string.IsNullOrWhiteSpace(dateOnlyAsString))
         {
-            return null;
+            throw new InvalidOperationException("DateOnly string cannot be null or empty.");
         }
 
         return DateOnly.ParseExact(dateOnlyAsString, "yyyy-MM-dd");

@@ -46,7 +46,7 @@ public class AccountLoader
             {
                 _logger.LogInformation("beginning to process account {accountDto}", accountDto);
 
-                var account = new Account(accountDto.AccountCode, (DateOnly?)_dateOnlyConverter.ConvertFromProvider(accountDto.OpeningDate));
+                var account = new Account(accountDto.AccountCode, (DateOnly)_dateOnlyConverter.ConvertFromProvider(accountDto.OpeningDate));
 
                 _repository.Add(account);
             }
