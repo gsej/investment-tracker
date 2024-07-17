@@ -11,7 +11,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   dotNetFramework: 'net8.0'
-  dotNetVersion: '7.0.x'  
+  dotNetVersion: '8.0.x'  
 
 stages:
   - stage: build
@@ -20,7 +20,7 @@ stages:
     - job:
       steps:
       - task: UseDotNet@2
-        displayName: 'Use ${dotNetVersion}'
+        displayName: 'Use $(dotNetVersion)'
         inputs:
           version: $(dotNetVersion)
       - task: DotNetCoreCLI@2
