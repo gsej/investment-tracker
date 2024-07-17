@@ -14,7 +14,7 @@ resource "azurerm_mssql_server" "sqlserver" {
 
 
 resource "azurerm_mssql_database" "database" {
-  name           = "database-${var.service_name}"
+  name           = "investments"
   server_id      = azurerm_mssql_server.sqlserver.id
   license_type   = "LicenseIncluded"
   max_size_gb    = 1

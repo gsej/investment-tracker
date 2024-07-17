@@ -7,75 +7,79 @@ using Api.QueryHandlers.Summary;
 using Database;
 using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Api;
 
-builder.Services.AddMemoryCache();
+public static class Program
+{
+    public static void Main(params string[]  args)
+    {
+
+        var builder = WebApplication.CreateBuilder(args);
+
+        builder.Configuration
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
+            .AddEnvironmentVariables();
+        
+        builder.Services.AddMemoryCache();
+
+        var connectionString = builder.Configuration["SqlConnectionString"];
 
 // Add services to the container.
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAllOrigins",
-        policy =>
+        builder.Services.AddCors(options =>
         {
-            policy.AllowAnyOrigin();
-            policy.AllowAnyMethod();
-            policy.AllowAnyHeader();
+            options.AddPolicy("AllowAllOrigins",
+                policy =>
+                {
+                    policy.AllowAnyOrigin();
+                    policy.AllowAnyMethod();
+                    policy.AllowAnyHeader();
+                });
         });
-});
 
-builder.Services.AddControllers();
+        builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(s =>
-{
-    s.SchemaFilter<ExampleSchemaFilter>();
-    s.CustomSchemaIds(x => x.FullName);
-});
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen(s =>
+        {
+            s.SchemaFilter<ExampleSchemaFilter>();
+            s.CustomSchemaIds(x => x.FullName);
+        });
 
-builder.Services.AddDbContext<InvestmentsDbContext>(
-    opts => opts.UseSqlServer(
-        "Server=localhost;Initial Catalog=investments;Persist Security Info=False;User ID=sa;Password=Password123!;MultipleActiveResultSets=False;Encrypt=True;Trust Server Certificate=True;Connection Timeout=30;")
-);
+        builder.Services.AddDbContext<InvestmentsDbContext>(
+            opts => opts.UseSqlServer(connectionString)
+        );
 
-builder.Services.AddScoped<IAccountSummaryQueryHandler, AccountSummaryQueryHandler>();
-builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
-builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
-builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
-builder.Services.AddScoped<IAnnualPerformanceQueryHandler, AnnualPerformanceQueryHandler>();
+        builder.Services.AddScoped<IAccountSummaryQueryHandler, AccountSummaryQueryHandler>();
+        builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
+        builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
+        builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
+        builder.Services.AddScoped<IAnnualPerformanceQueryHandler, AnnualPerformanceQueryHandler>();
 
-builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
+        builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
 
-builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
+        builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
 
-var app = builder.Build();
+        var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-//    app.UseSwaggerUI(c => c.);
+        app.UseSwagger();
+        app.UseSwaggerUI();
+
+        app.UseHttpsRedirection();
+
+        app.UseCors("AllowAllOrigins");
+
+        app.MapGet("/", http =>
+        {
+            http.Response.Redirect("/swagger/index.html", false);
+            return Task.CompletedTask;
+        });
+
+        app.MapControllers();
+
+        app.UseMiddleware<CorrelationIdMiddleware>();
+
+        app.Run();
+        
+    }
 }
-
-
-app.UseHttpsRedirection();
-
-app.UseCors("AllowAllOrigins");
-
-// app.UseAuthorization();
-app.MapGet("/", http =>
-{
-    http.Response.Redirect("/swagger/index.html", false);
-    return Task.CompletedTask;
-});
-
-// TODO: 
-// app.MapFallback()
-
-
-app.MapControllers();
-
-app.UseMiddleware<CorrelationIdMiddleware>();
-
-app.Run();
