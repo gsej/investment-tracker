@@ -1,4 +1,6 @@
 
+trigger: none
+
 pool:
   vmImage: ubuntu-latest
 
@@ -28,6 +30,21 @@ stages:
         inputs:
           command: 'build'
           projects: '**/Api.csproj'
+
+      - task: DotNetCoreCLI@2
+        displayName: 'Publish Api'
+        inputs:
+          command: 'publish'
+          publishWebProjects: True
+          arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+          zipAfterPublish: True
+
+      - task: AzureRmWebAppDeployment@4
+        displayName: 'Deploy to Azure App Service'
+        inputs:
+          azureSubscription: 'gsej-service-connection'
+          webAppName: 'app-investment-tracker'
+          package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
 
       # - task: DotNetCoreCLI@2
       #   env: 
