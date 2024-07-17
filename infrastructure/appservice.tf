@@ -5,9 +5,10 @@ resource "azurerm_linux_web_app" linuxapp {
     location            = azurerm_resource_group.group.location
 
     site_config {
-        linux_fx_version = "DOTNETCORE|8.0" # This value might need adjustment based on Azure's current naming conventions for .NET runtimes
-        always_on        = true  # Recommended for production environments
-        ftps_state       = "Disabled" # Optional: Disable FTP access
+        application_stack {
+       
+        dotnet_version              = "8.0"
+    }
 
     }
 

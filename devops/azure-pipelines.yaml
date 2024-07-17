@@ -35,7 +35,8 @@ stages:
         displayName: 'Publish Api'
         inputs:
           command: 'publish'
-          publishWebProjects: True
+          publishWebProjects: false
+          projects: '**/Api.csproj'
           arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
           zipAfterPublish: True
 
