@@ -1,0 +1,80 @@
+
+pool:
+  vmImage: ubuntu-latest
+
+# parameters:
+# - name: approvalTimeout
+#   displayName: Approval timeout in minutes
+#   type: number
+#   default: 10
+
+variables:
+  buildConfiguration: 'Release'
+  dotNetFramework: 'net8.0'
+  dotNetVersion: '7.0.x'  
+
+stages:
+  - stage: build
+    displayName: build and test api
+    jobs:
+    - job:
+      steps:
+      - task: UseDotNet@2
+        displayName: 'Use ${dotNetVersion}'
+        inputs:
+          version: $(dotNetVersion)
+      - task: DotNetCoreCLI@2
+        displayName: 'Build Api'
+        inputs:
+          command: 'build'
+          projects: '**/Api.csproj'
+
+      # - task: DotNetCoreCLI@2
+      #   env: 
+      #      myvariable: weiouqwoieuoiuoiu
+      #   inputs:
+      #     command: 'test'
+      #     projects: '**/Api.Tests.csproj'
+      #     arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./MyCoverage/'
+      #     publishTestResults: true
+        
+      # - task: PublishCodeCoverageResults@1
+      #   displayName: "publish coverage results"
+      #   inputs:
+      #     codeCoverageTool: 'Cobertura'
+      #     summaryFileLocation: '$(Build.SourcesDirectory)/**/MyCoverage/coverage.cobertura.xml'
+      #     failIfCoverageEmpty: true
+
+        
+      
+      # - task: DotNetCoreCLI@2
+      #   inputs:
+      #     command: publish
+      #     publishWebProjects: True
+      #     arguments: '--configuration $(BuildConfiguration) --framework $(dotNetFramework) --runtime $(targetRuntime) --self-contained --output $(Build.ArtifactStagingDirectory)'
+      #     zipAfterPublish: True
+
+      # # Package the file and uploads them as an artifact of the build
+      # - task: PublishPipelineArtifact@1
+      #   inputs:
+      #     targetPath: '$(Build.ArtifactStagingDirectory)' 
+      #     artifactName: 'api'
+  
+  # - stage: Dev   
+  #   dependsOn: build
+  #   jobs:
+  #   - deployment: theDeploymentToDev
+  #     environment: dev
+  #     displayName: deploy to app service
+  #     steps:
+  #     - download: current
+  #       artifact: 'api'
+  #       patterns: |
+  #         **/*.zip
+  #     - task: AzureRmWebAppDeployment@4
+  #       inputs:
+  #         ConnectionType: 'AzureRM'
+  #         azureSubscription: 'Microsoft Partner Network(c8b81ad0-0254-4154-a9b6-c4c1dca68b6a)'
+  #         appType: 'webApp'
+  #         WebAppName: 'gsej-myapp'
+  #         packageForLinux: '$(Pipeline.Workspace)/**/*.zip'
