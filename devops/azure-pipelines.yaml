@@ -17,7 +17,7 @@ stages:
   - stage: build
     displayName: build and test api
     jobs:
-    - job:
+    - job: "Build"
       steps:
       - task: UseDotNet@2
         displayName: 'Use $(dotNetVersion)'
