@@ -62,29 +62,18 @@ public static class Program
 
         var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-//    app.UseSwaggerUI(c => c.);
-        }
-
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseHttpsRedirection();
 
         app.UseCors("AllowAllOrigins");
 
-// app.UseAuthorization();
         app.MapGet("/", http =>
         {
             http.Response.Redirect("/swagger/index.html", false);
             return Task.CompletedTask;
         });
-
-// TODO: 
-// app.MapFallback()
-
 
         app.MapControllers();
 
