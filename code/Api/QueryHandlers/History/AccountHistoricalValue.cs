@@ -8,6 +8,7 @@ public record AccountHistoricalValue(
     string Comment)
 {
     public decimal? RecordedTotalValueInGbp { get; set; }
+    public string RecordedTotalValueSource { get; set; }
     public decimal? DiscrepancyPercentage { get; set; }
     public decimal? DifferenceToPreviousDay { get; set; }
     public decimal? DifferencePercentage { get; set; }

@@ -11,11 +11,13 @@ public class RecordedTotalValue
     public RecordedTotalValue(
         string accountCode,
         DateOnly date,
-        decimal totalValueInGbp)
+        decimal totalValueInGbp,
+        string source)
     {
         AccountCode = accountCode;;
         Date = date;
         TotalValueInGbp = totalValueInGbp;
+        Source = source;
     }
 
     [Key]
@@ -34,4 +36,8 @@ public class RecordedTotalValue
     [Required]
     [Precision(19,5)]
     public decimal TotalValueInGbp { get; set; }
+
+    [Required]
+    [MaxLength(50)]     
+    public string Source { get; set; }
 }

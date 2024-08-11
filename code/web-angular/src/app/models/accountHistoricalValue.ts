@@ -5,6 +5,7 @@ export class AccountHistoricalValue {
   valueInGbp!: number;
   totalPriceAgeInDays!: number;
   recordedTotalValueInGbp!: number;
+  recordedTotalValueSource!: string;
   discrepancyPercentage!: number;
   differenceToPreviousDay!: number;
   differencePercentage!: number;

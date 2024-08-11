@@ -15,6 +15,7 @@ export class AccountValueHistoryComponent implements OnChanges {
     'valueInGbp',
     'totalPriceAgeInDays',
     'recordedTotalValueInGbp',
+    'recordedTotalValueSource',
     'discrepancyPercentage',
     'differenceToPreviousDay',
     'differencePercentage',

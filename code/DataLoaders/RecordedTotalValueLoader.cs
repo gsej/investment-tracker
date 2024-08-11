@@ -1,7 +1,7 @@
 using Common.Extensions;
+using Common.Tracing;
 using Database.Repositories;
 using FileReaders;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 namespace DataLoaders;
 
@@ -23,38 +23,34 @@ public class RecordedTotalValueLoader
     public async Task LoadFile(string fileName, string source)
     {
         var recordedValues = (await _reader.Read(fileName)).ToList();
-
-        foreach (var recordedValueDto in recordedValues)
+        
+        using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
+        using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
-            decimal totalValueInGbp;
-
-            var totalValueParsable = decimal.TryParse(recordedValueDto.TotalValueInGbp, null, out totalValueInGbp);
-
-            if (!totalValueParsable)
+            foreach (var recordedValueDto in recordedValues)
             {
-                _logger.LogWarning("Could not parse total value {totalValue}", recordedValueDto.TotalValueInGbp);
-                continue;
-            }
+              
+                    decimal totalValueInGbp;
 
+                    var totalValueParsable = decimal.TryParse(recordedValueDto.TotalValueInGbp, null, out totalValueInGbp);
 
-            var knownValue = new Database.Entities.RecordedTotalValue(
-                recordedValueDto.AccountCode,
-                recordedValueDto.Date.ToDateOnly(),
-                totalValueInGbp);
+                    if (!totalValueParsable)
+                    {
+                        _logger.LogWarning("Could not parse total value {totalValue}", recordedValueDto.TotalValueInGbp);
+                        continue;
+                    }
 
-            try
-            {
-                _recordedTotalValueRepository.Add(knownValue);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine(knownValue.AccountCode);
-                throw;
+                    var recordedTotalValue = new Database.Entities.RecordedTotalValue(
+                        recordedValueDto.AccountCode,
+                        recordedValueDto.Date.ToDateOnly(),
+                        totalValueInGbp,
+                        recordedValueDto.Source);
+
+                    _recordedTotalValueRepository.Add(recordedTotalValue);
+
+                await _recordedTotalValueRepository.SaveChangesAsync();
             }
         }
-
-        await _recordedTotalValueRepository.SaveChangesAsync();
-
-        return;
     }
 }
+    

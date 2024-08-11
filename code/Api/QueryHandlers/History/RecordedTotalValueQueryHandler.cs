@@ -15,10 +15,10 @@ public class RecordedTotalValueQueryHandler : IRecordedTotalValueQueryHandler
     public async Task<RecordedTotalValuesResult> Handle(RecordedTotalValuesRequest request)
     {
         var recordedTotalValues = await _context.RecordedTotalValues
-            .Where(kb => request.AccountCode == kb.AccountCode)
-            .OrderBy(kb => kb.Date)
+            .Where(v => request.AccountCode == v.AccountCode)
+            .OrderBy(v => v.Date)
             .AsNoTracking()
-            .Select(kb => new RecordedTotalValue(kb.Date, kb.AccountCode, kb.TotalValueInGbp))
+            .Select(v => new RecordedTotalValue(v.Date, v.AccountCode, v.TotalValueInGbp, v.Source))
             .ToListAsync();
 
         return new RecordedTotalValuesResult(recordedTotalValues);

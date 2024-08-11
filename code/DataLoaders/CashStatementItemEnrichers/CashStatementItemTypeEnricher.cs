@@ -76,6 +76,10 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Dividend;
             // only seems to apply to money market fund
         }
+        else if (cashStatementItem.Description.StartsWith("Withdrawal", StringComparison.InvariantCultureIgnoreCase))
+        {
+            cashStatementItem.CashStatementItemType = CashStatementItemTypes.Withdrawal;
+        }
         else
         {
             var json = JsonSerializer.Serialize(cashStatementItem, new JsonSerializerOptions { WriteIndented = true });

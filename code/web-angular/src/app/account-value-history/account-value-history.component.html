@@ -32,6 +32,11 @@
       <td class="value-column" mat-cell *matCellDef="let element">{{ element.recordedTotalValueInGbp | number: '1.2' }}</td>
     </ng-container>
 
+    <ng-container matColumnDef="recordedTotalValueSource">
+      <th class="value-column" mat-header-cell *matHeaderCellDef>Recorded Value Source</th>
+      <td class="value-column" mat-cell *matCellDef="let element">{{ element.recordedTotalValueSource }}</td>
+    </ng-container>
+
     <ng-container matColumnDef="discrepancyPercentage">
       <th class="percentage-column" mat-header-cell *matHeaderCellDef>Discrepancy</th>
       <td class="percentage-column" mat-cell *matCellDef="let element">{{ element.discrepancyPercentage | number: '1.2' }}</td>

@@ -65,6 +65,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             if (matchingRecordedTotalValue != null)
             {
                 historicalValue.RecordedTotalValueInGbp = matchingRecordedTotalValue.TotalValueInGbp;
+                historicalValue.RecordedTotalValueSource = matchingRecordedTotalValue.Source;
 
                 if (historicalValue.ValueInGbp != 0)
                 {

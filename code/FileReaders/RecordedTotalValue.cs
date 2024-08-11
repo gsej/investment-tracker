@@ -11,4 +11,6 @@ public record RecordedTotalValue
  
     [JsonPropertyName("total_value_in_gbp")] 
     public string TotalValueInGbp{ get; init; }
+    
+    public string Source { get;init; }
 }

@@ -42,7 +42,7 @@ class Program
 
                 var configurationRoot = new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json")
-           //         .AddEnvironmentVariables()
+                    .AddEnvironmentVariables()
                     .Build();
 
                 _configuration = configurationRoot.GetRequiredSection(nameof(LoaderConfiguration)).Get<LoaderConfiguration>();
@@ -121,14 +121,14 @@ class Program
         var exchangeRateLoader = serviceProvider.GetRequiredService<ExchangeRateLoader>();
         var stockPriceLoader = serviceProvider.GetRequiredService<StockPriceLoader>();
         var recordedTotalValueLoader = serviceProvider.GetRequiredService<RecordedTotalValueLoader>();
-        
+
         var accountRepository = serviceProvider.GetRequiredService<IAccountRepository>();
-        
+
         var dataFolder = GetPathToDataFolder();
 
         await accountLoader.LoadFile(Path.Combine(dataFolder, "accounts.json"));
         await stockLoader.LoadFile(Path.Combine(dataFolder, "stocks.json"));
-            
+
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadCashStatements"))
         {
             var accounts = await accountRepository.GetAll();
@@ -142,24 +142,30 @@ class Program
 
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadRecordedTotalValues"))
         {
-            await recordedTotalValueLoader.LoadFile(Path.Combine(dataFolder, "RecordedTotalValues", "recorded_total_values.json"), "recorded_total_values.json");
+            var folder = Path.Combine(dataFolder, "RecordedTotalValues");
+
+            foreach (var file in Directory.EnumerateFiles(folder, "*.json", SearchOption.AllDirectories))
+            {
+                var relativePath = Path.GetRelativePath(folder, file);
+                await recordedTotalValueLoader.LoadFile(file, relativePath);
+            }
         }
 
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadExchangeRates"))
         {
             var exchangeRateFolder = GetPathToExchangeRateFolder();
-           
+
             foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
             {
                 var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
                 await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
             }
         }
-        
+
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockPrices"))
         {
             var priceFolder = GetPathToPriceFolder();
-            
+
             foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
             {
                 var relativePath = Path.GetRelativePath(priceFolder, priceFile);
