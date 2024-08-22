@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Account } from './models/account';
-import { AccountSummary } from "./models/accountSummary";
-import { Observable } from 'rxjs';
+import { Portfolio } from "./models/portfolio";
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { RecordedTotalValues } from './models/recordedTotalValues';
@@ -15,6 +15,14 @@ import { AccountAnnualPerformances } from './models/accountAnnualPerformances';
 export class AccountsService {
 
   _today: string;
+
+  _selectedAccount: string | null = null;
+
+  private _portfolioSubject: BehaviorSubject<Portfolio | null> = new BehaviorSubject<Portfolio | null>(null);
+  public portfolio$: Observable<Portfolio | null> = this._portfolioSubject.asObservable();
+
+
+
   constructor(private http: HttpClient) {
     this._today = new Date().toISOString().substring(0, 10);
   }
@@ -23,8 +31,19 @@ export class AccountsService {
     return this.http.get<any>('http://localhost:5100/accounts').pipe(map((result: any) => result.accounts));
   }
 
-  getAccountSummary(accountCode: string, date: string): Observable<AccountSummary> {
-    return this.http.post<AccountSummary>('http://localhost:5100/account/summary', { accountCode: accountCode, date: date })
+  // selectAccount(accountCode: string) {
+  //   this._selectedAccount = accountCode;
+  // }
+
+  selectAccount(accountCode: string) {
+    this._selectedAccount = accountCode;
+    this.getPortfolio(accountCode, this._today).subscribe(summary => {
+      this._portfolioSubject.next(summary);
+    });
+  }
+
+  getPortfolio(accountCode: string, date: string): Observable<Portfolio> {
+    return this.http.post<Portfolio>('http://localhost:5100/account/summary', { accountCode: accountCode, date: date })
   }
 
   getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {

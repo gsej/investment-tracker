@@ -37,7 +37,7 @@ public class AnnualPerformanceQueryHandlerTests
         _accountSummaryQueryHandler = Substitute.For<IAccountSummaryQueryHandler>();
 
         _accountSummaryQueryHandler.Handle(Arg.Any<AccountSummaryRequest>())
-            .Returns(new AccountSummaryResult(new List<Holding>(), 0, new TotalValue(0, 0)));
+            .Returns(new AccountSummaryResult(AccountCode, new List<Holding>(), 0, new TotalValue(0, 0)));
         
         _queryHandler = new AnnualPerformanceQueryHandler(
             _context,

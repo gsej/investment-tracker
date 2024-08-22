@@ -1,7 +1,7 @@
 <form [formGroup]="accountSelectorForm">
-  <select formControlName="account" (change)="onAccountChanged()">
-    <option *ngFor="let account of accounts" [ngValue]="account">
-      {{ account.accountCode }}
-    </option>
-  </select>
+   <select formControlName="account" (change)="onAccountChanged()">
+      @for (account of accounts; track account) {
+        <option [value]="account.accountCode">{{ account.accountCode }}</option>
+      }
+    </select>
 </form>

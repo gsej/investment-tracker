@@ -113,7 +113,11 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
         var totalPriceAgeInDays = holdings.Sum(h => h.StockPrice?.AgeInDays ?? 0);
 
-        return new AccountSummaryResult(Holdings: holdings, CashBalanceInGbp: cashBalance, new TotalValue(totalValueInGbp, totalPriceAgeInDays));
+        return new AccountSummaryResult(
+            request.AccountCode,
+            Holdings: holdings, 
+            CashBalanceInGbp: cashBalance, 
+            new TotalValue(totalValueInGbp, totalPriceAgeInDays));
     }
 
     private async Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode)

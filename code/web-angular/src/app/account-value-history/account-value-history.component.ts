@@ -4,6 +4,7 @@ import { AccountHistoricalValue } from '../models/accountHistoricalValue';
 
 @Component({
   selector: 'app-account-value-history',
+  standalone: true,
   templateUrl: './account-value-history.component.html',
   styleUrls: ['./account-value-history.component.scss']
 })

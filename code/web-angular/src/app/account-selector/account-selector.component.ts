@@ -1,13 +1,15 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { Account } from '../models/account';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-account-selector',
+  standalone: true,
+  imports: [ ReactiveFormsModule ],
   templateUrl: './account-selector.component.html',
   styleUrls: ['./account-selector.component.scss']
 })
-export class AccountSelectorComponent {
+export class AccountSelectorComponent implements OnChanges {
 
   @Input()
   public accounts: Account[] = []
@@ -23,8 +25,15 @@ export class AccountSelectorComponent {
     });
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.accountSelectorForm.controls["account"].value == null && this.accounts.length > 0) {
+      this.accountSelectorForm.controls['account'].setValue(this.accounts[0].accountCode);
+      this.accountChanged.next(this.accounts[0].accountCode);
+    }
+  }
+
   onAccountChanged() {
-    let selectedAccountCode = this.accountSelectorForm.controls["account"].value.accountCode;
+    const selectedAccountCode = this.accountSelectorForm.controls["account"].value;
     this.accountChanged.next(selectedAccountCode);
   }
 }

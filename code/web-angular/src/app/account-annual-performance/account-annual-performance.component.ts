@@ -3,6 +3,7 @@ import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
 
 @Component({
   selector: 'app-account-annual-performance',
+  standalone: true,
   templateUrl: './account-annual-performance.component.html',
   styleUrls: ['./account-annual-performance.component.scss']
 })

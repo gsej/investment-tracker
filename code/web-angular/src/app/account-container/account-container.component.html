@@ -1,3 +1,20 @@
+
+
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
+    </mat-card-header>
+  </mat-card>
+  <app-portfolio
+    [portfolio]="portfolio"
+    [date]="date"
+></app-portfolio>
+
+<!--
+
+
+
 <form>
   <app-account-selector
     [accounts]="accounts"
@@ -12,4 +29,4 @@
     [accountHistoricalValues]="accountHistoricalValues"
     (dateSelected)="dateSelected($event)"
   ></app-account-value-history>
-</form>
+</form> -->
