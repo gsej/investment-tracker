@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Account } from '../models/account';
-import { AccountsService } from '../accounts.service';
-import { RecordedTotalValues } from '../models/recordedTotalValues';
-import { AccountHistoricalValues } from '../models/accountHistoricalValues';
-import { PortfolioViewModel } from '../view-models/portfolioViewModel';
-import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
+import { Account } from '../../models/account';
+import { AccountsService } from '../../accounts.service';
+import { RecordedTotalValues } from '../../models/recordedTotalValues';
+import { AccountHistoricalValues } from '../../models/accountHistoricalValues';
+import { PortfolioViewModel } from '../../view-models/portfolioViewModel';
+import { AccountAnnualPerformances } from '../../models/accountAnnualPerformances';
 import { MatCardModule } from '@angular/material/card';
-import { AccountSelectorComponent } from '../account-selector/account-selector.component';
+import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
+import { HoldingsComponent } from '../holdings/holdings.component';
+import { SummaryComponent } from '../summary/summary.component';
+import { ChartComponent } from '../chart/chart.component';
 
-import { PortfolioComponent } from '../portfolio/portfolio.component';
+
 
 @Component({
   selector: 'app-account-container',
   standalone: true,
-  imports: [MatCardModule, AccountSelectorComponent, PortfolioComponent],
+  imports: [MatCardModule, AccountSelectorComponent, HoldingsComponent, ChartComponent, SummaryComponent],
   templateUrl: './account-container.component.html',
   styleUrls: ['./account-container.component.scss']
 })

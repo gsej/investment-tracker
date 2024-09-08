@@ -1,20 +1,21 @@
 import { Component, Input } from '@angular/core';
-import { PortfolioViewModel } from '../view-models/portfolioViewModel';
-import { HoldingViewModel } from '../view-models/holdingViewModel';
+import { PortfolioViewModel } from '../../view-models/portfolioViewModel';
+import { HoldingViewModel } from '../../view-models/holdingViewModel';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-import { SortIndicatorComponent } from '../sort-indicator/sort-indicator.component';
+import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.component';
 import { CommonModule } from '@angular/common';
-import { AccountsService } from '../accounts.service';
+import { AccountsService } from '../../accounts.service';
+import { HeaderComponent } from 'src/app/components/header/header.component';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-holdings',
   standalone: true,
-  imports: [CommonModule, SortIndicatorComponent],
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  imports: [CommonModule, SortIndicatorComponent, HeaderComponent],
+  templateUrl: './holdings.component.html',
+  styleUrls: ['./holdings.component.scss']
 })
-export class PortfolioComponent {
+export class HoldingsComponent {
 
   private _accountsService: AccountsService;
 
