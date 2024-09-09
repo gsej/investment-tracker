@@ -1,33 +1,16 @@
-<div class="light flex flex-col p-6">
-  <!-- extract this into a header component -->
-  <div class="flex w-full items-center justify-between px-2">
-    <h1 class="font-heading font-mono text-2xl font-bold tracking-tight">
-      Summary
-    </h1>
-  </div>
+<app-card>
+  <app-card-header class="flex flex-row items-center jusify-between pb-0">
+    <app-card-title class="text-lg font-bold">Cash Balance</app-card-title>
+    <div class="text-lg font-extrabold"> {{ portfolio?.cashBalanceInGbp }}</div>
+  </app-card-header>
 
-  <div >
+  <app-card-content>
 
-    <!-- add sort icons -->
 
-    <div>
-      <h3 class="py-4 text-lg font-bold">summary</h3>
+    <app-separator class="my-4" />
+    Other stuffss
 
-      <!-- card -->
-      <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-        <!-- card header -->
-        <div class="grid grid-cols-6 gap-4 p-6">
-          <div class="col-span-2 text-left font-medium text-gray-600" >Stock</div>
+  </app-card-content>
+</app-card>
 
-        </div>
-        <!-- separator -->
 
-        <!-- card content -->
-
-        <div class="pt-0 p-0">
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>

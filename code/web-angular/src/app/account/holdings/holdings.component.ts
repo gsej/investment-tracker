@@ -7,11 +7,20 @@ import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.comp
 import { CommonModule } from '@angular/common';
 import { AccountsService } from '../../accounts.service';
 import { HeaderComponent } from 'src/app/components/header/header.component';
+import { CardComponent } from 'src/app/components/card/card.component';
+import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
+import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 
 @Component({
   selector: 'app-holdings',
   standalone: true,
-  imports: [CommonModule, SortIndicatorComponent, HeaderComponent],
+  imports: [
+    CommonModule,
+    SortIndicatorComponent,
+    HeaderComponent, CardComponent,
+    CardHeaderComponent,
+    CardContentComponent
+  ],
   templateUrl: './holdings.component.html',
   styleUrls: ['./holdings.component.scss']
 })

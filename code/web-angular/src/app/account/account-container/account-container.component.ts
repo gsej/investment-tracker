@@ -10,13 +10,16 @@ import { AccountSelectorComponent } from '../../account-selector/account-selecto
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
 import { ChartComponent } from '../chart/chart.component';
+import { CardComponent } from 'src/app/components/card/card.component';
+import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
+import { CardTitleComponent } from 'src/app/components/card-title/card-title.component';
 
 
 
 @Component({
   selector: 'app-account-container',
   standalone: true,
-  imports: [MatCardModule, AccountSelectorComponent, HoldingsComponent, ChartComponent, SummaryComponent],
+  imports: [MatCardModule, AccountSelectorComponent, HoldingsComponent, ChartComponent, SummaryComponent, CardComponent, CardContentComponent, CardTitleComponent],
   templateUrl: './account-container.component.html',
   styleUrls: ['./account-container.component.scss']
 })
