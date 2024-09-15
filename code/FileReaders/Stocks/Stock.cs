@@ -7,7 +7,8 @@ public record Stock(string StockSymbol,
     IList<Alias> Aliases,
     string StockType,
     bool SubjectToStampDuty,
-    string Notes);
+    string Notes, 
+    string Allocation);
 
 public record Alias(string Description);
 

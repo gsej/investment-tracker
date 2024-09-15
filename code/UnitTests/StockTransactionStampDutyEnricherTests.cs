@@ -15,7 +15,7 @@ public class StockTransactionStampDutyEnricherTests
     [InlineData("Purchase", "2019-11-11", 748.51, 3.72)]
     public void Enrich_WithPurchaseAndSubjectToStampDuty_SetStampDuty(string transaction, string date, decimal amountGbp, decimal expectedDuty)
     {
-        var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage", StockTypes.Share)
+        var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage", StockTypes.Share, "Allocation")
             .WithStampDuty()
             .Build();
 

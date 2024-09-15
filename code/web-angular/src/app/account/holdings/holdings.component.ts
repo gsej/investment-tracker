@@ -10,6 +10,8 @@ import { HeaderComponent } from 'src/app/components/header/header.component';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
 import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
+import { formatQuantity, formatCurrency } from 'src/app/utils/formatters';
+import { SeparatorComponent } from 'src/app/components/separator/separator.component';
 
 @Component({
   selector: 'app-holdings',
@@ -17,9 +19,11 @@ import { CardContentComponent } from 'src/app/components/card-content/card-conte
   imports: [
     CommonModule,
     SortIndicatorComponent,
-    HeaderComponent, CardComponent,
+    HeaderComponent,
+    CardComponent,
     CardHeaderComponent,
-    CardContentComponent
+    CardContentComponent,
+    SeparatorComponent
   ],
   templateUrl: './holdings.component.html',
   styleUrls: ['./holdings.component.scss']
@@ -27,6 +31,9 @@ import { CardContentComponent } from 'src/app/components/card-content/card-conte
 export class HoldingsComponent {
 
   private _accountsService: AccountsService;
+
+  public formatQuantity = formatQuantity;
+  public formatCurrency = formatCurrency;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, accountService: AccountsService) {
 
@@ -76,26 +83,5 @@ export class HoldingsComponent {
 
       this.portfolio.holdings = holdings;
     }
-  }
-
-  public formatQuantity(value: number | null) {
-    if (value === null) {
-      return '';
-    }
-
-    return new Intl.NumberFormat('en-US', {
-      maximumFractionDigits: 2
-    }).format(value);
-  }
-
-  public formatCurrency(value: number | null) {
-    if (value === null) {
-      return '';
-    }
-
-    return new Intl.NumberFormat('en-US', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    }).format(value);
   }
 }

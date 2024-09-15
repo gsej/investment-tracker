@@ -34,6 +34,10 @@ public class Stock
     
     [MaxLength(500)]
     public string Notes { get; init; }
+    
+    [Required]
+    [MaxLength(20)]
+    public string Allocation { get; init; }
 
     public class StockBuilder 
     {
@@ -43,15 +47,17 @@ public class Stock
         private string _stockType;
         private string _notes;
         private bool _subjectToStampDuty;
+        private string _allocation;
      
         private IEnumerable<StockAlias> _aliases = new List<StockAlias>();
         private IEnumerable<AlternativeSymbol> _alternativeSymbols = new List<AlternativeSymbol>();
       
-        public StockBuilder(string stockSymbol, string description, string stockType)
+        public StockBuilder(string stockSymbol, string description, string stockType, string allocation)
         {
             _stockSymbol = stockSymbol;
             _description = description;
             _stockType = stockType;
+            _allocation = allocation;
         }
         
         public StockBuilder WithStampDuty()
@@ -101,7 +107,8 @@ public class Stock
                 Aliases = _aliases, 
                 AlternativeSymbols = _alternativeSymbols,
                 Isin = _isin,
-                SubjectToStampDuty = _subjectToStampDuty
+                SubjectToStampDuty = _subjectToStampDuty,
+                Allocation = _allocation
             };
         }
     }

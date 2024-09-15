@@ -49,7 +49,8 @@ public class StockLoader
                 var stock = new Stock.StockBuilder(
                         stockDto.StockSymbol,
                         stockDto.Description,
-                        stockDto.StockType)
+                        stockDto.StockType,
+                        stockDto.Allocation)
                         .WithAliases(stockDto.Aliases.Select(a => new StockAlias(a.Description)).ToList())
                         .WithAlternativeSymbols(stockDto.AlternativeSymbols.Select(a => new AlternativeSymbol(a.Alternative)).ToList())
                         .Build();

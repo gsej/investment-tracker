@@ -1,6 +1,7 @@
 export class HoldingViewModel {
   stockSymbol!: string;
   stockDescription!: string;
+  allocation!: string;
   quantity!: number;
   price!: number;
   currency!: string;

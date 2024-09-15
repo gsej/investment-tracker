@@ -1,16 +1,44 @@
-<app-card>
-  <app-card-header class="flex flex-row items-center jusify-between pb-0">
-    <app-card-title class="text-lg font-bold">Cash Balance</app-card-title>
-    <div class="text-lg font-extrabold"> {{ portfolio?.cashBalanceInGbp }}</div>
+<app-card class="h-96">
+  <app-card-header>
+    <div class="flex flex-row items-center justify-between pb-0">
+      <app-card-title class="text-lg font-bold">Total Value</app-card-title>
+      <div class="text-lg font-extrabold">
+        {{ formatCurrency(portfolio?.totalValueInGbp) }}
+      </div>
+    </div>
+  </app-card-header>
+  <app-separator class="mt-2 mb-4" />
+  <app-card-content>
+    <div class="flex justify-between">
+      <span class="text-gray-600">Investments</span>
+      <span class="text-gray-600">{{
+        formatCurrency(portfolio?.totalInvestmentsInGbp)
+      }}</span>
+    </div>
+    <div class="flex justify-between">
+      <span class="text-gray-600">Cash Balance</span>
+      <span class="text-gray-600">{{
+        formatCurrency(portfolio?.cashBalanceInGbp)
+      }}</span>
+    </div>
+  </app-card-content>
+
+  <app-card-header>
+    <div class="flex flex-row items-center justify-between pb-0">
+      <app-card-title class="text-lg font-bold">Allocations</app-card-title>
+    </div>
   </app-card-header>
 
+  <app-separator class="mt-2 mb-4" />
   <app-card-content>
 
-
-    <app-separator class="my-4" />
-    Other stuffss
-
+    @for (allocation of portfolio?.allocations; track allocation) {
+    <div class="flex justify-between">
+      <span class="text-gray-600">{{ allocation.name }}</span>
+      <span class="text-gray-600">{{ formatCurrency(allocation.value) }}</span>
+      <span class="text-gray-600">{{ formatPercentage(allocation.percentage) }}</span>
+    </div>
+  }
   </app-card-content>
+
 </app-card>
-
-

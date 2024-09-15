@@ -3,7 +3,7 @@ import { Account } from '../../models/account';
 import { AccountsService } from '../../accounts.service';
 import { RecordedTotalValues } from '../../models/recordedTotalValues';
 import { AccountHistoricalValues } from '../../models/accountHistoricalValues';
-import { PortfolioViewModel } from '../../view-models/portfolioViewModel';
+import { PortfolioViewModel, Allocation } from '../../view-models/portfolioViewModel';
 import { AccountAnnualPerformances } from '../../models/accountAnnualPerformances';
 import { MatCardModule } from '@angular/material/card';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
@@ -46,13 +46,15 @@ export class AccountContainerComponent implements OnInit {
         this.portfolio = null;
       }
       else {
-        this.portfolio = {
+
+        const portfolio = <PortfolioViewModel>{
           accountCode: summary.accountCode,
           holdings: summary.holdings.map(
             holding => {
               return {
                 stockSymbol: holding.stockSymbol,
                 stockDescription: holding.stockDescription,
+                allocation: holding.allocation,
                 quantity: holding.quantity,
                 price: holding.stockPrice.price,
                 currency: holding.stockPrice.currency,
@@ -65,8 +67,38 @@ export class AccountContainerComponent implements OnInit {
           ),
           cashBalanceInGbp: summary.cashBalanceInGbp,
           totalValueInGbp: summary.totalValue.valueInGbp,
+          totalInvestmentsInGbp: summary.holdings.reduce((sum, holding) => {
+            return sum + holding.valueInGbp;
+          }, 0),
           totalPriceAgeInDays: summary.totalValue.totalPriceAgeInDays
         }
+
+
+        const allocations = Array.from(new Set(summary.holdings.map(holding => holding.allocation)));
+
+        const groupedAllocations = [];
+
+        for (const allocation of allocations) {
+          const values = summary.holdings
+            .filter(holding => holding.allocation === allocation)
+            .map(holding => holding.valueInGbp);
+
+          const totalValueInAllocation = values.reduce((sum, value) => {
+            return sum + value;
+          }, 0);
+
+          const percentage = totalValueInAllocation / portfolio.totalValueInGbp;
+
+          groupedAllocations.push( <Allocation>{
+            name: allocation,
+            value: totalValueInAllocation,
+            percentage: percentage
+          })
+        }
+
+        portfolio.allocations = groupedAllocations;
+
+        this.portfolio = portfolio;
       }
     });
 

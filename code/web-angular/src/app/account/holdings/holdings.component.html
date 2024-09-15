@@ -12,8 +12,10 @@
         <div class="text-right font-medium text-gray-600" (click)="sort('quantity')">Quantity</div>
         <div class="text-right font-medium text-gray-600" (click)="sort('price')">Price</div>
         <div class="text-right font-medium text-gray-600" (click)="sort('valueInGbp')"  >Value</div>
+        <div class="text-left font-medium text-gray-600" (click)="sort('allocation')"  >Allocation</div>
         <div class="text-right font-medium text-gray-600"></div>
       </div>
+      <app-separator class="mt-2 mb-4" />
     </app-card-header>
 
     <!-- separattor-->
@@ -41,6 +43,10 @@
 
           <div class="flex-grow text-right">
             <p class="text-sm">{{ formatCurrency(holding.valueInGbp) }}</p>
+          </div>
+
+          <div class="flex-grow text-left">
+            <p class="text-sm">{{ holding.allocation }}</p>
           </div>
         </div>
       </div>

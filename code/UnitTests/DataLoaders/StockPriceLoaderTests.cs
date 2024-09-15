@@ -27,9 +27,9 @@ public class StockPriceLoaderTests
 
         var stocks = new List<Stock>
         {
-            new Stock.StockBuilder("VWRL.L", "", StockTypes.Etf).Build(),
-            new Stock.StockBuilder("SMT.L", "", StockTypes.Share).Build(),
-            new Stock.StockBuilder("IT25.L", "", StockTypes.Share).Build(),
+            new Stock.StockBuilder("VWRL.L", "", StockTypes.Etf, "Growth").Build(),
+            new Stock.StockBuilder("SMT.L", "", StockTypes.Share, "Growth").Build(),
+            new Stock.StockBuilder("IT25.L", "", StockTypes.Share, "MinimalRisk").Build(),
         };
         
         stockRepository.GetStocks().Returns(stocks);

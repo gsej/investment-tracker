@@ -92,7 +92,7 @@ public class AccountSummaryQueryHandlerTests : IDisposable, IAsyncDisposable
     public async Task Handler_WhenStockTransacftionsExist_ReturnsHolding()
     {
         // arrange
-        var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage Trust", StockTypes.Share)
+        var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage Trust", StockTypes.Share, "Growth")
             .Build();
         
         var stockTransactions = new List<StockTransaction>

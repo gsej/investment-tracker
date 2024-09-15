@@ -104,6 +104,7 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
                 holdings.Add(new Holding(
                     stock.StockSymbol, 
                     stock.Description, 
+                    stock.Allocation,
                     totalHeld, 
                     stockPrice, 
                     value ?? 0, comment));

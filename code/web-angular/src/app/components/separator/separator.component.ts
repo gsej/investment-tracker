@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-separator',
   standalone: true,
   imports: [CommonModule],
-  template: '<div [ngClass]="[class, \'shrink-0\', \'bg-border\', \'h-4px\', \'w-full\']"></div>'
+  template: '<div [ngClass]="[class, \'shrink-0\', \'bg-border\', \'h-[1px]\', \'w-full\']"></div>'
 })
 export class SeparatorComponent {
 
