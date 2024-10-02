@@ -25,8 +25,6 @@ public static class Program
 
         var connectionString = builder.Configuration["SqlConnectionString"];
 
-// Add services to the container.
-
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowAllOrigins",

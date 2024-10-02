@@ -1,13 +1,5 @@
+import { AllocationViewModel } from "./AllocationViewModel";
 import { HoldingViewModel } from "./holdingViewModel";
-
-
-
-export class Allocation {
-  name!: string;
-  value!: number;
-  percentage!: number;
-}
-
 
 export class PortfolioViewModel {
   accountCode!: string;
@@ -16,5 +8,5 @@ export class PortfolioViewModel {
   totalInvestmentsInGbp!: number;
   totalValueInGbp!: number;
   totalPriceAgeInDays!: number;
-  allocations: Allocation[] = []
+  allocations: AllocationViewModel[] = []
 }

@@ -3,7 +3,8 @@ import { Account } from '../../models/account';
 import { AccountsService } from '../../accounts.service';
 import { RecordedTotalValues } from '../../models/recordedTotalValues';
 import { AccountHistoricalValues } from '../../models/accountHistoricalValues';
-import { PortfolioViewModel, Allocation } from '../../view-models/portfolioViewModel';
+import { PortfolioViewModel } from '../../view-models/portfolioViewModel';
+import { AllocationViewModel } from "src/app/view-models/AllocationViewModel";
 import { AccountAnnualPerformances } from '../../models/accountAnnualPerformances';
 import { MatCardModule } from '@angular/material/card';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
@@ -13,8 +14,6 @@ import { ChartComponent } from '../chart/chart.component';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { CardTitleComponent } from 'src/app/components/card-title/card-title.component';
-
-
 
 @Component({
   selector: 'app-account-container',
@@ -67,36 +66,12 @@ export class AccountContainerComponent implements OnInit {
           ),
           cashBalanceInGbp: summary.cashBalanceInGbp,
           totalValueInGbp: summary.totalValue.valueInGbp,
+          allocations: summary.allocations,
           totalInvestmentsInGbp: summary.holdings.reduce((sum, holding) => {
             return sum + holding.valueInGbp;
           }, 0),
           totalPriceAgeInDays: summary.totalValue.totalPriceAgeInDays
         }
-
-
-        const allocations = Array.from(new Set(summary.holdings.map(holding => holding.allocation)));
-
-        const groupedAllocations = [];
-
-        for (const allocation of allocations) {
-          const values = summary.holdings
-            .filter(holding => holding.allocation === allocation)
-            .map(holding => holding.valueInGbp);
-
-          const totalValueInAllocation = values.reduce((sum, value) => {
-            return sum + value;
-          }, 0);
-
-          const percentage = totalValueInAllocation / portfolio.totalValueInGbp;
-
-          groupedAllocations.push( <Allocation>{
-            name: allocation,
-            value: totalValueInAllocation,
-            percentage: percentage
-          })
-        }
-
-        portfolio.allocations = groupedAllocations;
 
         this.portfolio = portfolio;
       }

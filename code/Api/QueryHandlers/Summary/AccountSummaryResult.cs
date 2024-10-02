@@ -4,6 +4,6 @@ public record AccountSummaryResult(
     string AccountCode,
     IList<Holding> Holdings,
     decimal CashBalanceInGbp,
-    
-    [property: Obsolete("this should be removed and calculated in the client")]
-    TotalValue TotalValue);
+    TotalValue TotalValue,
+    IList<Allocation> Allocations
+    );

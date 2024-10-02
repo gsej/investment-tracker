@@ -1,3 +1,4 @@
+import { Allocation } from "./Allocation";
 import { TotalValue } from "./TotalValue";
 import { Holding } from "./holding";
 
@@ -6,4 +7,5 @@ export class Portfolio {
   holdings!: Holding[];
   cashBalanceInGbp!: number;
   totalValue!: TotalValue;
+  allocations!: Allocation[];
 }

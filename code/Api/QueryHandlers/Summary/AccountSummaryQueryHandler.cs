@@ -1,5 +1,4 @@
 using Common;
-using Common.Extensions;
 using Database;
 using Database.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -113,12 +112,26 @@ public class AccountSummaryQueryHandler : IAccountSummaryQueryHandler
 
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
         var totalPriceAgeInDays = holdings.Sum(h => h.StockPrice?.AgeInDays ?? 0);
+       
+        var allocations = holdings
+            .GroupBy(h => h.Allocation)
+            .Select(g => new Allocation(
+                g.Key, 
+                g.Sum(h => h.ValueInGbp), 
+                g.Sum(h => h.ValueInGbp) / totalValueInGbp))
+            .ToList();
+
+        if (cashBalance > 0)
+        {
+            allocations.Add(new Allocation("Cash", cashBalance, cashBalance / totalValueInGbp));
+        }   
 
         return new AccountSummaryResult(
             request.AccountCode,
             Holdings: holdings, 
             CashBalanceInGbp: cashBalance, 
-            new TotalValue(totalValueInGbp, totalPriceAgeInDays));
+            new TotalValue(totalValueInGbp, totalPriceAgeInDays),
+            Allocations: allocations);
     }
 
     private async Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode)
