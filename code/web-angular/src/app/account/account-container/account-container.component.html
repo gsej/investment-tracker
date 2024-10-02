@@ -1,27 +1,14 @@
-<app-account-selector
-  [accounts]="accounts"
-  (accountChanged)="accountSelected($event)"
-></app-account-selector>
+<app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 
+<div class="grid grid-cols-3 gap-4 pt-0">
+  <div class="col-span-2 flex flex-col">
+    <app-chart class="h-full"></app-chart>
 
-
-
-<div class="grid grid-cols-3 gap-4 pt-0 outline outline-2 outline-yellow-500">
-  <app-card class="col-span-2 gap-4 pt-0">
-    <app-card-title class="text-md"> The Chart Title </app-card-title>
-
-    <app-card-content class="p-0">
-      <div class="w-full p-0">
-        <div class="flex w-full flex-col">
-          <app-chart></app-chart>
-        </div>
-      </div>
-    </app-card-content>
-  </app-card>
-
-  <div class="col-span-1">
+  </div>
+  <div class="flex flex-col">
     <app-summary [portfolio]="portfolio"></app-summary>
   </div>
+
 </div>
 <div class="pt-6">
   <app-holdings [portfolio]="portfolio" [date]="date"> </app-holdings>

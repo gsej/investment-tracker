@@ -6,6 +6,7 @@ using Api.QueryHandlers.Quality;
 using Api.QueryHandlers.Summary;
 using Database;
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Trace;
 
 namespace Api;
 
@@ -38,6 +39,16 @@ public static class Program
         });
 
         builder.Services.AddControllers();
+        
+        builder.Services.AddOpenTelemetry().WithTracing(builder =>
+        {
+            builder
+                // Configure ASP.NET Core Instrumentation
+                .AddAspNetCoreInstrumentation()
+                // Configure OpenTelemetry Protocol (OTLP) Exporter
+                .AddOtlpExporter();
+        });
+        
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(s =>

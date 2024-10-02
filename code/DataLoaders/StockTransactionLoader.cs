@@ -37,7 +37,7 @@ public class StockTransactionLoader
 
     public async Task Load(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity();
+        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockTransactions");
         
         if (!File.Exists(fileName))
         {

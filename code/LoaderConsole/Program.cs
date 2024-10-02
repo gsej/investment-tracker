@@ -16,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OpenTelemetry.Trace;
 
 namespace LoaderConsole;
 
@@ -38,6 +39,15 @@ class Program
                     loggingBuilder.ClearProviders();
                     loggingBuilder.AddConsole();
                     loggingBuilder.AddSeq();
+                });
+                
+                services.AddOpenTelemetry().WithTracing(builder =>
+                {
+                    builder
+                        // Configure ASP.NET Core Instrumentation
+                  //      .AddAspNetCoreInstrumentation()
+                        // Configure OpenTelemetry Protocol (OTLP) Exporter
+                        .AddOtlpExporter();
                 });
 
                 var configurationRoot = new ConfigurationBuilder()
@@ -89,7 +99,7 @@ class Program
         
         using var traceProvider = TracerProviderFactory.GetTracerProvider("Loader", _configuration.AppInsightsConnectionString);
             
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
+        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity("Loading");
 
         using (InvestmentTrackerActivitySource.Instance.StartActivity("EnsureDatabase"))
         {
@@ -143,29 +153,29 @@ class Program
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadRecordedTotalValues"))
         {
             var folder = Path.Combine(dataFolder, "RecordedTotalValues");
-
+        
             foreach (var file in Directory.EnumerateFiles(folder, "*.json", SearchOption.AllDirectories))
             {
                 var relativePath = Path.GetRelativePath(folder, file);
                 await recordedTotalValueLoader.LoadFile(file, relativePath);
             }
         }
-
+        
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadExchangeRates"))
         {
             var exchangeRateFolder = GetPathToExchangeRateFolder();
-
+        
             foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
             {
                 var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
                 await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
             }
         }
-
+        
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockPrices"))
         {
             var priceFolder = GetPathToPriceFolder();
-
+        
             foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
             {
                 var relativePath = Path.GetRelativePath(priceFolder, priceFile);
