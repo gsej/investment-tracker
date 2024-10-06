@@ -5,8 +5,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { RecordedTotalValues } from './models/recordedTotalValues';
-import { AccountHistoricalValues } from './models/accountHistoricalValues';
+//import { AccountHistoricalValues } from './models/accountHistoricalValues';
 import { AccountAnnualPerformances } from './models/accountAnnualPerformances';
+import { HistoryViewModel } from './view-models/HistoryViewModel';
+import { HistoryViewModels } from './view-models/HistoryViewModels';
 
 
 @Injectable({
@@ -21,6 +23,8 @@ export class AccountsService {
   private _portfolioSubject: BehaviorSubject<Portfolio | null> = new BehaviorSubject<Portfolio | null>(null);
   public portfolio$: Observable<Portfolio | null> = this._portfolioSubject.asObservable();
 
+  private _historySubject: BehaviorSubject<HistoryViewModels | null> = new BehaviorSubject<HistoryViewModels | null>(null);
+  public history$: Observable<HistoryViewModels | null> = this._historySubject.asObservable();
 
 
   constructor(private http: HttpClient) {
@@ -31,30 +35,33 @@ export class AccountsService {
     return this.http.get<any>('http://localhost:5100/accounts').pipe(map((result: any) => result.accounts));
   }
 
-  // selectAccount(accountCode: string) {
-  //   this._selectedAccount = accountCode;
-  // }
-
   selectAccount(accountCode: string) {
     this._selectedAccount = accountCode;
     this.getPortfolio(accountCode, this._today).subscribe(summary => {
       this._portfolioSubject.next(summary);
     });
+
+
+    this.getHistory(accountCode).subscribe(history => {
+      this._historySubject.next(history);
+    });
+
+
   }
 
   getPortfolio(accountCode: string, date: string): Observable<Portfolio> {
     return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCode: accountCode, date: date })
   }
 
-  getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {
-    return this.http.post<RecordedTotalValues>('http://localhost:5100/account/recorded-total-values', { accountCode: accountCode })
+  // getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {
+  //   return this.http.post<RecordedTotalValues>('http://localhost:5100/account/recorded-total-values', { accountCode: accountCode })
+  // }
+
+  getHistory(accountCode: string): Observable<HistoryViewModels> {
+    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history', { accountCode: accountCode })
   }
 
-  getAccountValueHistory(accountCode: string): Observable<AccountHistoricalValues> {
-    return this.http.post<AccountHistoricalValues>('http://localhost:5100/account/account-value-history', { accountCode: accountCode })
-  }
-
-  getAccountAnnualPerformance(accountCode: string, date: string): Observable<AccountAnnualPerformances> {
-    return this.http.post<AccountAnnualPerformances>('http://localhost:5100/account/annual-performance', { accountCode: accountCode, asOfDate: date })
-  }
+  // getAccountAnnualPerformance(accountCode: string, date: string): Observable<AccountAnnualPerformances> {
+  //   return this.http.post<AccountAnnualPerformances>('http://localhost:5100/account/annual-performance', { accountCode: accountCode, asOfDate: date })
+  // }
 }

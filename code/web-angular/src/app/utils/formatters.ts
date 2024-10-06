@@ -21,7 +21,7 @@ export function formatCurrency(value: number | null | undefined) {
 
 export function formatPercentage(value: number | null | undefined) {
   if (value === null || value === undefined) {
-    return formatPercentage(0);
+    return '';
   }
 
   return new Intl.NumberFormat('en-US', {

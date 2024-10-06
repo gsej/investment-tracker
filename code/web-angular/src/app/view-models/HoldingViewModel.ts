@@ -10,3 +10,4 @@ export class HoldingViewModel {
   valueInGbp!: number;
   comment!: string;
 }
+

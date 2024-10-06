@@ -31,8 +31,22 @@ public class AccountPortfolioQueryHandlerTests
         _stockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
             .Returns(callInfo => StockPriceResult.Missing(callInfo.Arg<string>()));
         
+        var stockFetcher = Substitute.For<IStockFetcher>();
+
+        stockFetcher.GetStocks().Returns(new List<Stock>
+        {
+            new()
+            {
+                StockSymbol = "SMT.L",
+                Description = "Scottish Mortgage Trust",
+                StockType = StockTypes.Share,
+                Allocation = "Growth"
+            }
+        });
+        
         _queryHander = new AccountPortfolioQueryHandler(
             Substitute.For<ILogger<AccountPortfolioQueryHandler>>(),
+            stockFetcher,
             _stockPriceFetcher,
             _cashStatementItemFetcher,
             _stockTransactionFetcher

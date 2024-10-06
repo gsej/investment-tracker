@@ -1,11 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { PortfolioViewModel } from '../../view-models/portfolioViewModel';
-import { HoldingViewModel } from '../../view-models/holdingViewModel';
-import { MatIconRegistry } from '@angular/material/icon';
+import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
+import { HoldingViewModel } from '../../view-models/HoldingViewModel';
 import { DomSanitizer } from '@angular/platform-browser';
-import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.component';
+//import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.component';
 import { CommonModule } from '@angular/common';
-import { AccountsService } from '../../accounts.service';
 import { HeaderComponent } from 'src/app/components/header/header.component';
 import { CardComponent } from 'src/app/components/card/card.component';
 import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
@@ -18,7 +16,7 @@ import { SeparatorComponent } from 'src/app/components/separator/separator.compo
   standalone: true,
   imports: [
     CommonModule,
-    SortIndicatorComponent,
+   // SortIndicatorComponent,
     HeaderComponent,
     CardComponent,
     CardHeaderComponent,
@@ -30,17 +28,14 @@ import { SeparatorComponent } from 'src/app/components/separator/separator.compo
 })
 export class HoldingsComponent {
 
-  private _accountsService: AccountsService;
-
   public formatQuantity = formatQuantity;
   public formatCurrency = formatCurrency;
 
-  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, accountService: AccountsService) {
+  constructor(sanitizer: DomSanitizer) {
 
-    this._accountsService = accountService;
-    iconRegistry.addSvgIcon(
-      'thumbs-up',
-      sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
+  //   iconRegistry.addSvgIcon(
+  //     'thumbs-up',
+  //     sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
   }
 
   @Input()

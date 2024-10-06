@@ -6,7 +6,7 @@ import { CardTitleComponent } from 'src/app/components/card-title/card-title.com
 import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
 import { SeparatorComponent } from 'src/app/components/separator/separator.component';
-import { PortfolioViewModel } from 'src/app/view-models/portfolioViewModel';
+import { PortfolioViewModel } from 'src/app/view-models/PortfolioViewModel';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
 
 @Component({

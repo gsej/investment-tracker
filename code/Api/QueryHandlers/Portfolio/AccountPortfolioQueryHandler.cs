@@ -1,22 +1,28 @@
 using Api.QueryHandlers.Fetchers;
 using Common;
+using Database.Entities;
 
 namespace Api.QueryHandlers.Portfolio;
 
 public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
 {
     private readonly ILogger<AccountPortfolioQueryHandler> _logger;
+    private readonly IStockFetcher _stockFetcher;
     private readonly IStockPriceFetcher _stockPriceFetcher;
     private readonly ICashStatementItemFetcher _cashStatementItemFetcher;
     private readonly IStockTransactionFetcher _stockTransactionFetcher;
+    private IList<Stock> _stocks;
+
 
     public AccountPortfolioQueryHandler(
         ILogger<AccountPortfolioQueryHandler> logger, 
+        IStockFetcher stockFetcher,
         IStockPriceFetcher stockPriceFetcher, 
         ICashStatementItemFetcher cashStatementItemFetcher, 
         IStockTransactionFetcher stockTransactionFetcher)
     {
         _logger = logger;
+        _stockFetcher = stockFetcher;
         _stockPriceFetcher = stockPriceFetcher;
         _cashStatementItemFetcher = cashStatementItemFetcher;
         _stockTransactionFetcher = stockTransactionFetcher;
@@ -25,6 +31,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
     // Summarizes the position of an account or set of accounts on a given day
     public async Task<AccountPortfolioResult> Handle(AccountPortfolioRequest request)
     {
+        _stocks = await _stockFetcher.GetStocks();
         var cashBalance = await GetCashBalance(request);
         var holdings = await GetHoldings(request);
 
@@ -70,12 +77,12 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         var groupedStockTransactions = stockTransactions
             .Where(s =>
                 request.Date.DayNumber >= s.Date.DayNumber)
-            .GroupBy(s => s.Stock)
+            .GroupBy(s => s.StockSymbol)
             .ToList();
 
         foreach (var group in groupedStockTransactions)
         {
-            var stock = group.Key;
+            var stockSymbol = group.Key;
             
             var stocksAdded = group.Where(st =>
                     st.TransactionType is StockTransactionTypes.Purchase or StockTransactionTypes.TransferIn or StockTransactionTypes.Receipt)
@@ -89,7 +96,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
 
             // TODO: sometimes stock is null. need to find out why and enforce integrity.
             
-            if (stock == null)
+            if (stockSymbol == null)
             {
                 _logger.LogError($"Stock is null for account {request.AccountCode}");
                 throw new InvalidOperationException($"Stock is null for account {request.AccountCode}");
@@ -97,6 +104,8 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
             
             if (totalHeld != 0)
             {
+                var stock = _stocks.Single(s => s.StockSymbol == stockSymbol);
+                
                 holdings.Add(new Holding(
                     stock.StockSymbol,
                     stock.Description,

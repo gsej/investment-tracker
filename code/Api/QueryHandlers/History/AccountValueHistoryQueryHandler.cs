@@ -69,7 +69,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
                 if (historicalValue.ValueInGbp != 0)
                 {
-                    historicalValue.DiscrepancyPercentage = 100 * (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
+                    historicalValue.DiscrepancyRatio =  (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
                 }
             }
 
@@ -79,7 +79,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
                 if (previousDayTotal.Value != 0)
                 {
-                    historicalValue.DifferencePercentage = 100 * (historicalValue.DifferenceToPreviousDay / previousDayTotal.Value);
+                    historicalValue.DifferenceRatio = historicalValue.DifferenceToPreviousDay / previousDayTotal.Value;
                 }
             }
             

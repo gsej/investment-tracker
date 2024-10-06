@@ -1,6 +1,3 @@
-
-
-
 export class AllocationViewModel {
     name!: string;
     value!: number;

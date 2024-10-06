@@ -5,8 +5,10 @@ using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
 using Api.QueryHandlers.Quality;
+using Common.Tracing;
 using Database;
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
 namespace Api;
@@ -15,16 +17,16 @@ public static class Program
 {
     public static void Main(params string[]  args)
     {
-
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Configuration
+        var configurationRoot = builder.Configuration
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: false)
-            .AddEnvironmentVariables();
+            .AddEnvironmentVariables()
+            .Build();
+        
+        var configuration = configurationRoot.GetRequiredSection(nameof(ApiConfiguration)).Get<ApiConfiguration>();
         
         builder.Services.AddMemoryCache();
-
-        var connectionString = builder.Configuration["SqlConnectionString"];
 
         builder.Services.AddCors(options =>
         {
@@ -38,14 +40,17 @@ public static class Program
         });
 
         builder.Services.AddControllers();
-        
+
         builder.Services.AddOpenTelemetry().WithTracing(builder =>
         {
             builder
                 // Configure ASP.NET Core Instrumentation
                 .AddAspNetCoreInstrumentation()
                 // Configure OpenTelemetry Protocol (OTLP) Exporter
-                .AddOtlpExporter();
+
+                .AddOtlpExporter()
+                .ConfigureResource(r => r.AddService("InvestmentTracker"));
+
         });
         
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -57,9 +62,10 @@ public static class Program
         });
 
         builder.Services.AddDbContext<InvestmentsDbContext>(
-            opts => opts.UseSqlServer(connectionString)
+            opts => opts.UseSqlServer(configuration.SqlConnectionString)
         );
         
+        builder.Services.AddScoped<IStockFetcher, StockFetcher>();
         builder.Services.AddScoped<IStockPriceFetcher, StockPriceFetcher>();
         builder.Services.AddScoped<ICashStatementItemFetcher, CashStatementItemFetcher>();
         builder.Services.AddScoped<IStockTransactionFetcher, StockTransactionFetcher>();
@@ -91,6 +97,8 @@ public static class Program
         app.MapControllers();
 
         app.UseMiddleware<CorrelationIdMiddleware>();
+        
+        using var traceProvider = TracerProviderFactory.GetTracerProvider("Api", configuration.AppInsightsConnectionString);
 
         app.Run();
         

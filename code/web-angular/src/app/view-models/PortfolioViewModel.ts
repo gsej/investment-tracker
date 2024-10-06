@@ -1,5 +1,5 @@
 import { AllocationViewModel } from "./AllocationViewModel";
-import { HoldingViewModel } from "./holdingViewModel";
+import { HoldingViewModel } from "./HoldingViewModel";
 
 export class PortfolioViewModel {
   accountCode!: string;
