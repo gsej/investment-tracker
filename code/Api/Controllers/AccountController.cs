@@ -1,6 +1,6 @@
 using Api.QueryHandlers.Account;
 using Api.QueryHandlers.History;
-using Api.QueryHandlers.Summary;
+using Api.QueryHandlers.Portfolio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
@@ -12,7 +12,7 @@ public class ExampleSchemaFilter : ISchemaFilter
 {
     public void Apply(OpenApiSchema schema, SchemaFilterContext context)
     {
-        if (context.Type == typeof(AccountSummaryRequest))
+        if (context.Type == typeof(AccountPortfolioRequest))
         {
             schema.Example = new OpenApiObject()
             {
@@ -30,21 +30,21 @@ public class AccountController : ControllerBase
     public record AccountResponse(IList<Account> Accounts);
 
     private readonly ILogger<AccountController> _logger;
-    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
+    private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IAccountQueryHandler _accountQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
     private readonly IAnnualPerformanceQueryHandler _annualPerformanceQueryHandler;
 
     public AccountController(ILogger<AccountController> logger,
-        IAccountSummaryQueryHandler accountSummaryQueryHandler,
+        IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IAccountQueryHandler accountQueryHandler,
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler,
         IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler,
         IAnnualPerformanceQueryHandler annualPerformanceQueryHandler)
     {
         _logger = logger;
-        _accountSummaryQueryHandler = accountSummaryQueryHandler;
+        _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _accountQueryHandler = accountQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
@@ -58,10 +58,10 @@ public class AccountController : ControllerBase
             return new AccountResponse(accounts);
     }
 
-    [HttpPost("/account/summary")]
-    public async Task<AccountSummaryResult> GetSummary([FromBody] AccountSummaryRequest request)
+    [HttpPost("/account/portfolio")]
+    public async Task<AccountPortfolioResult> GetPortfolio([FromBody] AccountPortfolioRequest request)
     {
-        return await _accountSummaryQueryHandler.Handle(request);
+        return await _accountPortfolioQueryHandler.Handle(request);
     }
     
     [HttpPost("/account/account-value-history")]

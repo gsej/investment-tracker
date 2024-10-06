@@ -1,4 +1,4 @@
-using Api.QueryHandlers.Summary;
+using Api.QueryHandlers.Portfolio;
 using Common;
 using Database;
 using Microsoft.EntityFrameworkCore;
@@ -15,15 +15,15 @@ public interface IAnnualPerformanceQueryHandler
 public class AnnualPerformanceQueryHandler : IAnnualPerformanceQueryHandler
 {
     private readonly InvestmentsDbContext _context;
-    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
+    private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly ILogger<AnnualPerformanceQueryHandler> _logger;
 
     public AnnualPerformanceQueryHandler(InvestmentsDbContext context,
-        IAccountSummaryQueryHandler accountSummaryQueryHandler,
+        IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         ILogger<AnnualPerformanceQueryHandler> logger)
     {
         _context = context;
-        _accountSummaryQueryHandler = accountSummaryQueryHandler;
+        _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _logger = logger;
     }
     
@@ -73,8 +73,8 @@ public class AnnualPerformanceQueryHandler : IAnnualPerformanceQueryHandler
              performanceResult.ValueAtEnd = new TotalValue(0, 0);
              foreach (var accountCode in request.AccountCodes)
              {
-                 var summaryAtStart = await _accountSummaryQueryHandler.Handle(new AccountSummaryRequest(accountCode, startDate));
-                 var summaryAtEnd = await _accountSummaryQueryHandler.Handle(new AccountSummaryRequest(accountCode, endDate));
+                 var summaryAtStart = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest(accountCode, startDate));
+                 var summaryAtEnd = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest(accountCode, endDate));
 
                  performanceResult.ValueAtStart = new TotalValue(ValueInGbp: performanceResult.ValueAtStart.ValueInGbp + summaryAtStart.TotalValue.ValueInGbp, TotalPriceAgeInDays: performanceResult.ValueAtStart.TotalPriceAgeInDays + summaryAtStart.TotalValue.TotalPriceAgeInDays);
                  performanceResult.ValueAtEnd = new TotalValue(ValueInGbp: performanceResult.ValueAtEnd.ValueInGbp + summaryAtEnd.TotalValue.ValueInGbp, TotalPriceAgeInDays: performanceResult.ValueAtEnd.TotalPriceAgeInDays + summaryAtEnd.TotalValue.TotalPriceAgeInDays);

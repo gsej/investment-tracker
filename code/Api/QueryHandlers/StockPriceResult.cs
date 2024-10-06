@@ -26,4 +26,3 @@ public record StockPriceResult
     
     public static StockPriceResult Missing(string stockSymbol) => new($"Missing:{stockSymbol}");
 }
-

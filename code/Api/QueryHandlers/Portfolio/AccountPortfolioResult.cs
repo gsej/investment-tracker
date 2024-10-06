@@ -1,9 +1,9 @@
-namespace Api.QueryHandlers.Summary;
+namespace Api.QueryHandlers.Portfolio;
 
-public record AccountSummaryResult(
+public record AccountPortfolioResult(
     string AccountCode,
     IList<Holding> Holdings,
     decimal CashBalanceInGbp,
     TotalValue TotalValue,
     IList<Allocation> Allocations
-    );
+);

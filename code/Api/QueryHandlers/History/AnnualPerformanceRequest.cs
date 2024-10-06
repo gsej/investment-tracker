@@ -1,4 +1,4 @@
-﻿using Api.QueryHandlers.Summary;
+﻿using Api.QueryHandlers.Portfolio;
 
 namespace Api.QueryHandlers.History;
 

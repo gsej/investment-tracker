@@ -1,5 +1,5 @@
 ﻿using Api.QueryHandlers.History;
-using Api.QueryHandlers.Summary;
+using Api.QueryHandlers.Portfolio;
 using Common;
 using Database;
 using Database.Entities;
@@ -20,7 +20,7 @@ public class AnnualPerformanceQueryHandlerTests
     private readonly DateOnly _accountOpeningDate = new(2020, 1, 1);
 
     private readonly IAnnualPerformanceQueryHandler _queryHandler;
-    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
+    private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     
     public AnnualPerformanceQueryHandlerTests()
     {
@@ -34,14 +34,14 @@ public class AnnualPerformanceQueryHandlerTests
         
         _context = new InvestmentsDbContext(builder.Options);
         
-        _accountSummaryQueryHandler = Substitute.For<IAccountSummaryQueryHandler>();
+        _accountPortfolioQueryHandler = Substitute.For<IAccountPortfolioQueryHandler>();
 
-        _accountSummaryQueryHandler.Handle(Arg.Any<AccountSummaryRequest>())
-            .Returns(new AccountSummaryResult(AccountCode, new List<Holding>(), 0, new TotalValue(0, 0), new List<Allocation>()));
+        _accountPortfolioQueryHandler.Handle(Arg.Any<AccountPortfolioRequest>())
+            .Returns(new AccountPortfolioResult(AccountCode, new List<Holding>(), 0, new TotalValue(0, 0), new List<Allocation>()));
         
         _queryHandler = new AnnualPerformanceQueryHandler(
             _context,
-            _accountSummaryQueryHandler,
+            _accountPortfolioQueryHandler,
             Substitute.For<ILogger<AnnualPerformanceQueryHandler>>());
         
         var account = new Account(AccountCode, _accountOpeningDate);

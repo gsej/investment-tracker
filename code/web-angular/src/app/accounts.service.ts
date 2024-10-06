@@ -42,10 +42,8 @@ export class AccountsService {
     });
   }
 
-  // TODO: terminology is mixed up. using portfolio / summary etc. clean up
-
   getPortfolio(accountCode: string, date: string): Observable<Portfolio> {
-    return this.http.post<Portfolio>('http://localhost:5100/account/summary', { accountCode: accountCode, date: date })
+    return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCode: accountCode, date: date })
   }
 
   getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {

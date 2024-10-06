@@ -1,8 +1,16 @@
-Convert file manipulation code to C# so account identifiers can be moved out of repo
-Populate and maintain USD exchange rates so incoming prices can be converted - i.e. all prices stored in GBP. 
+
+Next task:
+
+Add panel to show the value history for an account.
+Implement proper tests for this code.
+
+The data resulting will be used for a chart.
 
 
 
+
+
+Old Todos:
 
 
 Report totals for each given date in range for an account.
@@ -19,9 +27,7 @@ discrepancies with KnownValues
 
 Rename KnownValues to RecordedValues
 
-
 remember youinvest transaction fees changed to £5 from 1/4/2024 ish.
-
 
 Queries:
 get price from stock transactions and compare with stockprice

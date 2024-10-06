@@ -1,4 +1,4 @@
-using Api.QueryHandlers.Summary;
+using Api.QueryHandlers.Portfolio;
 using Database;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,17 +7,17 @@ namespace Api.QueryHandlers.History;
 public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 {
     private readonly InvestmentsDbContext _context;
-    private readonly IAccountSummaryQueryHandler _accountSummaryQueryHandler;
+    private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly ILogger<AccountValueHistoryQueryHandler> _logger;
 
     public AccountValueHistoryQueryHandler(InvestmentsDbContext context,
-        IAccountSummaryQueryHandler accountSummaryQueryHandler,
+        IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler, 
         ILogger<AccountValueHistoryQueryHandler> logger)
     {
         _context = context;
-        _accountSummaryQueryHandler = accountSummaryQueryHandler;
+        _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _logger = logger;
     }
@@ -50,7 +50,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
         
         while (currentDate <= endDate)
         {
-            var daysResult = await _accountSummaryQueryHandler.Handle(new AccountSummaryRequest { AccountCode = request.AccountCode, Date = currentDate });
+            var daysResult = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest { AccountCode = request.AccountCode, Date = currentDate });
 
             var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
 

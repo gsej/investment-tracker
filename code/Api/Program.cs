@@ -1,9 +1,10 @@
 using Api.Controllers;
 using Api.Correlation;
 using Api.QueryHandlers.Account;
+using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
+using Api.QueryHandlers.Portfolio;
 using Api.QueryHandlers.Quality;
-using Api.QueryHandlers.Summary;
 using Database;
 using Microsoft.EntityFrameworkCore;
 using OpenTelemetry.Trace;
@@ -58,15 +59,18 @@ public static class Program
         builder.Services.AddDbContext<InvestmentsDbContext>(
             opts => opts.UseSqlServer(connectionString)
         );
+        
+        builder.Services.AddScoped<IStockPriceFetcher, StockPriceFetcher>();
+        builder.Services.AddScoped<ICashStatementItemFetcher, CashStatementItemFetcher>();
+        builder.Services.AddScoped<IStockTransactionFetcher, StockTransactionFetcher>();
 
-        builder.Services.AddScoped<IAccountSummaryQueryHandler, AccountSummaryQueryHandler>();
+        builder.Services.AddScoped<IAccountPortfolioQueryHandler, AccountPortfolioQueryHandler>();
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
         builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
         builder.Services.AddScoped<IAnnualPerformanceQueryHandler, AnnualPerformanceQueryHandler>();
 
         builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
-
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
 
         var app = builder.Build();
