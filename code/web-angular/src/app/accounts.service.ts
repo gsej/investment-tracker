@@ -4,12 +4,7 @@ import { Portfolio } from "./models/portfolio";
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
-import { RecordedTotalValues } from './models/recordedTotalValues';
-//import { AccountHistoricalValues } from './models/accountHistoricalValues';
-import { AccountAnnualPerformances } from './models/accountAnnualPerformances';
-import { HistoryViewModel } from './view-models/HistoryViewModel';
 import { HistoryViewModels } from './view-models/HistoryViewModels';
-
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +20,6 @@ export class AccountsService {
 
   private _historySubject: BehaviorSubject<HistoryViewModels | null> = new BehaviorSubject<HistoryViewModels | null>(null);
   public history$: Observable<HistoryViewModels | null> = this._historySubject.asObservable();
-
 
   constructor(private http: HttpClient) {
     this._today = new Date().toISOString().substring(0, 10);
@@ -46,22 +40,13 @@ export class AccountsService {
       this._historySubject.next(history);
     });
 
-
   }
 
   getPortfolio(accountCode: string, date: string): Observable<Portfolio> {
     return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCode: accountCode, date: date })
   }
 
-  // getRecordedTotalValues(accountCode: string): Observable<RecordedTotalValues> {
-  //   return this.http.post<RecordedTotalValues>('http://localhost:5100/account/recorded-total-values', { accountCode: accountCode })
-  // }
-
   getHistory(accountCode: string): Observable<HistoryViewModels> {
     return this.http.post<HistoryViewModels>('http://localhost:5100/account/history', { accountCode: accountCode })
   }
-
-  // getAccountAnnualPerformance(accountCode: string, date: string): Observable<AccountAnnualPerformances> {
-  //   return this.http.post<AccountAnnualPerformances>('http://localhost:5100/account/annual-performance', { accountCode: accountCode, asOfDate: date })
-  // }
 }

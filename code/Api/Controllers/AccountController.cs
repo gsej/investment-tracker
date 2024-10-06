@@ -15,31 +15,25 @@ public class AccountController : ControllerBase
     private readonly ILogger<AccountController> _logger;
     private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IAccountQueryHandler _accountQueryHandler;
-    private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
-    private readonly IAnnualPerformanceQueryHandler _annualPerformanceQueryHandler;
 
     public AccountController(ILogger<AccountController> logger,
         IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IAccountQueryHandler accountQueryHandler,
-        IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler,
-        IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler,
-        IAnnualPerformanceQueryHandler annualPerformanceQueryHandler
+        IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler
         )
     {
         _logger = logger;
         _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _accountQueryHandler = accountQueryHandler;
-        _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
-        _annualPerformanceQueryHandler = annualPerformanceQueryHandler;
     }
 
     [HttpGet("/accounts")]
     public async Task<AccountResponse> GetAccounts()
     {
-            var accounts = await _accountQueryHandler.Handle(new AccountRequest());
-            return new AccountResponse(accounts);
+        var accounts = await _accountQueryHandler.Handle(new AccountRequest());
+        return new AccountResponse(accounts);
     }
 
     [HttpPost("/account/portfolio")]
@@ -51,8 +45,8 @@ public class AccountController : ControllerBase
     
     [HttpPost("/account/history")]
     public async Task<AccountValueHistoryResult> GetHistory([FromBody] AccountValueHistoryRequest request)
-    {using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
-        
+    {
+        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
         return await _accountValueHistoryQueryHandler.Handle(request);
     }
     

@@ -9,12 +9,13 @@ import { AllocationViewModel } from "src/app/view-models/AllocationViewModel";
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
-import { ChartComponent } from '../chart/chart.component';
+
 import { CardComponent } from 'src/app/components/card/card.component';
 import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { CardTitleComponent } from 'src/app/components/card-title/card-title.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryComponent } from '../history/history.component';
+import { HistoryChartComponent } from '../chart/history-chart.component';
 
 @Component({
   selector: 'app-account-container',
@@ -22,7 +23,7 @@ import { HistoryComponent } from '../history/history.component';
   imports: [AccountSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
-    ChartComponent,
+    HistoryChartComponent,
     SummaryComponent,
     CardComponent,
     CardContentComponent,

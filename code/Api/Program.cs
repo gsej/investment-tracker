@@ -78,7 +78,7 @@ public static class Program
 
         builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
-
+        
         var app = builder.Build();
 
         app.UseSwagger();
