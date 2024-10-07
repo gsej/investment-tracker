@@ -16,11 +16,16 @@ import { CardTitleComponent } from 'src/app/components/card-title/card-title.com
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryComponent } from '../history/history.component';
 import { HistoryChartComponent } from '../chart/history-chart.component';
+import { QualityService } from 'src/app/quality.service';
+import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-account-container',
   standalone: true,
-  imports: [AccountSelectorComponent,
+  imports: [
+    CommonModule,
+    AccountSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
     HistoryChartComponent,
@@ -43,11 +48,15 @@ export class AccountContainerComponent implements OnInit {
   public accountCode!: string;
   public date!: string;
 
-  constructor(private accountsService: AccountsService) {
+  showQualityData$!: Observable<boolean>;
+
+  constructor(private accountsService: AccountsService, private qualityService: QualityService) {
     this.setDateToToday();
   }
 
   ngOnInit(): void {
+
+    this.showQualityData$ = this.qualityService.showQualityData$;
 
     this.accountsService.portfolio$.subscribe(portfolio => {
 
@@ -159,10 +168,16 @@ export class AccountContainerComponent implements OnInit {
   //     });
   // }
 
+
   dateSelected(date: string) {
     console.log("container, date selected: " + date);
 
     this.date = date;
     //  this.getSummary();
+  }
+
+
+  toggleShowQualityData() {
+    this.qualityService.toggleShowQualityData();
   }
 }

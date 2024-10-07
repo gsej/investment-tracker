@@ -5,7 +5,7 @@ public record StockPriceResult
 {
     public string Error { get; }
     public decimal? Price { get; }
-    public string Currency { get; }
+    public string Currency { get; } // Currency is always GBP. Is this needed?
     public string OriginalCurrency { get; }
     public int? AgeInDays { get; }
 

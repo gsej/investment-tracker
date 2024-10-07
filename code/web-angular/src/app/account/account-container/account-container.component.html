@@ -1,5 +1,12 @@
 <app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 
+<div class="mb-4">
+  <label class="inline-flex items-center">
+    <input type="checkbox" class="form-checkbox" [checked]="(showQualityData$ | async)" (change)="toggleShowQualityData()" />
+    <span class="ml-2">Show quality data</span>
+  </label>
+</div>
+
 <div class="grid grid-cols-3 gap-4 pt-0">
 
   <div class="col-span-2 flex flex-col">

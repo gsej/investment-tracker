@@ -10,6 +10,8 @@ import { CardHeaderComponent } from 'src/app/components/card-header/card-header.
 import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { formatQuantity, formatCurrency } from 'src/app/utils/formatters';
 import { SeparatorComponent } from 'src/app/components/separator/separator.component';
+import { Observable } from 'rxjs';
+import { QualityService } from 'src/app/quality.service';
 
 @Component({
   selector: 'app-holdings',
@@ -31,7 +33,11 @@ export class HoldingsComponent {
   public formatQuantity = formatQuantity;
   public formatCurrency = formatCurrency;
 
-  constructor(sanitizer: DomSanitizer) {
+  showQualityData$!: Observable<boolean>;
+
+  constructor(qualityService: QualityService, sanitizer: DomSanitizer) {
+
+    this.showQualityData$ = qualityService.showQualityData$;
 
   //   iconRegistry.addSvgIcon(
   //     'thumbs-up',

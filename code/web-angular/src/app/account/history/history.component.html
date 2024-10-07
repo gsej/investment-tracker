@@ -25,8 +25,8 @@
         <th class="h-12 px-4 text-center align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Price Age</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Recorded Value</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Discrepancy</th>
-        <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change</th>
-        <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change %</th>
+        <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change</th>
+        <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change %</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Comment</th>
       </tr>
     </thead>
@@ -41,8 +41,8 @@
           <p>{{ item.recordedTotalValueSource }}</p>
         </td>
         <td class="p-4 text-right text-gray-600">{{ formatPercentage(item.discrepancyRatio) }}</td>
-        <td class="p-4 text-right text-gray-600">{{ item.differenceToPreviousDay }}</td>
-        <td class="p-4 text-right text-gray-600">{{ formatPercentage(item.differenceRatio) }}</td>
+        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ item.differenceToPreviousDay }}</td>
+        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ formatPercentage(item.differenceRatio) }}</td>
         <td class="p-4 text-center text-gray-600">{{ item.comment }}</td>
       </tr>
       }

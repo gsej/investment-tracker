@@ -14,6 +14,8 @@ import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/
 import { SeparatorComponent } from 'src/app/components/separator/separator.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryViewModel } from 'src/app/view-models/HistoryViewModel';
+import { Observable } from 'rxjs';
+import { QualityService } from 'src/app/quality.service';
 
 @Component({
   selector: 'app-history',
@@ -41,7 +43,11 @@ export class HistoryComponent implements OnChanges {
   private showRecordedOnly = false;
   private showBigDifferenceOnly = false;
 
-  constructor(sanitizer: DomSanitizer) {
+  showQualityData$!: Observable<boolean>;
+
+  constructor(qualityService: QualityService, sanitizer: DomSanitizer) {
+
+    this.showQualityData$ = qualityService.showQualityData$;
 
     //this._accountsService = accountService;
     // iconRegistry.addSvgIcon(

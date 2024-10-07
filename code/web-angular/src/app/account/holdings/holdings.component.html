@@ -32,8 +32,8 @@
 
           <div class="flex-grow text-right">
             <p class="text-sm">{{ formatCurrency(holding.price) }}</p>
-            <p class="text-sm text-gray-600">{{holding.currency}}</p>
-            <p class="text-xs">{{ holding.priceAgeInDays }} days old</p>
+            <p *ngIf="showQualityData$ | async" class="text-sm text-gray-600">Original currency: {{ holding.originalCurrency }}</p>
+            <p *ngIf="showQualityData$ | async" class="text-sm text-gray-600">{{ holding.priceAgeInDays }} days old</p>
           </div>
 
           <div class="flex-grow text-right">
