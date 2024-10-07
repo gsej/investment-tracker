@@ -59,6 +59,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             var historicalValue = new AccountHistoricalValue(currentDate, 
                 accountCode, 
                 daysResult.TotalValue.ValueInGbp,
+                daysResult.Contributions,
                 daysResult.TotalValue.TotalPriceAgeInDays, 
                 comment);
 
@@ -75,7 +76,8 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
             if (previousDayTotal.HasValue)
             {
-                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - previousDayTotal.Value;
+                // calculate difference to previous day to see if there are big leaps. Remove any contribution which might affect the result
+                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.Contributions - previousDayTotal.Value;
 
                 if (previousDayTotal.Value != 0)
                 {

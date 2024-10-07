@@ -96,6 +96,29 @@ public class AccountPortfolioQueryHandlerTests
     }
     
     [Fact]
+    public async Task Handle_WhenContributionsExistForRequestedDate_ReturnsContributions()
+    {
+        // arrange
+        var cashStatementItems = new List<CashStatementItem>
+        {
+            new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution }, 
+            new(AccountCode, new DateOnly(2023, 5, 1), "description", 0, -50) { CashStatementItemType = CashStatementItemTypes.Purchase }, 
+            new(AccountCode, new DateOnly(2023, 12, 31), "description", 0, -1) { CashStatementItemType = CashStatementItemTypes.Charge }, 
+            new(AccountCode, new DateOnly(2024, 1, 1), "description", 1000, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
+        };
+        
+        _cashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        
+        var request = new AccountPortfolioRequest("Account", new DateOnly(2024, 1, 1));
+        
+        // act
+        var result = await _queryHander.Handle(request);
+        
+        // assert
+        result.Contributions.Should().Be(1000);
+    }
+    
+    [Fact]
     public async Task Handle_WhenStockTransactionsExist_ReturnsHolding()
     {
         // arrange
@@ -193,7 +216,7 @@ public class AccountPortfolioQueryHandlerTests
     }
     
     [Fact]
-    public async Task Handle_WithAllDate_ReturnsAllocations()
+    public async Task Handle_WithAllData_ReturnsAllocations()
     {
         // arrange
         var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage Trust", StockTypes.Share, "Growth")

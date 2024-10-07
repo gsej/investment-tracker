@@ -37,7 +37,7 @@ public class AnnualPerformanceQueryHandlerTests
         _accountPortfolioQueryHandler = Substitute.For<IAccountPortfolioQueryHandler>();
 
         _accountPortfolioQueryHandler.Handle(Arg.Any<AccountPortfolioRequest>())
-            .Returns(new AccountPortfolioResult(AccountCode, new List<Holding>(), 0, new TotalValue(0, 0), new List<Allocation>()));
+            .Returns(new AccountPortfolioResult(AccountCode, new List<Holding>(), 0, 0, new TotalValue(0, 0), new List<Allocation>()));
         
         _queryHandler = new AnnualPerformanceQueryHandler(
             _context,

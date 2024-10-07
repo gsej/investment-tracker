@@ -13,7 +13,6 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
     private readonly IStockTransactionFetcher _stockTransactionFetcher;
     private IList<Stock> _stocks;
 
-
     public AccountPortfolioQueryHandler(
         ILogger<AccountPortfolioQueryHandler> logger, 
         IStockFetcher stockFetcher,
@@ -35,6 +34,8 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         var cashBalance = await GetCashBalance(request);
         var holdings = await GetHoldings(request);
 
+        var contributions = await GetContributions(request);
+
         await PriceHoldings(holdings, request.Date);
 
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
@@ -45,8 +46,10 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         return new AccountPortfolioResult(
             request.AccountCode,
             Holdings: holdings, 
-            CashBalanceInGbp: cashBalance, 
+            CashBalanceInGbp: cashBalance,
+            Contributions: contributions,
             new TotalValue(totalValueInGbp, totalPriceAgeInDays),
+            
             Allocations: allocations);
     }
 
@@ -135,7 +138,6 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
                 holding.Comment = stockPrice.Error;
             }
         }
-
     }
 
     private async Task<decimal> GetCashBalance(AccountPortfolioRequest request)
@@ -146,5 +148,16 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
             .Where(c => request.Date.DayNumber >= c.Date.DayNumber)
             .Sum(c => c.ReceiptAmountGbp + c.PaymentAmountGbp);
         return cashBalance;
+    }
+    
+    private async Task<decimal> GetContributions(AccountPortfolioRequest request)
+    {
+        // Returns contributions for the day in question
+        var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCode);
+        
+        var contribution = cashStatementItems.Where(c => c.Date.DayNumber == request.Date.DayNumber && c.CashStatementItemType == CashStatementItemTypes.Contribution)
+            .Sum(c => c.ReceiptAmountGbp);
+
+        return contribution;
     }
 }

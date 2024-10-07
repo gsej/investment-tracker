@@ -56,9 +56,10 @@ export class HistoryComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (this.history) {
-      this.itemsToShow = [...this.history.items];
-    }
+    this.filterRows();
+    // if (this.history) {
+    //   this.itemsToShow = [...this.history.items];
+    // }
 
   }
 
@@ -125,11 +126,10 @@ export class HistoryComponent implements OnChanges {
 
     if (this.history) {
 
-
       itemsToShow = [...this.history.items];
 
       if (this.showBigDifferenceOnly) {
-        itemsToShow = [...itemsToShow.filter(v => Math.abs(v.differenceRatio) > 0.01)];
+        itemsToShow = [...itemsToShow.filter(v => Math.abs(v.differenceRatio) > 0.03)];
       }
 
       if (this.showRecordedOnly) {
