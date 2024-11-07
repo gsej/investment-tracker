@@ -13,22 +13,22 @@ namespace UnitTests.Api.QueryHandlers;
 
 public class AccountPortfolioQueryHandlerTests
 {
-    private readonly IAccountPortfolioQueryHandler _queryHander;
+    private readonly IAccountPortfolioQueryHandler _queryHandler;
     
-    private readonly ICashStatementItemFetcher _cashStatementItemFetcher;
-    private readonly IStockTransactionFetcher _stockTransactionFetcher;
-    private readonly IStockPriceFetcher _stockPriceFetcher;
+    private readonly ICashStatementItemFetcher _mockCashStatementItemFetcher;
+    private readonly IStockTransactionFetcher _mockStockTransactionFetcher;
+    private readonly IStockPriceFetcher _mockStockPriceFetcher;
 
     private const string AccountCode = "Account";
 
     public AccountPortfolioQueryHandlerTests()
     {
-        _cashStatementItemFetcher = Substitute.For<ICashStatementItemFetcher>();
-        _stockTransactionFetcher = Substitute.For<IStockTransactionFetcher>();
+        _mockCashStatementItemFetcher = Substitute.For<ICashStatementItemFetcher>();
+        _mockStockTransactionFetcher = Substitute.For<IStockTransactionFetcher>();
 
-        _stockPriceFetcher = Substitute.For<IStockPriceFetcher>();
+        _mockStockPriceFetcher = Substitute.For<IStockPriceFetcher>();
         
-        _stockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
+        _mockStockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
             .Returns(callInfo => StockPriceResult.Missing(callInfo.Arg<string>()));
         
         var stockFetcher = Substitute.For<IStockFetcher>();
@@ -44,12 +44,12 @@ public class AccountPortfolioQueryHandlerTests
             }
         });
         
-        _queryHander = new AccountPortfolioQueryHandler(
+        _queryHandler = new AccountPortfolioQueryHandler(
             Substitute.For<ILogger<AccountPortfolioQueryHandler>>(),
             stockFetcher,
-            _stockPriceFetcher,
-            _cashStatementItemFetcher,
-            _stockTransactionFetcher
+            _mockStockPriceFetcher,
+            _mockCashStatementItemFetcher,
+            _mockStockTransactionFetcher
             );
     }
     
@@ -60,7 +60,7 @@ public class AccountPortfolioQueryHandlerTests
         var request = new AccountPortfolioRequest(AccountCode, new DateOnly(2023, 12, 31));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         using var _ = new AssertionScope();
@@ -84,12 +84,12 @@ public class AccountPortfolioQueryHandlerTests
             new(AccountCode, new DateOnly(2024, 1, 1), "description", 1000, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
         
-        _cashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         result.CashBalanceInGbp.Should().Be(49);
@@ -107,12 +107,12 @@ public class AccountPortfolioQueryHandlerTests
             new(AccountCode, new DateOnly(2024, 1, 1), "description", 1000, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
         
-        _cashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2024, 1, 1));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         result.Contributions.Should().Be(1000);
@@ -159,12 +159,12 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock }
         };
 
-        _stockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         using var _ = new AssertionScope();
@@ -194,16 +194,16 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
         };
 
-        _stockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
         
         var stockPrice = new StockPrice("SMT.L", new DateOnly(2023, 1, 2), 10m, "GBP", "Test", "GBP", null, null);
         
-        _stockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
+        _mockStockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         using var _ = new AssertionScope();
@@ -227,7 +227,7 @@ public class AccountPortfolioQueryHandlerTests
             new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
         
-        _cashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
 
         var stockTransactions = new List<StockTransaction>
         {
@@ -243,16 +243,16 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
         };
 
-        _stockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
         
         var stockPrice = new StockPrice("SMT.L", new DateOnly(2023, 1, 2), 10m, "GBP", "Test", "GBP", null, null);
         
-        _stockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
+        _mockStockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
         
         // act
-        var result = await _queryHander.Handle(request);
+        var result = await _queryHandler.Handle(request);
         
         // assert
         using var _ = new AssertionScope();

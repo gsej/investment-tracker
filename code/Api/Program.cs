@@ -64,6 +64,8 @@ public static class Program
         builder.Services.AddDbContext<InvestmentsDbContext>(
             opts => opts.UseSqlServer(configuration.SqlConnectionString)
         );
+
+        builder.Services.AddScoped<IAccountFetcher, AccountFetcher>();
         
         builder.Services.AddScoped<IStockFetcher, StockFetcher>();
         builder.Services.AddScoped<IStockPriceFetcher, StockPriceFetcher>();

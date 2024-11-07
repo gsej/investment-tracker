@@ -1,22 +1,22 @@
+using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.Portfolio;
-using Database;
-using Microsoft.EntityFrameworkCore;
 
 namespace Api.QueryHandlers.History;
 
 public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 {
-    private readonly InvestmentsDbContext _context;
+    private readonly IAccountFetcher _accountFetcher;
     private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
     private readonly ILogger<AccountValueHistoryQueryHandler> _logger;
 
-    public AccountValueHistoryQueryHandler(InvestmentsDbContext context,
+    public AccountValueHistoryQueryHandler(
+        IAccountFetcher accountFetcher, 
         IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler, 
         ILogger<AccountValueHistoryQueryHandler> logger)
     {
-        _context = context;
+        _accountFetcher = accountFetcher;
         _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
         _logger = logger;
@@ -25,7 +25,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
     // Returns the total value of the account at the end of each day in the date range.
     public async Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest request)
     {
-        var account = await _context.Accounts.SingleOrDefaultAsync(account => account.AccountCode == request.AccountCode);
+        var account = (await _accountFetcher.GetAccounts()).SingleOrDefault(account => account.AccountCode == request.AccountCode);
 
         if (account == null)
         {

@@ -1,10 +1,17 @@
 
 Next task:
 
-Add panel to show the value history for an account.
-Implement proper tests for this code.
+Implement proper tests for value history
 
-The data resulting will be used for a chart.
+Unitisation - and allow ploting of unit value on chart
+
+Stocks page to show list of stocks and backend to get prices for stocks
+(so stock prices can be added to chart)
+
+allow downloading stock list as json
+
+## UI improvements:
+show when loading
 
 
 
@@ -13,19 +20,9 @@ The data resulting will be used for a chart.
 Old Todos:
 
 
-Report totals for each given date in range for an account.
 
-Include:
-KnownValues where they exist
 
 Highlight data issues:
-missing prices
-old prices
-missing exchange rates
-big changes from one row to another
-discrepancies with KnownValues
-
-Rename KnownValues to RecordedValues
 
 remember youinvest transaction fees changed to £5 from 1/4/2024 ish.
 
