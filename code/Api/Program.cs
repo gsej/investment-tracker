@@ -76,8 +76,7 @@ public static class Program
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
         builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
-        builder.Services.AddScoped<IAnnualPerformanceQueryHandler, AnnualPerformanceQueryHandler>();
-
+   
         builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         

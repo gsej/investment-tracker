@@ -19,7 +19,6 @@ public class StockFetcher : IStockFetcher
 
     public async Task<IList<Stock>> GetStocks()
     {
-      
         if (_memoryCache.TryGetValue(CacheKey, out object cached) && cached is IList<Stock> stocks)
         {
             return stocks;
