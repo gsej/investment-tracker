@@ -1,14 +1,14 @@
-<app-card>
-  <app-card-header class="pb-2">
+<gsej-ng-tailwind-card>
+  <gsej-ng-tailwind-card-header class="pb-2">
     <div class="flex flex-row items-center justify-between pb-0">
-      <app-card-title class="text-lg font-bold">Total Value</app-card-title>
+      <gsej-ng-tailwind-card-title class="text-lg font-bold">Total Value</gsej-ng-tailwind-card-title>
       <div class="text-lg font-extrabold">
         {{ formatCurrency(portfolio?.totalValueInGbp) }}
       </div>
     </div>
-  </app-card-header>
-  <app-separator class="mt-2 mb-4" />
-  <app-card-content>
+  </gsej-ng-tailwind-card-header>
+  <gsej-ng-tailwind-separator class="mt-2 mb-4" />
+  <gsej-ng-tailwind-card-content>
     <div class="flex justify-between">
       <span class="text-gray-600">Investments</span>
       <span class="text-gray-600">{{
@@ -21,16 +21,16 @@
         formatCurrency(portfolio?.cashBalanceInGbp)
         }}</span>
     </div>
-  </app-card-content>
+  </gsej-ng-tailwind-card-content>
 
-  <app-card-header class="pb-2">
+  <gsej-ng-tailwind-card-header class="pb-2">
     <div class="flex flex-row items-center justify-between pb-0">
-      <app-card-title class="text-lg font-bold">Allocations</app-card-title>
+      <gsej-ng-tailwind-card-title class="text-lg font-bold">Allocations</gsej-ng-tailwind-card-title>
     </div>
-  </app-card-header>
+  </gsej-ng-tailwind-card-header>
 
-  <app-separator class="mt-2 mb-4" />
-  <app-card-content>
+  <gsej-ng-tailwind-separator class="mt-2 mb-4" />
+  <gsej-ng-tailwind-card-content>
 
     <div class="grid grid-cols-3 gap-4">
       @for (allocation of portfolio?.allocations; track allocation) {
@@ -40,6 +40,6 @@
       }
     </div>
 
-  </app-card-content>
+  </gsej-ng-tailwind-card-content>
 
-</app-card>
+</gsej-ng-tailwind-card>

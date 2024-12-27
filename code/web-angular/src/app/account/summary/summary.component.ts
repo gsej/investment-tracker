@@ -1,13 +1,8 @@
 import { Component, Input } from '@angular/core';
-
 import { CommonModule, formatPercent } from '@angular/common';
-import { CardComponent } from 'src/app/components/card/card.component';
-import { CardTitleComponent } from 'src/app/components/card-title/card-title.component';
-import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
-import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
-import { SeparatorComponent } from 'src/app/components/separator/separator.component';
 import { PortfolioViewModel } from 'src/app/view-models/PortfolioViewModel';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
+import { CardComponent, CardContentComponent, CardHeaderComponent, CardTitleComponent, SeparatorComponent } from '@gsej/tailwind-components';
 
 @Component({
   selector: 'app-summary',

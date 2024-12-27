@@ -1,3 +1,3 @@
 ﻿namespace Api.QueryHandlers.History;
 
-public record AccountValueHistoryRequest(string AccountCode);
+public record AccountValueHistoryRequest(string AccountCode, DateOnly QueryDate);

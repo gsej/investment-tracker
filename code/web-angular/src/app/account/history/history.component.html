@@ -1,6 +1,5 @@
 <h3 class="py-4 text-lg font-bold">History</h3>
 
-
 <div class="mb-4">
   <label class="inline-flex items-center">
     <input type="checkbox" class="form-checkbox" (change)="recordedOnly($event)" />
@@ -25,6 +24,8 @@
         <th class="h-12 px-4 text-center align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Price Age</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Recorded Value</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Discrepancy</th>
+        <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Units</th>
+        <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Unit Value</th>
         <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Contributions</th>
         <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change</th>
         <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change %</th>
@@ -42,6 +43,8 @@
           <p>{{ item.recordedTotalValueSource }}</p>
         </td>
         <td class="p-4 text-right text-gray-600">{{ formatPercentage(item.discrepancyRatio) }}</td>
+        <td class="p-4 text-right text-gray-600">{{ formatQuantity(item.units.numberOfUnits) }}</td>
+        <td class="p-4 text-right text-gray-600">{{ formatCurrency(item.units.valueInGbpPerUnit) }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-red-600">{{ formatCurrency(item.contributions) }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ item.differenceToPreviousDay }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ formatPercentage(item.differenceRatio) }}</td>
@@ -60,7 +63,7 @@
 
 
 <!--
-    <app-card-content>
+    <gsej-ng-tailwind-card-content>
       <div class="pt-0 p-0">
         <div *ngFor="let item of history.items" class="grid grid-cols-6 gap-4 border-b p-2">
 
@@ -96,8 +99,8 @@
           </div> -->
 <!-- </div>
       </div>
-    </app-card-content>
-  </app-card>
+    </gsej-ng-tailwind-card-content>
+  </gsej-ng-tailwind-card>
 
 </div> -->
 

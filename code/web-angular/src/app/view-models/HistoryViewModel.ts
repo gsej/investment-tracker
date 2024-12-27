@@ -10,6 +10,13 @@ export class HistoryViewModel {
   differenceToPreviousDay!: number;
   differenceRatio!: number;
   comment!: string;
+  units!: UnitViewModel;
+}
+
+export class UnitViewModel {
+  date!: string;
+  numberOfUnits!: number;
+  valueInGbpPerUnit!: number;
 }
 
 

@@ -36,7 +36,7 @@ export class AccountsService {
     });
 
 
-    this.getHistory(accountCode).subscribe(history => {
+    this.getHistory(accountCode, this._today).subscribe(history => {
       this._historySubject.next(history);
     });
 
@@ -46,7 +46,7 @@ export class AccountsService {
     return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCode: accountCode, date: date })
   }
 
-  getHistory(accountCode: string): Observable<HistoryViewModels> {
-    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history', { accountCode: accountCode })
+  getHistory(accountCode: string, queryDate: string): Observable<HistoryViewModels> {
+    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history', { accountCode: accountCode, queryDate: queryDate })
   }
 }

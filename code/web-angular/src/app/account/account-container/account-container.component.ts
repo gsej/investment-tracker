@@ -9,16 +9,13 @@ import { AllocationViewModel } from "src/app/view-models/AllocationViewModel";
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
-
-import { CardComponent } from 'src/app/components/card/card.component';
-import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
-import { CardTitleComponent } from 'src/app/components/card-title/card-title.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryComponent } from '../history/history.component';
 import { HistoryChartComponent } from '../chart/history-chart.component';
 import { QualityService } from 'src/app/quality.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-components';
 
 @Component({
   selector: 'app-account-container',
@@ -30,7 +27,6 @@ import { CommonModule } from '@angular/common';
     HistoryComponent,
     HistoryChartComponent,
     SummaryComponent,
-    CardComponent,
     CardContentComponent,
     CardTitleComponent],
   templateUrl: './account-container.component.html',
@@ -41,9 +37,6 @@ export class AccountContainerComponent implements OnInit {
   public accounts: Account[] = []
   public portfolio: PortfolioViewModel | null = null;
   public history: HistoryViewModels | null = null;
-  //public recordedTotalValues: RecordedTotalValues | null = null;
-  //public accountHistoricalValues: AccountHistoricalValues | null = null;
-  //public accountAnnualPerformances: AccountAnnualPerformances | null = null;
 
   public accountCode!: string;
   public date!: string;

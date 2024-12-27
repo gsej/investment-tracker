@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
 
+// TODO: is this used?
 @Component({
   selector: 'app-account-annual-performance',
   standalone: true,

@@ -13,4 +13,9 @@ public record AccountHistoricalValue(
     public decimal? DiscrepancyRatio { get; set; }
     public decimal? DifferenceToPreviousDay { get; set; }
     public decimal? DifferenceRatio { get; set; }
+    
+    public UnitAccount Units { get; set; }
 }
+
+
+public record UnitAccount(DateOnly Date, decimal? NumberOfUnits, decimal? ValueInGbpPerUnit);

@@ -1,29 +1,18 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
-import { HoldingViewModel } from '../../view-models/HoldingViewModel';
-//import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
-//import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.component';
 import { CommonModule, formatPercent } from '@angular/common';
-import { AccountsService } from '../../accounts.service';
-import { HeaderComponent } from 'src/app/components/header/header.component';
-import { CardComponent } from 'src/app/components/card/card.component';
-import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
-import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
-import { SeparatorComponent } from 'src/app/components/separator/separator.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryViewModel } from 'src/app/view-models/HistoryViewModel';
 import { Observable } from 'rxjs';
 import { QualityService } from 'src/app/quality.service';
+import { CardComponent, CardContentComponent, CardHeaderComponent, SeparatorComponent } from '@gsej/tailwind-components';
 
 @Component({
   selector: 'app-history',
   standalone: true,
   imports: [
     CommonModule,
-    //SortIndicatorComponent,
-    HeaderComponent,
     CardComponent,
     CardHeaderComponent,
     CardContentComponent,
@@ -33,7 +22,6 @@ import { QualityService } from 'src/app/quality.service';
   styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnChanges {
-
 
   public formatQuantity = formatQuantity;
   public formatCurrency = formatCurrency;

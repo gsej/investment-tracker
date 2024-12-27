@@ -2,24 +2,17 @@ import { Component, Input } from '@angular/core';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
 import { HoldingViewModel } from '../../view-models/HoldingViewModel';
 import { DomSanitizer } from '@angular/platform-browser';
-//import { SortIndicatorComponent } from '../../sort-indicator/sort-indicator.component';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from 'src/app/components/header/header.component';
-import { CardComponent } from 'src/app/components/card/card.component';
-import { CardHeaderComponent } from 'src/app/components/card-header/card-header.component';
-import { CardContentComponent } from 'src/app/components/card-content/card-content.component';
 import { formatQuantity, formatCurrency } from 'src/app/utils/formatters';
-import { SeparatorComponent } from 'src/app/components/separator/separator.component';
 import { Observable } from 'rxjs';
 import { QualityService } from 'src/app/quality.service';
+import { CardComponent, CardContentComponent, CardHeaderComponent, SeparatorComponent } from '@gsej/tailwind-components';
 
 @Component({
   selector: 'app-holdings',
   standalone: true,
   imports: [
     CommonModule,
-   // SortIndicatorComponent,
-    HeaderComponent,
     CardComponent,
     CardHeaderComponent,
     CardContentComponent,
@@ -36,12 +29,7 @@ export class HoldingsComponent {
   showQualityData$!: Observable<boolean>;
 
   constructor(qualityService: QualityService, sanitizer: DomSanitizer) {
-
     this.showQualityData$ = qualityService.showQualityData$;
-
-  //   iconRegistry.addSvgIcon(
-  //     'thumbs-up',
-  //     sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/thumbup-icon.svg'));
   }
 
   @Input()
