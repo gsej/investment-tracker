@@ -1,26 +1,27 @@
+using Api.QueryHandlers.History;
 using Database;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api.QueryHandlers.History;
+namespace Api.QueryHandlers.Fetchers;
 
-public class RecordedTotalValueQueryHandler : IRecordedTotalValueQueryHandler
+public class RecordedTotalValueFetcher : IRecordedTotalValueFetcher
 {
     private readonly InvestmentsDbContext _context;
 
-    public RecordedTotalValueQueryHandler(InvestmentsDbContext context)
+    public RecordedTotalValueFetcher(InvestmentsDbContext context)
     {
         _context = context;
     }
-    
-    public async Task<RecordedTotalValuesResult> Handle(RecordedTotalValuesRequest request)
+
+    public async Task<IList<RecordedTotalValue>> GetRecordedTotalValues(string accountCode)
     {
         var recordedTotalValues = await _context.RecordedTotalValues
-            .Where(v => request.AccountCode == v.AccountCode)
+            .Where(v => v.AccountCode == accountCode)
             .OrderBy(v => v.Date)
             .AsNoTracking()
             .Select(v => new RecordedTotalValue(v.Date, v.AccountCode, v.TotalValueInGbp, v.Source))
             .ToListAsync();
 
-        return new RecordedTotalValuesResult(recordedTotalValues);
+        return recordedTotalValues;
     }
 }

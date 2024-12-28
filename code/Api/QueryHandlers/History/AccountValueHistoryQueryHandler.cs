@@ -7,59 +7,41 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 {
     private readonly IAccountFetcher _accountFetcher;
     private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
-    private readonly IRecordedTotalValueQueryHandler _recordedTotalValueQueryHandler;
+    private readonly IRecordedTotalValueFetcher _recordedTotalValueFetcher;
     private readonly ILogger<AccountValueHistoryQueryHandler> _logger;
 
     public AccountValueHistoryQueryHandler(
         IAccountFetcher accountFetcher, 
         IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
-        IRecordedTotalValueQueryHandler recordedTotalValueQueryHandler, 
+        IRecordedTotalValueFetcher recordedTotalValueFetcher, 
         ILogger<AccountValueHistoryQueryHandler> logger)
     {
         _accountFetcher = accountFetcher;
         _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
-        _recordedTotalValueQueryHandler = recordedTotalValueQueryHandler;
+        _recordedTotalValueFetcher = recordedTotalValueFetcher;
         _logger = logger;
     }
     
     // Returns the total value of the account at the end of each day in the date range.
     public async Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest request)
     {
-        var account = (await _accountFetcher.GetAccounts()).SingleOrDefault(account => account.AccountCode == request.AccountCode);
-
-        if (account == null)
-        {
-            _logger.LogError("The account with code {AccountCode} does not exist", request.AccountCode);
-            throw new InvalidOperationException(); // TODO: perhaps return something better?
-        }
-       
-        // iterate over each day in the date range
-        var results = new List<AccountHistoricalValue>();
-
-        var currentDate = account.OpeningDate;
-
-        var accountCode = request.AccountCode;
+        var currentDate = await GetStartDate(request.AccountCode);
+        var endDate = request.QueryDate;
         
-        // get recorded total values
-        var recordedTotalValues = await _recordedTotalValueQueryHandler.Handle(new RecordedTotalValuesRequest(accountCode));
+        var results = new List<AccountHistoricalValue>();
+        
+        var recordedTotalValues = await _recordedTotalValueFetcher.GetRecordedTotalValues(request.AccountCode);
 
         decimal? previousDayTotal = null;
         
-        while (currentDate <= request.QueryDate)
+        while (currentDate <= endDate)
         {
-            var daysResult = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest { AccountCode = request.AccountCode, Date = currentDate });
-
-            var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
-
-            var matchingRecordedTotalValue = recordedTotalValues.RecordedTotalValues.SingleOrDefault(r => r.Date == currentDate);
+            var historicalValue = await GetPortfolioStateForDate(request.AccountCode, currentDate);
             
-            var historicalValue = new AccountHistoricalValue(currentDate, 
-                accountCode, 
-                daysResult.TotalValue.ValueInGbp,
-                daysResult.Contributions,
-                daysResult.TotalValue.TotalPriceAgeInDays, 
-                comment);
+            // TODO: here.
 
+            var matchingRecordedTotalValue = recordedTotalValues.SingleOrDefault(r => r.Date == currentDate);
+            
             if (matchingRecordedTotalValue != null)
             {
                 historicalValue.RecordedTotalValueInGbp = matchingRecordedTotalValue.TotalValueInGbp;
@@ -107,5 +89,35 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
         }
         
         return new AccountValueHistoryResult(results);
+    }
+
+    private async Task<DateOnly> GetStartDate(string accountCode)
+    {
+        var account = (await _accountFetcher.GetAccounts()).SingleOrDefault(account => account.AccountCode == accountCode);
+
+        if (account == null)
+        {
+            _logger.LogError("The account with code {AccountCode} does not exist", accountCode);
+            throw new InvalidOperationException();
+        }
+        
+        var currentDate = account.OpeningDate;
+        return currentDate;
+    }
+
+    private async Task<AccountHistoricalValue> GetPortfolioStateForDate(string accountCode, DateOnly date)
+    {
+        var daysResult = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest { AccountCode = accountCode, Date = date });
+
+        var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
+            
+        var historicalValue = new AccountHistoricalValue(date, 
+            accountCode, 
+            daysResult.TotalValue.ValueInGbp,
+            daysResult.Contributions,
+            daysResult.TotalValue.TotalPriceAgeInDays, 
+            comment);
+
+        return historicalValue;
     }
 }

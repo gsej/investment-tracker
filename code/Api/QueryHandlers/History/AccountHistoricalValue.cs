@@ -16,6 +16,3 @@ public record AccountHistoricalValue(
     
     public UnitAccount Units { get; set; }
 }
-
-
-public record UnitAccount(DateOnly Date, decimal? NumberOfUnits, decimal? ValueInGbpPerUnit);

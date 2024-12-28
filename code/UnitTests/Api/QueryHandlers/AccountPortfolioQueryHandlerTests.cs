@@ -23,9 +23,10 @@ public class AccountPortfolioQueryHandlerTests
 
     public AccountPortfolioQueryHandlerTests()
     {
+        var stocks = new List<Stock> { new() { StockSymbol = "SMT.L", Description = "Scottish Mortgage Trust", StockType = StockTypes.Share, Allocation = "Growth" } };
+        
         _mockCashStatementItemFetcher = Substitute.For<ICashStatementItemFetcher>();
         _mockStockTransactionFetcher = Substitute.For<IStockTransactionFetcher>();
-
         _mockStockPriceFetcher = Substitute.For<IStockPriceFetcher>();
         
         _mockStockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
@@ -33,24 +34,15 @@ public class AccountPortfolioQueryHandlerTests
         
         var stockFetcher = Substitute.For<IStockFetcher>();
 
-        stockFetcher.GetStocks().Returns(new List<Stock>
-        {
-            new()
-            {
-                StockSymbol = "SMT.L",
-                Description = "Scottish Mortgage Trust",
-                StockType = StockTypes.Share,
-                Allocation = "Growth"
-            }
-        });
-        
+        stockFetcher.GetStocks().Returns(stocks);
+
         _queryHandler = new AccountPortfolioQueryHandler(
             Substitute.For<ILogger<AccountPortfolioQueryHandler>>(),
             stockFetcher,
             _mockStockPriceFetcher,
             _mockCashStatementItemFetcher,
             _mockStockTransactionFetcher
-            );
+        );
     }
     
     [Fact]
@@ -117,7 +109,7 @@ public class AccountPortfolioQueryHandlerTests
         // assert
         result.Contributions.Should().Be(1000);
     }
-    
+
     [Fact]
     public async Task Handle_WhenStockTransactionsExist_ReturnsHolding()
     {
@@ -160,21 +152,20 @@ public class AccountPortfolioQueryHandlerTests
         };
 
         _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
-        
+
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
-        
+
         // act
         var result = await _queryHandler.Handle(request);
-        
+
         // assert
         using var _ = new AssertionScope();
         result.Holdings.Count.Should().Be(1);
-        result.Holdings[0].StockSymbol.Should().Be("SMT.L");
-        result.Holdings[0].Quantity.Should().Be(50);
+        result.Holdings[0].Should().BeEquivalentTo(new { StockSymbol = "SMT.L", Quantity = 50 });
     }
-    
+
     [Fact]
-    public async Task Handle_WithStockPrices_ReturnsValues()
+    public async Task Handle_WithStockPrices_ReturnsValuesForHoldings()
     {
         // arrange
         var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage Trust", StockTypes.Share, "Growth")
@@ -207,16 +198,14 @@ public class AccountPortfolioQueryHandlerTests
         
         // assert
         using var _ = new AssertionScope();
+
         result.Holdings.Count.Should().Be(1);
-        result.Holdings[0].StockSymbol.Should().Be("SMT.L");
-        result.Holdings[0].Quantity.Should().Be(100);
-        result.Holdings[0].ValueInGbp = 1000m;
-        
+        result.Holdings[0].Should().BeEquivalentTo(new { StockSymbol = "SMT.L", Quantity = 100, ValueInGbp = 1000m });
         result.TotalValue.ValueInGbp.Should().Be(1000m);
     }
     
     [Fact]
-    public async Task Handle_WithAllData_ReturnsAllocations()
+    public async Task Handle_WithStockTransactions_ReturnsAllocations()
     {
         // arrange
         var stock = new Stock.StockBuilder("SMT.L", "Scottish Mortgage Trust", StockTypes.Share, "Growth")
@@ -246,7 +235,6 @@ public class AccountPortfolioQueryHandlerTests
         _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
         
         var stockPrice = new StockPrice("SMT.L", new DateOnly(2023, 1, 2), 10m, "GBP", "Test", "GBP", null, null);
-        
         _mockStockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
         
         var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
@@ -257,14 +245,8 @@ public class AccountPortfolioQueryHandlerTests
         // assert
         using var _ = new AssertionScope();
         result.Allocations.Should().HaveCount(2);
-        result.Allocations.First().Name.Should().Be("Growth");
-        result.Allocations.First().Value.Should().Be(900);
-        result.Allocations.First().Percentage.Should().Be(0.9m);
+        result.Allocations.First().Should().BeEquivalentTo(new { Name = "Growth", Value = 900m, Percentage = 0.9m });
         
-        result.Allocations.Should().HaveCount(2);
-        result.Allocations.Last().Name.Should().Be("Cash");
-        result.Allocations.Last().Value.Should().Be(100);
-        result.Allocations.Last().Percentage.Should().Be(0.1m);
-        
+        result.Allocations.Last().Should().BeEquivalentTo(new { Name = "Cash", Value = 100m, Percentage = 0.1m });
     }
 }

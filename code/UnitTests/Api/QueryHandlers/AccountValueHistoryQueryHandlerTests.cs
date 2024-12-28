@@ -6,7 +6,7 @@ using FluentAssertions;
 using FluentAssertions.Execution;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
-using RecordedTotalValue = Api.QueryHandlers.History.RecordedTotalValue;
+using RecordedTotalValue = Api.QueryHandlers.Fetchers.RecordedTotalValue;
 
 namespace UnitTests.Api.QueryHandlers;
 
@@ -27,9 +27,8 @@ public class AccountValueHistoryQueryHandlerTests
 
         mockAccountFetcher.GetAccounts().Returns(new List<Account> { new(AccountCode, _startDate) });
 
-        var mockRecordedTotalValueQueryHandler = Substitute.For<IRecordedTotalValueQueryHandler>();
-        mockRecordedTotalValueQueryHandler.Handle(Arg.Any<RecordedTotalValuesRequest>()).Returns(
-            new RecordedTotalValuesResult(new List<RecordedTotalValue>()));
+        var mockRecordedTotalValueQueryHandler = Substitute.For<IRecordedTotalValueFetcher>();
+        mockRecordedTotalValueQueryHandler.GetRecordedTotalValues(AccountCode).Returns(new List<RecordedTotalValue>());
 
         _queryHandler = new AccountValueHistoryQueryHandler(
             mockAccountFetcher,
@@ -157,7 +156,7 @@ public class AccountValueHistoryQueryHandlerTests
 
         public void Add(DateOnly date, decimal cashBalanceInGbp, decimal valueInGbp, decimal contribution)
         {
-            _items.Add(date, new AccountPortfolioResult("AccountCode", new List<Holding>(), cashBalanceInGbp, contribution, new TotalValue(valueInGbp, 0), new List<Allocation>()));
+            _items.Add(date, new AccountPortfolioResult("AccountCode", new List<Holding>(), cashBalanceInGbp, contribution, new List<Allocation>(), new TotalValue(valueInGbp, 0)));
         }
 
         public Task<AccountPortfolioResult> Handle(AccountPortfolioRequest request)
@@ -168,7 +167,7 @@ public class AccountValueHistoryQueryHandlerTests
             }
             else
             {
-                return Task.FromResult(new AccountPortfolioResult("AccountCode", new List<Holding>(), 0, 0, new TotalValue(0, 0), new List<Allocation>()));
+                return Task.FromResult(new AccountPortfolioResult("AccountCode", new List<Holding>(), 0, 0, new List<Allocation>(), new TotalValue(0, 0)));
             }
 
         }

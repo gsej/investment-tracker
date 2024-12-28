@@ -35,10 +35,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         _stocks = await _stockFetcher.GetStocks();
         
         var cashBalance = await GetCashBalance(request);
-        
         var holdings = await GetHoldings(request);
-        
-        // This is an odd one and is only needed for some of the consuming query handlers. Possibly refactor.
         var contributions = await GetContributions(request);
      
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
@@ -48,31 +45,15 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
 
         return new AccountPortfolioResult(
             request.AccountCode,
-            Holdings: holdings, 
+            Holdings: holdings,
             CashBalanceInGbp: cashBalance,
             Contributions: contributions,
-            new TotalValue(totalValueInGbp, totalPriceAgeInDays),
-            
-            Allocations: allocations);
+            Allocations: allocations,
+            new TotalValue(totalValueInGbp, totalPriceAgeInDays)
+        );
     }
 
-    private static List<Allocation> GetAllocations(List<Holding> holdings, decimal totalValueInGbp, decimal cashBalance)
-    {
-        var allocations = holdings
-            .GroupBy(h => h.Allocation)
-            .Select(g => new Allocation(
-                g.Key, 
-                g.Sum(h => h.ValueInGbp), 
-                totalValueInGbp != 0 ? g.Sum(h => h.ValueInGbp) / totalValueInGbp : 0))
-            .ToList();
-
-        if (cashBalance > 0)
-        {
-            allocations.Add(new Allocation("Cash", cashBalance, cashBalance / totalValueInGbp));
-        }
-
-        return allocations;
-    }
+   
 
     private async Task<List<Holding>> GetHoldings(AccountPortfolioRequest request)
     {
@@ -155,5 +136,23 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
             .Sum(c => c.ReceiptAmountGbp);
 
         return contribution;
+    }
+    
+    private static List<Allocation> GetAllocations(List<Holding> holdings, decimal totalValueInGbp, decimal cashBalance)
+    {
+        var allocations = holdings
+            .GroupBy(h => h.Allocation)
+            .Select(g => new Allocation(
+                g.Key, 
+                g.Sum(h => h.ValueInGbp), 
+                totalValueInGbp != 0 ? g.Sum(h => h.ValueInGbp) / totalValueInGbp : 0))
+            .ToList();
+
+        if (cashBalance > 0)
+        {
+            allocations.Add(new Allocation("Cash", cashBalance, cashBalance / totalValueInGbp));
+        }
+
+        return allocations;
     }
 }
