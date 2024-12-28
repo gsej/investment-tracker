@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { CommonModule, formatPercent } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryViewModel } from 'src/app/view-models/HistoryViewModel';

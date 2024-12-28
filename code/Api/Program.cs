@@ -4,7 +4,6 @@ using Api.QueryHandlers.Account;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
-using Api.QueryHandlers.Quality;
 using Common.Tracing;
 using Database;
 using Microsoft.EntityFrameworkCore;
@@ -76,8 +75,7 @@ public static class Program
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
         builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
-   
-        builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
+        
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         
         var app = builder.Build();
@@ -102,6 +100,5 @@ public static class Program
         using var traceProvider = TracerProviderFactory.GetTracerProvider("Api", configuration.AppInsightsConnectionString);
 
         app.Run();
-        
     }
 }

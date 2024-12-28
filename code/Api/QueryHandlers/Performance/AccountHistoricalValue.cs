@@ -1,0 +1,21 @@
+﻿namespace Api.QueryHandlers.Performance;
+
+public record AccountPerformanceValue(
+        DateOnly Date,
+        string AccountCode,
+        decimal ValueInGbp,
+        decimal Contributions,
+        int TotalPriceAgeInDays,
+        string Comment)
+{
+    public decimal? RecordedTotalValueInGbp { get; set; }
+    public string RecordedTotalValueSource { get; set; }
+    public decimal? DiscrepancyRatio { get; set; }
+    public decimal? DifferenceToPreviousDay { get; set; }
+    public decimal? DifferenceRatio { get; set; }
+    
+    public UnitAccount Units { get; set; }
+}
+
+
+public record UnitAccount(DateOnly Date, decimal? NumberOfUnits, decimal? ValueInGbpPerUnit);

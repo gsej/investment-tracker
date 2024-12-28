@@ -1,5 +1,6 @@
 using Api.QueryHandlers.Account;
 using Api.QueryHandlers.History;
+using Api.QueryHandlers.Performance;
 using Api.QueryHandlers.Portfolio;
 using Common.Tracing;
 using Microsoft.AspNetCore.Mvc;
@@ -29,6 +30,10 @@ public class AccountController : ControllerBase
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
     }
 
+    
+    /// <summary>
+    /// Returns a list of accounts
+    /// </summary>
     [HttpGet("/accounts")]
     public async Task<AccountResponse> GetAccounts()
     {
@@ -36,6 +41,9 @@ public class AccountController : ControllerBase
         return new AccountResponse(accounts);
     }
 
+    /// <summary>
+    /// Returns the state of the portfolio at a given point in time
+    /// </summary>
     [HttpPost("/account/portfolio")]
     public async Task<AccountPortfolioResult> GetPortfolio([FromBody] AccountPortfolioRequest request)
     {
@@ -43,6 +51,9 @@ public class AccountController : ControllerBase
         return await _accountPortfolioQueryHandler.Handle(request);
     }
     
+    /// <summary>
+    /// Returns an entry for each date in the portfolios history showing key data for each day
+    /// </summary>
     [HttpPost("/account/history")]
     public async Task<AccountValueHistoryResult> GetHistory([FromBody] AccountValueHistoryRequest request)
     {
@@ -50,9 +61,9 @@ public class AccountController : ControllerBase
         return await _accountValueHistoryQueryHandler.Handle(request);
     }
     
-    // [HttpPost("/account/annual-performance")]
-    // public async Task<AnnualPerformanceResult> GetAccountAnnualPerformance([FromBody] AnnualPerformanceRequest request)
+    // [HttpPost("/account/performance")]
+    // public async Task<AccountPerformanceResult> GetAccountAnnualPerformance([FromBody] AccountPerformanceRequest request)
     // {
-    //     return await _annualPerformanceQueryHandler.Handle(request);
+    //     return await _accountPerformanceQueryHandler.Handle(request);
     // }
 }

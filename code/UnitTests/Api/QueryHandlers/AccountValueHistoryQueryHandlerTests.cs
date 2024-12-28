@@ -4,7 +4,6 @@ using Api.QueryHandlers.Portfolio;
 using Database.Entities;
 using FluentAssertions;
 using FluentAssertions.Execution;
-using Microsoft.AspNetCore.Authentication.BearerToken;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using RecordedTotalValue = Api.QueryHandlers.History.RecordedTotalValue;
