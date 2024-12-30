@@ -20,7 +20,6 @@ public class CashStatementItem
         if (paymentAmountGbp > 0)
             throw new ArgumentOutOfRangeException(nameof(paymentAmountGbp));
         
-        
         AccountCode = accountCode;
         Date = date;
         Description = description;
@@ -53,5 +52,5 @@ public class CashStatementItem
     
     [Required]
     [MaxLength(100)]
-    public string CashStatementItemType { get;  set; }
+    public string CashStatementItemType { get; set; }
 }

@@ -4,7 +4,7 @@ public record AccountHistoricalValue(
         DateOnly Date,
         string AccountCode,
         decimal ValueInGbp,
-        decimal Contributions,
+        decimal Inflows,
         int TotalPriceAgeInDays,
         string Comment)
 {

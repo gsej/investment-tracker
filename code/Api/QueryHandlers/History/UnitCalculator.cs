@@ -25,7 +25,7 @@ public class UnitCalculator
 
                 // buy additional units at the previous price:
                 var previousNumberOfUnits = previousUnit.NumberOfUnits;
-                var boughtUnits = currentValue.Contributions / previousUnit.ValueInGbpPerUnit;
+                var boughtUnits = currentValue.Inflows / previousUnit.ValueInGbpPerUnit;
                 var currentNumberOfUnits = previousNumberOfUnits + boughtUnits;
                 
                 var currentValueOfUnit = currentNumberOfUnits == 0 ? previousUnit.ValueInGbpPerUnit : currentValue.ValueInGbp / currentNumberOfUnits;

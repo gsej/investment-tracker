@@ -58,7 +58,7 @@ public class AccountPerformanceQueryHandlerTests
         result.Items.Should().AllSatisfy(item =>
         {
             item.ValueInGbp.Should().Be(0);
-            item.Contributions.Should().Be(0);
+            item.Inflows.Should().Be(0);
         });
     }
 
@@ -91,16 +91,16 @@ public class AccountPerformanceQueryHandlerTests
         result.Items.Count.Should().Be(days);
 
         result.Items[0].ValueInGbp.Should().Be(100);
-        result.Items[0].Contributions.Should().Be(100);
+        result.Items[0].Inflows.Should().Be(100);
 
         result.Items[1].ValueInGbp.Should().Be(100);
-        result.Items[1].Contributions.Should().Be(0);
+        result.Items[1].Inflows.Should().Be(0);
 
         result.Items[2].ValueInGbp.Should().Be(200);
-        result.Items[2].Contributions.Should().Be(100);
+        result.Items[2].Inflows.Should().Be(100);
 
         result.Items[3].ValueInGbp.Should().Be(400);
-        result.Items[3].Contributions.Should().Be(0);
+        result.Items[3].Inflows.Should().Be(0);
     }
 
 

@@ -20,11 +20,8 @@ public class AccountPortfolioQueryHandlerTests
     private readonly IStockPriceFetcher _mockStockPriceFetcher;
 
     private const string AccountCode = "Account";
-
     public AccountPortfolioQueryHandlerTests()
     {
-        var stocks = new List<Stock> { new() { StockSymbol = "SMT.L", Description = "Scottish Mortgage Trust", StockType = StockTypes.Share, Allocation = "Growth" } };
-        
         _mockCashStatementItemFetcher = Substitute.For<ICashStatementItemFetcher>();
         _mockStockTransactionFetcher = Substitute.For<IStockTransactionFetcher>();
         _mockStockPriceFetcher = Substitute.For<IStockPriceFetcher>();
@@ -32,8 +29,8 @@ public class AccountPortfolioQueryHandlerTests
         _mockStockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
             .Returns(callInfo => StockPriceResult.Missing(callInfo.Arg<string>()));
         
+        var stocks = new List<Stock> { new() { StockSymbol = "SMT.L", Description = "Scottish Mortgage Trust", StockType = StockTypes.Share, Allocation = "Growth" } };
         var stockFetcher = Substitute.For<IStockFetcher>();
-
         stockFetcher.GetStocks().Returns(stocks);
 
         _queryHandler = new AccountPortfolioQueryHandler(
@@ -108,6 +105,29 @@ public class AccountPortfolioQueryHandlerTests
         
         // assert
         result.Contributions.Should().Be(1000);
+    }
+    
+    [Fact]
+    public async Task Handle_WhenContributionsExistForRequestedDate_ReturnsWithdrawals()
+    {
+        // arrange
+        var cashStatementItems = new List<CashStatementItem>
+        {
+            new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution }, 
+            new(AccountCode, new DateOnly(2023, 5, 1), "description", 0, -50) { CashStatementItemType = CashStatementItemTypes.Purchase }, 
+            new(AccountCode, new DateOnly(2023, 12, 31), "description", 0, -1) { CashStatementItemType = CashStatementItemTypes.Charge }, 
+            new(AccountCode, new DateOnly(2024, 1, 1), "description", 0, -1000) { CashStatementItemType = CashStatementItemTypes.Withdrawal },
+        };
+        
+        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        
+        var request = new AccountPortfolioRequest("Account", new DateOnly(2024, 1, 1));
+        
+        // act
+        var result = await _queryHandler.Handle(request);
+        
+        // assert
+        result.Contributions.Should().Be(-1000);
     }
 
     [Fact]

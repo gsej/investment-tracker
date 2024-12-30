@@ -36,7 +36,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         
         var cashBalance = await GetCashBalance(request);
         var holdings = await GetHoldings(request);
-        var contributions = await GetContributions(request);
+        var inflows = await GetInflows(request);
      
         var totalValueInGbp = holdings.Sum(h => h.ValueInGbp) + cashBalance;
         var totalPriceAgeInDays = holdings.Sum(h => h.StockPrice?.AgeInDays ?? 0);
@@ -47,13 +47,11 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
             request.AccountCode,
             Holdings: holdings,
             CashBalanceInGbp: cashBalance,
-            Contributions: contributions,
+            Contributions: inflows, // TODO: rename to inflows
             Allocations: allocations,
             new TotalValue(totalValueInGbp, totalPriceAgeInDays)
         );
     }
-
-   
 
     private async Task<List<Holding>> GetHoldings(AccountPortfolioRequest request)
     {
@@ -127,15 +125,16 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         return cashBalance;
     }
     
-    private async Task<decimal> GetContributions(AccountPortfolioRequest request)
+    private async Task<decimal> GetInflows(AccountPortfolioRequest request)
     {
         // Returns contributions made on the query date
         var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCode);
         
-        var contribution = cashStatementItems.Where(c => c.Date.DayNumber == request.Date.DayNumber && c.CashStatementItemType == CashStatementItemTypes.Contribution)
-            .Sum(c => c.ReceiptAmountGbp);
-
-        return contribution;
+        var inflows = cashStatementItems.Where(c => c.Date.DayNumber == request.Date.DayNumber && (
+                c.CashStatementItemType == CashStatementItemTypes.Contribution || c.CashStatementItemType == CashStatementItemTypes.Withdrawal))
+            .Sum(c => c.ReceiptAmountGbp + c.PaymentAmountGbp);
+        
+        return inflows;
     }
     
     private static List<Allocation> GetAllocations(List<Holding> holdings, decimal totalValueInGbp, decimal cashBalance)

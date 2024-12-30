@@ -56,12 +56,25 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             if (previousDayTotal.HasValue)
             {
                 // calculate difference to previous day to see if there are big leaps. Remove any contribution which might affect the result
-                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.Contributions - previousDayTotal.Value;
-
-                if (previousDayTotal.Value != 0)
+                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.Inflows - previousDayTotal.Value;
+                if (historicalValue.DifferenceToPreviousDay == 0)
+                {
+                    historicalValue.DifferenceRatio = 0;
+                } 
+                else if (previousDayTotal.Value != 0)
                 {
                     historicalValue.DifferenceRatio = historicalValue.DifferenceToPreviousDay / previousDayTotal.Value;
                 }
+                // if the previous day total is 0, but the DifferenceToPreviousDay is not 0, set the difference ratio to an arbitrary 1 (i.e. 100%). This is to avoid division by zero.
+                else
+                {
+                    historicalValue.DifferenceRatio = 1;
+                }
+            }
+            else
+            {
+                historicalValue.DifferenceToPreviousDay = 0;
+                historicalValue.DifferenceRatio = 0;
             }
             
             results.Add(historicalValue);
