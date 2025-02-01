@@ -1,3 +1,4 @@
+using Api.QueryHandlers.Common;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.Portfolio;
 

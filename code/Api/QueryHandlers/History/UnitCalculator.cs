@@ -1,4 +1,6 @@
-﻿namespace Api.QueryHandlers.History;
+﻿using Api.QueryHandlers.Common;
+
+namespace Api.QueryHandlers.History;
 
 public class UnitCalculator
 {

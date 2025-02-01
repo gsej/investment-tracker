@@ -70,7 +70,8 @@ public static class Program
         builder.Services.AddScoped<IStockPriceFetcher, StockPriceFetcher>();
         builder.Services.AddScoped<ICashStatementItemFetcher, CashStatementItemFetcher>();
         builder.Services.AddScoped<IStockTransactionFetcher, StockTransactionFetcher>();
-
+        builder.Services.AddScoped<IRecordedTotalValueFetcher, RecordedTotalValueFetcher>();
+        
         builder.Services.AddScoped<IAccountPortfolioQueryHandler, AccountPortfolioQueryHandler>();
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
      

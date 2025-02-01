@@ -45,7 +45,7 @@
         <td class="p-4 text-right text-gray-600">{{ formatPercentage(item.discrepancyRatio) }}</td>
         <td class="p-4 text-right text-gray-600">{{ formatQuantity(item.units.numberOfUnits) }}</td>
         <td class="p-4 text-right text-gray-600">{{ formatCurrency(item.units.valueInGbpPerUnit) }}</td>
-        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-red-600">{{ formatCurrency(item.contributions) }}</td>
+        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-red-600">{{ formatCurrency(item.inflows) }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ item.differenceToPreviousDay }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ formatPercentage(item.differenceRatio) }}</td>
         <td class="p-4 text-center text-gray-600">{{ item.comment }}</td>

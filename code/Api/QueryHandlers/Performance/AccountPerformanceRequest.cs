@@ -1,3 +1,3 @@
 ﻿namespace Api.QueryHandlers.Performance;
 
-public record AccountPerformanceRequest(string AccountCode);
+public record AccountPerformanceRequest(string AccountCode, DateOnly QueryDate);
