@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics;
+using System.Reflection;
+using Common;
 using Common.Tracing;
 using Database;
 using Database.Converters;
@@ -56,6 +58,8 @@ class Program
                     .Build();
 
                 _configuration = configurationRoot.GetRequiredSection(nameof(LoaderConfiguration)).Get<LoaderConfiguration>();
+
+                services.AddSingleton(_configuration);
 
                 services.AddDbContext<InvestmentsDbContext>(
                     opts => opts.UseSqlServer(_configuration.SqlConnectionString)
@@ -139,8 +143,10 @@ class Program
         await accountLoader.LoadFile(Path.Combine(dataFolder, "accounts.json"));
         await stockLoader.LoadFile(Path.Combine(dataFolder, "stocks.json"));
 
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadCashStatements"))
+        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadAccountStatements"))
         {
+            var sw  = Stopwatch.StartNew();
+            
             var accounts = await accountRepository.GetAll();
 
             foreach (var account in accounts)
@@ -148,6 +154,9 @@ class Program
                 await cashStatementLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "cashstatement_items.json"));
                 await stockTransactionLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "transactions.json"));
             }
+            
+            sw.Stop();
+            _logger.LogInformation("Timing: Loaded account statements in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
         }
 
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadRecordedTotalValues"))
@@ -163,6 +172,8 @@ class Program
         
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadExchangeRates"))
         {
+            var sw  = Stopwatch.StartNew();
+            
             var exchangeRateFolder = GetPathToExchangeRateFolder();
         
             foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
@@ -170,10 +181,16 @@ class Program
                 var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
                 await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
             }
+            
+            sw.Stop();
+            _logger.LogInformation("Timing: Loaded exchange rates in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
         }
         
         using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockPrices"))
         {
+            _logger.LogInformation("Timing: starting to Load stock prices");
+            var sw  = Stopwatch.StartNew();
+            
             var priceFolder = GetPathToPriceFolder();
         
             foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
@@ -181,6 +198,9 @@ class Program
                 var relativePath = Path.GetRelativePath(priceFolder, priceFile);
                 await stockPriceLoader.LoadFile(priceFile, relativePath, _configuration.DeduplicateStockPrices);
             }
+            
+            sw.Stop();
+            _logger.LogInformation("Timing: Loaded stock prices in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
         }
     }
 

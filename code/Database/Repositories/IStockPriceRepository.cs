@@ -6,7 +6,6 @@ namespace Database.Repositories;
 
 public interface IStockPriceRepository
 {
-    void Add(StockPrice stockPrice);
-    Task<int> SaveChangesAsync();
+    Task BulkAdd(IEnumerable<StockPrice> stockPrices);
     Task<IList<StockPrice>> GetAll(string stockSymbol);
 }

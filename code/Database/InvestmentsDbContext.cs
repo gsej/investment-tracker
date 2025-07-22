@@ -21,6 +21,7 @@ public class InvestmentsDbContext : DbContext
 {
     public InvestmentsDbContext(  DbContextOptions<InvestmentsDbContext> options) : base(options)
     {
+        
     }
     
     public DbSet<Account> Accounts { get; set; }

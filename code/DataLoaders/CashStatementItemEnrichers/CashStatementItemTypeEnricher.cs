@@ -24,7 +24,8 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Sale;
         }
         else if (cashStatementItem.Description.StartsWith("Div") ||
-                 cashStatementItem.Description.StartsWith("DIVIDEND"))
+                 cashStatementItem.Description.StartsWith("DIVIDEND") ||
+                 cashStatementItem.Description.StartsWith("Distribution"))
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Dividend;
         }

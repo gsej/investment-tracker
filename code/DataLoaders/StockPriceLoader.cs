@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Common.Extensions;
 using Common.Tracing;
 using Database.Entities;
@@ -17,6 +18,9 @@ public class StockPriceLoader
     private readonly IStockPriceReader _reader;
     private readonly ExchangeRateFetcher _exchangeRateFetcher;
     private IList<Stock> _stocks;
+
+    private IDictionary<string, Stock> _stocksDictionary;
+    
     private IList<ExchangeRate> _exchangeRates;
    
     public StockPriceLoader(
@@ -37,33 +41,52 @@ public class StockPriceLoader
 
     public async Task LoadFile(string fileName, string source, bool deduplicate)
     {
+        var stockPrices = new List<StockPrice>();
+        
         using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
             // Preload stocks and exchange rates.
-            // TODO: check that we are only going to the db once per run for this.
+            
+            // TODO: fix this, appearst o be happening many times. 
+            _logger.LogWarning("DEBUG: loading stocks");
             _stocks = await _stockRepository.GetStocks();
+
+
+            _stocksDictionary = new Dictionary<string, Stock>(StringComparer.InvariantCultureIgnoreCase);
+            
+            
+            foreach (var stock in _stocks)
+            {
+                _stocksDictionary[stock.StockSymbol] = stock;
+                
+                foreach (var alternativeSymbol in stock.AlternativeSymbols)
+                {
+                    _stocksDictionary[alternativeSymbol.Alternative] = stock;
+                }
+            }
+            
             _exchangeRates = await _exchangeRateRepository.GetAll();
 
             _logger.LogInformation("Loading stock prices from {fileName}", fileName);
 
-            var stockPrices = (await _reader.ReadFile(fileName)).ToList();
+            var stockPriceDtos = (await _reader.ReadFile(fileName)).ToList();
 
-            foreach (var stockPriceDto in stockPrices)
+            foreach (var stockPriceDto in stockPriceDtos)
             {
                 using var _ = _logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName });
 
-                _logger.LogInformation("beginning to process stock price {stockPriceDto}", stockPriceDto);
                 var stockSymbol = stockPriceDto.StockSymbol;
-
-                var matchingStock = _stocks.SingleOrDefault(s =>
-                    s.StockSymbol.Equals(stockSymbol, StringComparison.InvariantCultureIgnoreCase) ||
-                    s.AlternativeSymbols.Any(a =>
-                        a.Alternative.Equals(stockSymbol, StringComparison.InvariantCultureIgnoreCase)));
-
-                if (matchingStock == null)
+                
+                if (string.IsNullOrWhiteSpace(stockPriceDto.StockSymbol))
                 {
-                    _logger.LogInformation("Stock symbol {stockSymbol} not found in database", stockSymbol);
+                    _logger.LogError("Stock symbol should not be null in file: {fileName}, incorrect record: {record}", fileName, JsonSerializer.Serialize(stockPriceDto));
+                    throw new InvalidOperationException("Stock symbol should not be null in file: " + fileName);
+                }
+
+                Stock matchingStock = null;
+                if (!_stocksDictionary.TryGetValue(stockSymbol, out matchingStock))
+                {
                     continue;
                 }
 
@@ -71,12 +94,6 @@ public class StockPriceLoader
                 {
                     _logger.LogInformation("Stock price was 'ERROR' for {stockSymbol}, skipping", stockSymbol);
                     continue;
-                }
-
-                if (string.IsNullOrWhiteSpace(stockPriceDto.StockSymbol))
-                {
-                    _logger.LogError("Stock symbol should not be null in file: {fileName}", fileName);
-                    throw new InvalidOperationException("Stock symbol should not be null in file: " + fileName);
                 }
 
                 var priceParsable = decimal.TryParse(stockPriceDto.Price, null, out var price);
@@ -112,7 +129,6 @@ public class StockPriceLoader
                         comment = "Missing GBP_USD exchange rate";
                     }
                 }
-                
 
                 var stockPrice = new StockPrice(
                     stockSymbol: matchingStock.StockSymbol,
@@ -124,11 +140,11 @@ public class StockPriceLoader
                     exchangeRateAgeInDays: exchangeRateAgeInDays,
                     comment: comment
                     );
-
-                _stockPriceRepository.Add(stockPrice);
+                
+                stockPrices.Add(stockPrice);
             }
 
-            await _stockPriceRepository.SaveChangesAsync();
+            await _stockPriceRepository.BulkAdd(stockPrices);
         }
     }
 }

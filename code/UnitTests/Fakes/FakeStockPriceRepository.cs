@@ -5,17 +5,17 @@ namespace UnitTests.Fakes;
 
 public class FakeStockPriceRepository : IStockPriceRepository
 {
-    public IList<StockPrice> StockPrices { get; set; } = new List<StockPrice>();
+    public List<StockPrice> StockPrices { get; } = new ();
 
     public void Add(StockPrice stockPrice)
     {
         StockPrices.Add(stockPrice);
     }
 
-    public Task<int> SaveChangesAsync()
+    public Task BulkAdd(IEnumerable<StockPrice> stockPrices)
     {
-        //   throw new NotImplementedException();
-        return Task.FromResult(0);
+        StockPrices.AddRange(stockPrices);
+        return Task.CompletedTask;
     }
 
     public Task<IList<StockPrice>> GetAll(string stockSymbol)
