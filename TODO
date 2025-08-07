@@ -5,6 +5,8 @@ Implement proper tests for value history
 
 Unitisation - and allow ploting of unit value on chart
 
+allow selecting multiple accounts
+
 Stocks page to show list of stocks and backend to get prices for stocks
 (so stock prices can be added to chart)
 

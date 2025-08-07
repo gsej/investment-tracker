@@ -5,7 +5,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 @Component({
   selector: 'app-account-selector',
   standalone: true,
-  imports: [ ReactiveFormsModule ],
+  imports: [ReactiveFormsModule],
   templateUrl: './account-selector.component.html',
   styleUrls: ['./account-selector.component.scss']
 })
@@ -15,25 +15,59 @@ export class AccountSelectorComponent implements OnChanges {
   public accounts: Account[] = []
 
   @Output()
-  public accountChanged: EventEmitter<string> = new EventEmitter<string>();
+  public accountChanged: EventEmitter<string[]> = new EventEmitter<string[]>();
 
   accountSelectorForm: FormGroup;
+  selectedAccounts: Set<string> = new Set<string>();
+  pendingSelectedAccounts: Set<string> = new Set<string>();
 
   constructor() {
-    this.accountSelectorForm = new FormGroup({
-      account: new FormControl(null)
-    });
+    this.accountSelectorForm = new FormGroup({});
+  }
+
+  get hasChanges(): boolean {
+    if (this.selectedAccounts.size !== this.pendingSelectedAccounts.size) {
+      return true;
+    }
+    for (const account of this.selectedAccounts) {
+      if (!this.pendingSelectedAccounts.has(account)) {
+        return true;
+      }
+    }
+    return false;
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (this.accountSelectorForm.controls["account"].value == null && this.accounts.length > 0) {
-      this.accountSelectorForm.controls['account'].setValue(this.accounts[0].accountCode);
-      this.accountChanged.next(this.accounts[0].accountCode);
+    if (this.accounts.length > 0) {
+      // Initialize form controls for each account
+      this.accounts.forEach(account => {
+        if (!this.accountSelectorForm.controls[account.accountCode]) {
+          this.accountSelectorForm.addControl(account.accountCode, new FormControl(false));
+        }
+      });
+
+      // If no accounts are selected and we have accounts, select the first one by default
+      if (this.selectedAccounts.size === 0) {
+        this.selectedAccounts.add(this.accounts[0].accountCode);
+        this.pendingSelectedAccounts.add(this.accounts[0].accountCode);
+        this.accountSelectorForm.controls[this.accounts[0].accountCode].setValue(true);
+        this.accountChanged.next(Array.from(this.selectedAccounts));
+      }
     }
   }
 
-  onAccountChanged() {
-    const selectedAccountCode = this.accountSelectorForm.controls["account"].value;
-    this.accountChanged.next(selectedAccountCode);
+  onAccountChanged(accountCode: string, event: Event) {
+    const checkbox = event.target as HTMLInputElement;
+
+    if (checkbox.checked) {
+      this.pendingSelectedAccounts.add(accountCode);
+    } else {
+      this.pendingSelectedAccounts.delete(accountCode);
+    }
+  }
+
+  applyChanges() {
+    this.selectedAccounts = new Set(this.pendingSelectedAccounts);
+    this.accountChanged.next(Array.from(this.selectedAccounts));
   }
 }

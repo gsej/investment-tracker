@@ -111,11 +111,11 @@ export class AccountContainerComponent implements OnInit {
     this.date = new Date().toISOString().substring(0, 10);
   }
 
-  accountSelected(accountCode: string) {
+  accountSelected(accountCodes: string[]) {
 
     this.setDateToToday();
-    this.accountCode = accountCode;
-    this.accountsService.selectAccount(accountCode);
+    this.accountCode = accountCodes[0];
+    this.accountsService.selectAccount(this.accountCode);
 
     // this.accountHistoricalValues = {
     //   accountHistoricalValues: []
