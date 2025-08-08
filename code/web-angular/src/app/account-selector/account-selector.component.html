@@ -3,7 +3,11 @@
     @for (account of accounts; track account) {
     <div class="flex items-center">
       <label class="flex items-center gap-2 cursor-pointer select-none">
-        <input type="checkbox" [formControlName]="account.accountCode" (change)="onAccountChanged(account.accountCode, $event)" class="m-0">
+        @if (multiSelectMode) {
+        <input type="checkbox" [formControlName]="'chk_' + account.accountCode" (change)="onAccountChanged(account.accountCode, $event)" class="m-0">
+        } @else {
+        <input type="radio" name="rad_selectedAccount" [value]="account.accountCode" formControlName="rad_selectedAccount" (change)="onAccountChanged(account.accountCode, $event)" class="m-0">
+        }
         <span>{{ account.accountCode }}</span>
       </label>
     </div>
