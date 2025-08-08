@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Account } from '../../models/account';
 import { AccountsService } from '../../accounts.service';
-//import { RecordedTotalValues } from '../../models/recordedTotalValues';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
-import { AllocationViewModel } from "src/app/view-models/AllocationViewModel";
-//import { AccountAnnualPerformances } from '../../models/accountAnnualPerformances';
-//import { MatCardModule } from '@angular/material/card';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
@@ -30,7 +26,8 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
     CardContentComponent,
     CardTitleComponent],
   templateUrl: './account-container.component.html',
-  styleUrls: ['./account-container.component.scss']
+  styleUrls: ['./account-container.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AccountContainerComponent implements OnInit {
 
@@ -43,7 +40,10 @@ export class AccountContainerComponent implements OnInit {
 
   showQualityData$!: Observable<boolean>;
 
-  constructor(private accountsService: AccountsService, private qualityService: QualityService) {
+  constructor(
+    private changeDetectorRef: ChangeDetectorRef,
+    private accountsService: AccountsService,
+    private qualityService: QualityService) {
     this.setDateToToday();
   }
 
@@ -86,24 +86,23 @@ export class AccountContainerComponent implements OnInit {
         }
 
         this.portfolio = portfolioViewModel;
+        this.changeDetectorRef.markForCheck();
       }
     });
 
     this.accountsService.history$.subscribe(history => {
-
       if (history == null) {
         this.history = null;
       }
       else {
-
-
         this.history = history;
       }
+      this.changeDetectorRef.markForCheck();
     });
-
 
     this.accountsService.getAccounts().subscribe(accounts => {
       this.accounts = accounts;
+      this.changeDetectorRef.markForCheck();
     });
   }
 
@@ -116,55 +115,12 @@ export class AccountContainerComponent implements OnInit {
     this.setDateToToday();
     this.accountCode = accountCodes[0];
     this.accountsService.selectAccount(this.accountCode);
-
-    // this.accountHistoricalValues = {
-    //   accountHistoricalValues: []
-    // };
-
-
-    //   this.getSummary();
-
-    // this.accountsService.getAccountValueHistory(accountCode)
-    //   .subscribe(accountHistoricalValues => {
-    //     this.accountHistoricalValues = accountHistoricalValues
-    //   });
-
-    // this.accountsService.getAccountAnnualPerformance(accountCode, this.date)
-    // .subscribe(accountAnnualPerformances => {
-    //   this.accountAnnualPerformances = accountAnnualPerformances
-    // });
   }
-
-  // getSummary() {
-  //   this.accountsService.getAccountSummary(this.accountCode, this.date)
-  //     .subscribe(summary => {
-  //       this.accountSummary = {
-  //         holdings: summary.holdings.map(
-  //           holding => {
-  //             return {
-  //               stockSymbol: holding.stockSymbol,
-  //               stockDescription: holding.stockDescription,
-  //               quantity: holding.quantity,
-  //               price: holding.stockPrice.price,
-  //               currency: holding.stockPrice.currency,
-  //               originalCurrency: holding.stockPrice.originalCurrency,
-  //               priceAgeInDays: holding.stockPrice.ageInDays,
-  //               valueInGbp: holding.valueInGbp,
-  //               comment: holding.comment
-  //             }
-  //           }
-  //         ),
-  //         cashBalanceInGbp: summary.cashBalanceInGbp,
-  //         totalValueInGbp: summary.totalValue.valueInGbp,
-  //         totalPriceAgeInDays: summary.totalValue.totalPriceAgeInDays
-  //       }
-  //     });
-  // }
 
 
   dateSelected(date: string) {
     console.log("container, date selected: " + date);
-
+// TODO: reenebale this
     this.date = date;
     //  this.getSummary();
   }

@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CommonModule, formatPercent } from '@angular/common';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
@@ -19,7 +19,8 @@ import { CardComponent, CardContentComponent, CardHeaderComponent, SeparatorComp
     SeparatorComponent
   ],
   templateUrl: './history.component.html',
-  styleUrls: ['./history.component.scss']
+  styleUrls: ['./history.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HistoryComponent implements OnChanges {
 

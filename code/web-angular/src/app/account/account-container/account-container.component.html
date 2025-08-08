@@ -1,5 +1,7 @@
 <app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 
+<h4>Date: {{ date }}</h4>
+
 <div class="mb-4">
   <label class="inline-flex items-center">
     <input type="checkbox" class="form-checkbox" [checked]="(showQualityData$ | async)" (change)="toggleShowQualityData()" />

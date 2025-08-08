@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AccountContainerComponent } from './account/account-container/account-container.component';
 
 @Component({
@@ -6,7 +6,8 @@ import { AccountContainerComponent } from './account/account-container/account-c
   standalone: true,
   imports: [AccountContainerComponent ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
 

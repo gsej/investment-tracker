@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { Account } from '../models/account';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -7,7 +7,9 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
   standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './account-selector.component.html',
-  styleUrls: ['./account-selector.component.scss']
+  styleUrls: ['./account-selector.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+
 })
 export class AccountSelectorComponent implements OnChanges {
 

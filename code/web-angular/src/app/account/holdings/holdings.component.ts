@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
 import { HoldingViewModel } from '../../view-models/HoldingViewModel';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -19,7 +19,8 @@ import { CardComponent, CardContentComponent, CardHeaderComponent, SeparatorComp
     SeparatorComponent
   ],
   templateUrl: './holdings.component.html',
-  styleUrls: ['./holdings.component.scss']
+  styleUrls: ['./holdings.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HoldingsComponent {
 

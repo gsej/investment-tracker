@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
@@ -11,7 +11,8 @@ Chart.register(annotationPlugin);
   standalone: true,
   imports: [],
   templateUrl: './history-chart.component.html',
-  styleUrl: './history-chart.component.scss'
+  styleUrl: './history-chart.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HistoryChartComponent implements OnChanges {
 
@@ -19,24 +20,19 @@ export class HistoryChartComponent implements OnChanges {
 
   private dates: string[] = [];
   private values: number[] = [];
-  //private previousPrediction: string | null = null;
+
 
   @Input()
   public history: HistoryViewModels | null = null;
 
   ngOnInit(): void {
-   // this.previousPrediction = JSON.stringify(this.prediction);
     this.setData();
     this.createChart();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    //const serializedPrediction = JSON.stringify(this.prediction);//
-    //if (this.previousPrediction !== serializedPrediction) {
-//      this.previousPrediction = serializedPrediction;
       this.setData();
       this.createChart();
-    //}
   }
 
   setData() {
@@ -85,33 +81,6 @@ export class HistoryChartComponent implements OnChanges {
             position: "chartArea",
           },
           annotation: {
-            annotations: {
-              // targetAgeLine: {
-              //   type: 'line',
-              //   scaleID: 'x',
-              //   value: this.prediction?.targetAge.toString(),
-              //   borderColor: 'green',
-              //   borderWidth: 1,
-              //   label: {
-              //     content: 'Target Age',
-              //     enabled: true,
-              //     position: 'top'
-              //   }
-              // },
-              // targetLabel: {
-              //   type: 'label',
-              //   content: this.prediction ? `Amount at ${this.prediction.targetAge}: ${formatCurrency(this.prediction.amountAtTargetAge)}` : '',
-              //   position: 'top',
-              //   xAdjust: 0,
-              //   yAdjust: 0,
-              //   //backgroundColor: 'rgba(255,255,255,0.8)',
-              //   font: {
-              //     size: 12,
-              //     style: 'normal',
-              //     color: 'red'
-              //   }
-              // }
-            }
           }
         }
       },

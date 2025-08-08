@@ -6,6 +6,7 @@ Implement proper tests for value history
 Unitisation - and allow ploting of unit value on chart
 
 allow selecting multiple accounts
+show the account list as radio buttons, normally, but switch to checkboxes if more than one is selected or if the user holds down the shift key
 
 Stocks page to show list of stocks and backend to get prices for stocks
 (so stock prices can be added to chart)

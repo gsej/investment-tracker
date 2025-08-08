@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule, formatPercent } from '@angular/common';
 import { PortfolioViewModel } from 'src/app/view-models/PortfolioViewModel';
 import { formatQuantity, formatCurrency, formatPercentage } from 'src/app/utils/formatters';
@@ -9,7 +9,8 @@ import { CardComponent, CardContentComponent, CardHeaderComponent, CardTitleComp
   standalone: true,
   imports: [CommonModule, CardComponent, CardTitleComponent, CardContentComponent, CardHeaderComponent, SeparatorComponent],
   templateUrl: './summary.component.html',
-  styleUrls: ['./summary.component.scss']
+  styleUrls: ['./summary.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SummaryComponent {
 

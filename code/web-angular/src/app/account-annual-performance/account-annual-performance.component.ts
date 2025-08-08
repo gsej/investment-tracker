@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
 
 // TODO: is this used?
@@ -6,7 +6,8 @@ import { AccountAnnualPerformances } from '../models/accountAnnualPerformances';
   selector: 'app-account-annual-performance',
   standalone: true,
   templateUrl: './account-annual-performance.component.html',
-  styleUrls: ['./account-annual-performance.component.scss']
+  styleUrls: ['./account-annual-performance.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AccountAnnualPerformanceComponent  {
 
