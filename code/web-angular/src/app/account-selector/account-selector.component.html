@@ -2,14 +2,29 @@
   <div class="flex flex-col gap-2">
     @for (account of accounts; track account) {
     <div class="flex items-center">
-      <label class="flex items-center gap-2 cursor-pointer select-none">
-        @if (multiSelectMode) {
-        <input type="checkbox" [formControlName]="'chk_' + account.accountCode" (change)="onAccountChanged(account.accountCode, $event)" class="m-0">
-        } @else {
-        <input type="radio" name="rad_selectedAccount" [value]="account.accountCode" formControlName="rad_selectedAccount" (change)="onAccountChanged(account.accountCode, $event)" class="m-0">
-        }
-        <span>{{ account.accountCode }}</span>
+      @if (multiSelectMode) {
+      <div>
+        <input type="checkbox" [id]="'chk_' + account.accountCode" [formControlName]="'chk_' + account.accountCode" (change)="onAccountChanged(account.accountCode, $event)" class="peer sr-only">
+        <label [for]="'chk_' + account.accountCode" class="cursor-pointer select-none inline-flex items-center px-3 py-1.5 rounded border text-sm font-medium transition-colors
+                 bg-white text-gray-700 border-gray-300 hover:bg-gray-50
+                 peer-checked:bg-blue-500 peer-checked:text-white peer-checked:border-blue-600
+                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500"
+                 (click)="onLabelClick($event, account.accountCode)">
+          {{ account.accountCode }}
+        </label>
+      </div>
+      } @else {
+      <label class="cursor-pointer select-none">
+        <input type="radio" name="rad_selectedAccount" [value]="account.accountCode" formControlName="rad_selectedAccount" (change)="onAccountChanged(account.accountCode, $event)" [id]="'rad_' + account.accountCode" class="peer sr-only">
+        <span class="inline-flex items-center px-3 py-1.5 rounded border text-sm font-medium transition-colors
+                 bg-white text-gray-700 border-gray-300 hover:bg-gray-50
+                 peer-checked:bg-blue-500 peer-checked:text-white peer-checked:border-blue-600
+                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500">
+          {{ account.accountCode }}
+        </span>
       </label>
+      }
+
     </div>
     }
     <div class="mt-3">

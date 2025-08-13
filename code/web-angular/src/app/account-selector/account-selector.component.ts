@@ -8,7 +8,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
   imports: [ReactiveFormsModule],
   templateUrl: './account-selector.component.html',
   styleUrls: ['./account-selector.component.scss'],
-  //changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AccountSelectorComponent implements OnChanges, OnInit, OnDestroy {
 
@@ -24,16 +24,20 @@ export class AccountSelectorComponent implements OnChanges, OnInit, OnDestroy {
   isShiftPressed: boolean = false;
 
   constructor() {
-    // this.accountSelectorForm = new FormGroup({
-    //   selectedAccount: new FormControl('') // Initialize with an empty string for radio button mode
-    // });
-
     this.accountSelectorForm = new FormGroup({
       rad_selectedAccount: new FormControl('')
     });
-    //   selectedAccount: new FormControl('') // Initialize with an empty string for radio button mode
-    // });
   }
+
+onLabelClick(event: MouseEvent, accountCode: string) {
+  if (event.shiftKey) {
+    event.preventDefault();
+    const checkbox = document.getElementById('chk_' + accountCode) as HTMLInputElement;
+    if (checkbox) {
+      checkbox.click();
+    }
+  }
+}
 
   get hasChanges(): boolean {
     if (!this.multiSelectMode) {
