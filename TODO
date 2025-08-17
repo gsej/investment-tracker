@@ -17,7 +17,9 @@ allow downloading stock list as json
 show when loading
 
 
-
+import:
+no transaction fees for work pension
+1.5 transaction fee for funds (eg. mmf) in a sipp 
 
 
 Old Todos:
