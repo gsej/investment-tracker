@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

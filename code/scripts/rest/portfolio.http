@@ -1,0 +1,7 @@
+POST http://localhost:5100/account/portfolio
+Content-Type: application/json
+
+{
+  "accountCode": "SIPP",
+  "date": "2024-12-31"
+}
