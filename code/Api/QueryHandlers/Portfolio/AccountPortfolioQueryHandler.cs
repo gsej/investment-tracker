@@ -152,12 +152,22 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
     
     private async Task<decimal> GetContributions(AccountPortfolioRequest request)
     {
-        // Returns contributions for the day in question
+        // Returns net inflows for the day in question
         var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCode);
         
-        var contribution = cashStatementItems.Where(c => c.Date.DayNumber == request.Date.DayNumber && c.CashStatementItemType == CashStatementItemTypes.Contribution)
-            .Sum(c => c.ReceiptAmountGbp);
+        var cashContributions = cashStatementItems
+            .Where(c => c.Date.DayNumber == request.Date.DayNumber && (
+                        c.CashStatementItemType == CashStatementItemTypes.Contribution ||
+                        c.CashStatementItemType == CashStatementItemTypes.TaxRelief ||
+                        c.CashStatementItemType == CashStatementItemTypes.Withdrawal ||
+                        c.CashStatementItemType == CashStatementItemTypes.TransferIn
+                        ))
+            .Sum(c => c.ReceiptAmountGbp + c.PaymentAmountGbp);
+        
+        var stockTransactions = await _stockTransactionFetcher.GetStockTransactions(request.AccountCode);
+        var stockInflows = stockTransactions.Where(c => c.Date.DayNumber == request.Date.DayNumber && c.TransactionType == StockTransactionTypes.TransferIn)
+            .Sum(s => s.AmountGbp);
 
-        return contribution;
+        return cashContributions + stockInflows;
     }
 }

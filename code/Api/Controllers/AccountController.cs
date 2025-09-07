@@ -16,17 +16,19 @@ public class AccountController : ControllerBase
     private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IAccountQueryHandler _accountQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
+    private readonly IAccountValueHistoryQueryHandler2 _accountValueHistoryQueryHandler2;
 
     public AccountController(ILogger<AccountController> logger,
         IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IAccountQueryHandler accountQueryHandler,
-        IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler
-        )
+        IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler,
+        IAccountValueHistoryQueryHandler2 accountValueHistoryQueryHandler2)
     {
         _logger = logger;
         _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _accountQueryHandler = accountQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
+        _accountValueHistoryQueryHandler2 = accountValueHistoryQueryHandler2;
     }
 
     [HttpGet("/accounts")]
@@ -48,6 +50,13 @@ public class AccountController : ControllerBase
     {
         using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
         return await _accountValueHistoryQueryHandler.Handle(request);
+    }
+    
+    [HttpPost("/account/history2")]
+    public async Task<AccountValueHistoryResult> GetHistory2([FromBody] AccountValueHistoryRequest request)
+    {
+        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
+        return await _accountValueHistoryQueryHandler2.Handle(request);
     }
     
     // [HttpPost("/account/annual-performance")]

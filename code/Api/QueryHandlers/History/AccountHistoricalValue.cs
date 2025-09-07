@@ -4,7 +4,7 @@ public record AccountHistoricalValue(
         DateOnly Date,
         string AccountCode,
         decimal ValueInGbp,
-        decimal Contributions,
+        decimal Contributions, // TODO: rename to NetInflows
         int TotalPriceAgeInDays,
         string Comment)
 {
@@ -16,6 +16,4 @@ public record AccountHistoricalValue(
     
     public UnitAccount Units { get; set; }
 }
-
-
 public record UnitAccount(DateOnly Date, decimal? NumberOfUnits, decimal? ValueInGbpPerUnit);

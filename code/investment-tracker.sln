@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjBellParserConsole", "AjBellParserConsole\AjBellParserConsole.csproj", "{064BF333-264A-40DC-B47B-07336B1121A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HistoryCalculatorConsole", "HistoryCalculatorConsole\HistoryCalculatorConsole.csproj", "{0F70638C-0E6A-427F-9578-1DAD8B732EC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +62,9 @@ Global
 		{064BF333-264A-40DC-B47B-07336B1121A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064BF333-264A-40DC-B47B-07336B1121A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064BF333-264A-40DC-B47B-07336B1121A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F70638C-0E6A-427F-9578-1DAD8B732EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F70638C-0E6A-427F-9578-1DAD8B732EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F70638C-0E6A-427F-9578-1DAD8B732EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F70638C-0E6A-427F-9578-1DAD8B732EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

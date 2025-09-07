@@ -32,6 +32,8 @@ public class InvestmentsDbContext : DbContext
     public DbSet<RecordedTotalValue> RecordedTotalValues { get; set; }
     public DbSet<ExchangeRate> ExchangeRates { get; set; }
     
+    public DbSet<AccountHistoricalValue> AccountHistoricalValues { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<CashStatementItem>()

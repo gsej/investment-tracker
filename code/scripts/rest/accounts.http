@@ -1,1 +1,19 @@
-GET http://localhost:5100/accounts
+POST http://localhost:5100/account/history
+Content-Type: application/json
+
+{
+  "accountCode": "GSEJ-SIPP",
+  "queryDate": "2025-10-08"  
+}
+
+
+
+###
+
+POST http://localhost:5100/account/history2
+Content-Type: application/json
+
+{
+  "accountCode": "GSEJ-ISA",
+  "queryDate": "2025-10-08"  
+}

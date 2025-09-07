@@ -47,6 +47,6 @@ export class AccountsService {
   }
 
   getHistory(accountCode: string, queryDate: string): Observable<HistoryViewModels> {
-    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history', { accountCode: accountCode, queryDate: queryDate })
+    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history2', { accountCode: accountCode, queryDate: queryDate })
   }
 }
