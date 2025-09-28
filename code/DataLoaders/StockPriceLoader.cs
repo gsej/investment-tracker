@@ -48,8 +48,7 @@ public class StockPriceLoader
         {
             // Preload stocks and exchange rates.
             
-            // TODO: fix this, appearst o be happening many times. 
-            _logger.LogWarning("DEBUG: loading stocks");
+            // TODO: fix this, appears to be happening many times.             
             _stocks = await _stockRepository.GetStocks();
 
 

@@ -19,7 +19,8 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
                 cashStatementItem.CashStatementItemType = CashStatementItemTypes.Purchase;
             }
         }
-        else if (cashStatementItem.Description.StartsWith("Sale"))
+        else if (cashStatementItem.Description.StartsWith("Sale") ||
+                 cashStatementItem.Description.Contains("Redemption", StringComparison.InvariantCultureIgnoreCase))
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Sale;
         }

@@ -4,7 +4,9 @@ export function formatQuantity(value: number | null | undefined) {
   }
 
   return new Intl.NumberFormat('en-US', {
-    maximumFractionDigits: 2
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 5
+
   }).format(value);
 }
 
