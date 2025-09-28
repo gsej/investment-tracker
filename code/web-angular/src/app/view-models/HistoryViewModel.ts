@@ -18,6 +18,3 @@ export class UnitViewModel {
   numberOfUnits!: number;
   valueInGbpPerUnit!: number;
 }
-
-
-

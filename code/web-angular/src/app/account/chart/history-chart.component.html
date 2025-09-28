@@ -1,3 +1,23 @@
-  <div class="h-full">
-    <canvas class="h-full" id="MyChart">{{ chart }}</canvas>
+<div class="h-full outline-1 flex flex-col ">
+  <div class="flex-grow">
+    <canvas  id="MyChart">{{ chart }}</canvas>
   </div>
+  <div>
+    <form #form="ngForm">
+      <div class="mx-10 grid grid-cols-3 gap-10 rounded-xl ">
+        <div>
+          <input type="radio" name="chart-type" id="valueInGbp" value="valueInGbp" class="peer hidden" checked [(ngModel)]="chartType" (ngModelChange)="onChartTypeChange($event)" />
+          <label for="valueInGbp" class="text-sm, font-medium, block cursor-pointer select-none rounded-xl p-2 text-center bg-gray-200 text-black peer-checked:bg-gray-500 peer-checked:font-bold peer-checked:text-white">Value In Gbp</label>
+        </div>
+        <div>
+          <input type="radio" name="chart-type" id="unitValue" value="unitValue" class="peer hidden" [(ngModel)]="chartType" (ngModelChange)="onChartTypeChange($event)" />
+          <label for="unitValue" class="text-sm, font-medium, block cursor-pointer select-none rounded-xl p-2 text-center bg-gray-200 text-black peer-checked:bg-gray-500 peer-checked:font-bold peer-checked:text-white">Unit Value</label>
+        </div>
+        <div>
+          <input type="radio" name="chart-type" id="numberOfUnits" value="numberOfUnits" class="peer hidden" [(ngModel)]="chartType" (ngModelChange)="onChartTypeChange($event)" />
+          <label for="numberOfUnits" class="text-sm, font-medium, block cursor-pointer select-none rounded-xl p-2 text-center bg-gray-200 text-black peer-checked:bg-gray-500 peer-checked:font-bold peer-checked:text-white">Number Of Units</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

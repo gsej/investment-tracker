@@ -2,6 +2,8 @@ import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } f
 import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
+import { FormsModule } from '@angular/forms';
+import { FormLabelComponent } from '@gsej/tailwind-components';
 
 
 Chart.register(annotationPlugin);
@@ -9,7 +11,7 @@ Chart.register(annotationPlugin);
 @Component({
   selector: 'app-history-chart',
   standalone: true,
-  imports: [],
+  imports: [FormsModule, FormLabelComponent],
   templateUrl: './history-chart.component.html',
   styleUrl: './history-chart.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -21,30 +23,68 @@ export class HistoryChartComponent implements OnChanges {
   private dates: string[] = [];
   private values: number[] = [];
 
+  public chartType = 'valueInGbp';
+  private label = '';
 
   @Input()
   public history: HistoryViewModels | null = null;
 
   ngOnInit(): void {
-    this.setData();
+    this.setData(this.chartType);
     this.createChart();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-      this.setData();
+      this.setData(this.chartType);
       this.createChart();
   }
 
-  setData() {
-  if (this.history) {
+  // setData() {
+  // if (this.history) {
+  //     this.dates = this.history.items.map(y => y.date.toString());
+  //     this.values = this.history.items.map(y => y.valueInGbp);
+  //   }
+  //   else {
+  //   this.dates = [];
+  //     this.values = [];
+  //   }
+  // }
+
+  onChartTypeChange(value: string) {
+    this.chartType = value;
+    this.setData(this.chartType);
+    this.createChart();
+  }
+
+  setData(chartType: string) {
+    if (this.history) {
+
       this.dates = this.history.items.map(y => y.date.toString());
-      this.values = this.history.items.map(y => y.valueInGbp);
+
+      if (chartType === 'valueInGbp') {
+        this.label = 'Value in Gbp';
+        this.values = this.history.items.map(y => y.valueInGbp);
+        //this.percentages = this.prediction.cumulativeBands.map(band => band.percentage * 100);
+      }
+      else if (chartType === 'unitValue') {
+        this.label = 'unit value';
+        this.values = this.history.items.map(y => y.units.valueInGbpPerUnit);
+                //this.percentages = this.prediction.bands.map(band => band.percentage * 100);
+      }
+      if (chartType === 'numberOfUnits') {
+        // this.label = 'percentage of outcomes having more than this';
+        this.values = this.history.items.map(y => y.units.numberOfUnits);
+        // this.values = this.prediction.reverseCumulativeBands.map(band => `${format000s(band.lower)}k`);
+        // this.percentages = this.prediction.reverseCumulativeBands.map(band => band.percentage * 100);
+      }
+
     }
     else {
-    this.dates = [];
+      this.dates = [];
       this.values = [];
     }
   }
+
 
   createChart() {
 
