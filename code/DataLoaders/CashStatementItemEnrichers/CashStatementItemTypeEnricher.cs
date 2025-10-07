@@ -56,7 +56,8 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.TransferIn;
         }
-        else if (cashStatementItem.Description.Contains("Cash Withdrawal"))
+        else if (cashStatementItem.Description.Contains("Withdraw", StringComparison.InvariantCultureIgnoreCase) ||
+                 cashStatementItem.Description.Contains("Pension payment requested", StringComparison.InvariantCultureIgnoreCase))
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Withdrawal;
         }
