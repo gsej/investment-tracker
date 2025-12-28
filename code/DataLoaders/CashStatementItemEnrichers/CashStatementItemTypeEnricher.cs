@@ -83,6 +83,10 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Withdrawal;
         }
+        else if (cashStatementItem.Description.StartsWith("Price error compensation", StringComparison.InvariantCultureIgnoreCase))
+        {
+            cashStatementItem.CashStatementItemType = CashStatementItemTypes.Adjustment;
+        }
         else
         {
             var json = JsonSerializer.Serialize(cashStatementItem, new JsonSerializerOptions { WriteIndented = true });

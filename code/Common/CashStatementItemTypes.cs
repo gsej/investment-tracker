@@ -14,5 +14,6 @@ public static class CashStatementItemTypes
     public const string Withdrawal = "Withdrawal";
     public const string TaxRelief = "TaxRelief";
     public const string OtherReceipt = "OtherReceipt";
+    public const string Adjustment = "Adjustment";
     
 }
