@@ -67,7 +67,14 @@ class Program
 
                 services.AddTransient<IAccountRepository, AccountRepository>();
                 services.AddTransient<IStockRepository, StockRepository>();
-                services.AddTransient<IStockPriceRepository, StockPriceRepository>();
+                
+                services.AddScoped<IStockPriceRepository>(provider =>
+                {
+                    var context = provider.GetRequiredService<InvestmentsDbContext>();
+                    var connectionString = _configuration.SqlConnectionString;
+                    return new StockPriceRepository(context, connectionString);
+                });
+                
                 services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
                 services.AddTransient<IRecordedTotalValueRepository, RecordedTotalValueRepository>();
 

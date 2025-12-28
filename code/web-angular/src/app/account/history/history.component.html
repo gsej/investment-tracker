@@ -26,7 +26,7 @@
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Discrepancy</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Units</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Unit Value</th>
-        <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Contributions</th>
+        <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Net Inflows</th>
         <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change</th>
         <th *ngIf="showQualityData$ | async" class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Day Change %</th>
         <th class="h-12 px-4 text-right align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0">Comment</th>
@@ -45,7 +45,7 @@
         <td class="p-4 text-right text-gray-600">{{ formatPercentage(item.discrepancyRatio) }}</td>
         <td class="p-4 text-right text-gray-600">{{ formatQuantity(item.units.numberOfUnits) }}</td>
         <td class="p-4 text-right text-gray-600">{{ formatCurrency(item.units.valueInGbpPerUnit) }}</td>
-        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-red-600">{{ formatCurrency(item.contributions) }}</td>
+        <td *ngIf="showQualityData$ | async" class="p-4 text-right text-red-600">{{ formatCurrency(item.netInflows) }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ item.differenceToPreviousDay }}</td>
         <td *ngIf="showQualityData$ | async" class="p-4 text-right text-gray-600">{{ formatPercentage(item.differenceRatio) }}</td>
         <td class="p-4 text-center text-gray-600">{{ item.comment }}</td>

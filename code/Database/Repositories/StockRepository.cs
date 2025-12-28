@@ -17,8 +17,7 @@ public class StockRepository : IStockRepository
     
     public async Task<IList<Stock>> GetStocks()
     {
-        // TODO: how can I prevent this from going to the DB multiple times?
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity(); // TODO: do I need a name here? 
+        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity(); 
         
         var stocks = await _context
             .Stocks

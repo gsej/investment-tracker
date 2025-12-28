@@ -35,7 +35,8 @@ export class AccountContainerComponent implements OnInit {
   public portfolio: PortfolioViewModel | null = null;
   public history: HistoryViewModels | null = null;
 
-  public accountCode!: string;
+  public accountCodes: string[] = [];
+
   public date!: string;
 
   showQualityData$!: Observable<boolean>;
@@ -59,7 +60,7 @@ export class AccountContainerComponent implements OnInit {
       else {
 
         const portfolioViewModel = <PortfolioViewModel>{
-          accountCode: portfolio.accountCode,
+          accountCodes: portfolio.accountCodes ?? [],
           holdings: portfolio.holdings.map(
             holding => {
               return {
@@ -113,8 +114,8 @@ export class AccountContainerComponent implements OnInit {
   accountSelected(accountCodes: string[]) {
 
     this.setDateToToday();
-    this.accountCode = accountCodes[0];
-    this.accountsService.selectAccount(this.accountCode);
+    this.accountCodes = accountCodes;
+    this.accountsService.selectAccounts(this.accountCodes);
   }
 
 

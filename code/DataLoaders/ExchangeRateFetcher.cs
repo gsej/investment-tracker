@@ -9,9 +9,6 @@ public class ExchangeRateFetcher
         IList<ExchangeRate> exchangeRates,
         DateOnly requestDate)
     {
-        
-        // TODO: what if there are multiple values fo rthe same date? 
-        // TODO: does this work when there is no value? 
         var exchangeRate = exchangeRates
             .Where(s =>
                 s.Date.CompareTo(requestDate) <= 0)

@@ -100,12 +100,6 @@ class Program
 
     private static async Task CalculateForAccount(IAccountValueHistoryQueryHandler queryHandler, InvestmentsDbContext dbContext, string accountCode)
     {
-
-        if (accountCode == "GSEJ-ISA-VIRGIN")
-        {
-            return;
-        }
-        
         var sw = Stopwatch.StartNew();
         
         _logger.LogInformation("Calculating history for {AccountCode}", accountCode);
@@ -121,7 +115,7 @@ class Program
                 Date = item.Date,
                 AccountCode = item.AccountCode,
                 ValueInGbp = item.ValueInGbp,
-                Contributions = item.Contributions,
+                NetInflows = item.NetInflows,
                 TotalPriceAgeInDays = item.TotalPriceAgeInDays,
                 Comment = item.Comment,
                 RecordedTotalValueInGbp = item.RecordedTotalValueInGbp,

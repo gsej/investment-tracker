@@ -4,7 +4,6 @@ using Api.QueryHandlers.Account;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
-using Api.QueryHandlers.Quality;
 using Common.Tracing;
 using Database;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +26,12 @@ public static class Program
         var configuration = configurationRoot.GetRequiredSection(nameof(ApiConfiguration)).Get<ApiConfiguration>();
         
         builder.Services.AddMemoryCache();
+        builder.Services.AddLogging((loggingBuilder) =>
+        {
+            loggingBuilder.ClearProviders();
+            loggingBuilder.AddConsole();
+            loggingBuilder.AddSeq();
+        });
 
         builder.Services.AddCors(options =>
         {
@@ -79,7 +84,6 @@ public static class Program
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler2, AccountValueHistoryQueryHandler2>();
    
-        builder.Services.AddScoped<IQualityQueryHandler, QualityQueryHandler>();
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         
         var app = builder.Build();

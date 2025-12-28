@@ -1,6 +1,5 @@
-﻿namespace Common;
+﻿namespace LoaderConsole;
 
-// TODO: this is in the wrong place.
 public class LoaderConfiguration
 {
     public string DataFolder { get; set; }
@@ -11,4 +10,3 @@ public class LoaderConfiguration
 
     public bool DeduplicateStockPrices { get; set; } = false;
 }
-

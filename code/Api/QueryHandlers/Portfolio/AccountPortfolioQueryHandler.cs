@@ -44,7 +44,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
         var allocations = GetAllocations(holdings, totalValueInGbp, cashBalance);
 
         return new AccountPortfolioResult(
-            request.AccountCode,
+            request.AccountCodes,
             Holdings: holdings, 
             CashBalanceInGbp: cashBalance,
             Contributions: contributions,
@@ -75,7 +75,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
     {
         var holdings = new List<Holding>();
         
-        var stockTransactions = await _stockTransactionFetcher.GetStockTransactions(request.AccountCode);
+        var stockTransactions = await _stockTransactionFetcher.GetStockTransactions(request.AccountCodes);
        
         var groupedStockTransactions = stockTransactions
             .Where(s =>
@@ -96,13 +96,11 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
                 .Sum(st => st.Quantity);
 
             var totalHeld = stocksAdded - stocksRemoved;
-
-            // TODO: sometimes stock is null. need to find out why and enforce integrity.
             
             if (stockSymbol == null)
             {
-                _logger.LogError($"Stock is null for account {request.AccountCode}");
-                throw new InvalidOperationException($"Stock is null for account {request.AccountCode}");
+                _logger.LogError("Stock is null. Cannot continue.");
+                throw new InvalidOperationException("Stock is null. Cannot continue.");
             }
             
             if (totalHeld != 0)
@@ -142,7 +140,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
 
     private async Task<decimal> GetCashBalance(AccountPortfolioRequest request)
     {
-        var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCode);
+        var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCodes);
 
         var cashBalance = cashStatementItems
             .Where(c => request.Date.DayNumber >= c.Date.DayNumber)
@@ -153,9 +151,9 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
     private async Task<decimal> GetContributions(AccountPortfolioRequest request)
     {
         // Returns net inflows for the day in question
-        var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCode);
+        var cashStatementItems = await _cashStatementItemFetcher.GetCashStatementItems(request.AccountCodes);
         
-        var cashContributions = cashStatementItems
+        var inflows = cashStatementItems
             .Where(c => c.Date.DayNumber == request.Date.DayNumber && (
                         c.CashStatementItemType == CashStatementItemTypes.Contribution ||
                         c.CashStatementItemType == CashStatementItemTypes.TaxRelief ||
@@ -164,10 +162,10 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
                         ))
             .Sum(c => c.ReceiptAmountGbp + c.PaymentAmountGbp);
         
-        var stockTransactions = await _stockTransactionFetcher.GetStockTransactions(request.AccountCode);
+        var stockTransactions = await _stockTransactionFetcher.GetStockTransactions(request.AccountCodes);
         var stockInflows = stockTransactions.Where(c => c.Date.DayNumber == request.Date.DayNumber && c.TransactionType == StockTransactionTypes.TransferIn)
             .Sum(s => s.AmountGbp);
 
-        return cashContributions + stockInflows;
+        return inflows + stockInflows;
     }
 }

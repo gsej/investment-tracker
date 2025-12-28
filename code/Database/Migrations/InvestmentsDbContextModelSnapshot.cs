@@ -54,10 +54,6 @@ namespace Database.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<decimal>("Contributions")
-                        .HasPrecision(19, 5)
-                        .HasColumnType("decimal(19,5)");
-
                     b.Property<string>("Date")
                         .IsRequired()
                         .HasColumnType("nvarchar(10)");
@@ -71,6 +67,10 @@ namespace Database.Migrations
                         .HasColumnType("decimal(19,5)");
 
                     b.Property<decimal?>("DiscrepancyRatio")
+                        .HasPrecision(19, 5)
+                        .HasColumnType("decimal(19,5)");
+
+                    b.Property<decimal>("NetInflows")
                         .HasPrecision(19, 5)
                         .HasColumnType("decimal(19,5)");
 

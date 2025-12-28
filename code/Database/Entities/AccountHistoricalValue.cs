@@ -22,7 +22,7 @@ public class AccountHistoricalValue
     public decimal ValueInGbp { get; set; }
     
     [Precision(19,5)]
-    public decimal Contributions { get; set; }
+    public decimal NetInflows { get; set; }
     
     public int TotalPriceAgeInDays { get; set; }
     

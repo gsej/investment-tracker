@@ -30,7 +30,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
         if (account == null)
         {
             _logger.LogError("The account with code {AccountCode} does not exist", request.AccountCode);
-            throw new InvalidOperationException(); // TODO: perhaps return something better?
+            throw new InvalidOperationException($"The account with code {request.AccountCode} does not exist");
         }
        
         // iterate over each day in the date range
@@ -47,7 +47,12 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
         
         while (currentDate <= request.QueryDate)
         {
-            var daysResult = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest { AccountCode = request.AccountCode, Date = currentDate });
+            var daysResult = await _accountPortfolioQueryHandler.Handle(new AccountPortfolioRequest
+            {
+                // TODO: handle multiple accounts
+                AccountCodes = [request.AccountCode], 
+                Date = currentDate
+            });
 
             var comment = string.Join(", ", daysResult.Holdings.Select(h => h.Comment).Where(c => !string.IsNullOrWhiteSpace(c)));
 
@@ -74,7 +79,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             if (previousDayTotal.HasValue)
             {
                 // calculate difference to previous day to see if there are big leaps. Remove any contribution which might affect the result
-                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.Contributions - previousDayTotal.Value;
+                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.NetInflows - previousDayTotal.Value;
 
                 if (previousDayTotal.Value != 0)
                 {

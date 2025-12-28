@@ -2,7 +2,7 @@ import { AllocationViewModel } from "./AllocationViewModel";
 import { HoldingViewModel } from "./HoldingViewModel";
 
 export class PortfolioViewModel {
-  accountCode!: string;
+  accountCodes: string[] = [];
   holdings!: HoldingViewModel[];
   cashBalanceInGbp!: number;
   totalInvestmentsInGbp!: number;

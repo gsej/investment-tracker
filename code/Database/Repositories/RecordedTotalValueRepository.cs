@@ -21,7 +21,6 @@ public class RecordedTotalValueRepository : IRecordedTotalValueRepository
 
     public async Task<int> SaveChangesAsync()
     {
-        // TODO: move to UoW
         return await _context.SaveChangesAsync();
     }
 }

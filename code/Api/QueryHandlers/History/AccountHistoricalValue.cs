@@ -2,9 +2,9 @@
 
 public record AccountHistoricalValue(
         DateOnly Date,
-        string AccountCode,
+        string AccountCode, // TODO: remove this property
         decimal ValueInGbp,
-        decimal Contributions, // TODO: rename to NetInflows
+        decimal NetInflows,
         int TotalPriceAgeInDays,
         string Comment)
 {

@@ -1,7 +1,7 @@
 namespace Api.QueryHandlers.Portfolio;
 
 public record AccountPortfolioResult(
-    string AccountCode,
+    string[] AccountCodes,
     IList<Holding> Holdings,
     decimal CashBalanceInGbp,
     decimal Contributions,

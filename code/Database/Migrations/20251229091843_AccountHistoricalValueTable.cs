@@ -19,7 +19,7 @@ namespace Database.Migrations
                     Date = table.Column<string>(type: "nvarchar(10)", nullable: false),
                     AccountCode = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     ValueInGbp = table.Column<decimal>(type: "decimal(19,5)", precision: 19, scale: 5, nullable: false),
-                    Contributions = table.Column<decimal>(type: "decimal(19,5)", precision: 19, scale: 5, nullable: false),
+                    NetInflows = table.Column<decimal>(type: "decimal(19,5)", precision: 19, scale: 5, nullable: false),
                     TotalPriceAgeInDays = table.Column<int>(type: "int", nullable: false),
                     Comment = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     RecordedTotalValueInGbp = table.Column<decimal>(type: "decimal(19,5)", precision: 19, scale: 5, nullable: true),

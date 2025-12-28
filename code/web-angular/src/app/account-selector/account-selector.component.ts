@@ -143,5 +143,7 @@ onLabelClick(event: MouseEvent, accountCode: string) {
 
   applyChanges() {
     this.selectedAccounts = new Set(this.pendingSelectedAccounts);
+    this.accountChanged.next(Array.from(this.selectedAccounts));
+
   }
 }

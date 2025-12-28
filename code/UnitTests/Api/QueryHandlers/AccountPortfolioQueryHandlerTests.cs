@@ -20,6 +20,7 @@ public class AccountPortfolioQueryHandlerTests
     private readonly IStockPriceFetcher _mockStockPriceFetcher;
 
     private const string AccountCode = "Account";
+    private const string OtherAccountCode = "OtherAccount";
 
     public AccountPortfolioQueryHandlerTests()
     {
@@ -57,14 +58,14 @@ public class AccountPortfolioQueryHandlerTests
     public async Task Handle_WhenNoDataExists_ReturnsEmptyResult()
     {
         // arrange
-        var request = new AccountPortfolioRequest(AccountCode, new DateOnly(2023, 12, 31));
+        var request = new AccountPortfolioRequest([AccountCode], new DateOnly(2023, 12, 31));
         
         // act
         var result = await _queryHandler.Handle(request);
         
         // assert
         using var _ = new AssertionScope();
-        result.AccountCode.Should().Be(AccountCode);
+        result.AccountCodes.Single().Should().Be(AccountCode);
         result.CashBalanceInGbp.Should().Be(0);
         result.Holdings.Should().BeEmpty();
         result.Allocations.Should().BeEmpty();
@@ -78,15 +79,17 @@ public class AccountPortfolioQueryHandlerTests
         // arrange
         var cashStatementItems = new List<CashStatementItem>
         {
-            new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution }, 
+            new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
             new(AccountCode, new DateOnly(2023, 5, 1), "description", 0, -50) { CashStatementItemType = CashStatementItemTypes.Purchase }, 
             new(AccountCode, new DateOnly(2023, 12, 31), "description", 0, -1) { CashStatementItemType = CashStatementItemTypes.Charge }, 
             new(AccountCode, new DateOnly(2024, 1, 1), "description", 1000, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
+
+        _mockCashStatementItemFetcher
+            .GetCashStatementItems(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(cashStatementItems);
         
-        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
-        
-        var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
+        var request = new AccountPortfolioRequest(["Account"], new DateOnly(2023, 12, 31));
         
         // act
         var result = await _queryHandler.Handle(request);
@@ -107,9 +110,12 @@ public class AccountPortfolioQueryHandlerTests
             new(AccountCode, new DateOnly(2024, 1, 1), "description", 1000, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
         
-        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        _mockCashStatementItemFetcher
+            .GetCashStatementItems(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(cashStatementItems);
         
-        var request = new AccountPortfolioRequest("Account", new DateOnly(2024, 1, 1));
+        // TODO: handle multiple accounts
+        var request = new AccountPortfolioRequest(["Account"], new DateOnly(2024, 1, 1));
         
         // act
         var result = await _queryHandler.Handle(request);
@@ -159,9 +165,11 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock }
         };
 
-        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher
+            .GetStockTransactions(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(stockTransactions);
         
-        var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
+        var request = new AccountPortfolioRequest(["Account"], new DateOnly(2023, 12, 31));
         
         // act
         var result = await _queryHandler.Handle(request);
@@ -194,13 +202,17 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
         };
 
-        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher.GetStockTransactions([AccountCode]).Returns(stockTransactions);
+        
+        _mockStockTransactionFetcher
+            .GetStockTransactions(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(stockTransactions);
         
         var stockPrice = new StockPrice("SMT.L", new DateOnly(2023, 1, 2), 10m, "GBP", "Test", "GBP", null, null);
         
         _mockStockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
         
-        var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
+        var request = new AccountPortfolioRequest(["Account"], new DateOnly(2023, 12, 31));
         
         // act
         var result = await _queryHandler.Handle(request);
@@ -227,7 +239,9 @@ public class AccountPortfolioQueryHandlerTests
             new(AccountCode, new DateOnly(2023, 1, 1), "description", 100, 0) { CashStatementItemType = CashStatementItemTypes.Contribution },
         };
         
-        _mockCashStatementItemFetcher.GetCashStatementItems(AccountCode).Returns(cashStatementItems);
+        _mockCashStatementItemFetcher
+            .GetCashStatementItems(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(cashStatementItems);
 
         var stockTransactions = new List<StockTransaction>
         {
@@ -243,13 +257,15 @@ public class AccountPortfolioQueryHandlerTests
                 stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
         };
 
-        _mockStockTransactionFetcher.GetStockTransactions(AccountCode).Returns(stockTransactions);
+        _mockStockTransactionFetcher
+            .GetStockTransactions(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
+            .Returns(stockTransactions);
         
         var stockPrice = new StockPrice("SMT.L", new DateOnly(2023, 1, 2), 10m, "GBP", "Test", "GBP", null, null);
         
         _mockStockPriceFetcher.GetStockPrice("SMT.L", new DateOnly(2023, 12, 31)).Returns(new StockPriceResult(stockPrice.Price, stockPrice.Currency, stockPrice.OriginalCurrency, 364));
         
-        var request = new AccountPortfolioRequest("Account", new DateOnly(2023, 12, 31));
+        var request = new AccountPortfolioRequest(["Account"], new DateOnly(2023, 12, 31));
         
         // act
         var result = await _queryHandler.Handle(request);
@@ -265,6 +281,5 @@ public class AccountPortfolioQueryHandlerTests
         result.Allocations.Last().Name.Should().Be("Cash");
         result.Allocations.Last().Value.Should().Be(100);
         result.Allocations.Last().Percentage.Should().Be(0.1m);
-        
     }
 }

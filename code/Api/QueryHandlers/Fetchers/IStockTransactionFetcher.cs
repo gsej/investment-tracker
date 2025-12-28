@@ -4,5 +4,5 @@ namespace Api.QueryHandlers.Fetchers;
 
 public interface IStockTransactionFetcher
 {
-    Task<IList<StockTransaction>> GetStockTransactions(string accountCode);
+    Task<IList<StockTransaction>> GetStockTransactions(string[] accountCodes);
 }

@@ -2,5 +2,5 @@
 
 public interface IAccountHistoricalValueFetcher
 {
-    Task<IList<Database.Entities.AccountHistoricalValue>> Get(string accountCode);
+    Task<IList<Database.Entities.AccountHistoricalValue>> Get(string[] accountCodes);
 }

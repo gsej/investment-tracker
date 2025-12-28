@@ -12,13 +12,11 @@ public class AccountHistoricalValueFetcher : IAccountHistoricalValueFetcher
         _context = context;
     }
 
-    public async Task<IList<Database.Entities.AccountHistoricalValue>> Get(string accountCode)
-    {
-        // TODO: could be cached, or restricted by date
-        
+    public async Task<IList<Database.Entities.AccountHistoricalValue>> Get(string[] accountCodes)
+    {        
         var values = await _context.AccountHistoricalValues
             .AsNoTracking()
-            .Where(account => account.AccountCode == accountCode)
+            .Where(account => accountCodes.Contains(account.AccountCode))
             .ToListAsync();
 
         return values;

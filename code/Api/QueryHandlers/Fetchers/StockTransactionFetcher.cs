@@ -16,8 +16,19 @@ public class StockTransactionFetcher : IStockTransactionFetcher
         _memoryCache = memoryCache;
         _context = context;
     }
+    
+    public async Task<IList<StockTransaction>> GetStockTransactions(string[] accountCodes)
+    {
+        var stockTransactions = new List<StockTransaction>();
+        foreach (var accountCode in accountCodes)
+        {
+            var transactions = await GetStockTransactionsForAccount(accountCode);
+            stockTransactions.AddRange(transactions);
+        }
+        return stockTransactions;
+    }
 
-    public async Task<IList<StockTransaction>> GetStockTransactions(string accountCode)
+    private async Task<IList<StockTransaction>> GetStockTransactionsForAccount(string accountCode)
     {
         var key = string.Format(CacheKey, accountCode);
 

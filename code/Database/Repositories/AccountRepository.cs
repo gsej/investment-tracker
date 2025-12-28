@@ -27,7 +27,6 @@ public class AccountRepository : IAccountRepository
     
     public async Task<int> SaveChangesAsync()
     {
-        // TODO: move to UoW
         return await _context.SaveChangesAsync();
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Database.Migrations
 {
     [DbContext(typeof(InvestmentsDbContext))]
-    [Migration("20250818070016_AccountHistoricalValueTable")]
+    [Migration("20251229091843_AccountHistoricalValueTable")]
     partial class AccountHistoricalValueTable
     {
         /// <inheritdoc />
@@ -57,10 +57,6 @@ namespace Database.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<decimal>("Contributions")
-                        .HasPrecision(19, 5)
-                        .HasColumnType("decimal(19,5)");
-
                     b.Property<string>("Date")
                         .IsRequired()
                         .HasColumnType("nvarchar(10)");
@@ -74,6 +70,10 @@ namespace Database.Migrations
                         .HasColumnType("decimal(19,5)");
 
                     b.Property<decimal?>("DiscrepancyRatio")
+                        .HasPrecision(19, 5)
+                        .HasColumnType("decimal(19,5)");
+
+                    b.Property<decimal>("NetInflows")
                         .HasPrecision(19, 5)
                         .HasColumnType("decimal(19,5)");
 

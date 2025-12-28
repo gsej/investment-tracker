@@ -10,6 +10,5 @@ public interface IStockRepository
     
     void Add(Stock stock);
     
-    // TODO: Remove to unit of work
     Task<int> SaveChangesAsync();
 }

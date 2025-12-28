@@ -2,5 +2,5 @@
 
 public interface IAccountValueHistoryQueryHandler2
 {
-    Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest request);
+    Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest2 request);
 }

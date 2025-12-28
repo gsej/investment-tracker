@@ -13,7 +13,10 @@ export class AccountsService {
 
   _today: string;
 
-  _selectedAccount: string | null = null;
+  // TODO: remove single account support
+  //_selectedAccount: string | null = null;
+
+  _selectedAccounts: string[] = [];
 
   private _portfolioSubject: BehaviorSubject<Portfolio | null> = new BehaviorSubject<Portfolio | null>(null);
   public portfolio$: Observable<Portfolio | null> = this._portfolioSubject.asObservable();
@@ -29,24 +32,23 @@ export class AccountsService {
     return this.http.get<any>('http://localhost:5100/accounts').pipe(map((result: any) => result.accounts));
   }
 
-  selectAccount(accountCode: string) {
-    this._selectedAccount = accountCode;
-    this.getPortfolio(accountCode, this._today).subscribe(summary => {
+  selectAccounts(accountCodes: string[]) {
+    this._selectedAccounts = accountCodes;
+    this.getPortfolio(accountCodes, this._today).subscribe(summary => {
       this._portfolioSubject.next(summary);
     });
 
-
-    this.getHistory(accountCode, this._today).subscribe(history => {
+    this.getHistory(accountCodes, this._today).subscribe(history => {
       this._historySubject.next(history);
     });
 
   }
 
-  getPortfolio(accountCode: string, date: string): Observable<Portfolio> {
-    return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCode: accountCode, date: date })
+  getPortfolio(accountCodes: string[], date: string): Observable<Portfolio> {
+    return this.http.post<Portfolio>('http://localhost:5100/account/portfolio', { accountCodes: accountCodes, date: date })
   }
 
-  getHistory(accountCode: string, queryDate: string): Observable<HistoryViewModels> {
-    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history2', { accountCode: accountCode, queryDate: queryDate })
+  getHistory(accountCodes: string[], queryDate: string): Observable<HistoryViewModels> {
+    return this.http.post<HistoryViewModels>('http://localhost:5100/account/history2', { accountCodes: accountCodes, queryDate: queryDate })
   }
 }

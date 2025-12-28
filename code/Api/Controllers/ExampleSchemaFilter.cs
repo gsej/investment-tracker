@@ -11,9 +11,12 @@ public class ExampleSchemaFilter : ISchemaFilter
     {
         if (context.Type == typeof(AccountPortfolioRequest))
         {
-            schema.Example = new OpenApiObject()
+            schema.Example = new OpenApiObject
             {
-                ["accountCode"] = new OpenApiString("SIPP"),
+                ["accountCodes"] = new OpenApiArray
+                {
+                    new OpenApiString("SIPP")
+                },
                 ["date"] = new OpenApiString("2024-10-30"),
             };
         }

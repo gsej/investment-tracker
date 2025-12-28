@@ -1,5 +1,4 @@
 ﻿using Api.QueryHandlers.Fetchers;
-using Api.QueryHandlers.Portfolio;
 
 namespace Api.QueryHandlers.History;
 
@@ -16,15 +15,14 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
         _accountHistoricalValueFetcher = accountHistoricalValueFetcher;
     }
     
-    public async Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest request)
+    public async Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest2 request)
     {
-        var values = (await _accountHistoricalValueFetcher.Get(request.AccountCode))
-            .OrderBy(value => value.Date);
+        var values = (await _accountHistoricalValueFetcher.Get(request.AccountCodes))
+            .OrderBy(value => value.Date)
+            .ToList();
        
         // iterate over each day in the date range
         var results = new List<AccountHistoricalValue>();
-
-        var accountCode = request.AccountCode;
 
         var currentDate = values.First().Date;
         
@@ -32,24 +30,31 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
         
         while (currentDate <= request.QueryDate)
         {
-            var daysValue = values.SingleOrDefault(v => v.Date == currentDate);
+            var daysValues = values
+                .Where(v => v.Date == currentDate)
+                .ToList();
 
-            if (daysValue is null)
+            if (!daysValues.Any())
                 break;
 
             var historicalValue = new AccountHistoricalValue(
                 currentDate,
-                accountCode,
-                daysValue.ValueInGbp,
-                daysValue.Contributions,
-                daysValue.TotalPriceAgeInDays,
-                daysValue.Comment)
+                "DUMMYACCOUNTCODE",
+                daysValues.Select(v => v.ValueInGbp).Sum(),
+                daysValues.Select(v => v.NetInflows).Sum(),
+                daysValues.Select(v => v.TotalPriceAgeInDays).Sum(),
+                string.Join(",", daysValues.Select(v => v.Comment))
+            )
             {
-                RecordedTotalValueInGbp = daysValue.RecordedTotalValueInGbp,
-                RecordedTotalValueSource = daysValue.RecordedTotalValueSource,
-                DiscrepancyRatio = daysValue.DiscrepancyRatio,
-                DifferenceToPreviousDay = daysValue.DifferenceToPreviousDay,
-                DifferenceRatio = daysValue.DifferenceRatio
+                RecordedTotalValueInGbp =  daysValues.Select(v => v.RecordedTotalValueInGbp).Sum(),
+                RecordedTotalValueSource = string.Join(",", daysValues.Select(v => v.RecordedTotalValueSource)),
+                
+                // TODO: these ratios need to be calculated here. they can't be taken from the DB. 
+                DiscrepancyRatio = 0, //daysValues.DiscrepancyRatio,
+                DifferenceToPreviousDay = daysValues.Select(v => v.DifferenceToPreviousDay).Sum(),
+                
+                // TODO: these ratios need to be calculated here. they can't be taken from the DB. 
+                DifferenceRatio = 0 // daysValues.DifferenceRatio
             };
             results.Add(historicalValue);
             currentDate = currentDate.AddDays(1);

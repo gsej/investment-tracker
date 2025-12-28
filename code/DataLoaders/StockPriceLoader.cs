@@ -99,7 +99,7 @@ public class StockPriceLoader
 
                 if (!priceParsable)
                 {
-                    _logger.LogError("Stock price not a valid number: {price}", stockPriceDto.Price);
+                    _logger.LogError("Stock price is not a valid number. {stockPriceDto}", JsonSerializer.Serialize(stockPriceDto));
                     continue;
                 }
 

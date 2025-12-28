@@ -10,6 +10,5 @@ public interface IAccountRepository
 
     Task<IList<Account>> GetAll();
     
-    // TODO: Remove to unit of work
     Task<int> SaveChangesAsync();
 }

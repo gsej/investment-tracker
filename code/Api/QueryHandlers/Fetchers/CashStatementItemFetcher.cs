@@ -18,7 +18,20 @@ public class CashStatementItemFetcher : ICashStatementItemFetcher
         _context = context;
     }
 
-    public async Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode)
+    public async Task<IList<CashStatementItem>> GetCashStatementItems(string[] accountCodes)
+    {
+        var cacheStatementItems = new List<CashStatementItem>();
+        
+        foreach (var accountCode in accountCodes)
+        {
+            var items = await GetCashStatementItemsForAccount(accountCode);
+            cacheStatementItems.AddRange(items);
+        }
+
+        return cacheStatementItems;
+    }
+    
+    private async Task<IList<CashStatementItem>> GetCashStatementItemsForAccount(string accountCode)
     {
         var key = string.Format(CacheKey, accountCode);
 

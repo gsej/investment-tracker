@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using Common;
 using Database.Converters;
 using Database.Entities;
 using Microsoft.Data.SqlClient;
@@ -17,10 +16,10 @@ public class StockPriceRepository : IStockPriceRepository
     private readonly string _connectionString;
     private readonly DateOnlyConverter _dateOnlyConverter = new ();
 
-    public StockPriceRepository(InvestmentsDbContext context, LoaderConfiguration configuration)
+    public StockPriceRepository(InvestmentsDbContext context, string sqlConnectionString)
     {
         _context = context;
-        _connectionString = configuration.SqlConnectionString;
+        _connectionString = sqlConnectionString;
     }
 
     public async Task BulkAdd(IEnumerable<StockPrice> stockPrices)

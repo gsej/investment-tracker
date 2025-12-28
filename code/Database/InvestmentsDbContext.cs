@@ -19,7 +19,7 @@ public class InvestmentsDbContextFactory : IDesignTimeDbContextFactory<Investmen
 
 public class InvestmentsDbContext : DbContext
 {
-    public InvestmentsDbContext(  DbContextOptions<InvestmentsDbContext> options) : base(options)
+    public InvestmentsDbContext(DbContextOptions<InvestmentsDbContext> options) : base(options)
     {
         
     }

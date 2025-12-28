@@ -4,5 +4,5 @@ namespace Api.QueryHandlers.Fetchers;
 
 public interface ICashStatementItemFetcher
 {
-    Task<IList<CashStatementItem>> GetCashStatementItems(string accountCode);
+    Task<IList<CashStatementItem>> GetCashStatementItems(string[] accountCodes);
 }
