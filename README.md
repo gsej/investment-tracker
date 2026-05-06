@@ -32,7 +32,7 @@ and date. This needs to be handled at the point of querying. Initially I filtere
 
 ## The code folder
 
-This contains C# code arranged in various projecfts.
+This contains C# code arranged in various projects.
 
 ### AjBellParserConsole
 
@@ -61,3 +61,9 @@ This is a front end to present the data. It's not great right now....
 ### Others
 
 There are other library projects used by the Api and LoaderConsole
+
+
+### Notes
+
+2024-04-01 Youinvest transaction fees changed to £5.
+2026-04-01 Regular investment fees reduced from £1.50 to £0
