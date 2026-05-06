@@ -46,7 +46,9 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
                 string.Join(",", daysValues.Select(v => v.Comment))
             )
             {
-                RecordedTotalValueInGbp =  daysValues.Select(v => v.RecordedTotalValueInGbp).Sum(),
+                RecordedTotalValueInGbp = daysValues.Any(v => v.RecordedTotalValueInGbp.HasValue)
+                    ? daysValues.Sum(v => v.RecordedTotalValueInGbp)
+                    : null,
                 RecordedTotalValueSource = string.Join(",", daysValues.Select(v => v.RecordedTotalValueSource)),
                 
                 // TODO: these ratios need to be calculated here. they can't be taken from the DB. 
