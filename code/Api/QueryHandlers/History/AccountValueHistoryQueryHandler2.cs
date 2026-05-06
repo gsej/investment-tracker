@@ -20,7 +20,10 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
         var values = (await _accountHistoricalValueFetcher.Get(request.AccountCodes))
             .OrderBy(value => value.Date)
             .ToList();
-       
+
+        if (!values.Any())
+            return new AccountValueHistoryResult([]);
+
         // iterate over each day in the date range
         var results = new List<AccountHistoricalValue>();
 

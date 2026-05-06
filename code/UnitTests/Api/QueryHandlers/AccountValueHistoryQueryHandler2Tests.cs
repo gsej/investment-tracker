@@ -29,6 +29,16 @@ public class AccountValueHistoryQueryHandler2Tests
     }
 
     [Fact]
+    public async Task Handle_WhenNoData_ReturnsEmptyResult()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.AccountHistoricalValue>());
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+
+        result.Items.Should().BeEmpty();
+    }
+
+    [Fact]
     public async Task Handle_SingleAccount_ReturnsOneResultPerDay()
     {
         var days = 3;
