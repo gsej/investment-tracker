@@ -1,6 +1,5 @@
 using System.Text.Json;
 using Common.Extensions;
-using Common.Tracing;
 using Database.Entities;
 using Database.Repositories;
 using FileReaders.Prices;
@@ -43,7 +42,6 @@ public class StockPriceLoader
     {
         var stockPrices = new List<StockPrice>();
         
-        using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
             // Preload stocks and exchange rates.

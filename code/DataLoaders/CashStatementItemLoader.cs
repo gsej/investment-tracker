@@ -1,5 +1,4 @@
 using Common.Extensions;
-using Common.Tracing;
 using Database;
 using DataLoaders.CashStatementItemEnrichers;
 using FileReaders;
@@ -23,8 +22,6 @@ public class CashStatementItemLoader
 
     public async Task Load(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity();
-
         if (!File.Exists(fileName))
         {
             _logger.LogError("File {fileName} does not exist", fileName);

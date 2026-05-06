@@ -4,12 +4,8 @@ using Api.QueryHandlers.Account;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
-using Common.Tracing;
 using Database;
 using Microsoft.EntityFrameworkCore;
-using OpenTelemetry.Resources;
-using OpenTelemetry.Trace;
-
 namespace Api;
 
 public static class Program
@@ -46,19 +42,7 @@ public static class Program
 
         builder.Services.AddControllers();
 
-        builder.Services.AddOpenTelemetry().WithTracing(builder =>
-        {
-            builder
-                // Configure ASP.NET Core Instrumentation
-                .AddAspNetCoreInstrumentation()
-                // Configure OpenTelemetry Protocol (OTLP) Exporter
-
-                .AddOtlpExporter()
-                .ConfigureResource(r => r.AddService("InvestmentTracker"));
-
-        });
-        
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(s =>
         {
@@ -105,8 +89,6 @@ public static class Program
 
         app.UseMiddleware<CorrelationIdMiddleware>();
         
-        using var traceProvider = TracerProviderFactory.GetTracerProvider("Api", configuration.AppInsightsConnectionString);
-
         app.Run();
         
     }

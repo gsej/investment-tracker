@@ -1,5 +1,4 @@
 using System.Text.Json;
-using Common.Tracing;
 using FileReaders.JsonConverters;
 using Microsoft.Extensions.Logging;
 
@@ -19,7 +18,6 @@ public class ExchangeRateReader : IReader<ExchangeRate>
 
     public async Task<IEnumerable<ExchangeRate>> Read(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity($"Reading exchange rate file {fileName}");
         _logger.LogInformation("Reading exchange rate {fileName}", fileName);
         
         await using var stream = File.OpenRead(fileName);

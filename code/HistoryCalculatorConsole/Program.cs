@@ -3,7 +3,6 @@ using Api.QueryHandlers.Account;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
-using Common.Tracing;
 using Database;
 using Database.Converters;
 using Microsoft.EntityFrameworkCore;
@@ -65,8 +64,6 @@ class Program
             })
             .Build();
         
-        using var traceProvider = TracerProviderFactory.GetTracerProvider("Loader", _calculatorConfiguration.AppInsightsConnectionString);
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity("Loading");
         _logger = host.Services.GetRequiredService<ILogger<Program>>();
 
         try

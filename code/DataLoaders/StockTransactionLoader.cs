@@ -1,5 +1,4 @@
 using Common.Extensions;
-using Common.Tracing;
 using Database;
 using Database.ValueTypes;
 using DataLoaders.StockTransactionEnrichers;
@@ -37,8 +36,6 @@ public class StockTransactionLoader
 
     public async Task Load(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockTransactions");
-        
         if (!File.Exists(fileName))
         {
             _logger.LogError("File {fileName} does not exist", fileName);

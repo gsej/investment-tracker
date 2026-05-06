@@ -1,5 +1,4 @@
 using System.Globalization;
-using Common.Tracing;
 using Database;
 using FileReaders;
 using Microsoft.Extensions.Logging;
@@ -25,8 +24,6 @@ public class ExchangeRateLoader
 
     public async Task LoadFile(string fileName, string source)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity();
-
         if (!File.Exists(fileName))
         {
             _logger.LogError("File {fileName} does not exist", fileName);

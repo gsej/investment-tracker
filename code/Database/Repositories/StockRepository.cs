@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Common.Tracing;
 using Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,8 +16,6 @@ public class StockRepository : IStockRepository
     
     public async Task<IList<Stock>> GetStocks()
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity(); 
-        
         var stocks = await _context
             .Stocks
             .Include(stock => stock.Aliases)

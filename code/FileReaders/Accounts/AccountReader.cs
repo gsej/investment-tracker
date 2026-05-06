@@ -1,5 +1,4 @@
 using System.Text.Json;
-using Common.Tracing;
 using Microsoft.Extensions.Logging;
 
 namespace FileReaders.Accounts;
@@ -17,7 +16,6 @@ public class AccountReader : IReader<Account>
 
     public async Task<IEnumerable<Account>> Read(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity($"Reading account file  {fileName}");
         _logger.LogInformation("Reading account file {fileName}", fileName);
         
         await using var stream = File.OpenRead(fileName);

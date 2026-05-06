@@ -1,7 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Reflection;
 using Common;
-using Common.Tracing;
 using Database;
 using Database.Converters;
 using Database.Repositories;
@@ -18,7 +17,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using OpenTelemetry.Trace;
 
 namespace LoaderConsole;
 
@@ -29,7 +27,7 @@ class Program
 {
     private static LoaderConfiguration _configuration;
     private static ILogger<Program> _logger;
-    
+
     public static async Task Main(string[] args)
     {
         var host = Host.CreateDefaultBuilder(args)
@@ -41,15 +39,6 @@ class Program
                     loggingBuilder.ClearProviders();
                     loggingBuilder.AddConsole();
                     loggingBuilder.AddSeq();
-                });
-                
-                services.AddOpenTelemetry().WithTracing(builder =>
-                {
-                    builder
-                        // Configure ASP.NET Core Instrumentation
-                  //      .AddAspNetCoreInstrumentation()
-                        // Configure OpenTelemetry Protocol (OTLP) Exporter
-                        .AddOtlpExporter();
                 });
 
                 var configurationRoot = new ConfigurationBuilder()
@@ -67,14 +56,14 @@ class Program
 
                 services.AddTransient<IAccountRepository, AccountRepository>();
                 services.AddTransient<IStockRepository, StockRepository>();
-                
+
                 services.AddScoped<IStockPriceRepository>(provider =>
                 {
                     var context = provider.GetRequiredService<InvestmentsDbContext>();
                     var connectionString = _configuration.SqlConnectionString;
                     return new StockPriceRepository(context, connectionString);
                 });
-                
+
                 services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
                 services.AddTransient<IRecordedTotalValueRepository, RecordedTotalValueRepository>();
 
@@ -90,16 +79,16 @@ class Program
 
                 services.AddTransient<IReader<Account>, AccountReader>();
                 services.AddTransient<AccountLoader>();
-                
+
                 services.AddTransient<IStockReader, StockReader>();
                 services.AddTransient<StockLoader>();
-                
+
                 services.AddTransient<IReader<ExchangeRate>, ExchangeRateReader>();
                 services.AddTransient<ExchangeRateLoader>();
-                
+
                 services.AddTransient<IStockPriceReader, StockPriceReader>();
                 services.AddTransient<StockPriceLoader>();
-                
+
                 services.AddTransient<IReader<RecordedTotalValue>, RecordedTotalValueReader>();
                 services.AddTransient<RecordedTotalValueLoader>();
 
@@ -107,16 +96,9 @@ class Program
 
             })
             .Build();
-        
-        using var traceProvider = TracerProviderFactory.GetTracerProvider("Loader", _configuration.AppInsightsConnectionString);
-            
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity("Loading");
 
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("EnsureDatabase"))
-        {
-            EnsureDatabase(host.Services);
-        }
-        
+        EnsureDatabase(host.Services);
+
         _logger = host.Services.GetRequiredService<ILogger<Program>>();
 
         try
@@ -126,8 +108,8 @@ class Program
         catch (Exception e)
         {
             _logger.LogError("Error loading data: {e}", e);
-            
-            // causes the log to be flushed            
+
+            // causes the log to be flushed
             ServiceProvider services = (ServiceProvider)host.Services;
             await services.DisposeAsync();
         }
@@ -150,97 +132,85 @@ class Program
         await accountLoader.LoadFile(Path.Combine(dataFolder, "accounts.json"));
         await stockLoader.LoadFile(Path.Combine(dataFolder, "stocks.json"));
 
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadAccountStatements"))
-        {
-            var sw  = Stopwatch.StartNew();
-            
-            var accounts = await accountRepository.GetAll();
+        var sw = Stopwatch.StartNew();
 
-            foreach (var account in accounts)
-            {
-                await cashStatementLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "cashstatement_items.json"));
-                await stockTransactionLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "transactions.json"));
-            }
-            
-            sw.Stop();
-            _logger.LogInformation("Timing: Loaded account statements in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+        var accounts = await accountRepository.GetAll();
+
+        foreach (var account in accounts)
+        {
+            await cashStatementLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "cashstatement_items.json"));
+            await stockTransactionLoader.Load(Path.Combine(dataFolder, "AccountStatements", account.AccountCode, "transactions.json"));
         }
 
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadRecordedTotalValues"))
+        sw.Stop();
+        _logger.LogInformation("Timing: Loaded account statements in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+
+        var recordedTotalValuesFolder = Path.Combine(dataFolder, "RecordedTotalValues");
+
+        foreach (var file in Directory.EnumerateFiles(recordedTotalValuesFolder, "*.json", SearchOption.AllDirectories))
         {
-            var folder = Path.Combine(dataFolder, "RecordedTotalValues");
-        
-            foreach (var file in Directory.EnumerateFiles(folder, "*.json", SearchOption.AllDirectories))
-            {
-                var relativePath = Path.GetRelativePath(folder, file);
-                await recordedTotalValueLoader.LoadFile(file, relativePath);
-            }
+            var relativePath = Path.GetRelativePath(recordedTotalValuesFolder, file);
+            await recordedTotalValueLoader.LoadFile(file, relativePath);
         }
-        
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadExchangeRates"))
+
+        sw = Stopwatch.StartNew();
+
+        var exchangeRateFolder = GetPathToExchangeRateFolder();
+
+        foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
         {
-            var sw  = Stopwatch.StartNew();
-            
-            var exchangeRateFolder = GetPathToExchangeRateFolder();
-        
-            foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
-            {
-                var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
-                await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
-            }
-            
-            sw.Stop();
-            _logger.LogInformation("Timing: Loaded exchange rates in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+            var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
+            await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
         }
-        
-        using (InvestmentTrackerActivitySource.Instance.StartActivity("LoadStockPrices"))
+
+        sw.Stop();
+        _logger.LogInformation("Timing: Loaded exchange rates in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+
+        _logger.LogInformation("Timing: starting to Load stock prices");
+        sw = Stopwatch.StartNew();
+
+        var priceFolder = GetPathToPriceFolder();
+
+        foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
         {
-            _logger.LogInformation("Timing: starting to Load stock prices");
-            var sw  = Stopwatch.StartNew();
-            
-            var priceFolder = GetPathToPriceFolder();
-        
-            foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
-            {
-                var relativePath = Path.GetRelativePath(priceFolder, priceFile);
-                await stockPriceLoader.LoadFile(priceFile, relativePath, _configuration.DeduplicateStockPrices);
-            }
-            
-            sw.Stop();
-            _logger.LogInformation("Timing: Loaded stock prices in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+            var relativePath = Path.GetRelativePath(priceFolder, priceFile);
+            await stockPriceLoader.LoadFile(priceFile, relativePath, _configuration.DeduplicateStockPrices);
         }
+
+        sw.Stop();
+        _logger.LogInformation("Timing: Loaded stock prices in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
     }
 
     private static string GetPathToPriceFolder()
     {
         var priceFolder = _configuration.PriceFolder;
-        
+
         if (!string.IsNullOrWhiteSpace(priceFolder))
         {
             return priceFolder;
         }
-        
+
         return Path.Combine(GetPathToDataFolder(), "Prices");
     }
-    
+
     private static string GetPathToExchangeRateFolder()
     {
         var exchangeRateFolder = _configuration.ExchangeRateFolder;
-        
+
         if (!string.IsNullOrWhiteSpace(exchangeRateFolder))
         {
             return exchangeRateFolder;
         }
-        
+
         return Path.Combine(GetPathToDataFolder(), "ExchangeRates");
     }
 
     private static string GetPathToDataFolder()
     {
         // We walk up the from where we're running from to find the SampleData folder, unless we've been given a configured directory
-        // in appsettings.json, in which case that will be used. The file structure is important and the names of the files are significant. 
+        // in appsettings.json, in which case that will be used. The file structure is important and the names of the files are significant.
         // This is documented in the readme in the SampleData folder.
-        
+
         var dataFolder = _configuration.DataFolder;
 
         if (!string.IsNullOrWhiteSpace(dataFolder))
@@ -249,9 +219,9 @@ class Program
         }
 
         var location = Assembly.GetExecutingAssembly().Location;
-        var directory = new FileInfo(location).Directory; 
-            
-        while (directory != null &&directory.EnumerateDirectories().All(d => d.Name != "SampleData"))
+        var directory = new FileInfo(location).Directory;
+
+        while (directory != null && directory.EnumerateDirectories().All(d => d.Name != "SampleData"))
         {
             directory = directory.Parent;
         }
@@ -260,18 +230,13 @@ class Program
         {
             throw new InvalidOperationException("could not find data folder");
         }
-            
+
         dataFolder = directory.EnumerateDirectories().Single(d => d.Name == "SampleData").FullName;
 
         _logger.LogInformation("Datafolder: {dataFolder}", dataFolder);
         return dataFolder;
     }
 
-    /// <summary>
-    /// Creates database (using migrations)
-    /// Loads some static data (e.g. stocks)
-    /// </summary>
-    /// <param name="services"></param>
     private static void EnsureDatabase(IServiceProvider services)
     {
         var context = services.GetRequiredService<InvestmentsDbContext>();

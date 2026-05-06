@@ -1,4 +1,3 @@
-using Common.Tracing;
 using Database.Converters;
 using Database.Repositories;
 using FileReaders;
@@ -35,7 +34,6 @@ public class AccountLoader
 
     public async Task LoadFile(string fileName)
     {
-        using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName, ["Contents"] = "Accounts" }))
         {
             _logger.LogInformation("Loading accounts from {fileName}", fileName);

@@ -1,5 +1,4 @@
 using Common.Extensions;
-using Common.Tracing;
 using Database.Repositories;
 using FileReaders;
 using Microsoft.Extensions.Logging;
@@ -24,7 +23,6 @@ public class RecordedTotalValueLoader
     {
         var recordedValues = (await _reader.Read(fileName)).ToList();
         
-        using (InvestmentTrackerActivitySource.Instance.StartActivity($"File: {fileName}"))
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
             foreach (var recordedValueDto in recordedValues)

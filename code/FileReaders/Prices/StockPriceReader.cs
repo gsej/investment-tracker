@@ -1,5 +1,4 @@
 using System.Text.Json;
-using Common.Tracing;
 using FileReaders.JsonConverters;
 using Microsoft.Extensions.Logging;
 
@@ -19,7 +18,6 @@ public class StockPriceReader : IStockPriceReader
 
     public async Task<IList<StockPrice>> ReadFile(string fileName)
     {
-        using var _ = InvestmentTrackerActivitySource.Instance.StartActivity($"Reading stock price file {fileName}");
         _logger.LogInformation("Reading stock price file {fileName}", fileName);
         
         await using var stream = File.OpenRead(fileName);

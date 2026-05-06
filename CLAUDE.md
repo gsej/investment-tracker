@@ -45,7 +45,6 @@ Three Docker containers are required for local development — start scripts are
 ```bash
 ./sql.sh     # SQL Server 2022 on port 1433
 ./seq.sh     # Seq logging on port 5341
-./jaeger.sh  # Jaeger tracing on ports 6831–9411
 ```
 
 Connection string used by all apps: `Server=localhost;Initial Catalog=investments;User ID=sa;Password=Password123!;Encrypt=True;Trust Server Certificate=True;`

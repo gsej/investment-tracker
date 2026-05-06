@@ -3,7 +3,6 @@ using AjBellParserConsole.InputModels;
 using AjBellParserConsole.Mappers;
 using AjBellParserConsole.Parsers;
 using Common;
-using Common.Tracing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -40,10 +39,6 @@ class Program
 
             })
             .Build();
-
-        using var traceProvider = TracerProviderFactory.GetTracerProvider("AjBellParser", _configuration.AppInsightsConnectionString);
-          
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
 
         _logger = host.Services.GetRequiredService<ILogger<Program>>();
 

@@ -1,7 +1,6 @@
 using Api.QueryHandlers.Account;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
-using Common.Tracing;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -41,8 +40,6 @@ public class AccountController : ControllerBase
     [HttpPost("/account/portfolio")]
     public async Task<AccountPortfolioResult> GetPortfolio([FromBody] AccountPortfolioRequest request)
     {
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
-
         request.AccountCodes ??= [];
         return await _accountPortfolioQueryHandler.Handle(request);
     }
@@ -51,15 +48,12 @@ public class AccountController : ControllerBase
     public async Task<AccountValueHistoryResult> GetHistory([FromBody] AccountValueHistoryRequest request)
     {
         // TODO: this needs to be removed
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
         return await _accountValueHistoryQueryHandler.Handle(request);
     }
     
     [HttpPost("/account/history2")]
     public async Task<AccountValueHistoryResult> GetHistory2([FromBody] AccountValueHistoryRequest2 request)
     {
-        using var activity = InvestmentTrackerActivitySource.Instance.StartActivity();
-        
         request.AccountCodes ??= [];
         return await _accountValueHistoryQueryHandler2.Handle(request);
     }
