@@ -2,7 +2,6 @@
 
 public record AccountHistoricalValue(
         DateOnly Date,
-        string AccountCode, // TODO: remove this property
         decimal ValueInGbp,
         decimal NetInflows,
         int TotalPriceAgeInDays,

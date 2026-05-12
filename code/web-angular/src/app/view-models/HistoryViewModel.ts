@@ -1,6 +1,5 @@
 export class HistoryViewModel {
   date!: string;
-  accountCode!: string;
   valueInGbp!: number;
   netInflows!: number;
   totalPriceAgeInDays!: number;

@@ -110,7 +110,7 @@ class Program
             var entity = new Database.Entities.AccountHistoricalValue
             {
                 Date = item.Date,
-                AccountCode = item.AccountCode,
+                AccountCode = accountCode,
                 ValueInGbp = item.ValueInGbp,
                 NetInflows = item.NetInflows,
                 TotalPriceAgeInDays = item.TotalPriceAgeInDays,

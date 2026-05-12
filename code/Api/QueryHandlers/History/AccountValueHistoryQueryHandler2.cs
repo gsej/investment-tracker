@@ -42,7 +42,6 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
 
             var historicalValue = new AccountHistoricalValue(
                 currentDate,
-                "DUMMYACCOUNTCODE",
                 daysValues.Select(v => v.ValueInGbp).Sum(),
                 daysValues.Select(v => v.NetInflows).Sum(),
                 daysValues.Select(v => v.TotalPriceAgeInDays).Sum(),

@@ -23,5 +23,3 @@ Declared on line 32 but never updated within the loop and never read. It needs t
 **Loop breaks on missing dates**  
 If there is a gap in the pre-calculated data (a date with no rows), the loop breaks rather than skipping or continuing. The old handler always walked every calendar day from the account opening date to the query date. Decide whether a gap should break, skip, or be treated as an error.
 
-**`AccountCode` is hardcoded to `"DUMMYACCOUNTCODE"`**  
-The `AccountHistoricalValue` return type carries an `AccountCode` property (already marked `// TODO: remove this property` in the record definition). For a multi-account combined result this field is meaningless; it should either be removed from the record or populated with a sensible value (e.g. a joined list of the requested account codes).

@@ -58,8 +58,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
             var matchingRecordedTotalValue = recordedTotalValues.RecordedTotalValues.SingleOrDefault(r => r.Date == currentDate);
             
-            var historicalValue = new AccountHistoricalValue(currentDate, 
-                accountCode, 
+            var historicalValue = new AccountHistoricalValue(currentDate,
                 daysResult.TotalValue.ValueInGbp,
                 daysResult.Contributions,
                 daysResult.TotalValue.TotalPriceAgeInDays, 
