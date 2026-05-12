@@ -76,7 +76,6 @@ Connection string used by all apps: `Server=localhost;Initial Catalog=investment
 
 - All C# projects use `Microsoft.Extensions.DependencyInjection`
 - Complex queries use the query-handler pattern (see `Api/QueryHandlers/`)
-- OpenTelemetry is wired throughout; traces export to Jaeger and Azure Application Insights
 - EF Core InMemory provider is used in `UnitTests`; NSubstitute handles mocks
 
 ## Testing
