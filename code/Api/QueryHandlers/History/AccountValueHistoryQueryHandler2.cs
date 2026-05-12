@@ -52,16 +52,20 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
                     ? daysValues.Sum(v => v.RecordedTotalValueInGbp)
                     : null,
                 RecordedTotalValueSource = string.Join(",", daysValues.Select(v => v.RecordedTotalValueSource)),
-                DifferenceToPreviousDay = daysValues.Select(v => v.DifferenceToPreviousDay).Sum(),
-
-                // TODO: these ratios need to be calculated here. they can't be taken from the DB.
-                DifferenceRatio = 0 // daysValues.DifferenceRatio
             };
 
             if (historicalValue.ValueInGbp != 0 && historicalValue.RecordedTotalValueInGbp.HasValue)
                 historicalValue.DiscrepancyRatio = (historicalValue.ValueInGbp - historicalValue.RecordedTotalValueInGbp) / historicalValue.ValueInGbp;
 
+            if (previousDayTotal.HasValue)
+            {
+                historicalValue.DifferenceToPreviousDay = historicalValue.ValueInGbp - historicalValue.NetInflows - previousDayTotal.Value;
+                if (previousDayTotal.Value != 0)
+                    historicalValue.DifferenceRatio = historicalValue.DifferenceToPreviousDay / previousDayTotal.Value;
+            }
+
             results.Add(historicalValue);
+            previousDayTotal = historicalValue.ValueInGbp;
             currentDate = currentDate.AddDays(1);
         }
 

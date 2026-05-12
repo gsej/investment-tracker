@@ -225,6 +225,116 @@ public class AccountValueHistoryQueryHandler2Tests
     }
 
     [Fact]
+    public async Task Handle_FirstDay_DifferenceToPreviousDayIsNull()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, NetInflows = 100m
+            }
+        ]);
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+
+        using var _ = new AssertionScope();
+        result.Items.Single().DifferenceToPreviousDay.Should().BeNull();
+        result.Items.Single().DifferenceRatio.Should().BeNull();
+    }
+
+    [Fact]
+    public async Task Handle_SecondDay_DifferenceToPreviousDayIsCalculated()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, NetInflows = 0m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate.AddDays(1), AccountCode = AccountCodeA,
+                ValueInGbp = 1100m, NetInflows = 50m
+            }
+        ]);
+
+        var queryDate = _startDate.AddDays(1);
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+
+        // DifferenceToPreviousDay = ValueInGbp - NetInflows - previousDayTotal = 1100 - 50 - 1000 = 50
+        // DifferenceRatio = 50 / 1000 = 0.05
+        using var _ = new AssertionScope();
+        result.Items.Last().DifferenceToPreviousDay.Should().Be(50m);
+        result.Items.Last().DifferenceRatio.Should().Be(0.05m);
+    }
+
+    [Fact]
+    public async Task Handle_MultipleAccounts_DifferenceToPreviousDayUsesCombinedValues()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, NetInflows = 0m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeB,
+                ValueInGbp = 2000m, NetInflows = 0m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate.AddDays(1), AccountCode = AccountCodeA,
+                ValueInGbp = 1100m, NetInflows = 50m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate.AddDays(1), AccountCode = AccountCodeB,
+                ValueInGbp = 2200m, NetInflows = 100m
+            }
+        ]);
+
+        var queryDate = _startDate.AddDays(1);
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], queryDate));
+
+        // combined day 1: ValueInGbp=3000, NetInflows=0 → previousDayTotal=3000
+        // combined day 2: ValueInGbp=3300, NetInflows=150
+        // DifferenceToPreviousDay = 3300 - 150 - 3000 = 150
+        // DifferenceRatio = 150 / 3000 = 0.05
+        using var _ = new AssertionScope();
+        result.Items.Last().DifferenceToPreviousDay.Should().Be(150m);
+        result.Items.Last().DifferenceRatio.Should().Be(0.05m);
+    }
+
+    [Fact]
+    public async Task Handle_WhenPreviousDayTotalIsZero_DifferenceRatioIsNull()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 0m, NetInflows = 0m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate.AddDays(1), AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, NetInflows = 1000m
+            }
+        ]);
+
+        var queryDate = _startDate.AddDays(1);
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+
+        using var _ = new AssertionScope();
+        result.Items.Last().DifferenceToPreviousDay.Should().Be(0m);
+        result.Items.Last().DifferenceRatio.Should().BeNull();
+    }
+
+    [Fact]
     public async Task Handle_StopsAtQueryDate()
     {
         // fetcher returns 5 days of data, but query date is day 2

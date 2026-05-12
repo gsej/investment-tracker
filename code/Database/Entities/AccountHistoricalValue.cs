@@ -31,16 +31,7 @@ public class AccountHistoricalValue
     
     [Precision(19,5)]
     public decimal? RecordedTotalValueInGbp { get; set; }
-    
-    [MaxLength(50)] 
+
+    [MaxLength(50)]
     public string RecordedTotalValueSource { get; set; }
-    
-    [Precision(19,5)]
-    public decimal? DiscrepancyRatio { get; set; }
-    
-    [Precision(19,5)]
-    public decimal? DifferenceToPreviousDay { get; set; }
-    
-    [Precision(19,5)]
-    public decimal? DifferenceRatio { get; set; }
 }

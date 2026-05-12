@@ -116,10 +116,7 @@ class Program
                 TotalPriceAgeInDays = item.TotalPriceAgeInDays,
                 Comment = item.Comment,
                 RecordedTotalValueInGbp = item.RecordedTotalValueInGbp,
-                RecordedTotalValueSource = item.RecordedTotalValueSource,
-                DiscrepancyRatio = item.DiscrepancyRatio,
-                DifferenceToPreviousDay = item.DifferenceToPreviousDay,
-                DifferenceRatio = item.DifferenceRatio
+                RecordedTotalValueSource = item.RecordedTotalValueSource
             };
 
             dbContext.AccountHistoricalValues.Add(entity);
