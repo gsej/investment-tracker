@@ -12,7 +12,10 @@ public class ExchangeRateFetcher
         var exchangeRate = exchangeRates
             .Where(s =>
                 s.Date.CompareTo(requestDate) <= 0)
-            .MaxBy(s => s.Date);
+            .OrderByDescending(s => s.Date)
+            // secondary sort ensures deterministic selection when multiple rates exist for the same date
+            .ThenByDescending(s => s.ExchangeRateId)
+            .FirstOrDefault();
 
         if (exchangeRate != null)
         {
