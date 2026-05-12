@@ -48,6 +48,8 @@ public class StockPriceFetcher : IStockPriceFetcher
         stockPrices = await _context.StockPrices
             .Where(stockPrice => stockPrice.StockSymbol == stockSymbol)
             .OrderByDescending(stockPrice => stockPrice.Date)
+            // secondary sort ensures deterministic selection when multiple prices exist for the same date
+            .ThenByDescending(stockPrice => stockPrice.StockPriceId)
             .AsNoTracking()
             .ToListAsync();
 
