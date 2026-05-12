@@ -168,6 +168,63 @@ public class AccountValueHistoryQueryHandler2Tests
     }
 
     [Fact]
+    public async Task Handle_SingleAccount_WhenNoRecordedValue_DiscrepancyRatioIsNull()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, RecordedTotalValueInGbp = null
+            }
+        ]);
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+
+        result.Items.Single().DiscrepancyRatio.Should().BeNull();
+    }
+
+    [Fact]
+    public async Task Handle_SingleAccount_WhenRecordedValueExists_DiscrepancyRatioIsCalculated()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, RecordedTotalValueInGbp = 1050m
+            }
+        ]);
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+
+        result.Items.Single().DiscrepancyRatio.Should().Be((1000m - 1050m) / 1000m);
+    }
+
+    [Fact]
+    public async Task Handle_MultipleAccounts_DiscrepancyRatioUsesCombined()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(
+        [
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeA,
+                ValueInGbp = 1000m, RecordedTotalValueInGbp = 1050m
+            },
+            new DbEntities.AccountHistoricalValue
+            {
+                Date = _startDate, AccountCode = AccountCodeB,
+                ValueInGbp = 2000m, RecordedTotalValueInGbp = 2100m
+            }
+        ]);
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], _startDate));
+
+        // combined: ValueInGbp=3000, RecordedTotalValueInGbp=3150
+        result.Items.Single().DiscrepancyRatio.Should().Be((3000m - 3150m) / 3000m);
+    }
+
+    [Fact]
     public async Task Handle_StopsAtQueryDate()
     {
         // fetcher returns 5 days of data, but query date is day 2

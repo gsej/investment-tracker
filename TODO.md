@@ -6,9 +6,6 @@
 
 ### Missing calculations
 
-**DiscrepancyRatio** (hardcoded to `0`)  
-Should be `(ValueInGbp - RecordedTotalValueInGbp) / ValueInGbp`, guarded by `ValueInGbp != 0` and `RecordedTotalValueInGbp.HasValue`. The old handler calculated this correctly per account; in the multi-account case it should use the combined sums.
-
 **DifferenceRatio** (hardcoded to `0`)  
 Should be `DifferenceToPreviousDay / previousDayTotal`, guarded by `previousDayTotal != 0`. The `previousDayTotal` variable is declared but never assigned or used, so this calculation is entirely absent.
 
