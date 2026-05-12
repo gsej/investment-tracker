@@ -8,7 +8,7 @@ using Database;
 using Microsoft.EntityFrameworkCore;
 namespace Api;
 
-public static class Program
+public class Program
 {
     public static void Main(params string[]  args)
     {
