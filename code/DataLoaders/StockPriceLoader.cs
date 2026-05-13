@@ -36,7 +36,7 @@ public class StockPriceLoader
         _exchangeRateFetcher = new ExchangeRateFetcher();
     }
 
-    public async Task LoadFile(string fileName, string source, bool deduplicate)
+    public async Task LoadFile(string fileName, string source)
     {
         await EnsureReferenceDataLoaded();
 

@@ -53,7 +53,7 @@ public class StockPriceLoaderTests
         _reader.ReadFile(fileName).Returns(new List<StockPrice> {readStockPrice});
         
         // act
-        await _loader.LoadFile(fileName, source: "Test", true);
+        await _loader.LoadFile(fileName, source: "Test");
         
         // assert
         var addedStock = _stockPriceRepository.StockPrices.Single();
@@ -77,7 +77,7 @@ public class StockPriceLoaderTests
         _reader.ReadFile(fileName).Returns(new List<StockPrice> {readStockPrice});
         
         // act
-        await _loader.LoadFile(fileName, source: "Test", true);
+        await _loader.LoadFile(fileName, source: "Test");
         
         // assert
         var addedStock = _stockPriceRepository.StockPrices.Single();
@@ -107,7 +107,7 @@ public class StockPriceLoaderTests
         _exchangeRateRepository.GetAll().Returns(new List<ExchangeRate> {exchangeRate});
         
         // act
-        await _loader.LoadFile(fileName, source: "Test", true);
+        await _loader.LoadFile(fileName, source: "Test");
         
         // assert
         var addedStock = _stockPriceRepository.StockPrices.Single();
@@ -133,7 +133,7 @@ public class StockPriceLoaderTests
         _reader.ReadFile(fileName).Returns(new List<global::FileReaders.Prices.StockPrice> {readStockPrice});
         
         // act
-        await _loader.LoadFile(fileName, source: "Test", true);
+        await _loader.LoadFile(fileName, source: "Test");
         
         // assert
         _stockPriceRepository.StockPrices.Should().BeEmpty();
@@ -152,7 +152,7 @@ public class StockPriceLoaderTests
         _reader.ReadFile(fileName).Returns(new List<global::FileReaders.Prices.StockPrice> {readStockPrice});
         
         // act
-        await _loader.LoadFile(fileName, source: "Test", true);
+        await _loader.LoadFile(fileName, source: "Test");
         
         // assert
         _stockPriceRepository.StockPrices.Should().BeEmpty();

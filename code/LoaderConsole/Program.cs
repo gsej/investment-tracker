@@ -174,7 +174,7 @@ class Program
         foreach (var priceFile in Directory.EnumerateFiles(priceFolder, "*.json", SearchOption.AllDirectories))
         {
             var relativePath = Path.GetRelativePath(priceFolder, priceFile);
-            await stockPriceLoader.LoadFile(priceFile, relativePath, _configuration.DeduplicateStockPrices);
+            await stockPriceLoader.LoadFile(priceFile, relativePath);
         }
 
         sw.Stop();
