@@ -25,6 +25,10 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
             return new AccountValueHistoryResult([]);
 
         // iterate over each day in the date range
+        var valuesByDate = values
+            .GroupBy(v => v.Date)
+            .ToDictionary(g => g.Key, g => g.ToList());
+
         var results = new List<AccountHistoricalValue>();
 
         var currentDate = values.First().Date;
@@ -33,11 +37,7 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
 
         while (currentDate <= request.QueryDate)
         {
-            var daysValues = values
-                .Where(v => v.Date == currentDate)
-                .ToList();
-
-            if (!daysValues.Any())
+            if (!valuesByDate.TryGetValue(currentDate, out var daysValues))
                 break;
 
             var historicalValue = new AccountHistoricalValue(
@@ -73,18 +73,11 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
 
         var unitValues = new UnitCalculator().Calculate(results, 100);
 
-        foreach (var result in results)
+        for (int i = 0; i < results.Count; i++)
         {
-            var matchingUnitValues = unitValues.SingleOrDefault(u => u.Date == result.Date);
-
-            if (matchingUnitValues == null)
-            {
-                result.Units = new UnitAccount(result.Date, null, null);
-            }
-            else
-            {
-                result.Units = matchingUnitValues;
-            }
+            results[i].Units = i < unitValues.Count
+                ? unitValues[i]
+                : new UnitAccount(results[i].Date, null, null);
         }
 
         return new AccountValueHistoryResult(results);
