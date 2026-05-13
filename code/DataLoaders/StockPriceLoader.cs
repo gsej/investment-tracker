@@ -16,12 +16,10 @@ public class StockPriceLoader
     private readonly IExchangeRateRepository _exchangeRateRepository;
     private readonly IStockPriceReader _reader;
     private readonly ExchangeRateFetcher _exchangeRateFetcher;
-    private IList<Stock> _stocks;
 
     private IDictionary<string, Stock> _stocksDictionary;
-    
-    private IList<ExchangeRate> _exchangeRates;
-   
+    private List<ExchangeRate> _sortedExchangeRates;
+
     public StockPriceLoader(
         ILogger<StockPriceLoader> logger,
         IStockRepository stockRepository,
@@ -40,41 +38,20 @@ public class StockPriceLoader
 
     public async Task LoadFile(string fileName, string source, bool deduplicate)
     {
+        await EnsureReferenceDataLoaded();
+
         var stockPrices = new List<StockPrice>();
-        
+
         using (_logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName }))
         {
-            // Preload stocks and exchange rates.
-            
-            // TODO: fix this, appears to be happening many times.             
-            _stocks = await _stockRepository.GetStocks();
-
-
-            _stocksDictionary = new Dictionary<string, Stock>(StringComparer.InvariantCultureIgnoreCase);
-            
-            
-            foreach (var stock in _stocks)
-            {
-                _stocksDictionary[stock.StockSymbol] = stock;
-                
-                foreach (var alternativeSymbol in stock.AlternativeSymbols)
-                {
-                    _stocksDictionary[alternativeSymbol.Alternative] = stock;
-                }
-            }
-            
-            _exchangeRates = await _exchangeRateRepository.GetAll();
-
             _logger.LogInformation("Loading stock prices from {fileName}", fileName);
 
             var stockPriceDtos = (await _reader.ReadFile(fileName)).ToList();
 
             foreach (var stockPriceDto in stockPriceDtos)
             {
-                using var _ = _logger.BeginScope(new Dictionary<string, string> { ["File"] = fileName });
-
                 var stockSymbol = stockPriceDto.StockSymbol;
-                
+
                 if (string.IsNullOrWhiteSpace(stockPriceDto.StockSymbol))
                 {
                     _logger.LogError("Stock symbol should not be null in file: {fileName}, incorrect record: {record}", fileName, JsonSerializer.Serialize(stockPriceDto));
@@ -113,7 +90,7 @@ public class StockPriceLoader
                 }
                 else if (currency.Equals("USD"))
                 {
-                    var exchangeRateResult = _exchangeRateFetcher.GetExchangeRate(_exchangeRates, date);
+                    var exchangeRateResult = _exchangeRateFetcher.GetExchangeRate(_sortedExchangeRates, date);
 
                     if (exchangeRateResult.HasRate)
                     {
@@ -137,11 +114,42 @@ public class StockPriceLoader
                     exchangeRateAgeInDays: exchangeRateAgeInDays,
                     comment: comment
                     );
-                
+
                 stockPrices.Add(stockPrice);
             }
 
             await _stockPriceRepository.BulkAdd(stockPrices);
         }
+    }
+
+    private async Task EnsureReferenceDataLoaded()
+    {
+        if (_stocksDictionary != null)
+        {
+            return;
+        }
+
+        var stocks = await _stockRepository.GetStocks();
+
+        var dictionary = new Dictionary<string, Stock>(StringComparer.InvariantCultureIgnoreCase);
+
+        foreach (var stock in stocks)
+        {
+            dictionary[stock.StockSymbol] = stock;
+
+            foreach (var alternativeSymbol in stock.AlternativeSymbols)
+            {
+                dictionary[alternativeSymbol.Alternative] = stock;
+            }
+        }
+
+        var exchangeRates = await _exchangeRateRepository.GetAll();
+
+        _sortedExchangeRates = exchangeRates
+            .OrderBy(r => r.Date)
+            .ThenBy(r => r.ExchangeRateId)
+            .ToList();
+
+        _stocksDictionary = dictionary;
     }
 }
