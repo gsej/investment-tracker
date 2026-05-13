@@ -1,69 +1,109 @@
 
-# Overview
+# Investment Tracker
 
-This is a project to analyse information about my investment accounts.
+A personal investment tracking application for UK AjBell accounts. CSV exports from AjBell are parsed into JSON, loaded into SQL Server, and served through an ASP.NET Core API to an Angular frontend that displays portfolio and historical value charts.
 
-## Quality
+## Prerequisites
 
-The account data is accurate.
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org/) (for the Angular frontend)
+- [Docker](https://www.docker.com/) (for SQL Server and Seq)
 
-It does not however include the values of each account at particular times - for this we need stock prices. Collecting this data is tricky, so there's some quality built in. If we calculate the value of an account at a particular time, we need the prices, and sometimes they are missing, so I include the age of prices or whether they are missing in tte output data.
+## Quick Start
 
-## Inputs
+### 1. Start infrastructure
 
-### Account data
+```bash
+cd code
+./sql.sh   # SQL Server 2022 on port 1433
+./seq.sh   # Seq log viewer on port 5341
+```
 
-The inputs to the process are downloaded CSV files from ajbell. They represent stock transactions (buying and selling stocks) and cash transactions (deposits, withdrawals, interest, dividends, charges etc.)
+### 2. Parse AjBell CSV exports
 
-The CSV files are transformed into JSON files as a first stage in processing. 
+Place AjBell CSV downloads in `SampleData/AccountStatements/<AccountCode>/`, then run:
 
-This data is private and so is in a separate private repository. 
+```bash
+dotnet run --project code/AjBellParserConsole/AjBellParserConsole.csproj
+```
 
-There are sample files in the main repo. 
+This writes `transactions.json` and `cashstatement_items.json` into each account folder.
 
-### Price data
+### 3. Load data into SQL Server
 
-Price information for securities is from a variety of sources. Some historical data is downloaded from various sites usually in CSV format, and then manually converted into JSON.
+```bash
+dotnet run --project code/LoaderConsole/LoaderConsole.csproj
+```
 
-Other prices are pulled from various sources, ususally in JSON form. The code to do this sits in the other repository and the price data sits in a separate private repo. Some sample price data exists in this repo. 
+This drops and recreates the database, then loads accounts, stocks, transactions, prices, and exchange rates from `SampleData/` (or a configured alternative folder).
 
-The prices are collected as close of day prices, and as they are from different sources, there are often duplicates. Later when loading data, we made load multiple prices for the same security 
-and date. This needs to be handled at the point of querying. Initially I filtered out duplicates on import, warning if there were large differences in price, but this made the import unacceptably slow.
+### 4. Pre-calculate historical values
 
-## The code folder
+```bash
+dotnet run --project code/HistoryCalculatorConsole/HistoryCalculatorConsole.csproj
+```
 
-This contains C# code arranged in various projects.
+### 5. Run the API
 
-### AjBellParserConsole
+```bash
+dotnet run --project code/Api/Api.csproj
+```
 
-This is a console app which reads CSV files downloaded from AjBell from the SampleData folder and 
-converts the data to json files for use in later stages.
+### 6. Run the frontend
 
-### LoaderConsole
+```bash
+cd code/web-angular
+npm install
+npm start   # dev server at http://localhost:4200
+```
 
-This is a console app which deletes and recreates a SQL database, and then loads a variety of data (located by default in the SampleData folder, but which can be configured to look for the data elsewhere). 
+## Using your own data
 
-Data loaded includes:
-* a list of investment accounts.
-* a list of the stocks we are interested in.
-* statements relating to the investment accounts (in json form, prepared by the AjBellParserConsole).
-* prices for the stocks we are interested in.
-* exchange rates.
+By default all apps look for data in `SampleData/`. To use a different location, set `dataFolder` (and optionally `priceFolder`) in the relevant `appsettings.json` files. See [SampleData/README.md](SampleData/README.md) for the expected folder structure.
 
-### Api
+## Project Structure
 
-The Api project is a dotnet web api which allows requests to be run on the DB. 
+```
+code/
+  AjBellParserConsole/   CSV → JSON parser
+  LoaderConsole/         JSON → SQL Server loader
+  HistoryCalculatorConsole/  Pre-calculates account value history
+  Api/                   ASP.NET Core 8 REST API
+  web-angular/           Angular 18 frontend (Chart.js + Tailwind CSS)
+  Database/              EF Core DbContext, entities, and migrations
+  DataLoaders/           Writes parsed data to the database
+  FileReaders/           Typed readers for each JSON/CSV format
+  Common/                Shared enums, helpers, OpenTelemetry setup
+  UnitTests/             xUnit + FluentAssertions + NSubstitute
+SampleData/              Sample input files (accounts, stocks, prices, statements)
+```
 
-### Web-angular
+## Running Tests
 
-This is a front end to present the data. It's not great right now....
+```bash
+# C# unit tests
+dotnet test code/UnitTests/UnitTests.csproj
 
-### Others
+# Angular tests
+cd code/web-angular && npm test
+```
 
-There are other library projects used by the Api and LoaderConsole
+See [code/UnitTests/README.md](code/UnitTests/README.md) for generating coverage reports.
 
+## Data Quality
 
-### Notes
+Account statement data (transactions and cash events) is accurate. Calculated account values depend on collected stock prices, which come from various sources and can contain duplicates or gaps. The application highlights discrepancies between calculated values and any manually recorded reference values, and flags large day-to-day swings.
 
-2024-04-01 Youinvest transaction fees changed to £5.
-2026-04-01 Regular investment fees reduced from £1.50 to £0
+## API Endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/accounts` | List all accounts |
+| POST | `/account/portfolio` | Current portfolio for an account |
+| POST | `/account/history` | Historical account value |
+| POST | `/account/history2` | Historical account value (alternate implementation) |
+
+## Notes
+
+- 2024-04-01 AJBell transaction fees changed to £5.
+- 2026-04-01 Regular investment fees reduced from £1.50 to £0.
