@@ -46,6 +46,7 @@ public class StockTransactionLoader
             .Stocks
             .Include(stock => stock.Aliases)
             .Include(stock => stock.AlternativeSymbols)
+            .AsSingleQuery()
             .ToListAsync();
         
         var ajBellStockTransactions = (await _reader.Read(fileName)).ToList();

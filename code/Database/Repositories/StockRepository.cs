@@ -20,6 +20,7 @@ public class StockRepository : IStockRepository
             .Stocks
             .Include(stock => stock.Aliases)
             .Include(stock => stock.AlternativeSymbols)
+            .AsSingleQuery()
             .ToListAsync();
         
         return stocks;
