@@ -219,6 +219,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
     {
         private readonly IList<StockPrice> _prices;
         private int _index = -1;
+        private DateOnly _lastDate = DateOnly.MinValue;
 
         public PriceCursor(IList<StockPrice> prices)
         {
@@ -227,6 +228,11 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
 
         public StockPrice AdvanceTo(DateOnly date)
         {
+            if (date < _lastDate)
+                throw new InvalidOperationException($"PriceCursor.AdvanceTo called with date {date} which is before previous date {_lastDate}.");
+
+            _lastDate = date;
+
             while (_index + 1 < _prices.Count && _prices[_index + 1].Date <= date)
                 _index++;
 
