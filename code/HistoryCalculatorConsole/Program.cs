@@ -48,7 +48,6 @@ class Program
                 services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
                 services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
                 services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
-                services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
                 services.AddDbContext<InvestmentsDbContext>(
                     opts => opts.UseSqlServer(_calculatorConfiguration.SqlConnectionString)
                 );

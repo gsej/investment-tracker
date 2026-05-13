@@ -1,6 +1,7 @@
+using Api.QueryHandlers;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
-using Api.QueryHandlers.Portfolio;
+using Common;
 using Database.Entities;
 using FluentAssertions;
 using FluentAssertions.Execution;
@@ -13,28 +14,42 @@ namespace UnitTests.Api.QueryHandlers;
 public class AccountValueHistoryQueryHandlerTests
 {
     private readonly IAccountValueHistoryQueryHandler _queryHandler;
-    private readonly FakeAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
+    private readonly ICashStatementItemFetcher _cashStatementItemFetcher;
+    private readonly IStockTransactionFetcher _stockTransactionFetcher;
+    private readonly IStockPriceFetcher _stockPriceFetcher;
 
     private readonly DateOnly _startDate = new(2024, 1, 1);
 
     private const string AccountCode = "Account";
+    private const string Symbol = "STOCK";
 
     public AccountValueHistoryQueryHandlerTests()
     {
-        _accountPortfolioQueryHandler = new FakeAccountPortfolioQueryHandler();
+        var accountFetcher = Substitute.For<IAccountFetcher>();
+        accountFetcher.GetAccounts().Returns(new List<Account> { new(AccountCode, _startDate) });
 
-        var mockAccountFetcher = Substitute.For<IAccountFetcher>();
+        _cashStatementItemFetcher = Substitute.For<ICashStatementItemFetcher>();
+        _cashStatementItemFetcher.GetCashStatementItems(Arg.Any<string[]>()).Returns(new List<CashStatementItem>());
 
-        mockAccountFetcher.GetAccounts().Returns(new List<Account> { new(AccountCode, _startDate) });
+        _stockTransactionFetcher = Substitute.For<IStockTransactionFetcher>();
+        _stockTransactionFetcher.GetStockTransactions(Arg.Any<string[]>()).Returns(new List<StockTransaction>());
 
-        var mockRecordedTotalValueQueryHandler = Substitute.For<IRecordedTotalValueQueryHandler>();
-        mockRecordedTotalValueQueryHandler.Handle(Arg.Any<RecordedTotalValuesRequest>()).Returns(
+        _stockPriceFetcher = Substitute.For<IStockPriceFetcher>();
+        _stockPriceFetcher.GetStockPrice(Arg.Any<string>(), Arg.Any<DateOnly>())
+            .Returns(StockPriceResult.Missing("default"));
+        _stockPriceFetcher.GetAllPrices(Arg.Any<string>())
+            .Returns(new List<StockPrice>());
+
+        var recordedTotalValueQueryHandler = Substitute.For<IRecordedTotalValueQueryHandler>();
+        recordedTotalValueQueryHandler.Handle(Arg.Any<RecordedTotalValuesRequest>()).Returns(
             new RecordedTotalValuesResult(new List<RecordedTotalValue>()));
 
         _queryHandler = new AccountValueHistoryQueryHandler(
-            mockAccountFetcher,
-            _accountPortfolioQueryHandler,
-            mockRecordedTotalValueQueryHandler,
+            accountFetcher,
+            _cashStatementItemFetcher,
+            _stockTransactionFetcher,
+            _stockPriceFetcher,
+            recordedTotalValueQueryHandler,
             Substitute.For<ILogger<AccountValueHistoryQueryHandler>>()
         );
     }
@@ -42,19 +57,13 @@ public class AccountValueHistoryQueryHandlerTests
     [Fact]
     public async Task Handle_WhenNoDataExists_ReturnsEmptyItemsForEachDate()
     {
-        // arrange
         var days = 10;
         var queryDate = _startDate.AddDays(days - 1);
 
-        var request = new AccountValueHistoryRequest(AccountCode, queryDate);
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest(AccountCode, queryDate));
 
-        // act
-        var result = await _queryHandler.Handle(request);
-
-        // assert
         using var _ = new AssertionScope();
         result.Items.Count.Should().Be(days);
-
         result.Items.Should().AllSatisfy(item =>
         {
             item.ValueInGbp.Should().Be(0);
@@ -63,182 +72,129 @@ public class AccountValueHistoryQueryHandlerTests
     }
 
     [Fact]
-    public async Task Handle_WhenPortfolioDataExists_ReturnsValueData()
+    public async Task Handle_WhenContributionMade_TotalValueAndNetInflowsAreTracked()
     {
-        // arrange
-        var days = 4;
-        var queryDate = _startDate.AddDays(days - 1);
+        // Day 0: £100 contribution → cash balance £100
+        _cashStatementItemFetcher.GetCashStatementItems(Arg.Any<string[]>()).Returns(new List<CashStatementItem>
+        {
+            Contribution(_startDate, 100m)
+        });
 
-        var request = new AccountValueHistoryRequest(AccountCode, queryDate);
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest(AccountCode, _startDate.AddDays(3)));
 
-        // On the first day, contribute £100
-        _accountPortfolioQueryHandler.Add(_startDate, cashBalanceInGbp: 100, valueInGbp: 100, contribution: 100);
-
-        // Second day, cash balance shifts into stocks:
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(1), cashBalanceInGbp: 0, valueInGbp: 100, contribution: 0);
-
-        // Third day, another contribution of £100
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(2), cashBalanceInGbp: 100, valueInGbp: 200, contribution: 100);
-
-        // Fourth day, value doubles due to stock price rises
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(3), cashBalanceInGbp: 100, valueInGbp: 400, contribution: 0);
-
-        // act
-        var result = await _queryHandler.Handle(request);
-
-        // assert
         using var _ = new AssertionScope();
-        result.Items.Count.Should().Be(days);
+        result.Items.Count.Should().Be(4);
 
         result.Items[0].ValueInGbp.Should().Be(100);
         result.Items[0].NetInflows.Should().Be(100);
 
+        // Subsequent days: cash balance persists, no new contributions
         result.Items[1].ValueInGbp.Should().Be(100);
         result.Items[1].NetInflows.Should().Be(0);
-
-        result.Items[2].ValueInGbp.Should().Be(200);
-        result.Items[2].NetInflows.Should().Be(100);
-
-        result.Items[3].ValueInGbp.Should().Be(400);
-        result.Items[3].NetInflows.Should().Be(0);
+        result.Items[2].ValueInGbp.Should().Be(100);
+        result.Items[3].ValueInGbp.Should().Be(100);
     }
 
     [Fact]
-    public async Task Handle_WhenPortfolioDataExists_CalculatesNumberAndValueOfUnits()
+    public async Task Handle_WhenStockHeld_TotalValueIncludesStockValue()
     {
-        // arrange
-        var days = 4;
-        var queryDate = _startDate.AddDays(days - 1);
-
-        var request = new AccountValueHistoryRequest(AccountCode, queryDate);
-
-        // On day 0, contribute £100
-        _accountPortfolioQueryHandler.Add(_startDate, cashBalanceInGbp: 100, valueInGbp: 100, contribution: 100);
-
-        // day 1, cash balance shifts into stocks:
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(1), cashBalanceInGbp: 0, valueInGbp: 100, contribution: 0);
-
-        // day 2, another contribution of £100
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(2), cashBalanceInGbp: 100, valueInGbp: 200, contribution: 100);
-
-        // day 3, value doubles due to stock price rises
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(3), cashBalanceInGbp: 100, valueInGbp: 400, contribution: 0);
-
-        // act
-        var result = await _queryHandler.Handle(request);
-
-        // assert
-        using var _ = new AssertionScope();
-
-        result.Items.Count.Should().Be(days);
-
-        result.Items[0].Units.Should().Be(new UnitAccount(_startDate, NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-        result.Items[1].Units.Should().Be(new UnitAccount(_startDate.AddDays(1), NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-        result.Items[2].Units.Should().Be(new UnitAccount(_startDate.AddDays(2), NumberOfUnits: 2, ValueInGbpPerUnit: 100m));
-        result.Items[3].Units.Should().Be(new UnitAccount(_startDate.AddDays(3), NumberOfUnits: 2, ValueInGbpPerUnit: 200m));
-    }
-    
-    [Fact]
-    public async Task Handle_WhenPortfolioDataExists_WithWithdrawals_CalculatesNumberAndValueOfUnits()
-    {
-        // arrange
-        var days = 4;
-        var queryDate = _startDate.AddDays(days - 1);
-
-        var request = new AccountValueHistoryRequest(AccountCode, queryDate);
-
-        // On day 0, contribute £100
-        _accountPortfolioQueryHandler.Add(_startDate, cashBalanceInGbp: 100, valueInGbp: 100, contribution: 100);
-
-        // day 1, cash balance shifts into stocks:
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(1), cashBalanceInGbp: 0, valueInGbp: 100, contribution: 0);
-
-        // day 2, another contribution of £100
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(2), cashBalanceInGbp: 100, valueInGbp: 200, contribution: 100);
-
-        // day 3, withdrawal of £50
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(3), cashBalanceInGbp: 50, valueInGbp: 150, contribution: -50);
-
-        // act
-        var result = await _queryHandler.Handle(request);
-
-        // assert
-        using var _ = new AssertionScope();
-
-        result.Items.Count.Should().Be(days);
-
-        result.Items[0].Units.Should().Be(new UnitAccount(_startDate, NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-        result.Items[1].Units.Should().Be(new UnitAccount(_startDate.AddDays(1), NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-        result.Items[2].Units.Should().Be(new UnitAccount(_startDate.AddDays(2), NumberOfUnits: 2, ValueInGbpPerUnit: 100m));
-        result.Items[3].Units.Should().Be(new UnitAccount(_startDate.AddDays(3), NumberOfUnits: 1.5m, ValueInGbpPerUnit: 100m));
-    }
-    
-    [Fact]
-    public async Task Handle_WhenPortfolioDataExists_WhenWithdrawingToZero_CalculatesNumberAndValueOfUnits()
-    {
-        // arrange
-        var days = 4;
-        var queryDate = _startDate.AddDays(days - 1);
-
-        var request = new AccountValueHistoryRequest(AccountCode, queryDate);
-
-        // On day 0, contribute £100
-        _accountPortfolioQueryHandler.Add(_startDate, cashBalanceInGbp: 100, valueInGbp: 100, contribution: 100);
-
-        // day 1, withdraw £100
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(1), cashBalanceInGbp: 0, valueInGbp: 0, contribution: -100);
-
-        // day 2, another contribution of £50
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(2), cashBalanceInGbp: 50, valueInGbp: 50, contribution: 50);
-
-        // day 3, another contribution of £50
-        _accountPortfolioQueryHandler.Add(_startDate.AddDays(3), cashBalanceInGbp: 100, valueInGbp: 100, contribution: 50);
-
-        // act
-        var result = await _queryHandler.Handle(request);
-
-        // assert
-        using var _ = new AssertionScope();
-
-        result.Items.Count.Should().Be(days);
-
-        result.Items[0].Units.Should().Be(new UnitAccount(_startDate, NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-        result.Items[1].Units.Should().Be(new UnitAccount(_startDate.AddDays(1), NumberOfUnits: 0, ValueInGbpPerUnit: 100m));
-        result.Items[2].Units.Should().Be(new UnitAccount(_startDate.AddDays(2), NumberOfUnits: 0.5m, ValueInGbpPerUnit: 100m));
-        result.Items[3].Units.Should().Be(new UnitAccount(_startDate.AddDays(3), NumberOfUnits: 1, ValueInGbpPerUnit: 100m));
-    }
-    
-    public class FakeAccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
-    {
-        private Dictionary<DateOnly, AccountPortfolioResult> _items = new();
-
-        public void Add(DateOnly date, decimal cashBalanceInGbp, decimal valueInGbp, decimal contribution)
+        // Day 0: contribute £100
+        _cashStatementItemFetcher.GetCashStatementItems(Arg.Any<string[]>()).Returns(new List<CashStatementItem>
         {
-            _items.Add(date, new AccountPortfolioResult(
-                ["AccountCode"], 
-                new List<Holding>(), 
-                cashBalanceInGbp, 
-                contribution,
-                new TotalValue(valueInGbp, 0),
-                new List<Allocation>()));
-        }
+            Contribution(_startDate, 100m),
+            // Day 1: spend £100 on a stock (cash balance drops to 0)
+            Purchase(_startDate.AddDays(1), -100m)
+        });
 
-        public Task<AccountPortfolioResult> Handle(AccountPortfolioRequest request)
+        _stockTransactionFetcher.GetStockTransactions(Arg.Any<string[]>()).Returns(new List<StockTransaction>
         {
-            if (_items.ContainsKey(request.Date))
-            {
-                return Task.FromResult(_items[request.Date]);
-            }
-            else
-            {
-                return Task.FromResult(new AccountPortfolioResult(
-                    ["AccountCode"], 
-                    new List<Holding>(),
-                    0,
-                    0, 
-                    new TotalValue(0, 0), 
-                    new List<Allocation>()));
-            }
-        }
+            // Day 1: buy 10 shares
+            StockPurchase(_startDate.AddDays(1), Symbol, quantity: 10m)
+        });
+
+        _stockPriceFetcher.GetAllPrices(Symbol).Returns(new List<StockPrice>
+        {
+            new(Symbol, _startDate.AddDays(1), 12m, "GBP", "test", "GBP")
+        });
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest(AccountCode, _startDate.AddDays(2)));
+
+        using var _ = new AssertionScope();
+        // Day 0: just cash
+        result.Items[0].ValueInGbp.Should().Be(100);
+        // Day 1: cash gone, 10 shares @ £12 = £120
+        result.Items[1].ValueInGbp.Should().Be(120);
+        // Day 2: same holdings
+        result.Items[2].ValueInGbp.Should().Be(120);
     }
+
+    [Fact]
+    public async Task Handle_DiscrepancyRatio_UsesRecordedTotalValue()
+    {
+        _cashStatementItemFetcher.GetCashStatementItems(Arg.Any<string[]>()).Returns(new List<CashStatementItem>
+        {
+            Contribution(_startDate, 100m)
+        });
+
+        var recordedTotalValueQueryHandler = Substitute.For<IRecordedTotalValueQueryHandler>();
+        recordedTotalValueQueryHandler.Handle(Arg.Any<RecordedTotalValuesRequest>()).Returns(
+            new RecordedTotalValuesResult(new List<RecordedTotalValue>
+            {
+                new(_startDate, AccountCode, 95m, "TestSource")
+            }));
+
+        var accountFetcher = Substitute.For<IAccountFetcher>();
+        accountFetcher.GetAccounts().Returns(new List<Account> { new(AccountCode, _startDate) });
+
+        var queryHandler = new AccountValueHistoryQueryHandler(
+            accountFetcher,
+            _cashStatementItemFetcher,
+            _stockTransactionFetcher,
+            _stockPriceFetcher,
+            recordedTotalValueQueryHandler,
+            Substitute.For<ILogger<AccountValueHistoryQueryHandler>>());
+
+        var result = await queryHandler.Handle(new AccountValueHistoryRequest(AccountCode, _startDate));
+
+        result.Items.Single().RecordedTotalValueInGbp.Should().Be(95m);
+        result.Items.Single().DiscrepancyRatio.Should().Be((100m - 95m) / 100m);
+    }
+
+    [Fact]
+    public async Task Handle_DifferenceToPreviousDay_StripsOutContributions()
+    {
+        // Day 0: contribute £100 (no previous day → DifferenceToPreviousDay null)
+        // Day 1: contribute another £50 (cash 150, previous total was 100, contribution 50 → diff 0)
+        _cashStatementItemFetcher.GetCashStatementItems(Arg.Any<string[]>()).Returns(new List<CashStatementItem>
+        {
+            Contribution(_startDate, 100m),
+            Contribution(_startDate.AddDays(1), 50m)
+        });
+
+        var result = await _queryHandler.Handle(new AccountValueHistoryRequest(AccountCode, _startDate.AddDays(1)));
+
+        using var _ = new AssertionScope();
+        result.Items[0].DifferenceToPreviousDay.Should().BeNull();
+        result.Items[1].DifferenceToPreviousDay.Should().Be(0m);
+        result.Items[1].DifferenceRatio.Should().Be(0m);
+    }
+
+    private static CashStatementItem Contribution(DateOnly date, decimal amount) =>
+        CashItem(date, amount, CashStatementItemTypes.Contribution);
+
+    private static CashStatementItem Purchase(DateOnly date, decimal amount) =>
+        CashItem(date, amount, CashStatementItemTypes.Purchase);
+
+    private static CashStatementItem CashItem(DateOnly date, decimal amount, string type)
+    {
+        var receipt = amount > 0 ? amount : 0m;
+        var payment = amount < 0 ? amount : 0m;
+        return new CashStatementItem(AccountCode, date, "test", receipt, payment) { CashStatementItemType = type };
+    }
+
+    private static StockTransaction StockPurchase(DateOnly date, string symbol, decimal quantity) =>
+        new StockTransaction(AccountCode, date, "Purchase", "test", quantity, 0m, "ref", 0m, 0m, symbol)
+        {
+            TransactionType = StockTransactionTypes.Purchase
+        };
 }

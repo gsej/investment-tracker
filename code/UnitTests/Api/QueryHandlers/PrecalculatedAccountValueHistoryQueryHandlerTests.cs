@@ -8,9 +8,9 @@ using NSubstitute;
 
 namespace UnitTests.Api.QueryHandlers;
 
-public class AccountValueHistoryQueryHandler2Tests
+public class PrecalculatedAccountValueHistoryQueryHandlerTests
 {
-    private readonly IAccountValueHistoryQueryHandler2 _queryHandler;
+    private readonly IPrecalculatedAccountValueHistoryQueryHandler _queryHandler;
     private readonly IAccountHistoricalValueFetcher _fetcher;
 
     private readonly DateOnly _startDate = new(2024, 1, 1);
@@ -18,12 +18,12 @@ public class AccountValueHistoryQueryHandler2Tests
     private const string AccountCodeA = "AccountA";
     private const string AccountCodeB = "AccountB";
 
-    public AccountValueHistoryQueryHandler2Tests()
+    public PrecalculatedAccountValueHistoryQueryHandlerTests()
     {
         _fetcher = Substitute.For<IAccountHistoricalValueFetcher>();
 
-        _queryHandler = new AccountValueHistoryQueryHandler2(
-            Substitute.For<ILogger<AccountValueHistoryQueryHandler2>>(),
+        _queryHandler = new PrecalculatedAccountValueHistoryQueryHandler(
+            Substitute.For<ILogger<PrecalculatedAccountValueHistoryQueryHandler>>(),
             _fetcher
         );
     }
@@ -33,7 +33,7 @@ public class AccountValueHistoryQueryHandler2Tests
     {
         _fetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.AccountHistoricalValue>());
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
 
         result.Items.Should().BeEmpty();
     }
@@ -46,7 +46,7 @@ public class AccountValueHistoryQueryHandler2Tests
 
         _fetcher.Get(Arg.Any<string[]>()).Returns(BuildEntities(AccountCodeA, _startDate, days));
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         result.Items.Count.Should().Be(days);
     }
@@ -68,7 +68,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         result.Items.Single().RecordedTotalValueInGbp.Should().BeNull();
     }
@@ -90,7 +90,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         result.Items.Single().RecordedTotalValueInGbp.Should().Be(1050m);
     }
@@ -114,7 +114,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA, AccountCodeB], queryDate));
 
         result.Items.Single().RecordedTotalValueInGbp.Should().BeNull();
     }
@@ -138,7 +138,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA, AccountCodeB], queryDate));
 
         result.Items.Single().ValueInGbp.Should().Be(3000m);
     }
@@ -162,7 +162,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA, AccountCodeB], queryDate));
 
         result.Items.Single().RecordedTotalValueInGbp.Should().Be(3150m);
     }
@@ -179,7 +179,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
 
         result.Items.Single().DiscrepancyRatio.Should().BeNull();
     }
@@ -196,7 +196,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
 
         result.Items.Single().DiscrepancyRatio.Should().Be((1000m - 1050m) / 1000m);
     }
@@ -218,7 +218,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], _startDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA, AccountCodeB], _startDate));
 
         // combined: ValueInGbp=3000, RecordedTotalValueInGbp=3150
         result.Items.Single().DiscrepancyRatio.Should().Be((3000m - 3150m) / 3000m);
@@ -236,7 +236,7 @@ public class AccountValueHistoryQueryHandler2Tests
             }
         ]);
 
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], _startDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
 
         using var _ = new AssertionScope();
         result.Items.Single().DifferenceToPreviousDay.Should().BeNull();
@@ -261,7 +261,7 @@ public class AccountValueHistoryQueryHandler2Tests
         ]);
 
         var queryDate = _startDate.AddDays(1);
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         // DifferenceToPreviousDay = ValueInGbp - NetInflows - previousDayTotal = 1100 - 50 - 1000 = 50
         // DifferenceRatio = 50 / 1000 = 0.05
@@ -298,7 +298,7 @@ public class AccountValueHistoryQueryHandler2Tests
         ]);
 
         var queryDate = _startDate.AddDays(1);
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA, AccountCodeB], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA, AccountCodeB], queryDate));
 
         // combined day 1: ValueInGbp=3000, NetInflows=0 → previousDayTotal=3000
         // combined day 2: ValueInGbp=3300, NetInflows=150
@@ -327,7 +327,7 @@ public class AccountValueHistoryQueryHandler2Tests
         ]);
 
         var queryDate = _startDate.AddDays(1);
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         using var _ = new AssertionScope();
         result.Items.Last().DifferenceToPreviousDay.Should().Be(0m);
@@ -341,7 +341,7 @@ public class AccountValueHistoryQueryHandler2Tests
         _fetcher.Get(Arg.Any<string[]>()).Returns(BuildEntities(AccountCodeA, _startDate, 5));
 
         var queryDate = _startDate.AddDays(2);
-        var result = await _queryHandler.Handle(new AccountValueHistoryRequest2([AccountCodeA], queryDate));
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], queryDate));
 
         using var _ = new AssertionScope();
         result.Items.Count.Should().Be(3);

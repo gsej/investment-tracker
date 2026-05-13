@@ -1,6 +1,10 @@
-﻿namespace Api.QueryHandlers.Fetchers;
+using Database.Entities;
+
+namespace Api.QueryHandlers.Fetchers;
 
 public interface IStockPriceFetcher
 {
     Task<StockPriceResult> GetStockPrice(string stockSymbol, DateOnly requestedDate);
+
+    Task<IList<StockPrice>> GetAllPrices(string stockSymbol);
 }

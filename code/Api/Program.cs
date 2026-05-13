@@ -66,7 +66,7 @@ public class Program
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
         builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
-        builder.Services.AddScoped<IAccountValueHistoryQueryHandler2, AccountValueHistoryQueryHandler2>();
+        builder.Services.AddScoped<IPrecalculatedAccountValueHistoryQueryHandler, PrecalculatedAccountValueHistoryQueryHandler>();
    
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         

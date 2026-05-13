@@ -1,21 +1,21 @@
-﻿using Api.QueryHandlers.Fetchers;
+using Api.QueryHandlers.Fetchers;
 
 namespace Api.QueryHandlers.History;
 
-public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler2
+public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccountValueHistoryQueryHandler
 {
     private readonly IAccountHistoricalValueFetcher _accountHistoricalValueFetcher;
-    private readonly ILogger<AccountValueHistoryQueryHandler2> _logger;
+    private readonly ILogger<PrecalculatedAccountValueHistoryQueryHandler> _logger;
 
-    public AccountValueHistoryQueryHandler2(
-        ILogger<AccountValueHistoryQueryHandler2> logger,
+    public PrecalculatedAccountValueHistoryQueryHandler(
+        ILogger<PrecalculatedAccountValueHistoryQueryHandler> logger,
         IAccountHistoricalValueFetcher accountHistoricalValueFetcher)
     {
         _logger = logger;
         _accountHistoricalValueFetcher = accountHistoricalValueFetcher;
     }
-    
-    public async Task<AccountValueHistoryResult> Handle(AccountValueHistoryRequest2 request)
+
+    public async Task<AccountValueHistoryResult> Handle(PrecalculatedAccountValueHistoryRequest request)
     {
         var values = (await _accountHistoricalValueFetcher.Get(request.AccountCodes))
             .OrderBy(value => value.Date)
@@ -28,9 +28,9 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
         var results = new List<AccountHistoricalValue>();
 
         var currentDate = values.First().Date;
-        
+
         decimal? previousDayTotal = null;
-        
+
         while (currentDate <= request.QueryDate)
         {
             var daysValues = values
@@ -70,7 +70,7 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
         }
 
         results = results.OrderBy(r => r.Date).ToList();
-        
+
         var unitValues = new UnitCalculator().Calculate(results, 100);
 
         foreach (var result in results)
@@ -86,7 +86,7 @@ public class AccountValueHistoryQueryHandler2 : IAccountValueHistoryQueryHandler
                 result.Units = matchingUnitValues;
             }
         }
-        
+
         return new AccountValueHistoryResult(results);
     }
 }

@@ -17,6 +17,8 @@ public class StockPriceFetcher : IStockPriceFetcher
         _context = context;
     }
 
+    public Task<IList<StockPrice>> GetAllPrices(string stockSymbol) => GetStockPrices(stockSymbol);
+
     public async Task<StockPriceResult> GetStockPrice(string stockSymbol, DateOnly requestedDate)
     {
         var prices = await GetStockPrices(stockSymbol);

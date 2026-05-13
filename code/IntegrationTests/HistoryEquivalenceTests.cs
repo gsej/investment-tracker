@@ -16,7 +16,7 @@ public class HistoryEquivalenceTests : IClassFixture<WebApplicationFactory<Api.P
     }
 
     [Fact]
-    public async Task History_AndHistory2_ReturnEquivalentResultsForEachAccount()
+    public async Task History_AndPrecalculatedHistory_ReturnEquivalentResultsForEachAccount()
     {
         var queryDate = DateOnly.FromDateTime(DateTime.Now).ToString("yyyy-MM-dd");
 
@@ -29,16 +29,16 @@ public class HistoryEquivalenceTests : IClassFixture<WebApplicationFactory<Api.P
             var history = await PostAsync<HistoryResponse>("/account/history",
                 new { accountCode = account.AccountCode, queryDate });
 
-            var history2 = await PostAsync<HistoryResponse>("/account/history2",
+            var precalculatedHistory = await PostAsync<HistoryResponse>("/account/precalculated-history",
                 new { accountCodes = new[] { account.AccountCode }, queryDate });
 
             using var scope = new AssertionScope($"account {account.AccountCode}");
 
-            history2!.Items.Should().HaveSameCount(history!.Items);
-         
-            
+            precalculatedHistory!.Items.Should().HaveSameCount(history!.Items);
+
+
             var index = 0;
-            foreach (var (h1, h2) in history.Items.Zip(history2.Items))
+            foreach (var (h1, h2) in history.Items.Zip(precalculatedHistory.Items))
             {
                 h2.Date.Should().Be(h1.Date, $"index {index}");
                 h2.ValueInGbp.Should().BeApproximately(h1.ValueInGbp, 0.0001m, $"index {index}");

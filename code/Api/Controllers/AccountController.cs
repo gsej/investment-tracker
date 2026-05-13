@@ -15,19 +15,19 @@ public class AccountController : ControllerBase
     private readonly IAccountPortfolioQueryHandler _accountPortfolioQueryHandler;
     private readonly IAccountQueryHandler _accountQueryHandler;
     private readonly IAccountValueHistoryQueryHandler _accountValueHistoryQueryHandler;
-    private readonly IAccountValueHistoryQueryHandler2 _accountValueHistoryQueryHandler2;
+    private readonly IPrecalculatedAccountValueHistoryQueryHandler _precalculatedAccountValueHistoryQueryHandler;
 
     public AccountController(ILogger<AccountController> logger,
         IAccountPortfolioQueryHandler accountPortfolioQueryHandler,
         IAccountQueryHandler accountQueryHandler,
         IAccountValueHistoryQueryHandler accountValueHistoryQueryHandler,
-        IAccountValueHistoryQueryHandler2 accountValueHistoryQueryHandler2)
+        IPrecalculatedAccountValueHistoryQueryHandler precalculatedAccountValueHistoryQueryHandler)
     {
         _logger = logger;
         _accountPortfolioQueryHandler = accountPortfolioQueryHandler;
         _accountQueryHandler = accountQueryHandler;
         _accountValueHistoryQueryHandler = accountValueHistoryQueryHandler;
-        _accountValueHistoryQueryHandler2 = accountValueHistoryQueryHandler2;
+        _precalculatedAccountValueHistoryQueryHandler = precalculatedAccountValueHistoryQueryHandler;
     }
 
     [HttpGet("/accounts")]
@@ -43,24 +43,17 @@ public class AccountController : ControllerBase
         request.AccountCodes ??= [];
         return await _accountPortfolioQueryHandler.Handle(request);
     }
-    
+
     [HttpPost("/account/history")]
     public async Task<AccountValueHistoryResult> GetHistory([FromBody] AccountValueHistoryRequest request)
     {
-        // TODO: this needs to be removed
         return await _accountValueHistoryQueryHandler.Handle(request);
     }
-    
-    [HttpPost("/account/history2")]
-    public async Task<AccountValueHistoryResult> GetHistory2([FromBody] AccountValueHistoryRequest2 request)
+
+    [HttpPost("/account/precalculated-history")]
+    public async Task<AccountValueHistoryResult> GetPrecalculatedHistory([FromBody] PrecalculatedAccountValueHistoryRequest request)
     {
         request.AccountCodes ??= [];
-        return await _accountValueHistoryQueryHandler2.Handle(request);
+        return await _precalculatedAccountValueHistoryQueryHandler.Handle(request);
     }
-    
-    // [HttpPost("/account/annual-performance")]
-    // public async Task<AnnualPerformanceResult> GetAccountAnnualPerformance([FromBody] AnnualPerformanceRequest request)
-    // {
-    //     return await _annualPerformanceQueryHandler.Handle(request);
-    // }
 }
