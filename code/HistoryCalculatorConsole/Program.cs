@@ -22,7 +22,7 @@ class Program
 {
     private static CalculatorConfiguration _calculatorConfiguration;
     private static ILogger<Program> _logger;
-    
+
     public static async Task Main(string[] args)
     {
         var host = Host.CreateDefaultBuilder(args)
@@ -35,7 +35,7 @@ class Program
                     loggingBuilder.AddConsole();
                     loggingBuilder.AddSeq();
                 });
-                
+
                 var configurationRoot = new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json")
                     .AddEnvironmentVariables()
@@ -43,7 +43,7 @@ class Program
 
                 _calculatorConfiguration = configurationRoot.GetRequiredSection(nameof(CalculatorConfiguration)).Get<CalculatorConfiguration>();
                 services.AddSingleton(_calculatorConfiguration);
-                
+
                 services.AddScoped<IAccountPortfolioQueryHandler, AccountPortfolioQueryHandler>();
                 services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();
                 services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
@@ -51,7 +51,7 @@ class Program
                 services.AddDbContext<InvestmentsDbContext>(
                     opts => opts.UseSqlServer(_calculatorConfiguration.SqlConnectionString)
                 );
-             
+
                 services.AddTransient<IAccountFetcher, AccountFetcher>();
                 services.AddTransient<IStockFetcher, StockFetcher>();
                 services.AddTransient<IStockPriceFetcher, StockPriceFetcher>();
@@ -62,7 +62,7 @@ class Program
 
             })
             .Build();
-        
+
         _logger = host.Services.GetRequiredService<ILogger<Program>>();
 
         try
@@ -72,7 +72,7 @@ class Program
         catch (Exception e)
         {
             _logger.LogError("Error loading data: {e}", e);
-            
+
             // causes the log to be flushed            
             ServiceProvider services = (ServiceProvider)host.Services;
             await services.DisposeAsync();
@@ -88,16 +88,20 @@ class Program
         var accountFetcher = serviceProvider.GetRequiredService<IAccountFetcher>();
         var accounts = await accountFetcher.GetAccounts();
 
+        var sw = Stopwatch.StartNew();
         foreach (var account in accounts)
         {
             await CalculateForAccount(queryHandler, dbContext, account.AccountCode);
         }
+        sw.Stop();
+
+        _logger.LogInformation("Timing: Calculated history for all accounts in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
     }
 
     private static async Task CalculateForAccount(IAccountValueHistoryQueryHandler queryHandler, InvestmentsDbContext dbContext, string accountCode)
     {
         var sw = Stopwatch.StartNew();
-        
+
         _logger.LogInformation("Calculating history for {AccountCode}", accountCode);
 
         var request = new AccountValueHistoryRequest(accountCode, DateOnly.FromDateTime(DateTime.Now));
