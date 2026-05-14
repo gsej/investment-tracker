@@ -101,8 +101,8 @@ public class StockTransactionLoader
             _stockTransactionStampDutyEnricher.Enrich(stockTransaction, matchingStock);
 
             _context.StockTransactions.Add(stockTransaction);
-            await _context.SaveChangesAsync();
-
         }
+
+        await _context.SaveChangesAsync();
     }
 }

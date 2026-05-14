@@ -42,8 +42,8 @@ public class CashStatementItemLoader
             cashStatementItemTypeEnricher.Enrich(cashStatementItem);
 
             _context.CashStatementItems.Add(cashStatementItem);
-            await _context.SaveChangesAsync();
-            
         }
+
+        await _context.SaveChangesAsync();
     }
 }
