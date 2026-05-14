@@ -27,7 +27,21 @@ export class HistoryChartComponent implements OnChanges {
   public chartType = 'valueInGbp';
   private label = '';
 
-  public activeComment: CommentViewModel | null = null;
+  public activeCommentIndex: number | null = null;
+  public visibleComments: CommentViewModel[] = [];
+
+  get activeComment(): CommentViewModel | null {
+    if (this.activeCommentIndex === null) return null;
+    return this.visibleComments[this.activeCommentIndex] ?? null;
+  }
+
+  get hasPreviousComment(): boolean {
+    return this.activeCommentIndex !== null && this.activeCommentIndex > 0;
+  }
+
+  get hasNextComment(): boolean {
+    return this.activeCommentIndex !== null && this.activeCommentIndex < this.visibleComments.length - 1;
+  }
 
   @Input()
   public history: HistoryViewModels | null = null;
@@ -51,7 +65,19 @@ export class HistoryChartComponent implements OnChanges {
   }
 
   closeComment() {
-    this.activeComment = null;
+    this.activeCommentIndex = null;
+  }
+
+  nextComment() {
+    if (this.hasNextComment) {
+      this.activeCommentIndex!++;
+    }
+  }
+
+  previousComment() {
+    if (this.hasPreviousComment) {
+      this.activeCommentIndex!--;
+    }
   }
 
   setData(chartType: string) {
@@ -80,6 +106,8 @@ export class HistoryChartComponent implements OnChanges {
 
   private buildCommentAnnotations(): Record<string, any> {
     const annotations: Record<string, any> = {};
+    this.visibleComments = [];
+    this.activeCommentIndex = null;
 
     if (!this.history?.comments?.length) {
       return annotations;
@@ -91,6 +119,9 @@ export class HistoryChartComponent implements OnChanges {
       if (!dateSet.has(comment.date)) {
         return;
       }
+
+      const visibleIndex = this.visibleComments.length;
+      this.visibleComments.push(comment);
 
       annotations[`comment-${index}`] = {
         type: 'line',
@@ -113,7 +144,7 @@ export class HistoryChartComponent implements OnChanges {
         leave: (ctx: any) => { ctx.chart.canvas.style.cursor = 'default'; },
         click: () => {
           this.zone.run(() => {
-            this.activeComment = comment;
+            this.activeCommentIndex = visibleIndex;
             this.cdr.markForCheck();
           });
         },

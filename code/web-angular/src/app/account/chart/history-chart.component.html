@@ -17,6 +17,23 @@
         {{ activeComment.accountCodes.join(', ') }}
       </div>
       <div class="text-sm text-gray-800 whitespace-pre-wrap">{{ activeComment.text }}</div>
+      @if (visibleComments.length > 1) {
+        <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-200">
+          <button
+            type="button"
+            class="text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:cursor-not-allowed text-xl px-1 leading-none"
+            [disabled]="!hasPreviousComment"
+            (click)="previousComment()"
+            aria-label="Previous comment">&#8249;</button>
+          <span class="text-xs text-gray-500">{{ activeCommentIndex! + 1 }} / {{ visibleComments.length }}</span>
+          <button
+            type="button"
+            class="text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:cursor-not-allowed text-xl px-1 leading-none"
+            [disabled]="!hasNextComment"
+            (click)="nextComment()"
+            aria-label="Next comment">&#8250;</button>
+        </div>
+      }
     </div>
   }
 
