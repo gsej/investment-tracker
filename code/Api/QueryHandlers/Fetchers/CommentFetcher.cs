@@ -16,6 +16,7 @@ public class CommentFetcher : ICommentFetcher
     {
         var allComments = await _context.Comments
             .AsNoTracking()
+            .OrderBy(c => c.Date)
             .ToListAsync();
 
         return allComments

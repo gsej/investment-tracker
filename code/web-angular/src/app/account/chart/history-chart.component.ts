@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, ChangeDetectorRef, NgZone } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, ChangeDetectorRef, NgZone, HostListener } from '@angular/core';
 import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
@@ -29,6 +29,7 @@ export class HistoryChartComponent implements OnChanges {
 
   public activeCommentIndex: number | null = null;
   public visibleComments: CommentViewModel[] = [];
+  private visibleCommentAnnotationKeys: string[] = [];
 
   get activeComment(): CommentViewModel | null {
     if (this.activeCommentIndex === null) return null;
@@ -64,20 +65,50 @@ export class HistoryChartComponent implements OnChanges {
     this.createChart();
   }
 
+  @HostListener('document:keydown', ['$event'])
+  onKeyDown(event: KeyboardEvent) {
+    if (this.activeCommentIndex === null) return;
+    if (event.key === 'ArrowLeft') {
+      this.previousComment();
+      this.cdr.markForCheck();
+    } else if (event.key === 'ArrowRight') {
+      this.nextComment();
+      this.cdr.markForCheck();
+    }
+  }
+
   closeComment() {
     this.activeCommentIndex = null;
+    this.updateAnnotationStyles();
   }
 
   nextComment() {
     if (this.hasNextComment) {
       this.activeCommentIndex!++;
+      this.updateAnnotationStyles();
     }
   }
 
   previousComment() {
     if (this.hasPreviousComment) {
       this.activeCommentIndex!--;
+      this.updateAnnotationStyles();
     }
+  }
+
+  private updateAnnotationStyles() {
+    if (!this.chart) return;
+    const annotations = this.chart.options.plugins.annotation.annotations;
+    this.visibleCommentAnnotationKeys.forEach((key, visibleIndex) => {
+      const annotation = annotations[key];
+      if (!annotation) return;
+      const isActive = visibleIndex === this.activeCommentIndex;
+      annotation.borderColor = isActive ? 'rgb(180, 83, 9)' : 'rgb(217, 119, 6)';
+      annotation.borderWidth = isActive ? 3 : 1.5;
+      annotation.borderDash = isActive ? [] : [6, 3];
+      annotation.label.backgroundColor = isActive ? 'rgb(180, 83, 9)' : 'rgb(217, 119, 6)';
+    });
+    this.chart.update('none');
   }
 
   setData(chartType: string) {
@@ -107,6 +138,7 @@ export class HistoryChartComponent implements OnChanges {
   private buildCommentAnnotations(): Record<string, any> {
     const annotations: Record<string, any> = {};
     this.visibleComments = [];
+    this.visibleCommentAnnotationKeys = [];
     this.activeCommentIndex = null;
 
     if (!this.history?.comments?.length) {
@@ -121,9 +153,11 @@ export class HistoryChartComponent implements OnChanges {
       }
 
       const visibleIndex = this.visibleComments.length;
+      const annotationKey = `comment-${index}`;
       this.visibleComments.push(comment);
+      this.visibleCommentAnnotationKeys.push(annotationKey);
 
-      annotations[`comment-${index}`] = {
+      annotations[annotationKey] = {
         type: 'line',
         scaleID: 'x',
         value: comment.date,
@@ -145,6 +179,7 @@ export class HistoryChartComponent implements OnChanges {
         click: () => {
           this.zone.run(() => {
             this.activeCommentIndex = visibleIndex;
+            this.updateAnnotationStyles();
             this.cdr.markForCheck();
           });
         },
