@@ -1,13 +1,16 @@
+using System.Text.Json.Serialization;
+
 namespace FileReaders.Stocks;
 
-public record Stock(string StockSymbol,
+public record Stock(
+    [property: JsonPropertyName("stock_symbol")] string StockSymbol,
     string Isin,
     string Description,
-    IList<AlternativeSymbols> AlternativeSymbols,
+    [property: JsonPropertyName("alternative_symbols")] IList<AlternativeSymbols> AlternativeSymbols,
     IList<Alias> Aliases,
-    string StockType,
-    bool SubjectToStampDuty,
-    string Notes, 
+    [property: JsonPropertyName("stock_type")] string StockType,
+    [property: JsonPropertyName("subject_to_stamp_duty")] bool SubjectToStampDuty,
+    string Notes,
     string Allocation);
 
 public record Alias(string Description);
