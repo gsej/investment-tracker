@@ -101,7 +101,7 @@ Account statement data (transactions and cash events) is accurate. Calculated ac
 | GET | `/accounts` | List all accounts |
 | POST | `/account/portfolio` | Current portfolio for an account |
 | POST | `/account/history` | Historical account value |
-| POST | `/account/history2` | Historical account value (alternate implementation) |
+| POST | `/account/precalculated-history` | Historical account value (alternate implementation) |
 
 ## Notes
 

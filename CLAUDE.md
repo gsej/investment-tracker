@@ -62,7 +62,7 @@ Connection string used by all apps: `Server=localhost;Initial Catalog=investment
 - **Api** (ASP.NET Core 8) — serves the Angular frontend with endpoints:
   - `GET /accounts`
   - `POST /account/portfolio`
-  - `POST /account/history` / `POST /account/history2`
+  - `POST /account/history` / `POST /account/precalculated-history`
 - **web-angular** (Angular 18) — chart-heavy UI using Chart.js + Tailwind CSS; communicates with the API
 
 ### Shared Libraries
