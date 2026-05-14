@@ -54,7 +54,6 @@ public class StockLoader
                         .Build();
               
                 _repository.Add(stock);
-                await _repository.SaveChangesAsync();
             }
 
             await _repository.SaveChangesAsync();

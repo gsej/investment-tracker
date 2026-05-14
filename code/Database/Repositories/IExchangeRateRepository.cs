@@ -7,4 +7,5 @@ namespace Database.Repositories;
 public interface IExchangeRateRepository
 {
     Task<IList<ExchangeRate>> GetAll();
+    Task BulkAdd(IEnumerable<ExchangeRate> exchangeRates);
 }

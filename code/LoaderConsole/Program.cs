@@ -65,7 +65,11 @@ class Program
                     return new StockPriceRepository(context, connectionString);
                 });
 
-                services.AddTransient<IExchangeRateRepository, ExchangeRateRepository>();
+                services.AddScoped<IExchangeRateRepository>(provider =>
+                {
+                    var context = provider.GetRequiredService<InvestmentsDbContext>();
+                    return new ExchangeRateRepository(context, _configuration.SqlConnectionString);
+                });
                 services.AddTransient<IRecordedTotalValueRepository, RecordedTotalValueRepository>();
 
                 services.AddTransient<IReader<CashStatementItem>, CashStatementReader>();
@@ -121,6 +125,8 @@ class Program
 
     private static async Task LoadData(IServiceProvider serviceProvider)
     {
+        var totalSw = Stopwatch.StartNew();
+
         var accountLoader = serviceProvider.GetRequiredService<AccountLoader>();
         var stockLoader = serviceProvider.GetRequiredService<StockLoader>();
         var cashStatementLoader = serviceProvider.GetRequiredService<CashStatementItemLoader>();
@@ -164,11 +170,7 @@ class Program
 
         var exchangeRateFolder = GetPathToExchangeRateFolder();
 
-        foreach (var exchangeRateFile in Directory.EnumerateFiles(exchangeRateFolder, "*.json", SearchOption.AllDirectories))
-        {
-            var relativePath = Path.GetRelativePath(exchangeRateFolder, exchangeRateFile);
-            await exchangeRateLoader.LoadFile(exchangeRateFile, relativePath);
-        }
+        await exchangeRateLoader.LoadAll(exchangeRateFolder);
 
         sw.Stop();
         _logger.LogInformation("Timing: Loaded exchange rates in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
@@ -186,6 +188,9 @@ class Program
 
         sw.Stop();
         _logger.LogInformation("Timing: Loaded stock prices in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+
+        totalSw.Stop();
+        _logger.LogInformation("Timing: Total load time {elapsedMilliseconds}ms ({elapsedSeconds}s)", totalSw.ElapsedMilliseconds, totalSw.Elapsed.TotalSeconds);
     }
 
     private static string GetPathToPriceFolder()

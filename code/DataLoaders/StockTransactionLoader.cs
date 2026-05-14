@@ -18,6 +18,8 @@ public class StockTransactionLoader
     private readonly IReader<FileReaders.AccountStatements.StockTransaction> _reader;
     private readonly InvestmentsDbContext _context;
 
+    private List<Database.Entities.Stock> _stocks;
+
     public StockTransactionLoader(
         ILogger<StockTransactionLoader> logger,
         StockTransactionTypeEnricher stockTransactionTypeEnricher,
@@ -41,13 +43,15 @@ public class StockTransactionLoader
             _logger.LogError("File {fileName} does not exist", fileName);
             return;
         }
-        
-        var stocks = await _context
+
+        _stocks ??= await _context
             .Stocks
             .Include(stock => stock.Aliases)
             .Include(stock => stock.AlternativeSymbols)
             .AsSingleQuery()
             .ToListAsync();
+
+        var stocks = _stocks;
         
         var ajBellStockTransactions = (await _reader.Read(fileName)).ToList();
         
