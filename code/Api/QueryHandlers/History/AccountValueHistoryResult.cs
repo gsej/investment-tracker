@@ -1,3 +1,3 @@
-﻿namespace Api.QueryHandlers.History;
+namespace Api.QueryHandlers.History;
 
-public record AccountValueHistoryResult(IList<AccountHistoricalValue> Items);
+public record AccountValueHistoryResult(IList<AccountHistoricalValue> Items, IList<CommentResult> Comments);

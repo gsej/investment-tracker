@@ -53,7 +53,7 @@ export class HistoryComponent implements OnChanges {
   }
 
   @Input()
-  public history: HistoryViewModels | null = { items: [] };
+  public history: HistoryViewModels | null = { items: [], comments: [] };
 
   @Input()
   public date!: string;

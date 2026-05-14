@@ -5,14 +5,17 @@ namespace Api.QueryHandlers.History;
 public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccountValueHistoryQueryHandler
 {
     private readonly IAccountHistoricalValueFetcher _accountHistoricalValueFetcher;
+    private readonly ICommentFetcher _commentFetcher;
     private readonly ILogger<PrecalculatedAccountValueHistoryQueryHandler> _logger;
 
     public PrecalculatedAccountValueHistoryQueryHandler(
         ILogger<PrecalculatedAccountValueHistoryQueryHandler> logger,
-        IAccountHistoricalValueFetcher accountHistoricalValueFetcher)
+        IAccountHistoricalValueFetcher accountHistoricalValueFetcher,
+        ICommentFetcher commentFetcher)
     {
         _logger = logger;
         _accountHistoricalValueFetcher = accountHistoricalValueFetcher;
+        _commentFetcher = commentFetcher;
     }
 
     public async Task<AccountValueHistoryResult> Handle(PrecalculatedAccountValueHistoryRequest request)
@@ -21,8 +24,16 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
             .OrderBy(value => value.Date)
             .ToList();
 
+        var comments = (await _commentFetcher.Get(request.AccountCodes))
+            .Select(c => new CommentResult(
+                c.CommentId,
+                c.Date,
+                c.Text,
+                c.AccountCodes.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList()))
+            .ToList();
+
         if (!values.Any())
-            return new AccountValueHistoryResult([]);
+            return new AccountValueHistoryResult([], comments);
 
         // iterate over each day in the date range
         var valuesByDate = values
@@ -80,6 +91,6 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
                 : new UnitAccount(results[i].Date, null, null);
         }
 
-        return new AccountValueHistoryResult(results);
+        return new AccountValueHistoryResult(results, comments);
     }
 }

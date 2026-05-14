@@ -1,7 +1,25 @@
-<div class="h-full outline-1 flex flex-col ">
+<div class="h-full outline-1 flex flex-col relative">
   <div class="flex-grow">
     <canvas  id="MyChart">{{ chart }}</canvas>
   </div>
+
+  @if (activeComment) {
+    <div class="absolute top-2 right-2 z-10 w-80 rounded-lg border border-gray-300 bg-white shadow-lg p-4">
+      <div class="flex items-start justify-between mb-2">
+        <div class="text-sm font-semibold text-gray-900">{{ activeComment.date }}</div>
+        <button
+          type="button"
+          class="text-gray-400 hover:text-gray-700 leading-none text-lg font-bold ml-2"
+          aria-label="Close"
+          (click)="closeComment()">&times;</button>
+      </div>
+      <div class="text-xs text-gray-600 mb-2">
+        {{ activeComment.accountCodes.join(', ') }}
+      </div>
+      <div class="text-sm text-gray-800 whitespace-pre-wrap">{{ activeComment.text }}</div>
+    </div>
+  }
+
   <div>
     <form #form="ngForm">
       <div class="mx-10 grid grid-cols-3 gap-10 rounded-xl ">

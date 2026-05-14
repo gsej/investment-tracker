@@ -33,11 +33,16 @@ public class InvestmentsDbContext : DbContext
     public DbSet<ExchangeRate> ExchangeRates { get; set; }
     
     public DbSet<AccountHistoricalValue> AccountHistoricalValues { get; set; }
-    
+
+    public DbSet<Comment> Comments { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<CashStatementItem>()
              .Property(s => s.CashStatementItemId).HasDefaultValueSql("newid()");
+
+        modelBuilder.Entity<Comment>()
+            .Property(c => c.CommentId).HasDefaultValueSql("newid()");
 
         modelBuilder.Entity<StockTransaction>()
             .Property(s => s.StockTransactionId).HasDefaultValueSql("newid()");

@@ -1,7 +1,8 @@
-import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, ChangeDetectorRef, NgZone } from '@angular/core';
 import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
+import { CommentViewModel } from 'src/app/view-models/CommentViewModel';
 import { FormsModule } from '@angular/forms';
 import { FormLabelComponent } from '@gsej/tailwind-components';
 
@@ -26,8 +27,12 @@ export class HistoryChartComponent implements OnChanges {
   public chartType = 'valueInGbp';
   private label = '';
 
+  public activeComment: CommentViewModel | null = null;
+
   @Input()
   public history: HistoryViewModels | null = null;
+
+  constructor(private cdr: ChangeDetectorRef, private zone: NgZone) {}
 
   ngOnInit(): void {
     this.setData(this.chartType);
@@ -39,21 +44,14 @@ export class HistoryChartComponent implements OnChanges {
       this.createChart();
   }
 
-  // setData() {
-  // if (this.history) {
-  //     this.dates = this.history.items.map(y => y.date.toString());
-  //     this.values = this.history.items.map(y => y.valueInGbp);
-  //   }
-  //   else {
-  //   this.dates = [];
-  //     this.values = [];
-  //   }
-  // }
-
   onChartTypeChange(value: string) {
     this.chartType = value;
     this.setData(this.chartType);
     this.createChart();
+  }
+
+  closeComment() {
+    this.activeComment = null;
   }
 
   setData(chartType: string) {
@@ -64,18 +62,13 @@ export class HistoryChartComponent implements OnChanges {
       if (chartType === 'valueInGbp') {
         this.label = 'Value in Gbp';
         this.values = this.history.items.map(y => y.valueInGbp);
-        //this.percentages = this.prediction.cumulativeBands.map(band => band.percentage * 100);
       }
       else if (chartType === 'unitValue') {
         this.label = 'unit value';
         this.values = this.history.items.map(y => y.units.valueInGbpPerUnit);
-                //this.percentages = this.prediction.bands.map(band => band.percentage * 100);
       }
       if (chartType === 'numberOfUnits') {
-        // this.label = 'percentage of outcomes having more than this';
         this.values = this.history.items.map(y => y.units.numberOfUnits);
-        // this.values = this.prediction.reverseCumulativeBands.map(band => `${format000s(band.lower)}k`);
-        // this.percentages = this.prediction.reverseCumulativeBands.map(band => band.percentage * 100);
       }
 
     }
@@ -85,6 +78,50 @@ export class HistoryChartComponent implements OnChanges {
     }
   }
 
+  private buildCommentAnnotations(): Record<string, any> {
+    const annotations: Record<string, any> = {};
+
+    if (!this.history?.comments?.length) {
+      return annotations;
+    }
+
+    const dateSet = new Set(this.dates);
+
+    this.history.comments.forEach((comment, index) => {
+      if (!dateSet.has(comment.date)) {
+        return;
+      }
+
+      annotations[`comment-${index}`] = {
+        type: 'line',
+        scaleID: 'x',
+        value: comment.date,
+        borderColor: 'rgb(217, 119, 6)',
+        borderWidth: 1.5,
+        borderDash: [6, 3],
+        label: {
+          display: true,
+          content: 'i',
+          position: 'start',
+          backgroundColor: 'rgb(217, 119, 6)',
+          color: 'white',
+          font: { weight: 'bold', size: 10 },
+          padding: { top: 2, bottom: 2, left: 6, right: 6 },
+          borderRadius: 10,
+        },
+        enter: (ctx: any) => { ctx.chart.canvas.style.cursor = 'pointer'; },
+        leave: (ctx: any) => { ctx.chart.canvas.style.cursor = 'default'; },
+        click: () => {
+          this.zone.run(() => {
+            this.activeComment = comment;
+            this.cdr.markForCheck();
+          });
+        },
+      };
+    });
+
+    return annotations;
+  }
 
   createChart() {
 
@@ -94,9 +131,9 @@ export class HistoryChartComponent implements OnChanges {
     }
 
     this.chart = new Chart("MyChart", <any>{
-      type: 'line', //this denotes tha type of chart
+      type: 'line',
 
-      data: {// values on X-Axis
+      data: {
         labels: this.dates,
         datasets: [
           {
@@ -121,6 +158,7 @@ export class HistoryChartComponent implements OnChanges {
             position: "chartArea",
           },
           annotation: {
+            annotations: this.buildCommentAnnotations()
           }
         }
       },

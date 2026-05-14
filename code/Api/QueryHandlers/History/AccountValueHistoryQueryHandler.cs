@@ -142,7 +142,7 @@ public class AccountValueHistoryQueryHandler : IAccountValueHistoryQueryHandler
             result.Units = matchingUnitValues ?? new UnitAccount(result.Date, null, null);
         }
 
-        return new AccountValueHistoryResult(results);
+        return new AccountValueHistoryResult(results, []);
     }
 
     private static bool IsContribution(string cashStatementItemType) =>

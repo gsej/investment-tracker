@@ -9,6 +9,7 @@ using DataLoaders.StockTransactionEnrichers;
 using FileReaders;
 using FileReaders.Accounts;
 using FileReaders.AccountStatements;
+using FileReaders.Comments;
 using FileReaders.ExchangeRates;
 using FileReaders.Prices;
 using FileReaders.Stocks;
@@ -92,6 +93,9 @@ class Program
                 services.AddTransient<IReader<RecordedTotalValue>, RecordedTotalValueReader>();
                 services.AddTransient<RecordedTotalValueLoader>();
 
+                services.AddTransient<IReader<CommentFileItem>, CommentReader>();
+                services.AddTransient<CommentLoader>();
+
                 services.AddSingleton<DateOnlyConverter>();
 
             })
@@ -124,6 +128,7 @@ class Program
         var exchangeRateLoader = serviceProvider.GetRequiredService<ExchangeRateLoader>();
         var stockPriceLoader = serviceProvider.GetRequiredService<StockPriceLoader>();
         var recordedTotalValueLoader = serviceProvider.GetRequiredService<RecordedTotalValueLoader>();
+        var commentLoader = serviceProvider.GetRequiredService<CommentLoader>();
 
         var accountRepository = serviceProvider.GetRequiredService<IAccountRepository>();
 
@@ -152,6 +157,8 @@ class Program
             var relativePath = Path.GetRelativePath(recordedTotalValuesFolder, file);
             await recordedTotalValueLoader.LoadFile(file, relativePath);
         }
+
+        await commentLoader.Load(Path.Combine(dataFolder, "comments.json"));
 
         sw = Stopwatch.StartNew();
 

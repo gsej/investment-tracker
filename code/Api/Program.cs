@@ -61,6 +61,7 @@ public class Program
         builder.Services.AddScoped<ICashStatementItemFetcher, CashStatementItemFetcher>();
         builder.Services.AddScoped<IStockTransactionFetcher, StockTransactionFetcher>();
         builder.Services.AddScoped<IAccountHistoricalValueFetcher, AccountHistoricalValueFetcher>();
+        builder.Services.AddScoped<ICommentFetcher, CommentFetcher>();
 
         builder.Services.AddScoped<IAccountPortfolioQueryHandler, AccountPortfolioQueryHandler>();
         builder.Services.AddScoped<IAccountQueryHandler, AccountQueryHandler>();

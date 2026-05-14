@@ -12,6 +12,7 @@ public class PrecalculatedAccountValueHistoryQueryHandlerTests
 {
     private readonly IPrecalculatedAccountValueHistoryQueryHandler _queryHandler;
     private readonly IAccountHistoricalValueFetcher _fetcher;
+    private readonly ICommentFetcher _commentFetcher;
 
     private readonly DateOnly _startDate = new(2024, 1, 1);
 
@@ -21,10 +22,13 @@ public class PrecalculatedAccountValueHistoryQueryHandlerTests
     public PrecalculatedAccountValueHistoryQueryHandlerTests()
     {
         _fetcher = Substitute.For<IAccountHistoricalValueFetcher>();
+        _commentFetcher = Substitute.For<ICommentFetcher>();
+        _commentFetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.Comment>());
 
         _queryHandler = new PrecalculatedAccountValueHistoryQueryHandler(
             Substitute.For<ILogger<PrecalculatedAccountValueHistoryQueryHandler>>(),
-            _fetcher
+            _fetcher,
+            _commentFetcher
         );
     }
 
@@ -346,6 +350,47 @@ public class PrecalculatedAccountValueHistoryQueryHandlerTests
         using var _ = new AssertionScope();
         result.Items.Count.Should().Be(3);
         result.Items.Last().Date.Should().Be(queryDate);
+    }
+
+    [Fact]
+    public async Task Handle_ReturnsCommentsFromFetcher_WithAccountCodesSplit()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.AccountHistoricalValue>());
+
+        var commentId = Guid.NewGuid();
+        _commentFetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.Comment>
+        {
+            new(_startDate, "Withdrew funds", $"{AccountCodeA},{AccountCodeB}")
+            {
+                CommentId = commentId
+            }
+        });
+
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
+
+        using var _ = new AssertionScope();
+        result.Comments.Should().HaveCount(1);
+        var comment = result.Comments.Single();
+        comment.CommentId.Should().Be(commentId);
+        comment.Date.Should().Be(_startDate);
+        comment.Text.Should().Be("Withdrew funds");
+        comment.AccountCodes.Should().BeEquivalentTo([AccountCodeA, AccountCodeB]);
+    }
+
+    [Fact]
+    public async Task Handle_ReturnsCommentsEvenWhenNoHistoryItems()
+    {
+        _fetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.AccountHistoricalValue>());
+        _commentFetcher.Get(Arg.Any<string[]>()).Returns(new List<DbEntities.Comment>
+        {
+            new(_startDate, "An event", AccountCodeA)
+        });
+
+        var result = await _queryHandler.Handle(new PrecalculatedAccountValueHistoryRequest([AccountCodeA], _startDate));
+
+        using var _ = new AssertionScope();
+        result.Items.Should().BeEmpty();
+        result.Comments.Should().HaveCount(1);
     }
 
     private static List<DbEntities.AccountHistoricalValue> BuildEntities(
