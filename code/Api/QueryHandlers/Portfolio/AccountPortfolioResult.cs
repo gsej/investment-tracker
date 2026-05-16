@@ -5,6 +5,6 @@ public record AccountPortfolioResult(
     IList<Holding> Holdings,
     decimal CashBalanceInGbp,
     decimal Contributions,
-    TotalValue TotalValue,
+    ValueWithAge TotalValue,
     IList<Allocation> Allocations
 );

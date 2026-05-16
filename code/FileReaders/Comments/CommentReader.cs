@@ -22,8 +22,8 @@ public class CommentReader : IReader<CommentFileItem>
             return Array.Empty<CommentFileItem>();
         }
 
-        var jsonString = await File.ReadAllTextAsync(fileName);
-        var items = JsonSerializer.Deserialize<IList<CommentFileItem>>(jsonString, _options);
+        await using var stream = File.OpenRead(fileName);
+        var items = await JsonSerializer.DeserializeAsync<IList<CommentFileItem>>(stream, _options);
         return items;
     }
 }

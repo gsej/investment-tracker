@@ -48,7 +48,7 @@ public class AccountPortfolioQueryHandler : IAccountPortfolioQueryHandler
             Holdings: holdings, 
             CashBalanceInGbp: cashBalance,
             Contributions: contributions,
-            new TotalValue(totalValueInGbp, totalPriceAgeInDays),
+            new ValueWithAge(totalValueInGbp, totalPriceAgeInDays),
             
             Allocations: allocations);
     }

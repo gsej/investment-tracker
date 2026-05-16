@@ -22,8 +22,8 @@ public class RecordedTotalValueReader :  IReader<RecordedTotalValue>
             return Array.Empty<RecordedTotalValue>();
         }
         
-        var jsonString = await File.ReadAllTextAsync(fileName);
-        var items = JsonSerializer.Deserialize<IList<RecordedTotalValue>>(jsonString, _options);
+        await using var stream = File.OpenRead(fileName);
+        var items = await JsonSerializer.DeserializeAsync<IList<RecordedTotalValue>>(stream, _options);
         return items;
     }
 }

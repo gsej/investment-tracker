@@ -8,9 +8,8 @@ public class StockTransactionReader : IReader<StockTransaction>
 
     public async Task<IEnumerable<StockTransaction>> Read(string fileName)
     {
-        // TODO: use streams like with exchange rate
-        var jsonString = await File.ReadAllTextAsync(fileName);
-        var items = JsonSerializer.Deserialize<IList<StockTransaction>>(jsonString, _options);
+        await using var stream = File.OpenRead(fileName);
+        var items = await JsonSerializer.DeserializeAsync<IList<StockTransaction>>(stream, _options);
 
         return items;
     }

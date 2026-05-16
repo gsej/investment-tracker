@@ -8,8 +8,8 @@ public class CashStatementReader : IReader<CashStatementItem>
 
     public async Task<IEnumerable<CashStatementItem>> Read(string fileName)
     {
-        var jsonString = await File.ReadAllTextAsync(fileName);
-        var items = JsonSerializer.Deserialize<IList<CashStatementItem>>(jsonString, _options);
+        await using var stream = File.OpenRead(fileName);
+        var items = await JsonSerializer.DeserializeAsync<IList<CashStatementItem>>(stream, _options);
         return items;
     }
 }
