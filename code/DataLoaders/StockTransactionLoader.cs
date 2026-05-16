@@ -72,21 +72,9 @@ public class StockTransactionLoader
 
             if (matchingStock.StockType == StockTypes.Gilt)
             {
-                quantity = quantity / 100;
+                quantity /= 100;
             }
-
-            // // TODO: fix this hack:
-            // // Is this actually for all GILTs? 
-            // if (matchingStock?.StockSymbol == "T26A" 
-            //     || matchingStock?.StockSymbol == "T25" 
-            //     || matchingStock?.StockSymbol == "T27A"
-            //     || matchingStock?.StockSymbol == "TY25"
-            //     )
-            // {
-            //     // quantities for some GILTs from AJBell are out by a factor of 100
-            //     quantity = quantity / 100;
-            // }
-            
+       
             var stockTransaction = new StockTransaction(
                 accountCode: ajBellStockTransaction.AccountCode,
                 date: ajBellStockTransaction.Date.ToDateOnly(),
@@ -95,9 +83,7 @@ public class StockTransactionLoader
                 quantity: quantity,
                 amountGbp: ajBellStockTransaction.AmountGbp,
                 reference: ajBellStockTransaction.Reference,
-                fee: -1, //todo: remove this default
-                stampDuty: 11111, // todo: enrich,
-                stockSymbol: matchingStock != null ? matchingStock.StockSymbol : null // is this possible to be null?
+                stockSymbol: matchingStock.StockSymbol
              );
 
             _stockTransactionTypeEnricher.Enrich(stockTransaction);

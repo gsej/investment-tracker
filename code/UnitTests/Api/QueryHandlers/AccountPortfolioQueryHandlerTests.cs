@@ -114,7 +114,6 @@ public class AccountPortfolioQueryHandlerTests
             .GetCashStatementItems(Arg.Is<string[]>(a => a.Length == 1 && a[0] == AccountCode))
             .Returns(cashStatementItems);
         
-        // TODO: handle multiple accounts
         var request = new AccountPortfolioRequest(["Account"], new DateOnly(2024, 1, 1));
         
         // act
@@ -140,9 +139,7 @@ public class AccountPortfolioQueryHandlerTests
                 quantity: 100,
                 amountGbp: 1020m,
                 reference: "Reference",
-                fee: 5m,
-                stampDuty: 5.1m,
-                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
+                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock, Fee = 5m, StampDuty = 5.1m},
             new(AccountCode,
                 new DateOnly(2023, 12, 31),
                 transaction: "Sale",
@@ -150,9 +147,7 @@ public class AccountPortfolioQueryHandlerTests
                 quantity: 50,
                 amountGbp: 510m,
                 reference: "Reference",
-                fee: 5m,
-                stampDuty: 0,
-                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Sale, Stock = stock },
+                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Sale, Stock = stock, Fee = 5m, StampDuty = 0m},
             new(AccountCode,
                 new DateOnly(2024, 1, 1),
                 transaction: "Purchase",
@@ -160,9 +155,7 @@ public class AccountPortfolioQueryHandlerTests
                 quantity: 1000,
                 amountGbp: 10200m,
                 reference: "Reference",
-                fee: 5m,
-                stampDuty: 51m,
-                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock }
+                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock, Fee = 5m, StampDuty = 51m }
         };
 
         _mockStockTransactionFetcher
@@ -197,9 +190,7 @@ public class AccountPortfolioQueryHandlerTests
                 quantity: 100,
                 amountGbp: 1020m,
                 reference: "Reference",
-                fee: 5m,
-                stampDuty: 5.1m,
-                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
+                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock, Fee = 5m, StampDuty = 5.1m },
         };
 
         _mockStockTransactionFetcher.GetStockTransactions([AccountCode]).Returns(stockTransactions);
@@ -252,9 +243,7 @@ public class AccountPortfolioQueryHandlerTests
                 quantity: 90,
                 amountGbp: 1020m,
                 reference: "Reference",
-                fee: 5m,
-                stampDuty: 5.1m,
-                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock },
+                stockSymbol: "SMT.L") { TransactionType = StockTransactionTypes.Purchase, Stock = stock, Fee = 5m, StampDuty = 5.1m },
         };
 
         _mockStockTransactionFetcher

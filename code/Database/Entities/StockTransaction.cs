@@ -16,8 +16,6 @@ public class StockTransaction
         decimal quantity,
         decimal amountGbp,
         string reference,
-        decimal fee,
-        decimal stampDuty,
         string stockSymbol)
     {
         AccountCode = accountCode;
@@ -27,8 +25,6 @@ public class StockTransaction
         Quantity = quantity;
         AmountGbp = amountGbp;
         Reference = reference;
-        Fee = fee;
-        StampDuty = stampDuty;
         StockSymbol = stockSymbol;
     }
  
@@ -47,7 +43,6 @@ public class StockTransaction
     [MaxLength(15)]
     public string StockSymbol { get; private set; }
     
-    // TODO: make this private setter
     public Stock Stock { get; init; }
   
     [Required]
@@ -67,11 +62,11 @@ public class StockTransaction
     
     [Required]
     [Precision(19,5)]
-    public decimal AmountGbp { get; set; }
+    public decimal AmountGbp { get; init; }
     
     [Required]
     [MaxLength(20)]
-    public string Reference { get; set; }
+    public string Reference { get; init; }
     
     [Required]
     [Precision(19,5)]

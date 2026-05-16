@@ -46,13 +46,11 @@ public class StockTransactionBuilder
             _accountCode,
             _date,
             _transaction,
-            _description, 
-            _quantity, 
+            _description,
+            _quantity,
             _amountGbp,
             _reference,
-            _fee,
-            _stampDuty,
-            _stockSymbol);
+            _stockSymbol) { Fee = _fee, StampDuty = _stampDuty };
         
         stockTransaction.TransactionType = _transactionType;
 

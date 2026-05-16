@@ -193,8 +193,10 @@ public class AccountValueHistoryQueryHandlerTests
     }
 
     private static StockTransaction StockPurchase(DateOnly date, string symbol, decimal quantity) =>
-        new StockTransaction(AccountCode, date, "Purchase", "test", quantity, 0m, "ref", 0m, 0m, symbol)
+        new StockTransaction(AccountCode, date, "Purchase", "test", quantity, 0m, "ref", symbol)
         {
-            TransactionType = StockTransactionTypes.Purchase
+            TransactionType = StockTransactionTypes.Purchase,
+            Fee = 0m,
+            StampDuty = 0m
         };
 }
