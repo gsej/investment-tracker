@@ -168,6 +168,13 @@ export class AccountContainerComponent implements OnInit {
     this.accountsService.selectAccounts(this.accountCodes);
   }
 
+  onChartRangeSelected(event: { start: string; end: string }): void {
+    this.rangeStart = event.start;
+    this.rangeEnd = event.end;
+    this.applyFilter();
+    this.changeDetectorRef.markForCheck();
+  }
+
   toggleShowQualityData() {
     this.qualityService.toggleShowQualityData();
   }
