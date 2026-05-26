@@ -1,0 +1,30 @@
+@if (trailingReturns && trailingReturns.length > 0) {
+  <gsej-ng-tailwind-card>
+    <gsej-ng-tailwind-card-header class="pb-2">
+      <gsej-ng-tailwind-card-title class="text-lg font-bold">Trailing Returns</gsej-ng-tailwind-card-title>
+    </gsej-ng-tailwind-card-header>
+    <gsej-ng-tailwind-separator class="mt-2 mb-4" />
+    <gsej-ng-tailwind-card-content>
+      <table class="w-full text-sm">
+        <tbody>
+          @for (item of trailingReturns; track item.periodLabel) {
+            <tr class="border-b border-gray-100 last:border-0">
+              <td class="py-1.5 text-gray-600">
+                {{ item.periodLabel }}
+                @if (item.isAnnualised) {
+                  <span class="text-xs text-gray-400 ml-1">(ann.)</span>
+                }
+              </td>
+              <td class="py-1.5 text-right font-mono font-medium"
+                  [class.text-green-600]="item.returnPercentage !== null && item.returnPercentage > 0"
+                  [class.text-red-600]="item.returnPercentage !== null && item.returnPercentage < 0"
+                  [class.text-gray-400]="item.returnPercentage === null">
+                {{ formatReturn(item.returnPercentage) }}
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </gsej-ng-tailwind-card-content>
+  </gsej-ng-tailwind-card>
+}

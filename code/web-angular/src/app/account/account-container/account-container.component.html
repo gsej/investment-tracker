@@ -35,8 +35,9 @@
     <app-history-chart class="h-full" [history]="filteredHistory" (rangeSelected)="onChartRangeSelected($event)"></app-history-chart>
   </div>
 
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-4">
     <app-summary [portfolio]="portfolio"></app-summary>
+    <app-trailing-returns [trailingReturns]="filteredHistory?.trailingReturns ?? null"></app-trailing-returns>
   </div>
 
 </div>

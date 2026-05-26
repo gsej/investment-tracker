@@ -91,6 +91,8 @@ public class PrecalculatedAccountValueHistoryQueryHandler : IPrecalculatedAccoun
                 : new UnitAccount(results[i].Date, null, null);
         }
 
-        return new AccountValueHistoryResult(results, comments);
+        var trailingReturns = TrailingReturnsCalculator.Calculate(unitValues, request.QueryDate);
+
+        return new AccountValueHistoryResult(results, comments) { TrailingReturns = trailingReturns };
     }
 }

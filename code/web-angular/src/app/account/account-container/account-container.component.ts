@@ -8,6 +8,7 @@ import { SummaryComponent } from '../summary/summary.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { HistoryComponent } from '../history/history.component';
 import { HistoryChartComponent } from '../chart/history-chart.component';
+import { TrailingReturnsComponent } from '../trailing-returns/trailing-returns.component';
 import { QualityService } from 'src/app/quality.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
@@ -24,6 +25,7 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
     HoldingsComponent,
     HistoryComponent,
     HistoryChartComponent,
+    TrailingReturnsComponent,
     SummaryComponent,
     CardContentComponent,
     CardTitleComponent],
@@ -136,7 +138,7 @@ export class AccountContainerComponent implements OnInit {
       (!this.rangeStart || comment.date >= this.rangeStart) &&
       (!this.rangeEnd || comment.date <= this.rangeEnd)
     );
-    this.filteredHistory = { items, comments };
+    this.filteredHistory = { items, comments, trailingReturns: this.fullHistory.trailingReturns };
   }
 
   onRangeChange(): void {
