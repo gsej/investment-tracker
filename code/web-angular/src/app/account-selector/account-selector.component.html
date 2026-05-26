@@ -1,5 +1,5 @@
 <form [formGroup]="accountSelectorForm">
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-row flex-wrap items-center gap-2">
     @for (account of accounts; track account) {
     <div class="flex items-center">
       @if (multiSelectMode) {
@@ -27,10 +27,10 @@
 
     </div>
     }
-    <div class="mt-3">
-      <button type="button" (click)="applyChanges()" [disabled]="!hasChanges" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors">
-        Apply Changes
-      </button>
-    </div>
+    @if (multiSelectMode) {
+    <button type="button" (click)="applyChanges()" [disabled]="!hasChanges" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors text-sm">
+      Apply
+    </button>
+    }
   </div>
 </form>
