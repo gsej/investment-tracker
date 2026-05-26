@@ -11,6 +11,7 @@ import { HistoryChartComponent } from '../chart/history-chart.component';
 import { QualityService } from 'src/app/quality.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-components';
 
 @Component({
@@ -18,6 +19,7 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     AccountSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
@@ -31,13 +33,20 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
 })
 export class AccountContainerComponent implements OnInit {
 
-  public accounts: Account[] = []
+  public accounts: Account[] = [];
   public portfolio: PortfolioViewModel | null = null;
-  public history: HistoryViewModels | null = null;
+
+  private fullHistory: HistoryViewModels | null = null;
+  public filteredHistory: HistoryViewModels | null = null;
 
   public accountCodes: string[] = [];
 
   public date!: string;
+
+  public rangeStart: string = '';
+  public rangeEnd: string = '';
+  private dataStart: string = '';
+  private dataEnd: string = '';
 
   showQualityData$!: Observable<boolean>;
 
@@ -92,12 +101,19 @@ export class AccountContainerComponent implements OnInit {
     });
 
     this.accountsService.history$.subscribe(history => {
-      if (history == null) {
-        this.history = null;
+      this.fullHistory = history;
+      if (history?.items?.length) {
+        this.dataStart = history.items[0].date;
+        this.dataEnd = history.items[history.items.length - 1].date;
+        this.rangeStart = this.dataStart;
+        this.rangeEnd = this.dataEnd;
+      } else {
+        this.dataStart = '';
+        this.dataEnd = '';
+        this.rangeStart = '';
+        this.rangeEnd = '';
       }
-      else {
-        this.history = history;
-      }
+      this.applyFilter();
       this.changeDetectorRef.markForCheck();
     });
 
@@ -107,25 +123,50 @@ export class AccountContainerComponent implements OnInit {
     });
   }
 
+  private applyFilter(): void {
+    if (!this.fullHistory) {
+      this.filteredHistory = null;
+      return;
+    }
+    const items = this.fullHistory.items.filter(item =>
+      (!this.rangeStart || item.date >= this.rangeStart) &&
+      (!this.rangeEnd || item.date <= this.rangeEnd)
+    );
+    const comments = this.fullHistory.comments.filter(comment =>
+      (!this.rangeStart || comment.date >= this.rangeStart) &&
+      (!this.rangeEnd || comment.date <= this.rangeEnd)
+    );
+    this.filteredHistory = { items, comments };
+  }
+
+  onRangeChange(): void {
+    this.applyFilter();
+    this.changeDetectorRef.markForCheck();
+  }
+
+  setRange(years: number | null): void {
+    if (years === null) {
+      this.rangeStart = this.dataStart;
+    } else {
+      const start = new Date();
+      start.setFullYear(start.getFullYear() - years);
+      const candidate = start.toISOString().substring(0, 10);
+      this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
+    }
+    this.rangeEnd = this.dataEnd;
+    this.applyFilter();
+    this.changeDetectorRef.markForCheck();
+  }
+
   setDateToToday() {
     this.date = new Date().toISOString().substring(0, 10);
   }
 
   accountSelected(accountCodes: string[]) {
-
     this.setDateToToday();
     this.accountCodes = accountCodes;
     this.accountsService.selectAccounts(this.accountCodes);
   }
-
-
-  dateSelected(date: string) {
-    console.log("container, date selected: " + date);
-// TODO: reenebale this
-    this.date = date;
-    //  this.getSummary();
-  }
-
 
   toggleShowQualityData() {
     this.qualityService.toggleShowQualityData();
