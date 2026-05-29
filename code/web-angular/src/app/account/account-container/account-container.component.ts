@@ -173,6 +173,24 @@ export class AccountContainerComponent implements OnInit {
     this.changeDetectorRef.markForCheck();
   }
 
+  setRangeMonths(months: number): void {
+    const start = new Date();
+    start.setMonth(start.getMonth() - months);
+    const candidate = start.toISOString().substring(0, 10);
+    this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
+    this.rangeEnd = this.dataEnd;
+    this.applyFilter();
+    this.changeDetectorRef.markForCheck();
+  }
+
+  setRangeYtd(): void {
+    const ytd = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
+    this.rangeStart = ytd < this.dataStart ? this.dataStart : ytd;
+    this.rangeEnd = this.dataEnd;
+    this.applyFilter();
+    this.changeDetectorRef.markForCheck();
+  }
+
   setDateToToday() {
     this.date = new Date().toISOString().substring(0, 10);
   }
