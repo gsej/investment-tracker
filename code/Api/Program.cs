@@ -4,6 +4,7 @@ using Api.QueryHandlers.Account;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
+using Api.QueryHandlers.StockHistory;
 using Database;
 using Microsoft.EntityFrameworkCore;
 namespace Api;
@@ -68,6 +69,7 @@ public class Program
         builder.Services.AddScoped<IRecordedTotalValueQueryHandler, RecordedTotalValueQueryHandler>();
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
         builder.Services.AddScoped<IPrecalculatedAccountValueHistoryQueryHandler, PrecalculatedAccountValueHistoryQueryHandler>();
+        builder.Services.AddScoped<IStockHistoryQueryHandler, StockHistoryQueryHandler>();
    
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         
