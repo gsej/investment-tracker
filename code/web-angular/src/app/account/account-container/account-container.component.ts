@@ -6,6 +6,7 @@ import { AccountSelectorComponent } from '../../account-selector/account-selecto
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
+import { StockHistoryViewModel } from 'src/app/view-models/StockHistoryViewModel';
 import { HistoryComponent } from '../history/history.component';
 import { HistoryChartComponent } from '../chart/history-chart.component';
 import { TrailingReturnsComponent } from '../trailing-returns/trailing-returns.component';
@@ -49,6 +50,18 @@ export class AccountContainerComponent implements OnInit {
   public rangeEnd: string = '';
   private dataStart: string = '';
   private dataEnd: string = '';
+
+  public benchmarkSymbol: string = '';
+  public benchmarkHistory: StockHistoryViewModel | null = null;
+
+  get availableStocks(): { symbol: string; description: string }[] {
+    if (!this.portfolio?.holdings?.length) return [];
+    const seen = new Map<string, string>();
+    for (const h of this.portfolio.holdings) {
+      if (!seen.has(h.stockSymbol)) seen.set(h.stockSymbol, h.stockDescription);
+    }
+    return Array.from(seen.entries()).map(([symbol, description]) => ({ symbol, description }));
+  }
 
   showQualityData$!: Observable<boolean>;
 
@@ -175,6 +188,18 @@ export class AccountContainerComponent implements OnInit {
     this.rangeEnd = event.end;
     this.applyFilter();
     this.changeDetectorRef.markForCheck();
+  }
+
+  onBenchmarkChange(): void {
+    if (!this.benchmarkSymbol) {
+      this.benchmarkHistory = null;
+      this.changeDetectorRef.markForCheck();
+      return;
+    }
+    this.accountsService.getStockHistory(this.benchmarkSymbol, this.date).subscribe(h => {
+      this.benchmarkHistory = h;
+      this.changeDetectorRef.markForCheck();
+    });
   }
 
   toggleShowQualityData() {

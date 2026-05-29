@@ -3,6 +3,7 @@ import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
 import { CommentViewModel } from 'src/app/view-models/CommentViewModel';
+import { StockHistoryViewModel, StockPriceViewModel } from 'src/app/view-models/StockHistoryViewModel';
 import { FormsModule } from '@angular/forms';
 import { FormLabelComponent } from '@gsej/tailwind-components';
 
@@ -23,6 +24,7 @@ export class HistoryChartComponent implements OnChanges {
 
   private dates: string[] = [];
   private values: number[] = [];
+  private benchmarkValues: number[] = [];
 
   public chartType = 'valueInGbp';
   private label = '';
@@ -54,6 +56,9 @@ export class HistoryChartComponent implements OnChanges {
 
   @Input()
   public history: HistoryViewModels | null = null;
+
+  @Input()
+  public benchmarkHistory: StockHistoryViewModel | null = null;
 
   constructor(private cdr: ChangeDetectorRef, private zone: NgZone) {}
 
@@ -136,11 +141,43 @@ export class HistoryChartComponent implements OnChanges {
         this.values = this.history.items.map(y => y.units.numberOfUnits);
       }
 
+      if (chartType === 'unitValue' && this.benchmarkHistory?.prices?.length) {
+        this.benchmarkValues = this.alignBenchmarkToAccountDates(this.dates, this.benchmarkHistory.prices, this.values);
+      } else {
+        this.benchmarkValues = [];
+      }
+
     }
     else {
       this.dates = [];
       this.values = [];
+      this.benchmarkValues = [];
     }
+  }
+
+  private alignBenchmarkToAccountDates(accountDates: string[], prices: StockPriceViewModel[], accountValues: number[]): number[] {
+    // Forward-fill: for each account date, use the latest benchmark price on or before that date
+    const filled: (number | null)[] = [];
+    let lastPrice: number | null = null;
+    let bIdx = 0;
+
+    for (const date of accountDates) {
+      while (bIdx < prices.length && prices[bIdx].date <= date) {
+        lastPrice = prices[bIdx].price;
+        bIdx++;
+      }
+      filled.push(lastPrice);
+    }
+
+    // Normalise so the benchmark starts at the same value as the account at the first shared data point
+    const firstIdx = filled.findIndex(v => v !== null);
+    if (firstIdx === -1 || firstIdx >= accountValues.length) return filled.map(() => NaN);
+
+    const firstBPrice = filled[firstIdx]!;
+    const firstAValue = accountValues[firstIdx];
+    if (firstBPrice === 0 || !firstAValue) return filled.map(() => NaN);
+
+    return filled.map(v => v !== null ? (v / firstBPrice) * firstAValue : NaN);
   }
 
   private getDragSelectionPlugin() {
@@ -274,20 +311,32 @@ export class HistoryChartComponent implements OnChanges {
       this.chart = null;
     }
 
+    const datasets: any[] = [
+      {
+        label: "Total £",
+        data: this.values,
+        backgroundColor: 'hsl(60, 9.1%, 97.8%)',
+        borderColor: 'hsl(60, 9.1%, 70%)',
+        fill: false
+      }
+    ];
+
+    if (this.chartType === 'unitValue' && this.benchmarkValues.length > 0 && this.benchmarkHistory) {
+      datasets.push({
+        label: this.benchmarkHistory.stockSymbol,
+        data: this.benchmarkValues,
+        backgroundColor: 'transparent',
+        borderColor: 'hsl(200, 70%, 55%)',
+        fill: false
+      });
+    }
+
     this.chart = new Chart("MyChart", <any>{
       type: 'line',
 
       data: {
         labels: this.dates,
-        datasets: [
-          {
-            label: "Total £",
-            data: this.values,
-            backgroundColor: 'hsl(60, 9.1%, 97.8%)',
-            borderColor: 'hsl(60, 9.1%, 70%)',
-            fill: false
-          }
-        ]
+        datasets
       },
       options: {
         responsive: true,

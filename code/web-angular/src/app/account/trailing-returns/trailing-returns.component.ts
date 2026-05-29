@@ -13,11 +13,16 @@ import { TrailingReturnViewModel } from 'src/app/view-models/TrailingReturnViewM
 export class TrailingReturnsComponent {
 
   @Input() trailingReturns: TrailingReturnViewModel[] | null = null;
+  @Input() benchmarkTrailingReturns: TrailingReturnViewModel[] | null = null;
 
   formatReturn(value: number | null): string {
     if (value === null) return '—';
     const pct = value * 100;
     const sign = pct >= 0 ? '+' : '';
     return `${sign}${pct.toFixed(2)}%`;
+  }
+
+  benchmarkReturnFor(periodLabel: string): number | null {
+    return this.benchmarkTrailingReturns?.find(r => r.periodLabel === periodLabel)?.returnPercentage ?? null;
   }
 }

@@ -6,6 +6,15 @@
     <gsej-ng-tailwind-separator class="mt-2 mb-4" />
     <gsej-ng-tailwind-card-content>
       <table class="w-full text-sm">
+        @if (benchmarkTrailingReturns) {
+          <thead>
+            <tr>
+              <th></th>
+              <th class="py-1 text-right font-semibold text-gray-500 text-xs">Account</th>
+              <th class="py-1 text-right font-semibold text-gray-500 text-xs pl-4">Benchmark</th>
+            </tr>
+          </thead>
+        }
         <tbody>
           @for (item of trailingReturns; track item.periodLabel) {
             <tr class="border-b border-gray-100 last:border-0">
@@ -21,6 +30,14 @@
                   [class.text-gray-400]="item.returnPercentage === null">
                 {{ formatReturn(item.returnPercentage) }}
               </td>
+              @if (benchmarkTrailingReturns) {
+                <td class="py-1.5 text-right font-mono font-medium pl-4"
+                    [class.text-green-600]="benchmarkReturnFor(item.periodLabel) !== null && benchmarkReturnFor(item.periodLabel)! > 0"
+                    [class.text-red-600]="benchmarkReturnFor(item.periodLabel) !== null && benchmarkReturnFor(item.periodLabel)! < 0"
+                    [class.text-gray-400]="benchmarkReturnFor(item.periodLabel) === null">
+                  {{ formatReturn(benchmarkReturnFor(item.periodLabel)) }}
+                </td>
+              }
             </tr>
           }
         </tbody>

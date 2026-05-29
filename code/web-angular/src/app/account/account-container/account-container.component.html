@@ -1,5 +1,18 @@
 <app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 
+@if (availableStocks.length > 0) {
+  <div class="mt-2 flex items-center gap-2">
+    <label class="text-sm text-gray-600 font-medium">Benchmark</label>
+    <select class="border border-gray-300 rounded px-2 py-1 text-sm"
+            [(ngModel)]="benchmarkSymbol" (ngModelChange)="onBenchmarkChange()">
+      <option value="">None</option>
+      @for (stock of availableStocks; track stock.symbol) {
+        <option [value]="stock.symbol">{{ stock.symbol }} — {{ stock.description }}</option>
+      }
+    </select>
+  </div>
+}
+
 <h4>Accounts: {{ portfolio?.accountCodes?.join(', ') }}</h4>
 
 <div class="mb-4 flex flex-wrap items-center gap-x-6 gap-y-2">
@@ -32,12 +45,12 @@
 <div class="grid grid-cols-3 gap-4 pt-0">
 
   <div class="col-span-2 flex flex-col">
-    <app-history-chart class="h-full" [history]="filteredHistory" (rangeSelected)="onChartRangeSelected($event)"></app-history-chart>
+    <app-history-chart class="h-full" [history]="filteredHistory" [benchmarkHistory]="benchmarkHistory" (rangeSelected)="onChartRangeSelected($event)"></app-history-chart>
   </div>
 
   <div class="flex flex-col gap-4">
     <app-summary [portfolio]="portfolio"></app-summary>
-    <app-trailing-returns [trailingReturns]="filteredHistory?.trailingReturns ?? null"></app-trailing-returns>
+    <app-trailing-returns [trailingReturns]="filteredHistory?.trailingReturns ?? null" [benchmarkTrailingReturns]="benchmarkHistory?.trailingReturns ?? null"></app-trailing-returns>
   </div>
 
 </div>

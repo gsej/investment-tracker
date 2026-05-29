@@ -5,6 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { HistoryViewModels } from './view-models/HistoryViewModels';
+import { StockHistoryViewModel } from './view-models/StockHistoryViewModel';
 
 @Injectable({
   providedIn: 'root'
@@ -50,5 +51,9 @@ export class AccountsService {
 
   getHistory(accountCodes: string[], queryDate: string): Observable<HistoryViewModels> {
     return this.http.post<HistoryViewModels>('http://localhost:5100/account/precalculated-history', { accountCodes: accountCodes, queryDate: queryDate })
+  }
+
+  getStockHistory(stockSymbol: string, queryDate: string): Observable<StockHistoryViewModel> {
+    return this.http.post<StockHistoryViewModel>('http://localhost:5100/stock/history', { stockSymbol, queryDate });
   }
 }
