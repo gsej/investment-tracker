@@ -21,7 +21,7 @@ public static class TrailingReturnsCalculator
         if (unitValues.Count == 0)
             return AllNull();
 
-        var endUnit = unitValues[unitValues.Count - 1];
+        var endUnit = FindLatestOnOrBefore(unitValues, queryDate) ?? unitValues[unitValues.Count - 1];
 
         if (endUnit.ValueInGbpPerUnit is null or 0)
             return AllNull();
