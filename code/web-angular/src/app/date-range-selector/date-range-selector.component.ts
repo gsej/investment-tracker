@@ -39,30 +39,21 @@ export class DateRangeSelectorComponent implements OnChanges {
     if (years === null) {
       this.rangeStart = '';
       this.rangeEnd = '';
-      this.emitRange();
-      return;
     } else {
-      const start = new Date();
-      start.setFullYear(start.getFullYear() - years);
-      const candidate = start.toISOString().substring(0, 10);
-      this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
+      this.rangeStart = this.dateMinusYears(years);
+      this.rangeEnd = this.dataEnd;
     }
-    this.rangeEnd = this.dataEnd;
     this.emitRange();
   }
 
   setRangeMonths(months: number): void {
-    const start = new Date();
-    start.setMonth(start.getMonth() - months);
-    const candidate = start.toISOString().substring(0, 10);
-    this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
+    this.rangeStart = this.dateMinusMonths(months);
     this.rangeEnd = this.dataEnd;
     this.emitRange();
   }
 
   setRangeYtd(): void {
-    const ytd = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
-    this.rangeStart = ytd < this.dataStart ? this.dataStart : ytd;
+    this.rangeStart = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
     this.rangeEnd = this.dataEnd;
     this.emitRange();
   }
@@ -70,22 +61,18 @@ export class DateRangeSelectorComponent implements OnChanges {
   isRangeActive(years: number | null): boolean {
     if (years === null) return this.rangeStart === '' && this.rangeEnd === '';
     if (this.rangeEnd !== this.dataEnd) return false;
-    return this.rangeStart === this.clampToDataStart(this.dateMinusYears(years));
+    return this.rangeStart === this.dateMinusYears(years);
   }
 
   isMonthRangeActive(months: number): boolean {
     if (this.rangeEnd !== this.dataEnd) return false;
-    return this.rangeStart === this.clampToDataStart(this.dateMinusMonths(months));
+    return this.rangeStart === this.dateMinusMonths(months);
   }
 
   isYtdActive(): boolean {
     if (this.rangeEnd !== this.dataEnd) return false;
     const ytd = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
-    return this.rangeStart === this.clampToDataStart(ytd);
-  }
-
-  private clampToDataStart(date: string): string {
-    return date < this.dataStart ? this.dataStart : date;
+    return this.rangeStart === ytd;
   }
 
   private dateMinusYears(years: number): string {
