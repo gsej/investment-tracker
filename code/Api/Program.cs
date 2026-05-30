@@ -1,6 +1,7 @@
 using Api.Controllers;
 using Api.Correlation;
 using Api.QueryHandlers.Account;
+using Api.QueryHandlers.Stocks;
 using Api.QueryHandlers.Fetchers;
 using Api.QueryHandlers.History;
 using Api.QueryHandlers.Portfolio;
@@ -70,6 +71,7 @@ public class Program
         builder.Services.AddScoped<IAccountValueHistoryQueryHandler, AccountValueHistoryQueryHandler>();
         builder.Services.AddScoped<IPrecalculatedAccountValueHistoryQueryHandler, PrecalculatedAccountValueHistoryQueryHandler>();
         builder.Services.AddScoped<IStockHistoryQueryHandler, StockHistoryQueryHandler>();
+        builder.Services.AddScoped<IStocksQueryHandler, StocksQueryHandler>();
    
         builder.Services.AddScoped<ICorrelationIdGenerator, CorrelationIdGenerator>();
         

@@ -44,14 +44,17 @@ public class StockLoader
             {
                 _logger.LogInformation("beginning to process Stock {stockDto}", stockDto);
 
-                var stock = new Stock.StockBuilder(
+                var builder = new Stock.StockBuilder(
                         stockDto.StockSymbol,
                         stockDto.Description,
                         stockDto.StockType,
                         stockDto.Allocation)
                         .WithAliases(stockDto.Aliases.Select(a => new StockAlias(a.Description)).ToList())
-                        .WithAlternativeSymbols(stockDto.AlternativeSymbols.Select(a => new AlternativeSymbol(a.Alternative)).ToList())
-                        .Build();
+                        .WithAlternativeSymbols(stockDto.AlternativeSymbols.Select(a => new AlternativeSymbol(a.Alternative)).ToList());
+
+                if (stockDto.Benchmark) builder.WithBenchmark();
+
+                var stock = builder.Build();
               
                 _repository.Add(stock);
             }

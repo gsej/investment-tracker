@@ -39,7 +39,9 @@ public class Stock
     [MaxLength(20)]
     public string Allocation { get; init; }
 
-    public class StockBuilder 
+    public bool Benchmark { get; init; }
+
+    public class StockBuilder
     {
         private readonly string _stockSymbol;
         private string _isin;
@@ -48,6 +50,7 @@ public class Stock
         private string _notes;
         private bool _subjectToStampDuty;
         private string _allocation;
+        private bool _benchmark;
      
         private IEnumerable<StockAlias> _aliases = new List<StockAlias>();
         private IEnumerable<AlternativeSymbol> _alternativeSymbols = new List<AlternativeSymbol>();
@@ -95,7 +98,13 @@ public class Stock
             _alternativeSymbols = alternativeSymbols;
             return this;
         }
-        
+
+        public StockBuilder WithBenchmark()
+        {
+            _benchmark = true;
+            return this;
+        }
+
         public Stock Build()
         {
             return new Stock
@@ -104,11 +113,12 @@ public class Stock
                 Description = _description,
                 StockType = _stockType,
                 Notes = _notes,
-                Aliases = _aliases, 
+                Aliases = _aliases,
                 AlternativeSymbols = _alternativeSymbols,
                 Isin = _isin,
                 SubjectToStampDuty = _subjectToStampDuty,
-                Allocation = _allocation
+                Allocation = _allocation,
+                Benchmark = _benchmark
             };
         }
     }

@@ -11,7 +11,8 @@ public record Stock(
     [property: JsonPropertyName("stock_type")] string StockType,
     [property: JsonPropertyName("subject_to_stamp_duty")] bool SubjectToStampDuty,
     string Notes,
-    string Allocation);
+    string Allocation,
+    bool Benchmark);
 
 public record Alias(string Description);
 
