@@ -10,28 +10,12 @@
     <span class="ml-2">Show quality data</span>
   </label>
 
-  <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
-    <div class="flex items-center gap-2">
-      <span class="text-sm text-gray-600">From</span>
-      <input type="date" class="border border-gray-300 rounded px-2 py-1 text-sm"
-             [(ngModel)]="rangeStart" (change)="onRangeChange()" />
-    </div>
-    <div class="flex items-center gap-2">
-      <span class="text-sm text-gray-600">To</span>
-      <input type="date" class="border border-gray-300 rounded px-2 py-1 text-sm"
-             [(ngModel)]="rangeEnd" (change)="onRangeChange()" />
-    </div>
-    <div class="flex items-center gap-1">
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRange(null)">All</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRange(10)">Last 10y</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRange(5)">Last 5y</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRange(3)">Last 3y</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRange(1)">Last year</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRangeMonths(6)">Last 6m</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRangeMonths(3)">Last 3m</button>
-      <button class="px-2 py-1 text-xs rounded border border-gray-300 hover:bg-gray-100" (click)="setRangeYtd()">YTD</button>
-    </div>
-  </div>
+  <app-date-range-selector
+    [dataStart]="dataStart"
+    [dataEnd]="dataEnd"
+    [overrideRange]="chartRange"
+    (rangeChanged)="onRangeChanged($event)">
+  </app-date-range-selector>
 </div>
 
 <div class="grid grid-cols-3 gap-4 pt-0">

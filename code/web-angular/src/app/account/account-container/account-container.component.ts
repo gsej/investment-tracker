@@ -4,6 +4,7 @@ import { AccountsService } from '../../accounts.service';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
 import { BenchmarkSelectorComponent } from '../../benchmark-selector/benchmark-selector.component';
+import { DateRangeSelectorComponent } from '../../date-range-selector/date-range-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
@@ -14,7 +15,6 @@ import { TrailingReturnsComponent } from '../trailing-returns/trailing-returns.c
 import { QualityService } from 'src/app/quality.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-components';
 
 @Component({
@@ -22,9 +22,9 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule,
     AccountSelectorComponent,
     BenchmarkSelectorComponent,
+    DateRangeSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
     HistoryChartComponent,
@@ -48,10 +48,11 @@ export class AccountContainerComponent implements OnInit {
 
   public date!: string;
 
-  public rangeStart: string = '';
-  public rangeEnd: string = '';
-  private dataStart: string = '';
-  private dataEnd: string = '';
+  private rangeStart: string = '';
+  private rangeEnd: string = '';
+  public dataStart: string = '';
+  public dataEnd: string = '';
+  public chartRange: { start: string; end: string } | null = null;
 
   public benchmarkHistory: StockHistoryViewModel | null = null;
   public availableStocks: { symbol: string; description: string }[] = [];
@@ -118,8 +119,6 @@ export class AccountContainerComponent implements OnInit {
       if (history?.items?.length) {
         this.dataStart = history.items[0].date;
         this.dataEnd = history.items[history.items.length - 1].date;
-        this.rangeStart = this.dataStart;
-        this.rangeEnd = this.dataEnd;
       } else {
         this.dataStart = '';
         this.dataEnd = '';
@@ -152,39 +151,9 @@ export class AccountContainerComponent implements OnInit {
     this.filteredHistory = { items, comments, trailingReturns: this.fullHistory.trailingReturns };
   }
 
-  onRangeChange(): void {
-    this.applyFilter();
-    this.changeDetectorRef.markForCheck();
-  }
-
-  setRange(years: number | null): void {
-    if (years === null) {
-      this.rangeStart = this.dataStart;
-    } else {
-      const start = new Date();
-      start.setFullYear(start.getFullYear() - years);
-      const candidate = start.toISOString().substring(0, 10);
-      this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
-    }
-    this.rangeEnd = this.dataEnd;
-    this.applyFilter();
-    this.changeDetectorRef.markForCheck();
-  }
-
-  setRangeMonths(months: number): void {
-    const start = new Date();
-    start.setMonth(start.getMonth() - months);
-    const candidate = start.toISOString().substring(0, 10);
-    this.rangeStart = candidate < this.dataStart ? this.dataStart : candidate;
-    this.rangeEnd = this.dataEnd;
-    this.applyFilter();
-    this.changeDetectorRef.markForCheck();
-  }
-
-  setRangeYtd(): void {
-    const ytd = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
-    this.rangeStart = ytd < this.dataStart ? this.dataStart : ytd;
-    this.rangeEnd = this.dataEnd;
+  onRangeChanged(range: { start: string; end: string }): void {
+    this.rangeStart = range.start;
+    this.rangeEnd = range.end;
     this.applyFilter();
     this.changeDetectorRef.markForCheck();
   }
@@ -202,6 +171,7 @@ export class AccountContainerComponent implements OnInit {
   onChartRangeSelected(event: { start: string; end: string }): void {
     this.rangeStart = event.start;
     this.rangeEnd = event.end;
+    this.chartRange = { ...event };
     this.applyFilter();
     this.changeDetectorRef.markForCheck();
   }
