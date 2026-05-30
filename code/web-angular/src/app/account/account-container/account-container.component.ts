@@ -3,6 +3,7 @@ import { Account } from '../../models/account';
 import { AccountsService } from '../../accounts.service';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
+import { BenchmarkSelectorComponent } from '../../benchmark-selector/benchmark-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
@@ -23,6 +24,7 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
     CommonModule,
     FormsModule,
     AccountSelectorComponent,
+    BenchmarkSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
     HistoryChartComponent,
@@ -51,7 +53,6 @@ export class AccountContainerComponent implements OnInit {
   private dataStart: string = '';
   private dataEnd: string = '';
 
-  public benchmarkSymbol: string = '';
   public benchmarkHistory: StockHistoryViewModel | null = null;
 
   get availableStocks(): { symbol: string; description: string }[] {
@@ -208,13 +209,13 @@ export class AccountContainerComponent implements OnInit {
     this.changeDetectorRef.markForCheck();
   }
 
-  onBenchmarkChange(): void {
-    if (!this.benchmarkSymbol) {
+  onBenchmarkChanged(symbol: string): void {
+    if (!symbol) {
       this.benchmarkHistory = null;
       this.changeDetectorRef.markForCheck();
       return;
     }
-    this.accountsService.getStockHistory(this.benchmarkSymbol, this.date).subscribe(h => {
+    this.accountsService.getStockHistory(symbol, this.date).subscribe(h => {
       this.benchmarkHistory = h;
       this.changeDetectorRef.markForCheck();
     });
