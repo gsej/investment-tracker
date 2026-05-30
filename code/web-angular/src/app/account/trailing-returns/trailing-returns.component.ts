@@ -14,6 +14,7 @@ export class TrailingReturnsComponent {
 
   @Input() trailingReturns: TrailingReturnViewModel[] | null = null;
   @Input() benchmarkTrailingReturns: TrailingReturnViewModel[] | null = null;
+  @Input() benchmarkName: string | null = null;
 
   formatReturn(value: number | null): string {
     if (value === null) return '—';

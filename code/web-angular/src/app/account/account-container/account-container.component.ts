@@ -54,15 +54,7 @@ export class AccountContainerComponent implements OnInit {
   private dataEnd: string = '';
 
   public benchmarkHistory: StockHistoryViewModel | null = null;
-
-  get availableStocks(): { symbol: string; description: string }[] {
-    if (!this.portfolio?.holdings?.length) return [];
-    const seen = new Map<string, string>();
-    for (const h of this.portfolio.holdings) {
-      if (!seen.has(h.stockSymbol)) seen.set(h.stockSymbol, h.stockDescription);
-    }
-    return Array.from(seen.entries()).map(([symbol, description]) => ({ symbol, description }));
-  }
+  public availableStocks: { symbol: string; description: string }[] = [];
 
   showQualityData$!: Observable<boolean>;
 
@@ -76,6 +68,11 @@ export class AccountContainerComponent implements OnInit {
   ngOnInit(): void {
 
     this.showQualityData$ = this.qualityService.showQualityData$;
+
+    this.accountsService.getStocks().subscribe(stocks => {
+      this.availableStocks = stocks.filter(s => s.benchmark);
+      this.changeDetectorRef.markForCheck();
+    });
 
     this.accountsService.portfolio$.subscribe(portfolio => {
 
