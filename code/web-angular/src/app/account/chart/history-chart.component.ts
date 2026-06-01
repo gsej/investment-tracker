@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, ChangeDetectionStrategy, ChangeDetectorRef, NgZone, HostListener } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, OnDestroy, SimpleChanges, ChangeDetectionStrategy, ChangeDetectorRef, NgZone, HostListener } from '@angular/core';
 import Chart from 'chart.js/auto';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { HistoryViewModels } from 'src/app/view-models/HistoryViewModels';
@@ -18,7 +18,7 @@ Chart.register(annotationPlugin);
   styleUrl: './history-chart.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HistoryChartComponent implements OnChanges {
+export class HistoryChartComponent implements OnChanges, OnDestroy {
 
   public chart: any;
 
@@ -34,8 +34,7 @@ export class HistoryChartComponent implements OnChanges {
   private dragStartX: number | null = null;
   private dragCurrentX: number | null = null;
   private isDragging = false;
-  private windowMouseMoveHandler: ((e: MouseEvent) => void) | null = null;
-  private windowMouseUpHandler: ((e: MouseEvent) => void) | null = null;
+  private canvasMouseDownHandler: ((e: MouseEvent) => void) | null = null;
 
   public activeCommentIndex: number | null = null;
   public visibleComments: CommentViewModel[] = [];
@@ -200,7 +199,7 @@ export class HistoryChartComponent implements OnChanges {
   }
 
   private attachDragHandlers(canvas: HTMLCanvasElement): void {
-    canvas.addEventListener('mousedown', (e: MouseEvent) => {
+    const mouseDownHandler = (e: MouseEvent) => {
       const rect = canvas.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const chartArea = this.chart?.chartArea;
@@ -211,7 +210,10 @@ export class HistoryChartComponent implements OnChanges {
       this.isDragging = true;
       canvas.style.cursor = 'crosshair';
 
-      this.windowMouseMoveHandler = (me: MouseEvent) => {
+      let localMoveHandler: (me: MouseEvent) => void;
+      let localUpHandler: (me: MouseEvent) => void;
+
+      localMoveHandler = (me: MouseEvent) => {
         const r = canvas.getBoundingClientRect();
         const mx = me.clientX - r.left;
         const ca = this.chart?.chartArea;
@@ -220,9 +222,9 @@ export class HistoryChartComponent implements OnChanges {
         this.chart?.render();
       };
 
-      this.windowMouseUpHandler = (me: MouseEvent) => {
-        window.removeEventListener('mousemove', this.windowMouseMoveHandler!);
-        window.removeEventListener('mouseup', this.windowMouseUpHandler!);
+      localUpHandler = (me: MouseEvent) => {
+        window.removeEventListener('mousemove', localMoveHandler);
+        window.removeEventListener('mouseup', localUpHandler);
 
         const dragDistance = Math.abs((this.dragCurrentX ?? 0) - (this.dragStartX ?? 0));
         if (dragDistance > 5 && this.chart) {
@@ -245,9 +247,12 @@ export class HistoryChartComponent implements OnChanges {
         this.chart?.render();
       };
 
-      window.addEventListener('mousemove', this.windowMouseMoveHandler);
-      window.addEventListener('mouseup', this.windowMouseUpHandler);
-    });
+      window.addEventListener('mousemove', localMoveHandler);
+      window.addEventListener('mouseup', localUpHandler);
+    };
+
+    canvas.addEventListener('mousedown', mouseDownHandler);
+    this.canvasMouseDownHandler = mouseDownHandler;
   }
 
   private buildCommentAnnotations(): Record<string, any> {
@@ -304,9 +309,22 @@ export class HistoryChartComponent implements OnChanges {
     return annotations;
   }
 
+  ngOnDestroy(): void {
+    if (this.chart) {
+      if (this.canvasMouseDownHandler) {
+        this.chart.canvas.removeEventListener('mousedown', this.canvasMouseDownHandler);
+      }
+      this.chart.destroy();
+    }
+  }
+
   createChart() {
 
     if (this.chart) {
+      if (this.canvasMouseDownHandler) {
+        this.chart.canvas.removeEventListener('mousedown', this.canvasMouseDownHandler);
+        this.canvasMouseDownHandler = null;
+      }
       this.chart.destroy();
       this.chart = null;
     }

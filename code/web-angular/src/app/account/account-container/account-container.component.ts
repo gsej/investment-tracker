@@ -50,8 +50,6 @@ export class AccountContainerComponent implements OnInit {
 
   private rangeStart: string = '';
   private rangeEnd: string = '';
-  public dataStart: string = '';
-  public dataEnd: string = '';
   public chartRange: { start: string; end: string } | null = null;
 
   public benchmarkHistory: StockHistoryViewModel | null = null;
@@ -116,12 +114,7 @@ export class AccountContainerComponent implements OnInit {
 
     this.accountsService.history$.subscribe(history => {
       this.fullHistory = history;
-      if (history?.items?.length) {
-        this.dataStart = history.items[0].date;
-        this.dataEnd = history.items[history.items.length - 1].date;
-      } else {
-        this.dataStart = '';
-        this.dataEnd = '';
+      if (!history?.items?.length) {
         this.rangeStart = '';
         this.rangeEnd = '';
       }

@@ -10,8 +10,6 @@ import { FormsModule } from '@angular/forms';
 })
 export class DateRangeSelectorComponent implements OnChanges {
 
-  @Input() dataStart: string = '';
-  @Input() dataEnd: string = '';
   @Input() overrideRange: { start: string; end: string } | null = null;
 
   @Output() rangeChanged = new EventEmitter<{ start: string; end: string }>();
@@ -20,11 +18,6 @@ export class DateRangeSelectorComponent implements OnChanges {
   public rangeEnd: string = '';
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['dataStart'] || changes['dataEnd']) {
-      this.rangeStart = '';
-      this.rangeEnd = '';
-      this.emitRange();
-    }
     if (changes['overrideRange'] && this.overrideRange) {
       this.rangeStart = this.overrideRange.start;
       this.rangeEnd = this.overrideRange.end;
@@ -41,38 +34,39 @@ export class DateRangeSelectorComponent implements OnChanges {
       this.rangeEnd = '';
     } else {
       this.rangeStart = this.dateMinusYears(years);
-      this.rangeEnd = this.dataEnd;
+      this.rangeEnd = this.today();
     }
     this.emitRange();
   }
 
   setRangeMonths(months: number): void {
     this.rangeStart = this.dateMinusMonths(months);
-    this.rangeEnd = this.dataEnd;
+    this.rangeEnd = this.today();
     this.emitRange();
   }
 
   setRangeYtd(): void {
     this.rangeStart = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
-    this.rangeEnd = this.dataEnd;
+    this.rangeEnd = this.today();
     this.emitRange();
   }
 
   isRangeActive(years: number | null): boolean {
     if (years === null) return this.rangeStart === '' && this.rangeEnd === '';
-    if (this.rangeEnd !== this.dataEnd) return false;
-    return this.rangeStart === this.dateMinusYears(years);
+    return this.rangeStart === this.dateMinusYears(years) && this.rangeEnd === this.today();
   }
 
   isMonthRangeActive(months: number): boolean {
-    if (this.rangeEnd !== this.dataEnd) return false;
-    return this.rangeStart === this.dateMinusMonths(months);
+    return this.rangeStart === this.dateMinusMonths(months) && this.rangeEnd === this.today();
   }
 
   isYtdActive(): boolean {
-    if (this.rangeEnd !== this.dataEnd) return false;
     const ytd = new Date(new Date().getFullYear(), 0, 1).toISOString().substring(0, 10);
-    return this.rangeStart === ytd;
+    return this.rangeStart === ytd && this.rangeEnd === this.today();
+  }
+
+  private today(): string {
+    return new Date().toISOString().substring(0, 10);
   }
 
   private dateMinusYears(years: number): string {
