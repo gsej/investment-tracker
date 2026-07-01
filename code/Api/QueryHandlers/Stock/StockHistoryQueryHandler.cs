@@ -22,13 +22,34 @@ public class StockHistoryQueryHandler : IStockHistoryQueryHandler
             .OrderBy(p => p.Date)
             .ToList();
 
-        var prices = deduplicated
-            .Select(p => new StockPriceResult(p.Date, p.Price))
-            .ToList();
+        if (deduplicated.Count == 0)
+        {
+            return new StockHistoryResult(request.StockSymbol, [], []);
+        }
 
-        var unitValues = deduplicated
-            .Select(p => new UnitAccount(p.Date, 1, p.Price))
-            .ToList();
+        var prices = new List<StockPriceResult>();
+        var unitValues = new List<UnitAccount>();
+
+        var startDate = deduplicated[0].Date;
+        var endDate = request.QueryDate;
+
+        decimal currentPrice = 0;
+        DateOnly lastPriceDate = startDate;
+        int priceIdx = 0;
+
+        for (var date = startDate; date <= endDate; date = date.AddDays(1))
+        {
+            while (priceIdx < deduplicated.Count && deduplicated[priceIdx].Date <= date)
+            {
+                currentPrice = deduplicated[priceIdx].Price;
+                lastPriceDate = deduplicated[priceIdx].Date;
+                priceIdx++;
+            }
+
+            var ageInDays = date.DayNumber - lastPriceDate.DayNumber;
+            prices.Add(new StockPriceResult(date, currentPrice, ageInDays));
+            unitValues.Add(new UnitAccount(date, 1, currentPrice));
+        }
 
         var trailingReturns = TrailingReturnsCalculator.Calculate(unitValues, request.QueryDate);
 

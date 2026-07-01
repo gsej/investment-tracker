@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Account } from './models/account';
 import { Portfolio } from "./models/portfolio";
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { HistoryViewModels } from './view-models/HistoryViewModels';
@@ -26,6 +26,28 @@ export class AccountsService {
   private _historySubject: BehaviorSubject<HistoryViewModels | null> = new BehaviorSubject<HistoryViewModels | null>(null);
   public history$: Observable<HistoryViewModels | null> = this._historySubject.asObservable();
 
+  private _dateRangeSubject = new BehaviorSubject<{ start: string; end: string }>({ start: '', end: '' });
+  public dateRange$ = this._dateRangeSubject.asObservable();
+
+  public filteredHistory$: Observable<HistoryViewModels | null> = combineLatest([
+    this._historySubject,
+    this._dateRangeSubject
+  ]).pipe(
+    map(([history, range]) => {
+      if (!history) return null;
+      if (!range.start && !range.end) return history;
+      const items = history.items.filter(item =>
+        (!range.start || item.date >= range.start) &&
+        (!range.end || item.date <= range.end)
+      );
+      const comments = history.comments.filter(comment =>
+        (!range.start || comment.date >= range.start) &&
+        (!range.end || comment.date <= range.end)
+      );
+      return { items, comments, trailingReturns: history.trailingReturns };
+    })
+  );
+
   constructor(private http: HttpClient) {
     this._today = new Date().toISOString().substring(0, 10);
   }
@@ -36,6 +58,13 @@ export class AccountsService {
 
   selectAccounts(accountCodes: string[]) {
     this._selectedAccounts = accountCodes;
+
+    if (accountCodes.length === 0) {
+      this._portfolioSubject.next(null);
+      this._historySubject.next(null);
+      return;
+    }
+
     this.getPortfolio(accountCodes, this._today).subscribe(summary => {
       this._portfolioSubject.next(summary);
     });
@@ -43,7 +72,10 @@ export class AccountsService {
     this.getHistory(accountCodes, this._today).subscribe(history => {
       this._historySubject.next(history);
     });
+  }
 
+  setDateRange(range: { start: string; end: string }): void {
+    this._dateRangeSubject.next(range);
   }
 
   getPortfolio(accountCodes: string[], date: string): Observable<Portfolio> {

@@ -1,5 +1,18 @@
 <form [formGroup]="accountSelectorForm">
   <div class="flex flex-row flex-wrap items-center gap-2">
+    @if (!multiSelectMode) {
+    <div class="flex items-center">
+      <label class="cursor-pointer select-none">
+        <input type="radio" name="rad_selectedAccount" value="" formControlName="rad_selectedAccount" (change)="selectNone()" id="rad_none" class="peer sr-only">
+        <span class="inline-flex items-center px-3 py-1.5 rounded border text-sm font-medium transition-colors
+                 bg-white text-gray-500 border-gray-300 hover:bg-gray-50
+                 peer-checked:bg-gray-200 peer-checked:text-gray-700 peer-checked:border-gray-400
+                 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-500">
+          None
+        </span>
+      </label>
+    </div>
+    }
     @for (account of accounts; track account) {
     <div class="flex items-center">
       @if (multiSelectMode) {

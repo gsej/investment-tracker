@@ -59,6 +59,9 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
   @Input()
   public benchmarkHistory: StockHistoryViewModel | null = null;
 
+  @Input()
+  public dateRange: { start: string; end: string } = { start: '', end: '' };
+
   constructor(private cdr: ChangeDetectorRef, private zone: NgZone) {}
 
   ngOnInit(): void {
@@ -126,7 +129,9 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
   setData(chartType: string) {
     if (this.history) {
 
-      this.dates = this.history.items.map(y => y.date.toString());
+      const start = this.dateRange.start || this.history.items[0]?.date?.toString() || '';
+      const end = this.dateRange.end || this.history.items[this.history.items.length - 1]?.date?.toString() || '';
+      this.dates = this.generateDateRange(start, end);
 
       if (chartType === 'valueInGbp') {
         this.label = 'Value in Gbp';
@@ -152,6 +157,15 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
       this.values = [];
       this.benchmarkValues = [];
     }
+  }
+
+  private generateDateRange(start: string, end: string): string[] {
+    const dates: string[] = [];
+    const endDate = new Date(end);
+    for (let d = new Date(start); d <= endDate; d.setDate(d.getDate() + 1)) {
+      dates.push(d.toISOString().substring(0, 10));
+    }
+    return dates;
   }
 
   private alignBenchmarkToAccountDates(accountDates: string[], prices: StockPriceViewModel[], accountValues: number[]): number[] {

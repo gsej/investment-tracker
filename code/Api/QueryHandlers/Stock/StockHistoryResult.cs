@@ -7,4 +7,4 @@ public record StockHistoryResult(
     IReadOnlyList<StockPriceResult> Prices,
     IReadOnlyList<TrailingReturnResult> TrailingReturns);
 
-public record StockPriceResult(DateOnly Date, decimal Price);
+public record StockPriceResult(DateOnly Date, decimal Price, int PriceAgeInDays);

@@ -95,12 +95,6 @@ onLabelClick(event: MouseEvent, accountCode: string) {
         }
       });
 
-      if (this.selectedAccounts.size === 0) {
-        this.selectedAccounts.add(this.accounts[0].accountCode);
-        this.pendingSelectedAccounts.add(this.accounts[0].accountCode);
-        this.updateFormControls();
-        this.accountChanged.next(Array.from(this.selectedAccounts));
-      }
     }
 
   }
@@ -141,9 +135,15 @@ onLabelClick(event: MouseEvent, accountCode: string) {
     }
   }
 
+  selectNone() {
+    this.pendingSelectedAccounts.clear();
+    this.selectedAccounts.clear();
+    this.updateFormControls();
+    this.accountChanged.next([]);
+  }
+
   applyChanges() {
     this.selectedAccounts = new Set(this.pendingSelectedAccounts);
     this.accountChanged.next(Array.from(this.selectedAccounts));
-
   }
 }

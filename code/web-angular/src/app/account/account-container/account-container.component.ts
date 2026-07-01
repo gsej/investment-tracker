@@ -41,16 +41,14 @@ export class AccountContainerComponent implements OnInit {
   public accounts: Account[] = [];
   public portfolio: PortfolioViewModel | null = null;
 
-  private fullHistory: HistoryViewModels | null = null;
   public filteredHistory: HistoryViewModels | null = null;
 
   public accountCodes: string[] = [];
 
   public date!: string;
 
-  private rangeStart: string = '';
-  private rangeEnd: string = '';
   public chartRange: { start: string; end: string } | null = null;
+  public dateRange: { start: string; end: string } = { start: '', end: '' };
 
   public benchmarkHistory: StockHistoryViewModel | null = null;
   public availableStocks: { symbol: string; description: string }[] = [];
@@ -112,13 +110,13 @@ export class AccountContainerComponent implements OnInit {
       }
     });
 
-    this.accountsService.history$.subscribe(history => {
-      this.fullHistory = history;
-      if (!history?.items?.length) {
-        this.rangeStart = '';
-        this.rangeEnd = '';
-      }
-      this.applyFilter();
+    this.accountsService.filteredHistory$.subscribe(history => {
+      this.filteredHistory = history;
+      this.changeDetectorRef.markForCheck();
+    });
+
+    this.accountsService.dateRange$.subscribe(range => {
+      this.dateRange = range;
       this.changeDetectorRef.markForCheck();
     });
 
@@ -128,27 +126,8 @@ export class AccountContainerComponent implements OnInit {
     });
   }
 
-  private applyFilter(): void {
-    if (!this.fullHistory) {
-      this.filteredHistory = null;
-      return;
-    }
-    const items = this.fullHistory.items.filter(item =>
-      (!this.rangeStart || item.date >= this.rangeStart) &&
-      (!this.rangeEnd || item.date <= this.rangeEnd)
-    );
-    const comments = this.fullHistory.comments.filter(comment =>
-      (!this.rangeStart || comment.date >= this.rangeStart) &&
-      (!this.rangeEnd || comment.date <= this.rangeEnd)
-    );
-    this.filteredHistory = { items, comments, trailingReturns: this.fullHistory.trailingReturns };
-  }
-
   onRangeChanged(range: { start: string; end: string }): void {
-    this.rangeStart = range.start;
-    this.rangeEnd = range.end;
-    this.applyFilter();
-    this.changeDetectorRef.markForCheck();
+    this.accountsService.setDateRange(range);
   }
 
   setDateToToday() {
@@ -158,15 +137,13 @@ export class AccountContainerComponent implements OnInit {
   accountSelected(accountCodes: string[]) {
     this.setDateToToday();
     this.accountCodes = accountCodes;
+    this.chartRange = null;
     this.accountsService.selectAccounts(this.accountCodes);
   }
 
   onChartRangeSelected(event: { start: string; end: string }): void {
-    this.rangeStart = event.start;
-    this.rangeEnd = event.end;
+    this.accountsService.setDateRange({ ...event });
     this.chartRange = { ...event };
-    this.applyFilter();
-    this.changeDetectorRef.markForCheck();
   }
 
   onBenchmarkChanged(symbol: string): void {
