@@ -1,6 +1,6 @@
 <app-account-selector [accounts]="accounts" (accountChanged)="accountSelected($event)"></app-account-selector>
 
-<app-benchmark-selector [availableStocks]="availableStocks" (benchmarkChanged)="onBenchmarkChanged($event)"></app-benchmark-selector>
+<app-stock-selector [availableStocks]="availableStocks" (stocksChanged)="onStocksChanged($event)"></app-stock-selector>
 
 <h4>Accounts: {{ portfolio?.accountCodes?.join(', ') }}</h4>
 
@@ -16,16 +16,16 @@
   </app-date-range-selector>
 </div>
 
-<div class="grid grid-cols-3 gap-4 pt-0">
+<div class="grid grid-cols-3 gap-4 pt-0 min-h-[500px]">
 
   <div class="col-span-2 flex flex-col">
-    <app-history-chart class="h-full" [history]="filteredHistory" [benchmarkHistory]="benchmarkHistory" [dateRange]="dateRange" (rangeSelected)="onChartRangeSelected($event)"></app-history-chart>
+    <app-history-chart class="h-full" [history]="filteredHistory" [stockHistories]="stockHistories" [dateRange]="dateRange" (rangeSelected)="onChartRangeSelected($event)"></app-history-chart>
   </div>
 
   @if (portfolio || filteredHistory) {
   <div class="flex flex-col gap-4">
     <app-summary [portfolio]="portfolio"></app-summary>
-    <app-trailing-returns [trailingReturns]="filteredHistory?.trailingReturns ?? null" [benchmarkTrailingReturns]="benchmarkHistory?.trailingReturns ?? null" [benchmarkName]="benchmarkHistory?.stockSymbol ?? null"></app-trailing-returns>
+    <app-trailing-returns [trailingReturns]="filteredHistory?.trailingReturns ?? null" [benchmarkTrailingReturns]="firstStock?.trailingReturns ?? null" [benchmarkName]="firstStock?.stockSymbol ?? null"></app-trailing-returns>
   </div>
   }
 

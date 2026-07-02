@@ -15,9 +15,6 @@ export class AccountsService {
 
   _today: string;
 
-  // TODO: remove single account support
-  //_selectedAccount: string | null = null;
-
   _selectedAccounts: string[] = [];
 
   private _portfolioSubject: BehaviorSubject<Portfolio | null> = new BehaviorSubject<Portfolio | null>(null);

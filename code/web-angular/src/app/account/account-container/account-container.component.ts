@@ -3,7 +3,7 @@ import { Account } from '../../models/account';
 import { AccountsService } from '../../accounts.service';
 import { PortfolioViewModel } from '../../view-models/PortfolioViewModel';
 import { AccountSelectorComponent } from '../../account-selector/account-selector.component';
-import { BenchmarkSelectorComponent } from '../../benchmark-selector/benchmark-selector.component';
+import { StockSelectorComponent } from '../../stock-selector/stock-selector.component';
 import { DateRangeSelectorComponent } from '../../date-range-selector/date-range-selector.component';
 import { HoldingsComponent } from '../holdings/holdings.component';
 import { SummaryComponent } from '../summary/summary.component';
@@ -13,7 +13,7 @@ import { HistoryComponent } from '../history/history.component';
 import { HistoryChartComponent } from '../chart/history-chart.component';
 import { TrailingReturnsComponent } from '../trailing-returns/trailing-returns.component';
 import { QualityService } from 'src/app/quality.service';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-components';
 
@@ -23,7 +23,7 @@ import { CardContentComponent, CardTitleComponent } from '@gsej/tailwind-compone
   imports: [
     CommonModule,
     AccountSelectorComponent,
-    BenchmarkSelectorComponent,
+    StockSelectorComponent,
     DateRangeSelectorComponent,
     HoldingsComponent,
     HistoryComponent,
@@ -50,7 +50,11 @@ export class AccountContainerComponent implements OnInit {
   public chartRange: { start: string; end: string } | null = null;
   public dateRange: { start: string; end: string } = { start: '', end: '' };
 
-  public benchmarkHistory: StockHistoryViewModel | null = null;
+  public stockHistories: StockHistoryViewModel[] = [];
+
+  get firstStock(): StockHistoryViewModel | null {
+    return this.stockHistories[0] ?? null;
+  }
   public availableStocks: { symbol: string; description: string }[] = [];
 
   showQualityData$!: Observable<boolean>;
@@ -146,14 +150,14 @@ export class AccountContainerComponent implements OnInit {
     this.chartRange = { ...event };
   }
 
-  onBenchmarkChanged(symbol: string): void {
-    if (!symbol) {
-      this.benchmarkHistory = null;
+  onStocksChanged(symbols: string[]): void {
+    if (symbols.length === 0) {
+      this.stockHistories = [];
       this.changeDetectorRef.markForCheck();
       return;
     }
-    this.accountsService.getStockHistory(symbol, this.date).subscribe(h => {
-      this.benchmarkHistory = h;
+    forkJoin(symbols.map(s => this.accountsService.getStockHistory(s, this.date))).subscribe(histories => {
+      this.stockHistories = histories;
       this.changeDetectorRef.markForCheck();
     });
   }

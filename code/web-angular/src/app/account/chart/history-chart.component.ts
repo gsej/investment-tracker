@@ -7,7 +7,6 @@ import { StockHistoryViewModel, StockPriceViewModel } from 'src/app/view-models/
 import { FormsModule } from '@angular/forms';
 import { FormLabelComponent } from '@gsej/tailwind-components';
 
-
 Chart.register(annotationPlugin);
 
 @Component({
@@ -24,7 +23,15 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
 
   private dates: string[] = [];
   private values: number[] = [];
-  private benchmarkValues: number[] = [];
+  private stockDatasets: { symbol: string; values: number[] }[] = [];
+
+  private readonly stockColors = [
+    'hsl(200, 70%, 55%)',
+    'hsl(340, 70%, 55%)',
+    'hsl(120, 50%, 45%)',
+    'hsl(30, 80%, 55%)',
+    'hsl(270, 60%, 60%)',
+  ];
 
   public chartType = 'valueInGbp';
   private label = '';
@@ -57,7 +64,7 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
   public history: HistoryViewModels | null = null;
 
   @Input()
-  public benchmarkHistory: StockHistoryViewModel | null = null;
+  public stockHistories: StockHistoryViewModel[] = [];
 
   @Input()
   public dateRange: { start: string; end: string } = { start: '', end: '' };
@@ -145,17 +152,49 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
         this.values = this.history.items.map(y => y.units.numberOfUnits);
       }
 
-      if (chartType === 'unitValue' && this.benchmarkHistory?.prices?.length) {
-        this.benchmarkValues = this.alignBenchmarkToAccountDates(this.dates, this.benchmarkHistory.prices, this.values);
+      if (chartType === 'unitValue') {
+        this.stockDatasets = this.stockHistories
+          .filter(h => h.prices?.length)
+          .map(h => ({
+            symbol: h.stockSymbol,
+            values: this.scaleStockToAccount(this.dates, h.prices, this.values)
+          }));
       } else {
-        this.benchmarkValues = [];
+        this.stockDatasets = [];
       }
 
+    }
+    else if (this.stockHistories.some(h => h.prices?.length)) {
+      this.chartType = 'unitValue';
+      const withPrices = this.stockHistories.filter(h => h.prices?.length);
+
+      const starts = withPrices.map(h => h.prices[0]?.date?.toString() ?? '').filter(d => d).sort();
+      const ends = withPrices.map(h => h.prices[h.prices.length - 1]?.date?.toString() ?? '').filter(d => d).sort();
+      const start = this.dateRange.start || starts[0] || '';
+      const end = this.dateRange.end || ends[ends.length - 1] || '';
+      this.dates = this.generateDateRange(start, end);
+      this.values = [];
+
+      this.stockDatasets = withPrices.map(stock => {
+        let lastPrice: number | null = null;
+        let bIdx = 0;
+        const raw = this.dates.map(date => {
+          while (bIdx < stock.prices.length && stock.prices[bIdx].date <= date) {
+            lastPrice = stock.prices[bIdx++].price;
+          }
+          return lastPrice !== null ? lastPrice : NaN;
+        });
+
+        const firstIdx = raw.findIndex(v => !isNaN(v));
+        if (firstIdx === -1) return { symbol: stock.stockSymbol, values: raw };
+        const base = raw[firstIdx];
+        return { symbol: stock.stockSymbol, values: raw.map(v => isNaN(v) ? NaN : (v / base) * 100) };
+      });
     }
     else {
       this.dates = [];
       this.values = [];
-      this.benchmarkValues = [];
+      this.stockDatasets = [];
     }
   }
 
@@ -168,7 +207,7 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
     return dates;
   }
 
-  private alignBenchmarkToAccountDates(accountDates: string[], prices: StockPriceViewModel[], accountValues: number[]): number[] {
+  private scaleStockToAccount(accountDates: string[], prices: StockPriceViewModel[], accountValues: number[]): number[] {
     // Forward-fill: for each account date, use the latest benchmark price on or before that date
     const filled: (number | null)[] = [];
     let lastPrice: number | null = null;
@@ -343,25 +382,27 @@ export class HistoryChartComponent implements OnChanges, OnDestroy {
       this.chart = null;
     }
 
-    const datasets: any[] = [
-      {
+    const datasets: any[] = [];
+
+    if (this.values.length > 0) {
+      datasets.push({
         label: "Total £",
         data: this.values,
         backgroundColor: 'hsl(60, 9.1%, 97.8%)',
         borderColor: 'hsl(60, 9.1%, 70%)',
         fill: false
-      }
-    ];
-
-    if (this.chartType === 'unitValue' && this.benchmarkValues.length > 0 && this.benchmarkHistory) {
-      datasets.push({
-        label: this.benchmarkHistory.stockSymbol,
-        data: this.benchmarkValues,
-        backgroundColor: 'transparent',
-        borderColor: 'hsl(200, 70%, 55%)',
-        fill: false
       });
     }
+
+    this.stockDatasets.forEach((bd, i) => {
+      datasets.push({
+        label: bd.symbol,
+        data: bd.values,
+        backgroundColor: 'transparent',
+        borderColor: this.stockColors[i % this.stockColors.length],
+        fill: false
+      });
+    });
 
     this.chart = new Chart("MyChart", <any>{
       type: 'line',
