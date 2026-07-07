@@ -5,6 +5,7 @@ using Database;
 using Database.Converters;
 using Database.Repositories;
 using DataLoaders;
+using DataLoaders.CashStatementItemEnrichers;
 using DataLoaders.StockTransactionEnrichers;
 using FileReaders;
 using FileReaders.Accounts;
@@ -73,6 +74,7 @@ class Program
                 services.AddTransient<IRecordedTotalValueRepository, RecordedTotalValueRepository>();
 
                 services.AddTransient<IReader<CashStatementItem>, CashStatementReader>();
+                services.AddTransient<CashStatementItemDividendStockEnricher>();
                 services.AddTransient<CashStatementItemLoader>();
 
                 services.AddTransient<StockTransactionTypeEnricher>();

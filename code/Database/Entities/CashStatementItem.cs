@@ -54,4 +54,13 @@ public class CashStatementItem
     [Required]
     [MaxLength(100)]
     public string CashStatementItemType { get;  set; }
+
+    [ForeignKey(nameof(Stock))]
+    [MaxLength(15)]
+    public string StockSymbol { get; set; }
+
+    public Stock Stock { get; private set; }
+
+    [Precision(19, 5)]
+    public decimal? DividendQuantity { get; set; }
 }

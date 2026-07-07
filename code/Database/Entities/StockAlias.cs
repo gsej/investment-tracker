@@ -13,7 +13,7 @@ public class StockAlias
 
     [Key]
     [Required]
-    [MaxLength(50)]
+    [MaxLength(200)]
     public string Description { get; set; }
     
     [Required]

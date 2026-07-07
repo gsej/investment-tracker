@@ -2,7 +2,6 @@
 using DataLoaders.StockTransactionEnrichers;
 using FluentAssertions;
 using UnitTests.Builder;
-using Xunit.Sdk;
 
 namespace UnitTests;
 

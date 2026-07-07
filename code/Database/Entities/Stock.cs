@@ -18,7 +18,7 @@ public class Stock
     public string Isin { get; init; }
 
     [Required]
-    [MaxLength(50)]
+    [MaxLength(200)]
     public string Description { get; init; }
 
     public IEnumerable<AlternativeSymbol> AlternativeSymbols { get; init; } = new List<AlternativeSymbol>();// encapsulate this
