@@ -2,6 +2,6 @@ POST http://localhost:5100/account/portfolio
 Content-Type: application/json
 
 {
-  "accountCode": "SIPP",
-  "date": "2024-12-31"
+  "accountCodes": ["SHEJ-SIPP"],
+  "date": "2015-08-07"
 }
