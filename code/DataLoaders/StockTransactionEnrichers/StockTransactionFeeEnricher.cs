@@ -14,19 +14,32 @@ public class StockTransactionFeeEnricher : IStockTransactionEnricher
         // AjBell reduced their regular trade price on 2024-04-01
         var isAfterPriceReduction = stockTransaction.Date.DayNumber >= (new DateOnly(2024, 4, 1)).DayNumber;
         
+        // AjBell removed the regular investment fee on 2026-04-01
+        var isAfterRegularFeeRemoval = stockTransaction.Date.DayNumber >= (new DateOnly(2026, 4, 1)).DayNumber;
+
         if (stockTransaction.TransactionType == "Purchase")
         {
             if (RegularInvestmentDayCalculator.IsRegularInvestmentDay(stockTransaction.Date))
             {
-                fee = 1.5m;
-            }
-            else if (isAfterPriceReduction)
-            {
-                fee = 5m;
+                if (isAfterRegularFeeRemoval)
+                {
+                    fee = 0m;
+                }
+                else
+                {
+                    fee = 1.5m;
+                }
             }
             else
             {
-                fee = 9.95m;
+                if (isAfterPriceReduction)
+                {
+                    fee = 5m;
+                }
+                else
+                {
+                    fee = 9.95m;
+                }    
             }
         }
         else if (stockTransaction.TransactionType == "Sale")

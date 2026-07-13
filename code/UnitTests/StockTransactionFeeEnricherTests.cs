@@ -54,6 +54,8 @@ public class StockTransactionFeeEnricherTests
     [InlineData("Purchase", "2023-09-11", 1.5)]
     [InlineData("Purchase", "2024-03-11", 1.5)]
     [InlineData("Purchase", "2025-05-12", 1.5)]
+    [InlineData("Purchase", "2026-03-10", 1.5)] // Last month before regular fee removal
+    [InlineData("Purchase", "2026-04-10", 0)] // Regular investment fee removed from 2026-04-01
     public void Enrich_WithRegularPurchase_SetsFee(string transaction, string date, decimal expectedFee)
     {
         var stockTransaction = new StockTransactionBuilder()

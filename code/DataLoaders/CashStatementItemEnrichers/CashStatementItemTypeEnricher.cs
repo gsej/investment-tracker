@@ -83,7 +83,10 @@ public class CashStatementItemTypeEnricher : ICashStatementItemEnricher
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Withdrawal;
         }
-        else if (cashStatementItem.Description.StartsWith("Price error compensation", StringComparison.InvariantCultureIgnoreCase))
+        else if (
+            cashStatementItem.Description.StartsWith("Price error compensation", StringComparison.InvariantCultureIgnoreCase) ||
+            cashStatementItem.Description.StartsWith("Adjustment", StringComparison.InvariantCultureIgnoreCase)
+            )
         {
             cashStatementItem.CashStatementItemType = CashStatementItemTypes.Adjustment;
         }
