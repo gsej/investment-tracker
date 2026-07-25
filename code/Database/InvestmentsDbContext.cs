@@ -36,6 +36,8 @@ public class InvestmentsDbContext : DbContext
 
     public DbSet<Comment> Comments { get; set; }
 
+    public DbSet<Dividend> Dividends { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<CashStatementItem>()
@@ -62,8 +64,14 @@ public class InvestmentsDbContext : DbContext
         
         modelBuilder.Entity<ExchangeRate>().Property(a => a.BaseCurrency)
             .UseCollation("SQL_Latin1_General_CP1_CS_AS");
-        
+
         modelBuilder.Entity<ExchangeRate>().Property(a => a.AlternateCurrency)
+            .UseCollation("SQL_Latin1_General_CP1_CS_AS");
+
+        modelBuilder.Entity<Dividend>().Property(a => a.Currency)
+            .UseCollation("SQL_Latin1_General_CP1_CS_AS");
+
+        modelBuilder.Entity<Dividend>().Property(a => a.OriginalCurrency)
             .UseCollation("SQL_Latin1_General_CP1_CS_AS");
     }
 

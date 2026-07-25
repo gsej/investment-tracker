@@ -11,6 +11,7 @@ using FileReaders;
 using FileReaders.Accounts;
 using FileReaders.AccountStatements;
 using FileReaders.Comments;
+using FileReaders.Dividends;
 using FileReaders.ExchangeRates;
 using FileReaders.Prices;
 using FileReaders.Stocks;
@@ -96,6 +97,14 @@ class Program
                 services.AddTransient<IStockPriceReader, StockPriceReader>();
                 services.AddTransient<StockPriceLoader>();
 
+                services.AddScoped<IDividendRepository>(provider =>
+                {
+                    return new DividendRepository(_configuration.SqlConnectionString);
+                });
+
+                services.AddTransient<IDividendReader, DividendReader>();
+                services.AddTransient<DividendLoader>();
+
                 services.AddTransient<IReader<RecordedTotalValue>, RecordedTotalValueReader>();
                 services.AddTransient<RecordedTotalValueLoader>();
 
@@ -135,6 +144,7 @@ class Program
         var stockTransactionLoader = serviceProvider.GetRequiredService<StockTransactionLoader>();
         var exchangeRateLoader = serviceProvider.GetRequiredService<ExchangeRateLoader>();
         var stockPriceLoader = serviceProvider.GetRequiredService<StockPriceLoader>();
+        var dividendLoader = serviceProvider.GetRequiredService<DividendLoader>();
         var recordedTotalValueLoader = serviceProvider.GetRequiredService<RecordedTotalValueLoader>();
         var commentLoader = serviceProvider.GetRequiredService<CommentLoader>();
 
@@ -176,7 +186,22 @@ class Program
 
         sw.Stop();
         _logger.LogInformation("Timing: Loaded exchange rates in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+      
 
+        _logger.LogInformation("Timing: starting to Load dividends");
+        sw = Stopwatch.StartNew();
+
+        var dividendFolder = GetPathToDividendFolder();
+
+        foreach (var dividendFile in Directory.EnumerateFiles(dividendFolder, "*.json", SearchOption.AllDirectories))
+        {
+            var relativePath = Path.GetRelativePath(dividendFolder, dividendFile);
+            await dividendLoader.LoadFile(dividendFile, relativePath);
+        }
+
+        sw.Stop();
+        _logger.LogInformation("Timing: Loaded dividends in {elapsedMilliseconds}ms ({elapsedSeconds}s)", sw.ElapsedMilliseconds, sw.Elapsed.TotalSeconds);
+        
         _logger.LogInformation("Timing: starting to Load stock prices");
         sw = Stopwatch.StartNew();
 
@@ -205,6 +230,18 @@ class Program
         }
 
         return Path.Combine(GetPathToDataFolder(), "Prices");
+    }
+
+    private static string GetPathToDividendFolder()
+    {
+        var dividendFolder = _configuration.DividendFolder;
+
+        if (!string.IsNullOrWhiteSpace(dividendFolder))
+        {
+            return dividendFolder;
+        }
+
+        return Path.Combine(GetPathToDataFolder(), "Dividends");
     }
 
     private static string GetPathToExchangeRateFolder()
