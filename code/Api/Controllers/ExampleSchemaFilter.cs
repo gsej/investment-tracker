@@ -1,23 +1,20 @@
-﻿using Api.QueryHandlers.Portfolio;
-using Microsoft.OpenApi.Any;
-using Microsoft.OpenApi.Models;
+using Api.QueryHandlers.Portfolio;
+using Microsoft.OpenApi;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Text.Json.Nodes;
 
 namespace Api.Controllers;
 
 public class ExampleSchemaFilter : ISchemaFilter
 {
-    public void Apply(OpenApiSchema schema, SchemaFilterContext context)
+    public void Apply(IOpenApiSchema schema, SchemaFilterContext context)
     {
-        if (context.Type == typeof(AccountPortfolioRequest))
+        if (context.Type == typeof(AccountPortfolioRequest) && schema is OpenApiSchema openApiSchema)
         {
-            schema.Example = new OpenApiObject
+            openApiSchema.Example = new JsonObject
             {
-                ["accountCodes"] = new OpenApiArray
-                {
-                    new OpenApiString("SIPP")
-                },
-                ["date"] = new OpenApiString("2024-10-30"),
+                ["accountCodes"] = new JsonArray { JsonValue.Create("SIPP") },
+                ["date"] = JsonValue.Create("2024-10-30"),
             };
         }
     }
